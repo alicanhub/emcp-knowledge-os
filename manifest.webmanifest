@@ -1,10 +1,10 @@
 {
   "name": "EMCP Knowledge OS",
   "short_name": "EMCP OS",
-  "description": "EMCP Knowledge OS — Business Intelligence Platform",
+  "description": "The Operating System for Property, Construction & Investment Professionals.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#F4F7FB",
+  "background_color": "#F3F6FB",
   "theme_color": "#012169",
   "lang": "tr",
   "icons": [

@@ -1,20 +1,28 @@
-# EMCP Knowledge OS v2
-## Business Intelligence Platform
+# EMCP Knowledge OS v3
+## The Operating System for Property, Construction & Investment Professionals.
 
-Bu sürümde:
-- App Store tarzı ana ekran
-- Dashboard istatistikleri
-- Dark Mode
-- Geliştirilmiş kart ve animasyonlar
-- Kavram detay ekranı
-- Kopyala / paylaş
-- Favoriler
-- Son bakılanlar
-- LTV, ROI ve Concrete hesaplayıcıları
-- Çevrimdışı PWA
-- Türkçe / English arayüz
-- 103 başlangıç kavramı
+### Active modules
+- Knowledge Library
+- Calculators
+- Construction Tools
 
-## Yükleme
-GitHub'daki mevcut dosyaların üzerine bu paketteki 5 dosyayı yükleyin ve commit edin.
-Vercel otomatik olarak yeniden yayınlar.
+### Calculators included
+- LTV
+- LTC
+- LTGDV
+- ROI
+- Rental Yield
+- Development Profit
+- Monthly Loan Payment
+- Arrangement Fee
+- Interest Roll-up
+- Concrete Volume
+- Paint Area
+- Flooring Area
+- Plasterboard Sheets
+- Insulation Area
+- Tiles Quantity
+
+### Installation
+Upload the five files in this package to the existing GitHub repository and commit to main.
+Vercel will redeploy automatically.
