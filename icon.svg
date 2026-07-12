@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+<rect width="512" height="512" rx="112" fill="#012169"/>
+<path d="M0 206h512v100H0z" fill="#fff" opacity=".98"/>
+<path d="M206 0h100v512H206z" fill="#fff" opacity=".98"/>
+<path d="M0 226h512v60H0z" fill="#C8102E"/>
+<path d="M226 0h60v512H226z" fill="#C8102E"/>
+<circle cx="256" cy="256" r="154" fill="#012169" stroke="#fff" stroke-width="12"/>
+<text x="256" y="280" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-size="92" font-weight="800" fill="#fff">EMCP</text>
+</svg>
