@@ -1,31 +1,20 @@
-# EMCP Knowledge OS
+# EMCP Knowledge OS v2
 ## Business Intelligence Platform
 
-Bu paket ilk çalışan PWA sürümüdür.
-
-### İçerik
-- 103 açıklanmış İngilizce–Türkçe kavram
-- Her harfte anlık arama
-- Türkçe / English arayüz
+Bu sürümde:
+- App Store tarzı ana ekran
+- Dashboard istatistikleri
+- Dark Mode
+- Geliştirilmiş kart ve animasyonlar
+- Kavram detay ekranı
+- Kopyala / paylaş
 - Favoriler
-- Kategori filtreleri
-- Çevrimdışı kullanım
-- Telefona uygulama gibi kurulum
-- Gelecek modüller için ana ekran:
-  - Investment Calculators
-  - Construction Take-off
-  - Finance Modules
-  - Legal Guides
-  - Email Templates
-  - Meeting Preparation
+- Son bakılanlar
+- LTV, ROI ve Concrete hesaplayıcıları
+- Çevrimdışı PWA
+- Türkçe / English arayüz
+- 103 başlangıç kavramı
 
-### GitHub'a yükleme
-1. ZIP'i açın.
-2. GitHub'da `Alicanhub/emcp-knowledge-os` deposunu açın.
-3. `Add file` > `Upload files` seçin.
-4. Bu klasördeki tüm dosyaları yükleyin.
-5. Commit message alanına `Add EMCP Knowledge OS v1` yazın.
-6. `Commit changes` düğmesine basın.
-7. Vercel birkaç dakika içinde otomatik olarak yeniden yayınlar.
-
-Bu sürüm build işlemi gerektirmeyen statik bir PWA'dır.
+## Yükleme
+GitHub'daki mevcut dosyaların üzerine bu paketteki 5 dosyayı yükleyin ve commit edin.
+Vercel otomatik olarak yeniden yayınlar.
