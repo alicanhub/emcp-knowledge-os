@@ -1,0 +1,372 @@
+[
+  {
+    "term": "JCT Contract",
+    "tr": "JCT yapı sözleşmesi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "Joint Contracts Tribunal",
+    "def": "Birleşik Krallık'ta yaygın kullanılan standart inşaat sözleşmesi ailesi.",
+    "use": "Traditional, design and build ve minor works gibi türleri vardır.",
+    "example": "The works will be procured under a JCT Design and Build contract.",
+    "tags": ["contract", "construction", "JCT"]
+  },
+  {
+    "term": "NEC Contract",
+    "tr": "NEC yapı ve mühendislik sözleşmesi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "New Engineering Contract",
+    "def": "İşbirliği, erken uyarı ve aktif proje yönetimine dayalı standart sözleşme ailesi.",
+    "use": "Altyapı ve kamu projelerinde yaygındır.",
+    "example": "The infrastructure package will use NEC4 ECC.",
+    "tags": ["contract", "infrastructure", "NEC"]
+  },
+  {
+    "term": "Practical Completion",
+    "tr": "Pratik tamamlanma",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "PC",
+    "def": "İşlerin önemli ölçüde tamamlandığı ve binanın kullanılabilir olduğu sözleşmesel aşama.",
+    "use": "Retention'ın yarısının serbest kalması ve defects period başlangıcıyla ilişkilidir.",
+    "example": "Practical completion is targeted for March 2027.",
+    "tags": ["completion", "construction", "handover"]
+  },
+  {
+    "term": "Retention",
+    "tr": "Kesinti / teminat tutarı",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "İşverenin kusurların giderilmesini güvence altına almak için hakedişlerden tuttuğu yüzde.",
+    "use": "Genellikle PC ve defects period sonunda aşamalı serbest bırakılır.",
+    "example": "A 3% retention will apply to interim payments.",
+    "tags": ["payment", "defects", "contract"]
+  },
+  {
+    "term": "Variation",
+    "tr": "İş değişikliği",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Sözleşme kapsamındaki iş, tasarım, miktar veya şartlarda yapılan değişiklik.",
+    "use": "Fiyat ve süre etkisi belgelenmelidir.",
+    "example": "The client instructed a variation to the mechanical specification.",
+    "tags": ["change order", "contract", "cost"]
+  },
+  {
+    "term": "Snagging",
+    "tr": "Eksik ve kusur tespiti",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Tamamlanma öncesi veya sonrası küçük kusur ve eksiklerin listelenmesi süreci.",
+    "use": "Handover öncesinde yapılır.",
+    "example": "The snagging inspection is scheduled for Friday.",
+    "tags": ["defects", "inspection", "completion"]
+  },
+  {
+    "term": "RAMS",
+    "tr": "Risk değerlendirmesi ve yöntem beyanı",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "Risk Assessments and Method Statements",
+    "def": "Bir işin risklerini ve güvenli uygulama yöntemini açıklayan sağlık ve güvenlik belgeleri.",
+    "use": "Şantiye öncesi onay sürecinde kullanılır.",
+    "example": "All subcontractors must submit RAMS before starting work.",
+    "tags": ["health safety", "method statement", "risk"]
+  },
+  {
+    "term": "BOQ",
+    "tr": "Mahal ve miktar listesi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "Bill of Quantities",
+    "def": "Projede yapılacak iş kalemlerini ve miktarlarını sistemli şekilde listeleyen ihale ve maliyet belgesi.",
+    "use": "Tender ve valuation süreçlerinde kullanılır.",
+    "example": "The contractor priced the works against the BOQ.",
+    "tags": ["quantity", "tender", "cost"]
+  },
+  {
+    "term": "Value Engineering",
+    "tr": "Değer mühendisliği",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "VE",
+    "def": "Gerekli performansı koruyarak maliyet, süre veya uygulanabilirliği iyileştirme çalışması.",
+    "use": "Sadece ucuzlatma değil, toplam değeri optimize etme amacı taşır.",
+    "example": "The team identified £250,000 of value engineering savings.",
+    "tags": ["cost saving", "design", "construction"]
+  },
+  {
+    "term": "Design and Build",
+    "tr": "Tasarla ve yap",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "D&B",
+    "def": "Tasarım ve yapım sorumluluğunun ana yüklenicide birleştiği tedarik modeli.",
+    "use": "Tek sorumluluk noktası sağlar.",
+    "example": "The project will be delivered on a design and build basis.",
+    "tags": ["procurement", "contractor", "design"]
+  },
+  {
+    "term": "Employer's Requirements",
+    "tr": "İşveren gereksinimleri",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "ERs",
+    "def": "Design and Build sözleşmesinde işverenin performans, kapsam ve tasarım beklentilerini belirleyen doküman.",
+    "use": "Contractor's Proposals ile birlikte değerlendirilir.",
+    "example": "The tender must comply with the Employer's Requirements.",
+    "tags": ["D&B", "specification", "contract"]
+  },
+  {
+    "term": "Contractor's Proposals",
+    "tr": "Yüklenici teklif ve çözümleri",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "CPs",
+    "def": "Yüklenicinin Employer's Requirements'a nasıl cevap vereceğini açıklayan tasarım ve yöntem dokümanları.",
+    "use": "D&B sözleşmesinin temel parçalarındandır.",
+    "example": "The Contractor's Proposals include the structural design solution.",
+    "tags": ["D&B", "proposal", "design"]
+  },
+  {
+    "term": "Architect",
+    "tr": "Mimar",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Görevlendirme kapsamı içinde bina tasarımını geliştiren ve koordine eden yetkin tasarım uzmanıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Architect” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Construction Client",
+    "tr": "İnşaat İşvereni",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Bir inşaat projesinin adına yürütüldüğü kişi veya kuruluştur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Construction Client” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Pre-Construction Phase",
+    "tr": "İnşaat Öncesi Aşama",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Yapım başlamadan önce tasarım, planlama ve hazırlığın yapıldığı proje dönemidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Pre-Construction Phase” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Principal Contractor",
+    "tr": "Ana Yüklenici",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "İlgili çok yüklenicili projelerde yapım aşamasını yönetmek ve koordine etmek üzere atanan yüklenicidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Principal Contractor” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Principal Designer",
+    "tr": "Ana Tasarımcı",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "İlgili projelerde inşaat öncesi aşamadaki sağlık ve güvenlik koordinasyonuna liderlik etmek üzere atanan tasarımcıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Principal Designer” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Project Handover",
+    "tr": "Proje Teslimi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Tamamlanan işlerin, bilgilerin ve sorumlulukların teslim alan tarafa düzenli biçimde aktarılmasıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Project Handover” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Quantity Surveyor",
+    "tr": "Maliyet ve Metraj Uzmanı",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Ölçüm, maliyet ve ticari bilgileri yöneten inşaat uzmanıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Quantity Surveyor” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Site Manager",
+    "tr": "Şantiye Müdürü",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Devredilen yetkiler kapsamında günlük şantiye faaliyetlerini yöneten kişidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Site Manager” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Structural Engineer",
+    "tr": "İnşaat Mühendisi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Yüklerin güvenle taşınması için yapı elemanlarını değerlendiren ve tasarlayan mühendistir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Structural Engineer” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Subcontractor",
+    "tr": "Alt Yüklenici",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "İşlerin bir bölümünü yapmak üzere bir yüklenici tarafından görevlendirilen kişi veya işletmedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Subcontractor” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Condensation",
+    "tr": "Yoğuşma",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Nemli havanın yeterince soğuk bir yüzeyle karşılaşması veya çiy noktasının altına soğumasıyla oluşan sudur.",
+    "use": "Bir konut karar dosyasında yoğuşma konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for condensation, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "defects", "pack-002"]
+  },
+  {
+    "term": "Dry Rot",
+    "tr": "Kuru Çürüklük",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Nem ve diğer uygun koşullarda mantarın yol açtığı ahşap bozulması türüdür.",
+    "use": "Bir konut karar dosyasında kuru çürüklük konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for dry rot, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "defects", "pack-002"]
+  },
+  {
+    "term": "Mould Growth",
+    "tr": "Küf Oluşumu",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Bir yüzeyde uygun nem, sıcaklık ve besin koşullarının desteklediği mantar oluşumudur.",
+    "use": "Bir konut karar dosyasında küf oluşumu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for mould growth, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "defects", "pack-002"]
+  },
+  {
+    "term": "Structural Movement",
+    "tr": "Yapısal Hareket",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Yapı elemanlarının geçmiş, mevsimsel veya devam eden; nedeni özel olarak değerlendirilmesi gereken hareketidir.",
+    "use": "Bir konut karar dosyasında yapısal hareket konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for structural movement, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "defects", "pack-002"]
+  },
+  {
+    "term": "Wet Rot",
+    "tr": "Islak Çürüklük",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Sürekli nemli koşullar ve ahşabı bozan mantarlarla ilişkili ahşap çürümesidir.",
+    "use": "Bir konut karar dosyasında ıslak çürüklük konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for wet rot, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "defects", "pack-002"]
+  },
+  {
+    "term": "Forwarding Address",
+    "tr": "Yeni Yazışma Adresi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Bir kişinin taşınmazdan ayrılmasından sonra yazışmalar için sağladığı adrestir.",
+    "use": "Bir konut karar dosyasında yeni yazışma adresi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for forwarding address, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "moving", "pack-002"]
+  },
+  {
+    "term": "Key Handover",
+    "tr": "Anahtar Teslimi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Anahtarların veya giriş bilgilerinin yetkili kullanıcıya ya da malike belgeli biçimde devridir.",
+    "use": "Bir konut karar dosyasında anahtar teslimi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for key handover, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "moving", "pack-002"]
+  },
+  {
+    "term": "Handover Meter Reading",
+    "tr": "Teslim Sayaç Okuması",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Tüketimi doğru paylaştırmak için tamamlama, giriş veya çıkışta kaydedilen sayaç değeridir.",
+    "use": "Bir konut karar dosyasında teslim sayaç okuması konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for handover meter reading, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "moving", "pack-002"]
+  },
+  {
+    "term": "Moving-in Checklist",
+    "tr": "Taşınma Kontrol Listesi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Bir konuta yerleşirken giriş, altyapı, durum, güvenlik ve idari işleri sıralayan listedir.",
+    "use": "Bir konut karar dosyasında taşınma kontrol listesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for moving-in checklist, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "moving", "pack-002"]
+  },
+  {
+    "term": "Vacant Possession Handover",
+    "tr": "Boş Teslim İşlemi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Taşınmazın kullanımı engelleyen kullanıcı veya eşyalar olmadan teslim edileceği durumda uygulanan teslim sürecidir.",
+    "use": "Bir konut karar dosyasında boş teslim işlemi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for vacant possession handover, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "moving", "pack-002"]
+  },
+  {
+    "term": "Home Maintenance Schedule",
+    "tr": "Konut Bakım Programı",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Bir konutun tekrarlanan kontrollerini, servislerini ve bakım işlerini tarihli olarak listeleyen plandır.",
+    "use": "Bir konut karar dosyasında konut bakım programı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for home maintenance schedule, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "renovation", "pack-002"]
+  },
+  {
+    "term": "Planned Maintenance",
+    "tr": "Planlı Bakım",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Beklenen kullanım ömrü, incelemeler ve öncelikler kullanılarak önceden programlanan bakımdır.",
+    "use": "Bir konut karar dosyasında planlı bakım konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for planned maintenance, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "renovation", "pack-002"]
+  },
+  {
+    "term": "Reactive Maintenance",
+    "tr": "Arıza Sonrası Bakım",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Arıza, bozulma veya beklenmedik bakım ihtiyacına karşı başlatılan çalışmadır.",
+    "use": "Bir konut karar dosyasında arıza sonrası bakım konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for reactive maintenance, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "renovation", "pack-002"]
+  },
+  {
+    "term": "Residential Refurbishment",
+    "tr": "Konut İyileştirmesi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Mevcut konutu tamamen yeniden yapmadan onaran, yenileyen veya geliştiren çalışmalardır.",
+    "use": "Bir konut karar dosyasında konut iyileştirmesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for residential refurbishment, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "renovation", "pack-002"]
+  },
+  {
+    "term": "Residential Renovation",
+    "tr": "Konut Yenilemesi",
+    "cat": "İnşaat ve Teslim",
+    "abbr": "",
+    "def": "Mevcut konutun durumunu, işlevini veya görünümünü iyileştiren ya da eski hâline getiren koordineli çalışmalardır.",
+    "use": "Bir konut karar dosyasında konut yenilemesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for residential renovation, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "renovation", "pack-002"]
+  }
+]

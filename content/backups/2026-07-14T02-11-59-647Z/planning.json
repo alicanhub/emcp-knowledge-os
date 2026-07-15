@@ -1,0 +1,242 @@
+[
+  {
+    "term": "LPA",
+    "tr": "Yerel planlama otoritesi",
+    "cat": "Planlama ve Kamu",
+    "abbr": "Local Planning Authority",
+    "def": "Planlama başvurularını değerlendiren yerel kamu kurumu.",
+    "use": "Genellikle district, borough veya city council'dır.",
+    "example": "The application has been submitted to the LPA.",
+    "tags": ["planning", "council", "authority"]
+  },
+  {
+    "term": "Outline Planning Permission",
+    "tr": "Ana hatlarıyla planlama izni",
+    "cat": "Planlama ve Kamu",
+    "abbr": "Outline Permission",
+    "def": "Bir geliştirmenin prensipte kabul edildiğini gösteren, detayların daha sonra reserved matters ile sunulduğu izin.",
+    "use": "Büyük arazi ve konut projelerinde kullanılır.",
+    "example": "The site benefits from outline planning permission.",
+    "tags": ["outline", "planning", "permission"]
+  },
+  {
+    "term": "Reserved Matters",
+    "tr": "Saklı detaylar başvurusu",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Outline permission sonrasında erişim, görünüm, peyzaj, ölçek ve yerleşim gibi detayların onaya sunulması.",
+    "use": "Outline izni detaylandırır.",
+    "example": "The reserved matters application will be submitted next quarter.",
+    "tags": ["planning", "details", "outline"]
+  },
+  {
+    "term": "Section 106",
+    "tr": "Planlama yükümlülüğü anlaşması",
+    "cat": "Planlama ve Kamu",
+    "abbr": "S106",
+    "def": "Geliştirici ile yerel otorite arasında, uygun fiyatlı konut veya altyapı katkıları gibi yükümlülükleri düzenleyen anlaşma.",
+    "use": "Planning permission ile bağlantılıdır.",
+    "example": "The scheme is subject to a Section 106 agreement.",
+    "tags": ["planning obligation", "affordable housing", "council"]
+  },
+  {
+    "term": "CIL",
+    "tr": "Toplumsal altyapı katkı payı",
+    "cat": "Planlama ve Kamu",
+    "abbr": "Community Infrastructure Levy",
+    "def": "Yeni geliştirmelerin yerel altyapıya katkısı için uygulanan metrekare bazlı yerel vergi/harç.",
+    "use": "Her LPA uygulamayabilir veya oranları değişebilir.",
+    "example": "The development is liable for CIL.",
+    "tags": ["levy", "planning", "infrastructure"]
+  },
+  {
+    "term": "NPPF",
+    "tr": "Ulusal Planlama Politikası Çerçevesi",
+    "cat": "Planlama ve Kamu",
+    "abbr": "National Planning Policy Framework",
+    "def": "İngiltere'deki planlama kararları ve yerel planlar için merkezi hükümet politika çerçevesi.",
+    "use": "Planning statement ve appeal süreçlerinde referans verilir.",
+    "example": "The proposal accords with the NPPF.",
+    "tags": ["planning policy", "national", "framework"]
+  },
+  {
+    "term": "Public-backed",
+    "tr": "Kamu destekli",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Bir proje veya büyüme programının kamu politikası, finansmanı, arazi desteği veya kurumsal katılım ile desteklenmesi.",
+    "use": "Yatırım anlatısında dikkatli ve kanıtlı kullanılmalıdır.",
+    "example": "The opportunity sits within a public-backed regeneration programme.",
+    "tags": ["government", "support", "regeneration"]
+  },
+  {
+    "term": "Local Plan",
+    "tr": "Yerel plan",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Yerel otoritenin arazi kullanımı, konut, altyapı ve gelişme politikalarını belirleyen resmi plan belgesi.",
+    "use": "Arazi potansiyelini değerlendirmede temel kaynaktır.",
+    "example": "The site is allocated for housing in the adopted Local Plan.",
+    "tags": ["planning", "allocation", "council"]
+  },
+  {
+    "term": "Planning Gain",
+    "tr": "Planlama kaynaklı değer artışı / katkı",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Planlama izniyle oluşan değer artışı veya geliştiriciden alınan toplumsal katkılar için kullanılan genel ifade.",
+    "use": "S106, CIL ve arazi değer artışı bağlamında kullanılır.",
+    "example": "The authority is seeking appropriate planning gain.",
+    "tags": ["uplift", "S106", "CIL"]
+  },
+  {
+    "term": "Building Completion Certificate",
+    "tr": "Yapı Tamamlama Belgesi",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "İlgili süreç tamamlanan işin kendi kapsamı içinde uygun olduğuna karar verdiğinde düzenlenen yapı kontrol belgesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Building Completion Certificate” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Building Control Approval",
+    "tr": "Yapı Kontrol Onayı",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Önerilen yapım işi için geçerli yapı kontrol yöntemi üzerinden alınan onay veya kabuldür. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Building Control Approval” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Building Control Body",
+    "tr": "Yapı Kontrol Kuruluşu",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Bir projedeki yapı kontrol işlevlerinden sorumlu yetkili kuruluştur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Building Control Body” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Building Regulations",
+    "tr": "Yapı Yönetmelikleri",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Planlama izninden ayrı olarak bina tasarımı ve yapımının belirli yönlerini düzenleyen yasal standartlardır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Building Regulations” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Conservation Area",
+    "tr": "Koruma Alanı",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Özel mimari veya tarihî önemi nedeniyle belirlenen ve ek planlama kontrollerinin uygulanabildiği alandır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Conservation Area” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Listed Building Consent",
+    "tr": "Tescilli Yapı İzni",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Tescilli bir yapının özel niteliğini etkileyen işler için gerekebilecek ayrı bir izindir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Listed Building Consent” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Party Wall",
+    "tr": "Ortak Duvar",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Binalar veya malikler tarafından paylaşılan ve özel yasal usullere tabi olabilen duvar ya da yapıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Party Wall” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Permitted Development Rights",
+    "tr": "İzinli Geliştirme Hakları",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Belirli geliştirmelere sınır ve şartlara bağlı olarak normal planlama başvurusu olmadan izin veren haklardır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Permitted Development Rights” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Planning Application",
+    "tr": "Planlama İzni Başvurusu",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Önerilen geliştirme hakkında karar verilmesi için planlama makamına yapılan resmî başvurudur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Planning Application” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Planning Condition",
+    "tr": "Planlama Koşulu",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Geliştirmenin nasıl yürütüleceğini veya kullanılacağını düzenleyen planlama iznine bağlı şarttır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Planning Condition” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": ["planning-building-control", "content-pack-001", "fundamentals"]
+  },
+  {
+    "term": "Building Control Inspection",
+    "tr": "Yapı Kontrol İncelemesi",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "İşlerin uygulanabilir yapı kontrol gerekliliklerine uygunluğunu değerlendirmek için ilgili aşamada yapılan incelemedir.",
+    "use": "Bir konut karar dosyasında yapı kontrol incelemesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for building control inspection, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "planning", "pack-002"]
+  },
+  {
+    "term": "Building Notice",
+    "tr": "Yapı Bildirimi",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Uygunluk ve bölgeye bağlı olarak belirli işler için kullanılabilen yapı kontrol başvuru yoludur.",
+    "use": "Bir konut karar dosyasında yapı bildirimi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for building notice, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "planning", "pack-002"]
+  },
+  {
+    "term": "Full Plans Application",
+    "tr": "Tam Plan Başvurusu",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "Ayrıntılı plan ve bilgilerin işten önce veya iş sırasında değerlendirme için sunulduğu yapı kontrol yoludur.",
+    "use": "Bir konut karar dosyasında tam plan başvurusu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for full plans application, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "planning", "pack-002"]
+  },
+  {
+    "term": "Lawful Development Certificate",
+    "tr": "Hukuka Uygun Geliştirme Belgesi",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "İlgili planlama sisteminde önerilen veya mevcut kullanım ya da geliştirmenin hukuka uygunluğuna ilişkin resmî karardır.",
+    "use": "Bir konut karar dosyasında hukuka uygun geliştirme belgesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for lawful development certificate, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "planning", "pack-002"]
+  },
+  {
+    "term": "Planning Permission",
+    "tr": "Planlama İzni",
+    "cat": "Planlama ve Kamu",
+    "abbr": "",
+    "def": "İzin gerektiren geliştirme için ilgili planlama otoritesinden alınan resmî onaydır.",
+    "use": "Bir konut karar dosyasında planlama izni konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for planning permission, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": ["residential-property", "planning", "pack-002"]
+  }
+]

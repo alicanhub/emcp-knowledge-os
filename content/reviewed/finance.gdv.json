@@ -1,0 +1,152 @@
+{
+  "$schema": "../../schemas/content-entry.schema.json",
+  "id": "finance.gdv",
+  "legacy_term": "GDV",
+  "title": {
+    "en": "GDV",
+    "tr": "Brüt geliştirme değeri"
+  },
+  "abbreviation": "Gross Development Value",
+  "definition": {
+    "en": "The expected total sale or market value of a development when completed.",
+    "tr": "Bir geliştirme projesinin tamamlandığında beklenen toplam satış veya piyasa değeri."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "finance.valuation",
+    "en": "Development valuation",
+    "tr": "Geliştirme değerlemesi"
+  },
+  "aliases": {
+    "en": ["Gross development value"],
+    "tr": ["Tamamlanmış brüt proje değeri"]
+  },
+  "tags": ["development value", "valuation", "sales"],
+  "keywords": {
+    "en": ["completed value", "development appraisal"],
+    "tr": ["tamamlanmış değer", "geliştirme fizibilitesi"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "If 20 completed units are expected to sell for £900,000 each, the estimated GDV is £18 million.",
+    "tr": "Tamamlanan 20 birimin her birinin 900.000 £'a satılması bekleniyorsa tahmini GDV 18 milyon £'dur."
+  },
+  "use_cases": {
+    "en": ["Used in profitability and finance calculations."],
+    "tr": ["Kârlılık ve finansman hesaplarında kullanılır."]
+  },
+  "risks": {
+    "en": [
+      "Optimistic sales assumptions can materially overstate development value."
+    ],
+    "tr": [
+      "İyimser satış varsayımları geliştirme değerini önemli ölçüde yüksek gösterebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating GDV as net sale proceeds without deducting disposal costs."
+    ],
+    "tr": [
+      "Satış maliyetlerini düşmeden GDV'yi net satış geliri olarak değerlendirmek."
+    ]
+  },
+  "related_concepts": ["finance.ltv", "finance.ltc", "finance.irr"],
+  "related_calculators": ["ltgdv", "development-profit"],
+  "related_documents": [],
+  "jurisdiction": ["United Kingdom"],
+  "sources": [
+    {
+      "title": "RICS Valuation – Global Standards",
+      "publisher": "Royal Institution of Chartered Surveyors",
+      "url": "https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/valuation-standards",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Professional standards context for valuation bases, assumptions and reporting."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Review Board (sample)",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "The estimated aggregate value of a completed development at the chosen valuation date and stated assumptions.",
+    "tr": "Tamamlanmış bir geliştirmenin seçilen değerleme tarihinde ve açıklanan varsayımlarla tahmini toplam değeridir."
+  },
+  "professional_explanation": {
+    "en": "The estimated aggregate value of a completed development at the chosen valuation date and stated assumptions. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Tamamlanmış bir geliştirmenin seçilen değerleme tarihinde ve açıklanan varsayımlarla tahmini toplam değeridir. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for gdv before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce brüt geliştirme değeri için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the gdv assumption.",
+    "tr": "Değerleme dosyası brüt geliştirme değeri varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify GDV?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Brüt Geliştirme Değeri nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can GDV be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Brüt Geliştirme Değeri esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

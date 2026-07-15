@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>EMCP Production Studio</title>
+    <link rel="stylesheet" href="production-studio.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="../" aria-label="EMCP Knowledge OS home">
+        <span class="brand-mark" aria-hidden="true">E</span>
+        <span><strong>EMCP</strong><small>Production Studio</small></span>
+      </a>
+      <div class="topbar-actions">
+        <span class="live-state"
+          ><i aria-hidden="true"></i><span id="modeLabel">Read-only</span></span
+        >
+        <button class="button secondary" id="refreshButton" type="button">
+          Refresh
+        </button>
+        <button class="button primary" id="startButton" type="button">
+          Start Production
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="studioTitle">
+        <div>
+          <p class="eyebrow">Content operations</p>
+          <h1 id="studioTitle">Production command centre</h1>
+          <p class="intro">
+            A read-only view of planning, research, editorial review, validation
+            and publishing health.
+          </p>
+        </div>
+        <div class="cycle-card">
+          <div class="cycle-heading">
+            <span>Production cycle</span><strong id="progressValue">0%</strong>
+          </div>
+          <div
+            class="progress-track"
+            role="progressbar"
+            aria-label="Production cycle progress"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+            id="overallProgress"
+          >
+            <span></span>
+          </div>
+          <p>
+            <span id="cycleStatus">Idle</span
+            ><time id="lastUpdated">Not refreshed</time>
+          </p>
+        </div>
+      </section>
+
+      <p class="notice" id="studioStatus" role="status" aria-live="polite">
+        Loading production data…
+      </p>
+
+      <section aria-labelledby="pipelineTitle">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Workflow</p>
+            <h2 id="pipelineTitle">Production pipeline</h2>
+          </div>
+          <span id="stageCount">0 of 12 complete</span>
+        </div>
+        <ol class="pipeline" id="pipeline"></ol>
+      </section>
+
+      <section
+        class="metric-grid"
+        id="metrics"
+        aria-label="Production metrics"
+      ></section>
+
+      <div class="studio-grid">
+        <section class="panel span-two" aria-labelledby="jobQueueTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Operations</p>
+              <h2 id="jobQueueTitle">Job Queue</h2>
+            </div>
+            <span class="count" id="jobCount">0</span>
+          </div>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th>Job</th>
+                  <th>Status</th>
+                  <th>Priority</th>
+                  <th>Updated</th>
+                </tr>
+              </thead>
+              <tbody id="jobs"></tbody>
+            </table>
+          </div>
+          <p class="empty" id="jobsEmpty">No queued jobs.</p>
+        </section>
+
+        <section class="panel" aria-labelledby="qualityTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Content health</p>
+              <h2 id="qualityTitle">Knowledge Quality</h2>
+            </div>
+          </div>
+          <div class="quality-score">
+            <div class="score-ring" id="qualityRing">
+              <strong id="qualityScore">0</strong><span>/ 100</span>
+            </div>
+            <div>
+              <strong id="qualityBand">Not scored</strong>
+              <p id="qualityDetail">No quality reports available.</p>
+            </div>
+          </div>
+          <div class="quality-bars" id="qualityCategories"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="researchTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Evidence</p>
+              <h2 id="researchTitle">Research Queue</h2>
+            </div>
+            <span class="count" id="researchCount">0</span>
+          </div>
+          <div class="status-bars" id="researchStatuses"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="reviewTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Editorial</p>
+              <h2 id="reviewTitle">Human Review</h2>
+            </div>
+            <span class="count" id="reviewCount">0</span>
+          </div>
+          <div class="status-list" id="reviewStatuses"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="validationTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Quality gate</p>
+              <h2 id="validationTitle">Validation</h2>
+            </div>
+            <span class="badge" id="validationBadge">No report</span>
+          </div>
+          <div class="finding-grid" id="validationFindings"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="importTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">Publishing</p>
+              <h2 id="importTitle">Safe Import</h2>
+            </div>
+            <span class="count" id="importCount">0</span>
+          </div>
+          <dl class="definition-list" id="importDetails"></dl>
+        </section>
+
+        <section class="panel span-two" aria-labelledby="dashboardTitle">
+          <div class="panel-heading">
+            <div>
+              <p class="eyebrow">System</p>
+              <h2 id="dashboardTitle">Dashboard metrics</h2>
+            </div>
+          </div>
+          <div class="dashboard-metrics" id="dashboardMetrics"></div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <span>EMCP Production Studio v1</span
+      ><span>Local administration · no editing controls</span>
+    </footer>
+    <script src="production-studio.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+{
+  "id": "path.property-investor",
+  "object_type": "learning_path",
+  "title": {
+    "en": "Property Investor Learning Path",
+    "tr": "Gayrimenkul Yatırımcısı Öğrenme Yolu"
+  },
+  "summary": {
+    "en": "A progressive route from foundation concepts to investor decision-making.",
+    "tr": "Temel kavramlardan yatırım kararına ilerleyen öğrenme yolu."
+  },
+  "learning_objectives": {
+    "en": [
+      "Understand Property Investor Learning Path and its place in the publishing hierarchy."
+    ],
+    "tr": [
+      "Gayrimenkul Yatırımcısı Öğrenme Yolu konusunu ve yayın hiyerarşisindeki yerini anlamak."
+    ]
+  },
+  "prerequisites": ["pack.001"],
+  "difficulty_level": "beginner",
+  "estimated_study_time_minutes": 30,
+  "related_knowledge_entries": [],
+  "related_topics": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_case_studies": [],
+  "official_sources": [
+    {
+      "title": "Authoritative source review required",
+      "url": null,
+      "status": "required"
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial publishing architecture draft.",
+        "tr": "İlk yayın mimarisi taslağı."
+      }
+    }
+  ],
+  "completion_status": "planned",
+  "content_version": "1.0.0",
+  "review_status": "draft",
+  "reviewer": null,
+  "jurisdiction": [
+    "United Kingdom",
+    "Turkey — local professional verification required"
+  ],
+  "child_packs": ["pack.001", "pack.002", "pack.003"]
+}

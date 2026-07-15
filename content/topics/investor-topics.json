@@ -1,0 +1,172 @@
+[
+  {
+    "id": "topic.property-finance-ratios",
+    "object_type": "topic",
+    "title": {
+      "en": "Property Finance Ratios",
+      "tr": "Gayrimenkul Finansman Oranları"
+    },
+    "summary": {
+      "en": "Core ratios used to describe leverage, cover and returns.",
+      "tr": "Kaldıraç, karşılama ve getiriyi açıklayan temel oranlar."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Property Finance Ratios and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Gayrimenkul Finansman Oranları konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": ["LTV", "LTC", "DSCR", "ROI", "IRR"],
+    "related_topics": [],
+    "related_calculators": ["LTV", "LTC", "ROI"],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ]
+  },
+  {
+    "id": "topic.residential-investment",
+    "object_type": "topic",
+    "title": {
+      "en": "Residential Investment",
+      "tr": "Konut Yatırımı"
+    },
+    "summary": {
+      "en": "Ownership, letting, finance and risk in residential investment.",
+      "tr": "Konut yatırımında mülkiyet, kiralama, finansman ve risk."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Residential Investment and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Konut Yatırımı konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [
+      "Mortgage",
+      "Rent",
+      "Landlord",
+      "Tenant",
+      "Home Survey"
+    ],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ]
+  },
+  {
+    "id": "topic.property-transactions",
+    "object_type": "topic",
+    "title": {
+      "en": "Property Transactions",
+      "tr": "Gayrimenkul İşlemleri"
+    },
+    "summary": {
+      "en": "The practical buying, title and due-diligence process.",
+      "tr": "Satın alma, tapu ve inceleme süreci."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Property Transactions and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Gayrimenkul İşlemleri konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [
+      "Conveyancing",
+      "Property Searches",
+      "Title Register",
+      "Exchange of Contracts"
+    ],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ]
+  }
+]

@@ -1,0 +1,183 @@
+{
+  "id": "residential.management.maintenance-request",
+  "title": {
+    "en": "Property Maintenance Request",
+    "tr": "Taşınmaz Bakım Talebi"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "A recorded request describing a maintenance issue, priority, access information and required follow-up.",
+    "tr": "Bakım sorununu, önceliğini, giriş bilgilerini ve gereken takibi açıklayan kayıtlı taleptir."
+  },
+  "simple_explanation": {
+    "en": "A recorded request describing a maintenance issue, priority, access information and required follow-up.",
+    "tr": "Bakım sorununu, önceliğini, giriş bilgilerini ve gereken takibi açıklayan kayıtlı taleptir."
+  },
+  "professional_explanation": {
+    "en": "A recorded request describing a maintenance issue, priority, access information and required follow-up. Its precise effect depends on the transaction, contract, evidence and jurisdiction.",
+    "tr": "Bakım sorununu, önceliğini, giriş bilgilerini ve gereken takibi açıklayan kayıtlı taleptir. Kesin etkisi işleme, sözleşmeye, kanıta ve hukuk bölgesine bağlıdır."
+  },
+  "real_world_example": {
+    "en": "A homeowner, buyer, landlord or adviser records property maintenance request while reviewing a residential property decision.",
+    "tr": "Bir ev sahibi, alıcı, kiraya veren veya danışman konut kararını incelerken taşınmaz bakım talebi konusunu kaydeder."
+  },
+  "office_example": {
+    "en": "A property professional identifies the evidence, assumptions and responsible party before relying on property maintenance request.",
+    "tr": "Taşınmaz uzmanı taşınmaz bakım talebi konusuna dayanmadan önce kanıtı, varsayımları ve sorumlu tarafı belirler."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "What is Property Maintenance Request, and what should be verified?",
+        "answer": "A recorded request describing a maintenance issue, priority, access information and required follow-up. Verify the current document, evidence, contract and jurisdiction-specific requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Taşınmaz Bakım Talebi nedir ve neler doğrulanmalıdır?",
+        "answer": "Bakım sorununu, önceliğini, giriş bilgilerini ve gereken takibi açıklayan kayıtlı taleptir. Güncel belgeyi, kanıtı, sözleşmeyi ve bölgeye özel gereklilikleri doğrulayın."
+      }
+    ]
+  },
+  "definition": {
+    "en": "A recorded request describing a maintenance issue, priority, access information and required follow-up.",
+    "tr": "Bakım sorununu, önceliğini, giriş bilgilerini ve gereken takibi açıklayan kayıtlı taleptir."
+  },
+  "category": {
+    "key": "property-development",
+    "en": "Property and Development",
+    "tr": "Gayrimenkul ve Geliştirme"
+  },
+  "subcategory": {
+    "key": "management",
+    "en": "Property management",
+    "tr": "Taşınmaz yönetimi"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["residential-property", "management", "pack-002"],
+  "keywords": {
+    "en": ["property maintenance request"],
+    "tr": ["taşınmaz bakım talebi"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "In a simple home review, the user records the relevant facts for property maintenance request, keeps the supporting document and flags anything requiring professional advice.",
+    "tr": "Basit bir konut incelemesinde kullanıcı taşınmaz bakım talebi için ilgili bilgileri kaydeder, destekleyici belgeyi saklar ve uzman görüşü gerektiren konuları işaretler."
+  },
+  "when_to_use": {
+    "en": "Use this concept when buying, owning, letting, managing, financing, improving or selling a home where it is relevant.",
+    "tr": "Bu kavramı ilgili olduğu durumda konut alırken, sahip olurken, kiralarken, yönetirken, finanse ederken, iyileştirirken veya satarken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Record and communicate property maintenance request in a residential decision file."
+    ],
+    "tr": [
+      "Bir konut karar dosyasında taşınmaz bakım talebi konusunu kaydedip paylaşmak."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Definitions, contractual effects and legal requirements can differ by jurisdiction and change over time."
+    ],
+    "tr": [
+      "Tanımlar, sözleşmesel etkiler ve hukuki gereklilikler bölgeye göre değişebilir ve zamanla güncellenebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Relying on an informal description without checking the underlying document or current evidence."
+    ],
+    "tr": [
+      "Dayanak belgeyi veya güncel kanıtı kontrol etmeden gayriresmî açıklamaya güvenmek."
+    ]
+  },
+  "practical_tips": {
+    "en": ["Keep dated evidence and record who verified it."],
+    "tr": ["Tarihli kanıtı saklayın ve kimin doğruladığını kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Confirm material decisions with an appropriately qualified professional."
+    ],
+    "tr": ["Önemli kararları uygun nitelikte bir uzmanla doğrulayın."]
+  },
+  "uk_practice": {
+    "en": "Use the cited UK guidance as a starting point and check the rules for the relevant UK nation and transaction date.",
+    "tr": "Atıf verilen Birleşik Krallık rehberini başlangıç noktası olarak kullanın; ilgili ülke ve işlem tarihindeki kuralları kontrol edin."
+  },
+  "turkey_practice": {
+    "en": "The UK concept may not map directly to Turkish law or market practice; obtain current local advice and use the Turkish title as an educational explanation.",
+    "tr": "Birleşik Krallık kavramı Türk hukukuna veya piyasa uygulamasına bire bir karşılık gelmeyebilir; güncel yerel görüş alın ve Türkçe başlığı eğitim amaçlı açıklama olarak kullanın."
+  },
+  "related_concepts": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 002 reviewed edition.",
+        "tr": "İlk Pack 002 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ],
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 4,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Is Property Maintenance Request the same in every jurisdiction?",
+        "answer": "No. Check the current local legal, contractual and professional context."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Taşınmaz Bakım Talebi her hukuk bölgesinde aynı mıdır?",
+        "answer": "Hayır. Güncel yerel hukuki, sözleşmesel ve mesleki bağlamı kontrol edin."
+      }
+    ]
+  },
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "A future diagram will illustrate property maintenance request.",
+      "tr": "Gelecekteki bir şema taşınmaz bakım talebi konusunu gösterecektir."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "A future beginner video will explain property maintenance request.",
+      "tr": "Gelecekteki başlangıç videosu taşınmaz bakım talebi konusunu açıklayacaktır."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Letting agent redress schemes",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/redress-scheme-estate-agencies",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative starting point for the property management scope; current transaction-specific requirements must be verified."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

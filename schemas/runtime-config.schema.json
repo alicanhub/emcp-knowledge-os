@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/runtime-config.schema.json",
+  "type": "object",
+  "required": ["releaseChannel", "flags"],
+  "additionalProperties": false,
+  "properties": {
+    "releaseChannel": { "enum": ["stable", "beta", "canary"] },
+    "flags": {
+      "type": "object",
+      "required": [
+        "workerSearch",
+        "virtualResults",
+        "preloadFeatures",
+        "localAnalytics",
+        "performanceMonitoring"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "workerSearch": { "type": "boolean" },
+        "virtualResults": { "type": "boolean" },
+        "preloadFeatures": { "type": "boolean" },
+        "localAnalytics": { "type": "boolean" },
+        "performanceMonitoring": { "type": "boolean" }
+      }
+    },
+    "productionStudio": {
+      "type": "object",
+      "required": ["dataUrl", "refreshMs", "startEndpoint"],
+      "additionalProperties": false,
+      "properties": {
+        "dataUrl": { "type": "string", "minLength": 1 },
+        "refreshMs": { "type": "integer", "minimum": 2000 },
+        "startEndpoint": {
+          "type": ["string", "null"],
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

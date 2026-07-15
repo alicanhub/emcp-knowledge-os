@@ -1,0 +1,52 @@
+[
+  {
+    "term": "One-pager",
+    "tr": "Tek sayfalık özet",
+    "cat": "İletişim ve Belgeler",
+    "abbr": "",
+    "def": "Bir şirketi, fırsatı veya projeyi tek sayfada özetleyen kısa tanıtım dokümanı.",
+    "use": "İlk temas ve hızlı değerlendirme için kullanılır.",
+    "example": "Please send the investor one-pager before the call.",
+    "tags": ["summary", "document", "investor"]
+  },
+  {
+    "term": "Teaser",
+    "tr": "Kısa anonim fırsat tanıtımı",
+    "cat": "İletişim ve Belgeler",
+    "abbr": "",
+    "def": "Tam gizli bilgiler paylaşılmadan önce yatırım fırsatının temel özelliklerini özetleyen kısa belge.",
+    "use": "NDA öncesinde veya ilk yatırımcı ilgisini ölçmek için kullanılır.",
+    "example": "We circulated a confidential teaser to selected investors.",
+    "tags": ["opportunity", "document", "marketing"]
+  },
+  {
+    "term": "IM",
+    "tr": "Yatırım bilgi memorandumu",
+    "cat": "İletişim ve Belgeler",
+    "abbr": "Information Memorandum",
+    "def": "Bir yatırım veya satış fırsatını ayrıntılı olarak açıklayan kapsamlı bilgi dokümanı.",
+    "use": "Finansal, hukuki, operasyonel ve pazar bilgilerini içerir.",
+    "example": "The full IM is available following execution of the NDA.",
+    "tags": ["memorandum", "investment", "document"]
+  },
+  {
+    "term": "Capital Narrative",
+    "tr": "Sermaye anlatısı",
+    "cat": "İletişim ve Belgeler",
+    "abbr": "",
+    "def": "Bir projenin neden yatırım yapılabilir olduğunu yatırımcı diliyle açıklayan yapılandırılmış hikâye.",
+    "use": "Bölge, talep, kamu desteği, getiri, risk ve çıkışı bir araya getirir.",
+    "example": "The capital narrative needs to be clearer before investor outreach.",
+    "tags": ["story", "investment thesis", "presentation"]
+  },
+  {
+    "term": "Controlled Introduction",
+    "tr": "Kontrollü tanıştırma",
+    "cat": "İletişim ve Belgeler",
+    "abbr": "",
+    "def": "Yatırımcı ve fırsat sahibinin, uygunluk ve gizlilik kontrolleri tamamlandıktan sonra planlı biçimde tanıştırılması.",
+    "use": "Mass brokering yerine seçici süreçte kullanılır.",
+    "example": "We will arrange a controlled introduction after qualification.",
+    "tags": ["introduction", "investor fit", "NDA"]
+  }
+]

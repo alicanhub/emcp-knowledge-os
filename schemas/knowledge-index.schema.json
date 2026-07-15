@@ -1,0 +1,45 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/knowledge-index.schema.json",
+  "type": "object",
+  "required": [
+    "categories",
+    "translations",
+    "searchIndex",
+    "relationships",
+    "details"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "translations": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*\\.json$"
+    },
+    "searchIndex": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*\\.json$"
+    },
+    "relationships": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*\\.json$"
+    },
+    "details": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*\\.json$"
+    },
+    "categories": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": ["category", "file"],
+        "additionalProperties": false,
+        "properties": {
+          "category": { "type": "string", "minLength": 1, "maxLength": 120 },
+          "file": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*\\.json$" }
+        }
+      }
+    }
+  }
+}

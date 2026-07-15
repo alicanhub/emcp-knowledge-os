@@ -1,0 +1,189 @@
+{
+  "id": "investor.deal-snapshot",
+  "title": {
+    "en": "Deal Snapshot",
+    "tr": "Yatırım Fırsatı Özeti"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "A concise, dated summary of key deal inputs, outputs, assumptions and risks.",
+    "tr": "Yatırım fırsatının temel girdi, çıktı, varsayım ve risklerinin kısa ve tarihli özetidir."
+  },
+  "definition": {
+    "en": "A concise, dated summary of key deal inputs, outputs, assumptions and risks.",
+    "tr": "Yatırım fırsatının temel girdi, çıktı, varsayım ve risklerinin kısa ve tarihli özetidir."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "investor-fundamentals",
+    "en": "Property Investor Fundamentals",
+    "tr": "Gayrimenkul Yatırımcısı Temelleri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["property-investment", "pack-003", "beginner"],
+  "keywords": {
+    "en": ["deal snapshot"],
+    "tr": ["yatırım fırsatı özeti"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records deal snapshot, and tests whether a reasonable adverse change alters the decision.",
+    "tr": "Öğrenci varsayımsal taşınmazın kanıtını tarihli değerlemeye girer, yatırım fırsatı özeti değerini hesaplar veya kaydeder ve makul olumsuz değişikliğin kararı değiştirip değiştirmediğini test eder."
+  },
+  "when_to_use": {
+    "en": "Use deal snapshot when it is relevant to screening, financing, managing or exiting a property investment.",
+    "tr": "Yatırım Fırsatı Özeti kavramını gayrimenkul yatırımını ön eleme, finanse etme, yönetme veya yatırımdan çıkmada ilgili olduğunda kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Document deal snapshot in an investment appraisal or decision record."
+    ],
+    "tr": [
+      "Yatırım Fırsatı Özeti konusunu yatırım değerlemesi veya karar kaydında belgelemek."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Incorrect definitions, periods or unsupported assumptions can materially distort the decision."
+    ],
+    "tr": [
+      "Yanlış tanım, dönem veya desteksiz varsayımlar kararı önemli ölçüde bozabilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Using a number without recording its source, date, units and exclusions."
+    ],
+    "tr": [
+      "Bir rakamı kaynağı, tarihi, birimi ve hariç kalemleri olmadan kullanmak."
+    ]
+  },
+  "related_concepts": [],
+  "related_calculators": [
+    "LTV",
+    "LTC",
+    "ROI",
+    "Rental Yield",
+    "Development Profit"
+  ],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "Deal Snapshot decision diagram planned.",
+      "tr": "Yatırım Fırsatı Özeti karar şeması planlandı."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "Deal Snapshot beginner lesson planned.",
+      "tr": "Yatırım Fırsatı Özeti başlangıç dersi planlandı."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Property investment professional guidance",
+      "publisher": "Royal Institution of Chartered Surveyors",
+      "url": "https://www.rics.org/consumer-guides",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative professional starting point; transaction-specific assumptions and current requirements require verification."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0",
+  "simple_explanation": {
+    "en": "A concise, dated summary of key deal inputs, outputs, assumptions and risks.",
+    "tr": "Yatırım fırsatının temel girdi, çıktı, varsayım ve risklerinin kısa ve tarihli özetidir."
+  },
+  "professional_explanation": {
+    "en": "A concise, dated summary of key deal inputs, outputs, assumptions and risks. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Yatırım fırsatının temel girdi, çıktı, varsayım ve risklerinin kısa ve tarihli özetidir. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for deal snapshot before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce yatırım fırsatı özeti için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the deal snapshot assumption.",
+    "tr": "Değerleme dosyası yatırım fırsatı özeti varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify Deal Snapshot?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yatırım Fırsatı Özeti nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can Deal Snapshot be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yatırım Fırsatı Özeti esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 003 reviewed edition.",
+        "tr": "İlk Pack 003 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

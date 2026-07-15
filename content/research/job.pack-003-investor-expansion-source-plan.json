@@ -1,0 +1,52 @@
+{
+  "job_id": "job.pack-003-investor-expansion",
+  "target_pack": "pack.003",
+  "record_generation_started": false,
+  "source_review_status": "planned",
+  "source_priority": [
+    {
+      "jurisdiction": "United Kingdom",
+      "official": [
+        "GOV.UK",
+        "HM Land Registry",
+        "FCA",
+        "MoneyHelper",
+        "Planning Portal",
+        "RICS",
+        "HSE",
+        "official local-government sources"
+      ],
+      "professional": ["Recognised professional institutions"],
+      "unverified_articles_acceptable_as_evidence": false
+    },
+    {
+      "jurisdiction": "Turkey",
+      "official": [
+        "Official government sources",
+        "Tapu ve Kadastro Genel Müdürlüğü",
+        "Gelir İdaresi Başkanlığı",
+        "relevant ministries",
+        "Mevzuat Bilgi Sistemi"
+      ],
+      "professional": ["Recognised professional institutions"],
+      "unverified_articles_acceptable_as_evidence": false
+    }
+  ],
+  "claim_groups": [
+    "definitions and terminology",
+    "formula methodology",
+    "worked-example arithmetic",
+    "finance and lending statements",
+    "legal and regulatory wording",
+    "tax wording",
+    "jurisdiction comparisons"
+  ],
+  "rules": [
+    "Do not infer rates, thresholds or criteria.",
+    "Record the exact claim supported by each citation.",
+    "Return unsupported content to draft.",
+    "Require professional review for legal, tax and regulated-finance interpretations."
+  ],
+  "last_checked_date": null,
+  "next_review_date": null
+}

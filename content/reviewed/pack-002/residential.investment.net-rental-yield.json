@@ -1,0 +1,199 @@
+{
+  "id": "residential.investment.net-rental-yield",
+  "title": {
+    "en": "Net Rental Yield",
+    "tr": "Net Kira Getirisi"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "Annual rental income after defined operating costs expressed as a percentage of the chosen property value or cost basis.",
+    "tr": "Tanımlanan işletme giderleri sonrası yıllık kira gelirinin seçilen taşınmaz değeri veya maliyet esasına oranıdır."
+  },
+  "simple_explanation": {
+    "en": "Annual rental income after defined operating costs expressed as a percentage of the chosen property value or cost basis.",
+    "tr": "Tanımlanan işletme giderleri sonrası yıllık kira gelirinin seçilen taşınmaz değeri veya maliyet esasına oranıdır."
+  },
+  "professional_explanation": {
+    "en": "Annual rental income after defined operating costs expressed as a percentage of the chosen property value or cost basis. Its precise effect depends on the transaction, contract, evidence and jurisdiction.",
+    "tr": "Tanımlanan işletme giderleri sonrası yıllık kira gelirinin seçilen taşınmaz değeri veya maliyet esasına oranıdır. Kesin etkisi işleme, sözleşmeye, kanıta ve hukuk bölgesine bağlıdır."
+  },
+  "real_world_example": {
+    "en": "A homeowner, buyer, landlord or adviser records net rental yield while reviewing a residential property decision.",
+    "tr": "Bir ev sahibi, alıcı, kiraya veren veya danışman konut kararını incelerken net kira getirisi konusunu kaydeder."
+  },
+  "office_example": {
+    "en": "A property professional identifies the evidence, assumptions and responsible party before relying on net rental yield.",
+    "tr": "Taşınmaz uzmanı net kira getirisi konusuna dayanmadan önce kanıtı, varsayımları ve sorumlu tarafı belirler."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "What is Net Rental Yield, and what should be verified?",
+        "answer": "Annual rental income after defined operating costs expressed as a percentage of the chosen property value or cost basis. Verify the current document, evidence, contract and jurisdiction-specific requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Net Kira Getirisi nedir ve neler doğrulanmalıdır?",
+        "answer": "Tanımlanan işletme giderleri sonrası yıllık kira gelirinin seçilen taşınmaz değeri veya maliyet esasına oranıdır. Güncel belgeyi, kanıtı, sözleşmeyi ve bölgeye özel gereklilikleri doğrulayın."
+      }
+    ]
+  },
+  "definition": {
+    "en": "Annual rental income after defined operating costs expressed as a percentage of the chosen property value or cost basis.",
+    "tr": "Tanımlanan işletme giderleri sonrası yıllık kira gelirinin seçilen taşınmaz değeri veya maliyet esasına oranıdır."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "investment",
+    "en": "Residential investment basics",
+    "tr": "Konut yatırımı temelleri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["residential-property", "investment", "pack-002"],
+  "keywords": {
+    "en": ["net rental yield"],
+    "tr": ["net kira getirisi"]
+  },
+  "formula": {
+    "expression": "(annual rent − defined annual operating costs) / property value × 100",
+    "variables": [],
+    "notes": {
+      "en": "List every included and excluded cost.",
+      "tr": "Dahil edilen ve edilmeyen tüm giderleri listeleyin."
+    }
+  },
+  "worked_example": {
+    "en": "In a simple home review, the user records the relevant facts for net rental yield, keeps the supporting document and flags anything requiring professional advice.",
+    "tr": "Basit bir konut incelemesinde kullanıcı net kira getirisi için ilgili bilgileri kaydeder, destekleyici belgeyi saklar ve uzman görüşü gerektiren konuları işaretler."
+  },
+  "when_to_use": {
+    "en": "Use this concept when buying, owning, letting, managing, financing, improving or selling a home where it is relevant.",
+    "tr": "Bu kavramı ilgili olduğu durumda konut alırken, sahip olurken, kiralarken, yönetirken, finanse ederken, iyileştirirken veya satarken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Record and communicate net rental yield in a residential decision file."
+    ],
+    "tr": [
+      "Bir konut karar dosyasında net kira getirisi konusunu kaydedip paylaşmak."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Definitions, contractual effects and legal requirements can differ by jurisdiction and change over time."
+    ],
+    "tr": [
+      "Tanımlar, sözleşmesel etkiler ve hukuki gereklilikler bölgeye göre değişebilir ve zamanla güncellenebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Relying on an informal description without checking the underlying document or current evidence."
+    ],
+    "tr": [
+      "Dayanak belgeyi veya güncel kanıtı kontrol etmeden gayriresmî açıklamaya güvenmek."
+    ]
+  },
+  "practical_tips": {
+    "en": ["Keep dated evidence and record who verified it."],
+    "tr": ["Tarihli kanıtı saklayın ve kimin doğruladığını kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Confirm material decisions with an appropriately qualified professional."
+    ],
+    "tr": ["Önemli kararları uygun nitelikte bir uzmanla doğrulayın."]
+  },
+  "uk_practice": {
+    "en": "Use the cited UK guidance as a starting point and check the rules for the relevant UK nation and transaction date.",
+    "tr": "Atıf verilen Birleşik Krallık rehberini başlangıç noktası olarak kullanın; ilgili ülke ve işlem tarihindeki kuralları kontrol edin."
+  },
+  "turkey_practice": {
+    "en": "The UK concept may not map directly to Turkish law or market practice; obtain current local advice and use the Turkish title as an educational explanation.",
+    "tr": "Birleşik Krallık kavramı Türk hukukuna veya piyasa uygulamasına bire bir karşılık gelmeyebilir; güncel yerel görüş alın ve Türkçe başlığı eğitim amaçlı açıklama olarak kullanın."
+  },
+  "related_concepts": [],
+  "related_calculators": ["Rental Yield"],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 002 reviewed edition.",
+        "tr": "İlk Pack 002 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ],
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 4,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Is Net Rental Yield the same in every jurisdiction?",
+        "answer": "No. Check the current local legal, contractual and professional context."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Net Kira Getirisi her hukuk bölgesinde aynı mıdır?",
+        "answer": "Hayır. Güncel yerel hukuki, sözleşmesel ve mesleki bağlamı kontrol edin."
+      }
+    ]
+  },
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "A future diagram will illustrate net rental yield.",
+      "tr": "Gelecekteki bir şema net kira getirisi konusunu gösterecektir."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "A future beginner video will explain net rental yield.",
+      "tr": "Gelecekteki başlangıç videosu net kira getirisi konusunu açıklayacaktır."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Renting out your property",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/renting-out-a-property",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative starting point for the residential investment basics scope; current transaction-specific requirements must be verified."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.2.0"
+}

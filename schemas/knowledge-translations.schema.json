@@ -1,0 +1,15 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/knowledge-translations.schema.json",
+  "type": "object",
+  "maxProperties": 2000,
+  "additionalProperties": {
+    "type": "object",
+    "required": ["defEn", "useEn"],
+    "additionalProperties": false,
+    "properties": {
+      "defEn": { "type": "string", "minLength": 1, "maxLength": 20000 },
+      "useEn": { "type": "string", "minLength": 1, "maxLength": 20000 }
+    }
+  }
+}

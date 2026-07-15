@@ -1,0 +1,63 @@
+{
+  "job_id": "job.pack-003-investor-expansion",
+  "title": {
+    "en": "Property Investor Fundamentals Expansion",
+    "tr": "Gayrimenkul Yatırımcısı Temelleri Genişletmesi"
+  },
+  "target_pack": "pack.003",
+  "subject_area": {
+    "en": "Property investment decisions, finance, operations and exits",
+    "tr": "Gayrimenkul yatırım kararları, finansman, işletme ve çıkış"
+  },
+  "target_audience": {
+    "en": "Beginner property investors",
+    "tr": "Başlangıç seviyesindeki gayrimenkul yatırımcıları"
+  },
+  "jurisdiction": ["General", "United Kingdom", "Turkey"],
+  "difficulty_range": ["beginner", "intermediate"],
+  "target_reviewed_entry_count": 250,
+  "target_draft_entry_count": 50,
+  "priority": "high",
+  "dependencies": ["pack.003"],
+  "required_source_domains": [
+    "gov.uk",
+    "landregistry.gov.uk",
+    "fca.org.uk",
+    "moneyhelper.org.uk",
+    "rics.org",
+    "tkgm.gov.tr",
+    "gib.gov.tr",
+    "mevzuat.gov.tr"
+  ],
+  "required_calculators": [
+    "LTV",
+    "LTC",
+    "ROI",
+    "Rental Yield",
+    "Monthly Loan Payment"
+  ],
+  "required_handbook_chapters": [
+    1, 3, 4, 7, 10, 11, 14, 15, 27, 28, 32, 36, 40
+  ],
+  "required_checklists": [
+    "checklist.investor-goals-and-strategy",
+    "checklist.investor-deal-screening"
+  ],
+  "required_case_studies": [
+    "case.investor-first-rental",
+    "case.investor-risk-adjusted-choice"
+  ],
+  "required_document_guides": [
+    "document-guide.investment-memorandum",
+    "document-guide.deal-appraisal"
+  ],
+  "status": "planned",
+  "created_date": "2026-07-14",
+  "started_date": null,
+  "completed_date": null,
+  "reviewer": null,
+  "notes": {
+    "en": "Create the first 50-record batch only after its topic and source plans receive human approval. No records have been generated.",
+    "tr": "İlk 50 kayıtlık grubu yalnızca konu ve kaynak planları insan onayı aldıktan sonra oluşturun. Henüz kayıt oluşturulmadı."
+  }
+}

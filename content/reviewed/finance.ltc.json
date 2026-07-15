@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schemas/content-entry.schema.json",
+  "id": "finance.ltc",
+  "legacy_term": "LTC",
+  "title": {
+    "en": "LTC",
+    "tr": "Kredi / toplam maliyet oranı"
+  },
+  "abbreviation": "Loan to Cost",
+  "definition": {
+    "en": "The ratio of the loan amount to total project cost.",
+    "tr": "Kredi tutarının toplam proje maliyetine oranı."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "finance.development",
+    "en": "Development finance",
+    "tr": "Geliştirme finansmanı"
+  },
+  "aliases": {
+    "en": ["Loan-to-cost ratio"],
+    "tr": ["Kredi maliyet oranı"]
+  },
+  "tags": ["cost", "loan", "development"],
+  "keywords": {
+    "en": ["development finance", "project cost"],
+    "tr": ["geliştirme finansmanı", "proje maliyeti"]
+  },
+  "formula": {
+    "expression": "LTC (%) = Loan amount / Total project cost × 100",
+    "variables": [
+      {
+        "symbol": "Loan amount",
+        "description": {
+          "en": "Total facility amount included in the ratio.",
+          "tr": "Orana dahil edilen toplam kredi tutarı."
+        }
+      },
+      {
+        "symbol": "Total project cost",
+        "description": {
+          "en": "Eligible acquisition and development costs.",
+          "tr": "Uygun satın alma ve geliştirme maliyetleri."
+        }
+      }
+    ],
+    "notes": {
+      "en": "The lender's definition of eligible cost controls the denominator.",
+      "tr": "Paydadaki tutarı kredi verenin uygun maliyet tanımı belirler."
+    }
+  },
+  "worked_example": {
+    "en": "An £800,000 facility against £1,000,000 total cost produces 80% LTC.",
+    "tr": "1.000.000 £ toplam maliyete karşı 800.000 £ kredi, %80 LTC oluşturur."
+  },
+  "use_cases": {
+    "en": ["Commonly used in development finance."],
+    "tr": ["Geliştirme finansmanında sık kullanılır."]
+  },
+  "risks": {
+    "en": [
+      "Unfunded cost overruns can increase the effective leverage requirement."
+    ],
+    "tr": [
+      "Finanse edilmeyen maliyet aşımları fiili kaldıraç ihtiyacını artırabilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Including costs that the lender excludes from eligible project cost."
+    ],
+    "tr": [
+      "Kredi verenin uygun proje maliyetinden hariç tuttuğu kalemleri dahil etmek."
+    ]
+  },
+  "related_concepts": ["finance.ltv", "finance.gdv"],
+  "related_calculators": ["ltc"],
+  "related_documents": [],
+  "jurisdiction": ["United Kingdom"],
+  "sources": [
+    {
+      "title": "RICS Valuation – Global Standards",
+      "publisher": "Royal Institution of Chartered Surveyors",
+      "url": "https://www.rics.org/profession-standards/rics-standards-and-guidance/sector-standards/valuation-standards",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Professional valuation context used when assessing development finance inputs."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Review Board (sample)",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "Loan amount divided by the defined total project cost, expressed as a percentage.",
+    "tr": "Kredi tutarının tanımlı toplam proje maliyetine bölünerek yüzde olarak ifade edilmesidir."
+  },
+  "professional_explanation": {
+    "en": "Loan amount divided by the defined total project cost, expressed as a percentage. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Kredi tutarının tanımlı toplam proje maliyetine bölünerek yüzde olarak ifade edilmesidir. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for ltc before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce kredi maliyet oranı için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the ltc assumption.",
+    "tr": "Değerleme dosyası kredi maliyet oranı varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify LTC?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kredi Maliyet Oranı nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can LTC be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kredi Maliyet Oranı esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

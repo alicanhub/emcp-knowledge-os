@@ -1,0 +1,21 @@
+{
+  "topic_plan_id": "topic.example",
+  "title": { "en": "Topic name", "tr": "Konu adı" },
+  "owner": "",
+  "target_jurisdictions": ["England and Wales"],
+  "audience": ["Property professionals"],
+  "objectives": { "en": [""], "tr": [""] },
+  "proposed_entries": [
+    {
+      "id": "category.proposed-entry",
+      "title": { "en": "", "tr": "" },
+      "priority": "medium",
+      "dependencies": [],
+      "suggested_sources": []
+    }
+  ],
+  "reviewers": [],
+  "status": "planned",
+  "target_review_date": "YYYY-MM-DD",
+  "notes": ""
+}

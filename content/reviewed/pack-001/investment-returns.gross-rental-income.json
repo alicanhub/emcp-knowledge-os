@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "investment-returns.gross-rental-income",
+  "title": {
+    "en": "Gross Rental Income",
+    "tr": "Brüt Kira Geliri"
+  },
+  "summary": {
+    "en": "Total rental income before property expenses and finance costs are deducted.",
+    "tr": "Taşınmaz giderleri ve finansman maliyetleri düşülmeden önceki toplam kira geliridir."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "Total rental income before property expenses and finance costs are deducted. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Taşınmaz giderleri ve finansman maliyetleri düşülmeden önceki toplam kira geliridir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "capital-investment",
+    "en": "Capital and Investment",
+    "tr": "Sermaye ve Yatırım"
+  },
+  "subcategory": {
+    "key": "investment-returns",
+    "en": "Everyday investment and returns",
+    "tr": "Temel yatırım ve getiri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["investment-returns", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["gross", "rental", "income"],
+    "tr": ["brüt", "kira", "geliri"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Gross Rental Income” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Brüt Kira Geliri” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving gross rental income.",
+    "tr": "Bu kavramı brüt kira geliri içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "investment-returns.rental-cash-flow",
+    "investment-returns.net-rental-income"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Property investment guidance",
+      "publisher": "RICS",
+      "url": "https://www.rics.org/consumer-guides",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Gross Rental Income; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

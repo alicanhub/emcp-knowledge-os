@@ -1,0 +1,136 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/knowledge-details.schema.json",
+  "type": "object",
+  "required": ["version", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "version": { "const": 2 },
+    "entries": {
+      "type": "object",
+      "maxProperties": 20000,
+      "additionalProperties": { "$ref": "#/$defs/details" }
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "maxLength": 20000 },
+        "tr": { "type": "string", "maxLength": 20000 }
+      }
+    },
+    "localizedList": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "string", "maxLength": 2000 }
+        },
+        "tr": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "string", "maxLength": 2000 }
+        }
+      }
+    },
+    "details": {
+      "type": "object",
+      "required": [
+        "simpleExplanation",
+        "professionalExplanation",
+        "realWorldExample",
+        "siteExample",
+        "officeExample",
+        "interviewQuestions",
+        "formula",
+        "calculatorLinks",
+        "commonMistakes",
+        "practicalTips",
+        "risks",
+        "bestPractice",
+        "ukPractice",
+        "turkeyPractice",
+        "relatedConcepts",
+        "relatedDocuments",
+        "relatedStandards",
+        "relatedRegulations",
+        "officialSources",
+        "revisionHistory",
+        "difficultyLevel",
+        "estimatedReadingTimeMinutes",
+        "frequentlyAskedQuestions",
+        "visualIllustration",
+        "futureVideo"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "simpleExplanation": { "$ref": "#/$defs/localizedText" },
+        "professionalExplanation": { "$ref": "#/$defs/localizedText" },
+        "realWorldExample": { "$ref": "#/$defs/localizedText" },
+        "siteExample": { "$ref": "#/$defs/localizedText" },
+        "officeExample": { "$ref": "#/$defs/localizedText" },
+        "interviewQuestions": { "type": "object" },
+        "formula": { "type": ["object", "null"] },
+        "calculatorLinks": {
+          "type": "array",
+          "maxItems": 50,
+          "items": { "type": "string", "maxLength": 160 }
+        },
+        "commonMistakes": { "$ref": "#/$defs/localizedList" },
+        "practicalTips": { "$ref": "#/$defs/localizedList" },
+        "risks": { "$ref": "#/$defs/localizedList" },
+        "bestPractice": { "$ref": "#/$defs/localizedList" },
+        "ukPractice": { "$ref": "#/$defs/localizedText" },
+        "turkeyPractice": { "$ref": "#/$defs/localizedText" },
+        "relatedConcepts": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "string", "maxLength": 300 }
+        },
+        "relatedDocuments": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "object" }
+        },
+        "relatedStandards": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "object" }
+        },
+        "relatedRegulations": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "object" }
+        },
+        "officialSources": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "type": "object" }
+        },
+        "revisionHistory": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 100,
+          "items": { "type": "object" }
+        },
+        "difficultyLevel": {
+          "enum": ["beginner", "intermediate", "advanced", "expert"]
+        },
+        "estimatedReadingTimeMinutes": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 240
+        },
+        "frequentlyAskedQuestions": { "type": "object" },
+        "visualIllustration": { "type": "object" },
+        "futureVideo": { "type": "object" }
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "noEmit": true,
+    "noImplicitAny": false,
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM", "WebWorker"]
+  },
+  "include": [
+    "production-engine/**/*.ts",
+    "types/**/*.d.ts",
+    "js/core.js",
+    "js/knowledge.js",
+    "js/calculator-model.js",
+    "js/dom.js"
+  ]
+}

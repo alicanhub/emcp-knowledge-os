@@ -1,35 +1,740 @@
-let TERMS=[];
-let lang=localStorage.getItem('emcpLang')||'tr',activeCat='Tümü',mode='all';
-const norm=s=>String(s||'').toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i').replace(/ş/g,'s').replace(/ç/g,'c').replace(/ğ/g,'g').replace(/ö/g,'o').replace(/ü/g,'u');
-const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-function score(t,q){if(!q)return 1;const n=norm(q),term=norm(t.term),abbr=norm(t.abbr),tr=norm(t.tr),tags=norm((t.tags||[]).join(' ')),def=norm(t.def);let s=0;if(term===n)s+=100;if(abbr===n)s+=95;if(term.startsWith(n))s+=70;if(abbr.startsWith(n))s+=65;if(tr.startsWith(n))s+=55;if(term.includes(n))s+=45;if(abbr.includes(n))s+=40;if(tr.includes(n))s+=35;if(tags.includes(n))s+=25;if(def.includes(n))s+=15;return s;}
-function getFav(){return JSON.parse(localStorage.getItem('emcpFav')||'[]')}function getRecent(){return JSON.parse(localStorage.getItem('emcpRecent')||'[]')}
-function updateStats(){favCount.textContent=getFav().length;recentCount.textContent=getRecent().length}
-function renderCats(){cats.innerHTML=['Tümü',...new Set(TERMS.map(x=>x.cat))].map(c=>`<button class="chip ${activeCat===c?'active':''}" onclick="setCat('${c.replace(/'/g,"\'")}')">${esc(c)}</button>`).join('')}
-function getList(){const q=document.getElementById('q').value.trim();let a=TERMS.map((t,i)=>({...t,_i:i,_s:score(t,q)})).filter(x=>x._s>0);if(activeCat!=='Tümü')a=a.filter(x=>x.cat===activeCat);a.sort((a,b)=>b._s-a._s||a.term.localeCompare(b.term,'en'));return a}
-function render(){const a=getList();count.textContent=lang==='tr'?`${a.length} sonuç`:`${a.length} results`;grid.innerHTML=a.length?a.map((t,n)=>`<article class="card" style="animation-delay:${Math.min(n,8)*30}ms" onclick="openTerm(${t._i})"><div class="term">${esc(t.term)}</div>${t.abbr?`<div class="abbr">${esc(t.abbr)}</div>`:''}<div class="tr">${esc(t.tr)}</div><div class="def">${esc(t.def)}</div><div class="badge">${esc(t.cat)}</div></article>`).join(''):`<div class="empty">${lang==='tr'?'Sonuç bulunamadı.':'No results found.'}</div>`;updateStats()}
-function setCat(c){activeCat=c;renderCats();render()}
-function openTerm(i){const t=TERMS[i];let r=getRecent();r=[t.term,...r.filter(x=>x!==t.term)].slice(0,30);localStorage.setItem('emcpRecent',JSON.stringify(r));const fav=getFav().includes(t.term);sheet.innerHTML=`<button class="close" onclick="closeModal()">×</button><div class="badge">${esc(t.cat)}</div><h2>${esc(t.term)}</h2>${t.abbr?`<div class="abbr">${esc(t.abbr)}</div>`:''}<h3>${lang==='tr'?'Türkçesi':'Turkish equivalent'}</h3><p><b>${esc(t.tr)}</b></p><h3>${lang==='tr'?'Tanım':'Definition'}</h3><p>${esc(t.def)}</p><h3>${lang==='tr'?'Ne zaman kullanılır?':'When is it used?'}</h3><p>${esc(t.use)}</p><h3>${lang==='tr'?'Toplantı / e-posta örneği':'Meeting / email example'}</h3><p><i>${esc(t.example)}</i></p><div class="actions"><button onclick="toggleFav('${t.term.replace(/'/g,"\'")}')">${fav?'★':'☆'} Favourite</button><button onclick="copyTerm(${i})">Copy</button><button onclick="shareTerm(${i})">Share</button></div>`;modal.classList.add('show');updateStats()}
-function closeModal(){modal.classList.remove('show')}function toggleFav(term){let f=getFav();f=f.includes(term)?f.filter(x=>x!==term):[...f,term];localStorage.setItem('emcpFav',JSON.stringify(f));closeModal();render()}
-function copyTerm(i){const t=TERMS[i];navigator.clipboard?.writeText(`${t.term} — ${t.tr}\n${t.def}`);alert(lang==='tr'?'Kopyalandı':'Copied')}
-function shareTerm(i){const t=TERMS[i],text=`${t.term} — ${t.tr}\n${t.def}`;if(navigator.share)navigator.share({title:t.term,text});else copyTerm(i)}
-function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+name).classList.add('active');document.querySelectorAll('.bottom button').forEach(b=>b.classList.remove('active'));if(name==='home')navHome.classList.add('active');if(name==='knowledge')navKnowledge.classList.add('active');if(name==='calculators')navCalc.classList.add('active');if(name==='construction')navBuild.classList.add('active');scrollTo({top:0,behavior:'smooth'})}
-function setLang(l){lang=l;localStorage.setItem('emcpLang',l);trBtn.classList.toggle('active',l==='tr');enBtn.classList.toggle('active',l==='en');q.placeholder=l==='tr'?'Bir harf, kelime veya kısaltma yazın…':'Type a letter, term or abbreviation…';clearBtn.textContent=l==='tr'?'Temizle':'Clear';installTitle.textContent=l==='tr'?'Telefonuna uygulama gibi kur':'Install it like an app';installText.textContent=l==='tr'?'Safari’de aç, Paylaş düğmesine bas ve “Ana Ekrana Ekle”yi seç.':'Open in Safari, tap Share, then choose “Add to Home Screen”.';render()}
-function pct(a,b){return b?((a/b)*100).toFixed(2)+'%':'—'}function money(v){return isFinite(v)?'£'+v.toLocaleString(undefined,{maximumFractionDigits:2}):'—'}
-function calcLTV(){ltvResult.textContent=pct(+ltvLoan.value,+ltvValue.value)}function calcLTC(){ltcResult.textContent=pct(+ltcLoan.value,+ltcCost.value)}function calcLTGDV(){ltgdvResult.textContent=pct(+ltgdvLoan.value,+ltgdvValue.value)}function calcROI(){roiResult.textContent=pct(+roiProfit.value,+roiCost.value)}function calcYield(){yieldResult.textContent=pct(+yieldRent.value,+yieldValue.value)}
-function calcDevProfit(){const p=+devGdv.value-+devCost.value;devResult.textContent=`${money(p)} | ${pct(p,+devCost.value)} on cost`}
-function calcMonthly(){const P=+loanPrincipal.value,r=(+loanRate.value/100)/12,n=+loanYears.value*12;const m=r&&n?P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):P/n;loanResult.textContent=money(m)}
-function calcFee(){feeResult.textContent=money(+feeLoan.value*(+feeRate.value/100))}
-function calcRollup(){rollResult.textContent=money(+rollLoan.value*(+rollRate.value/100)*(+rollMonths.value/12))}
-function calcConcrete(){cResult.textContent=(+cLen.value*+cWid.value*+cDep.value).toFixed(2)+' m³'}function calcPaint(){const area=+pLen.value*+pHeight.value*+pCoats.value;pResult.textContent=area.toFixed(2)+' m² total coating area'}
-function calcFloor(){const a=+fLen.value*+fWid.value*(1+(+fWaste.value/100));fResult.textContent=a.toFixed(2)+' m² incl. waste'}
-function calcPB(){const sheets=(+pbArea.value*(1+(+pbWaste.value/100)))/+pbSheet.value;pbResult.textContent=Math.ceil(sheets)+' sheets'}
-function calcIns(){const a=+insArea.value*(1+(+insWaste.value/100));insResult.textContent=a.toFixed(2)+' m² incl. waste'}
-function calcTiles(){const qty=(+tileArea.value*(1+(+tileWaste.value/100)))/+tileSize.value;tileResult.textContent=Math.ceil(qty)+' tiles'}
-q.addEventListener('input',()=>{showPage('knowledge');render()});clearBtn.onclick=()=>{q.value='';activeCat='Tümü';renderCats();render()};trBtn.onclick=()=>setLang('tr');enBtn.onclick=()=>setLang('en');
-themeBtn.onclick=()=>{const d=document.documentElement.getAttribute('data-theme')==='dark';document.documentElement.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('emcpTheme',d?'light':'dark')};document.documentElement.setAttribute('data-theme',localStorage.getItem('emcpTheme')||'light');
-navHelp.onclick=()=>{sheet.innerHTML=`<button class="close" onclick="closeModal()">×</button><h2>${lang==='tr'?'Çocuk Gibi Anlatılan Kullanım Kılavuzu':'Very Simple User Guide'}</h2><p>${lang==='tr'?'1. Home ekranından bir modüle dokun.<br>2. Knowledge içinde arama yap.<br>3. Calculators bölümünde rakamları yaz ve Calculate’a bas.<br>4. Construction Tools bölümünde ölçüleri gir.<br>5. Koyu mod için üstteki yarım ay düğmesine bas.<br>6. Uygulamayı Safari’de açıp Ana Ekrana Ekle.':'1. Tap a module on Home.<br>2. Search inside Knowledge.<br>3. Enter numbers in Calculators and tap Calculate.<br>4. Enter dimensions in Construction Tools.<br>5. Use the half-moon button for dark mode.<br>6. Open in Safari and Add to Home Screen.'}</p>`;modal.classList.add('show')};
-installBtn.onclick=()=>navHelp.click();modal.onclick=e=>{if(e.target.id==='modal')closeModal()};
-async function initializeApp(){try{const response=await fetch("data/terms.json");if(!response.ok)throw new Error("Unable to load knowledge data");TERMS=await response.json()}catch(error){console.error("Failed to load knowledge data:",error)}setLang(lang);renderCats();render();updateStats()}
+let TERMS = [];
+const core = window.EMCPCore,
+  knowledge = window.EMCPKnowledge;
+const {
+  q,
+  clearBtn,
+  trBtn,
+  enBtn,
+  themeBtn,
+  cats,
+  count,
+  grid,
+  sheet,
+  favCount,
+  recentCount,
+  navHome,
+  navKnowledge,
+  navHandbooks,
+  navCalc,
+  navBuild,
+  retryKnowledge,
+  knowledgeErrorTitle,
+  knowledgeErrorText,
+} = window.EMCPDOM.collect([
+  "q",
+  "clearBtn",
+  "trBtn",
+  "enBtn",
+  "themeBtn",
+  "cats",
+  "count",
+  "grid",
+  "sheet",
+  "favCount",
+  "recentCount",
+  "navHome",
+  "navKnowledge",
+  "navHandbooks",
+  "navCalc",
+  "navBuild",
+  "retryKnowledge",
+  "knowledgeErrorTitle",
+  "knowledgeErrorText",
+]);
+let lang = core.storage.getRaw("emcpLang") || "tr",
+  activeCat = "Tümü";
+let currentTermIndex = null;
+let knowledgeLoadError = null;
+const ui = window.EMCPi18n;
+const pick = (english, turkish) =>
+  ui ? ui.pick(english, turkish) : lang === "tr" ? turkish : english;
+const CATEGORY_EN = {
+  "Sermaye ve Yatırım": "Capital & Investment",
+  Finansman: "Finance",
+  "Hukuk ve İnceleme": "Legal & Due Diligence",
+  "Gayrimenkul ve Geliştirme": "Property & Development",
+  "Planlama ve Kamu": "Planning & Public Sector",
+  "İnşaat ve Teslim": "Construction & Delivery",
+  "Uyum ve Kurumsal": "Compliance & Corporate",
+  "İletişim ve Belgeler": "Communications & Documents",
+};
+const CALCULATOR_TR = {
+  "Rental Yield": "Kira Getirisi",
+  "Development Profit": "Geliştirme Kârı",
+  "Monthly Loan Payment": "Aylık Kredi Ödemesi",
+  "Arrangement Fee": "Kredi Düzenleme Ücreti",
+  "Interest Roll-up": "Birikmiş Faiz",
+  "Concrete Volume": "Beton Hacmi",
+  "Paint Area": "Boya Alanı",
+  "Flooring Area": "Zemin Alanı",
+  "Plasterboard Sheets": "Alçıpan Levha",
+  "Insulation Area": "Yalıtım Alanı",
+  "Tiles Quantity": "Karo Adedi",
+};
+const categoryLabel = (category) =>
+  lang === "tr" ? category : CATEGORY_EN[category] || category;
+const calculatorLabel = (title) =>
+  lang === "tr" ? CALCULATOR_TR[title] || title : title;
+window.emcpCategoryLabel = categoryLabel;
+const norm = knowledge.normalize;
+const esc = core.escapeHTML;
+const RELATED_CALCULATORS = [
+  {
+    title: "LTV",
+    page: "calculators",
+    target: "ltvLoan",
+    categories: ["Finansman", "Gayrimenkul ve Geliştirme"],
+    tags: ["loan", "property value", "lending"],
+    keywords: ["ltv", "debt", "finance"],
+    aliases: ["loan to value"],
+  },
+  {
+    title: "LTC",
+    page: "calculators",
+    target: "ltcLoan",
+    categories: ["Finansman", "Gayrimenkul ve Geliştirme"],
+    tags: ["loan", "total cost", "development"],
+    keywords: ["ltc", "debt", "finance"],
+    aliases: ["loan to cost"],
+  },
+  {
+    title: "LTGDV",
+    page: "calculators",
+    target: "ltgdvLoan",
+    categories: ["Finansman", "Gayrimenkul ve Geliştirme"],
+    tags: ["loan", "gdv", "development"],
+    keywords: ["ltgdv", "debt", "finance"],
+    aliases: ["loan to gross development value"],
+  },
+  {
+    title: "ROI",
+    page: "calculators",
+    target: "roiProfit",
+    categories: ["Sermaye ve Yatırım", "Finansman"],
+    tags: ["profit", "investment", "return"],
+    keywords: ["roi", "finance"],
+    aliases: ["return on investment"],
+  },
+  {
+    title: "Rental Yield",
+    page: "calculators",
+    target: "yieldRent",
+    categories: ["Gayrimenkul ve Geliştirme", "Finansman"],
+    tags: ["rent", "property value", "investment"],
+    keywords: ["yield", "rental"],
+    aliases: ["rental yield"],
+  },
+  {
+    title: "Development Profit",
+    page: "calculators",
+    target: "devGdv",
+    categories: ["Gayrimenkul ve Geliştirme", "Finansman"],
+    tags: ["gdv", "development cost", "profit"],
+    keywords: ["development", "return"],
+    aliases: ["development profit"],
+  },
+  {
+    title: "Monthly Loan Payment",
+    page: "calculators",
+    target: "loanPrincipal",
+    categories: ["Finansman"],
+    tags: ["loan", "interest", "payment"],
+    keywords: ["debt", "finance"],
+    aliases: ["mortgage payment"],
+  },
+  {
+    title: "Arrangement Fee",
+    page: "calculators",
+    target: "feeLoan",
+    categories: ["Finansman"],
+    tags: ["loan", "fee", "lending"],
+    keywords: ["finance", "arrangement"],
+    aliases: ["loan fee"],
+  },
+  {
+    title: "Interest Roll-up",
+    page: "calculators",
+    target: "rollLoan",
+    categories: ["Finansman"],
+    tags: ["loan", "interest", "development"],
+    keywords: ["finance", "roll up"],
+    aliases: ["rolled up interest"],
+  },
+  {
+    title: "Concrete Volume",
+    page: "construction",
+    target: "cLen",
+    categories: ["İnşaat ve Teslim"],
+    tags: ["concrete", "volume", "materials"],
+    keywords: ["construction", "site"],
+    aliases: ["concrete"],
+  },
+  {
+    title: "Paint Area",
+    page: "construction",
+    target: "pLen",
+    categories: ["İnşaat ve Teslim"],
+    tags: ["paint", "wall", "area"],
+    keywords: ["construction", "materials"],
+    aliases: ["painting"],
+  },
+  {
+    title: "Flooring Area",
+    page: "construction",
+    target: "fLen",
+    categories: ["İnşaat ve Teslim"],
+    tags: ["flooring", "area", "materials"],
+    keywords: ["construction", "site"],
+    aliases: ["floor area"],
+  },
+  {
+    title: "Plasterboard Sheets",
+    page: "construction",
+    target: "pbArea",
+    categories: ["İnşaat ve Teslim"],
+    tags: ["plasterboard", "wall", "materials"],
+    keywords: ["construction", "site"],
+    aliases: ["drywall"],
+  },
+  {
+    title: "Insulation Area",
+    page: "construction",
+    target: "insArea",
+    categories: ["İnşaat ve Teslim"],
+    tags: ["insulation", "area", "materials"],
+    keywords: ["construction", "site"],
+    aliases: ["insulation"],
+  },
+  {
+    title: "Tiles Quantity",
+    page: "construction",
+    target: "tileArea",
+    categories: ["İnşaat ve Teslim"],
+    tags: ["tiles", "area", "materials"],
+    keywords: ["construction", "site"],
+    aliases: ["tiling"],
+  },
+];
+const list = (value) => (Array.isArray(value) ? value : value ? [value] : []);
+const normalizedSet = (value) => new Set(list(value).map(norm).filter(Boolean));
+function sharedCount(left, right) {
+  const leftValues = normalizedSet(left),
+    rightValues = normalizedSet(right);
+  let total = 0;
+  leftValues.forEach((value) => {
+    if (rightValues.has(value)) total++;
+  });
+  return total;
+}
+function relationScore(left, right) {
+  const sharedCategory = sharedCount(
+      left.cat || left.category,
+      right.cat || right.category || right.categories,
+    ),
+    sharedTags = sharedCount(left.tags, right.tags),
+    sharedKeywords = sharedCount(left.keywords, right.keywords),
+    sharedAliases = sharedCount(
+      [left.tr, left.abbr, ...list(left.aliases)],
+      [right.tr, right.abbr, ...list(right.aliases)],
+    );
+  return (
+    sharedCategory * 20 +
+    sharedTags * 24 +
+    sharedKeywords * 18 +
+    sharedAliases * 12
+  );
+}
+function getRelatedEntries(currentIndex) {
+  const precomputed = knowledge.related?.(currentIndex) || [];
+  if (precomputed.length)
+    return precomputed
+      .map((index) => ({ entry: TERMS[index], index, score: 1 }))
+      .filter((item) => item.entry)
+      .slice(0, 5);
+  const current = TERMS[currentIndex],
+    scored = TERMS.map((entry, index) => ({
+      entry,
+      index,
+      score: relationScore(current, entry),
+    }))
+      .filter((item) => item.index !== currentIndex)
+      .sort(
+        (a, b) =>
+          b.score - a.score || a.entry.term.localeCompare(b.entry.term, "en"),
+      ),
+    strong = scored.filter((item) => item.score > 20),
+    sameCategory = scored.filter(
+      (item) => norm(item.entry.cat) === norm(current.cat),
+    );
+  const ordered = [...strong, ...sameCategory, ...scored],
+    seen = new Set();
+  return ordered
+    .filter((item) => !seen.has(item.index) && (seen.add(item.index), true))
+    .slice(0, 5);
+}
+function getRelatedCalculators(entry) {
+  return RELATED_CALCULATORS.map((calculator) => ({
+    calculator,
+    score: relationScore(entry, calculator),
+  }))
+    .filter((item) => item.score > 0)
+    .sort(
+      (a, b) =>
+        b.score - a.score ||
+        a.calculator.title.localeCompare(b.calculator.title),
+    )
+    .slice(0, 3);
+}
+function openCalculator(target, page) {
+  showPage(page);
+  (window.EMCPFeatures?.load(page) || Promise.resolve()).then(() =>
+    requestAnimationFrame(() => {
+      const input = document.getElementById(target);
+      if (input) {
+        window.EMCPAccessibility?.scrollIntoView(input.closest(".calc"), {
+          block: "center",
+        });
+        input.focus({ preventScroll: true });
+      }
+    }),
+  );
+}
+function relatedContent(index, entry) {
+  const related = getRelatedEntries(index),
+    calculators = getRelatedCalculators(entry),
+    knowledgeItems = related
+      .map(
+        (item) =>
+          `<button type="button" class="related-item" data-open-term="${item.index}"><strong>${esc(item.entry.term)}</strong><span>${esc(item.entry.tr)}</span></button>`,
+      )
+      .join(""),
+    calculatorItems = calculators
+      .map(
+        (item) =>
+          `<button type="button" class="related-item" data-calculator-target="${esc(item.calculator.target)}" data-calculator-page="${esc(item.calculator.page)}"><strong>${esc(calculatorLabel(item.calculator.title))}</strong><span>${pick("Open calculator →", "Hesaplayıcıyı aç →")}</span></button>`,
+      )
+      .join("");
+  return `<section class="related-content"><h3>${pick("Related Knowledge", "İlgili Bilgiler")}</h3><div class="related-list">${knowledgeItems}</div><h3>${pick("Related Calculators", "İlgili Hesaplayıcılar")}</h3><div class="related-list">${calculatorItems || `<p class="related-empty">${pick("No directly related calculators.", "Doğrudan ilgili hesaplayıcı yok.")}</p>`}</div></section>`;
+}
+const detailText = (value) => esc(lang === "tr" ? value?.tr : value?.en);
+const detailList = (value) => {
+  const items = lang === "tr" ? value?.tr : value?.en;
+  return list(items).length
+    ? `<ul>${items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>`
+    : `<p class="related-empty">${pick("Not yet supplied.", "Henüz eklenmedi.")}</p>`;
+};
+function expandable(titleEn, titleTr, content, open = false) {
+  return `<details class="knowledge-section"${open ? " open" : ""}><summary>${esc(pick(titleEn, titleTr))}</summary><div class="knowledge-section-body">${content}</div></details>`;
+}
+function questionsMarkup(value) {
+  const items = lang === "tr" ? value?.tr : value?.en;
+  return list(items).length
+    ? items
+        .map(
+          (item) =>
+            `<div class="knowledge-qa"><strong>${esc(item.question)}</strong><p>${esc(item.answer)}</p></div>`,
+        )
+        .join("")
+    : `<p class="related-empty">${pick("No questions supplied.", "Henüz soru eklenmedi.")}</p>`;
+}
+function referencesMarkup(items) {
+  return list(items).length
+    ? `<ul>${items
+        .map((item) => {
+          const title = lang === "tr" ? item.title?.tr : item.title?.en;
+          return `<li>${item.url ? `<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(title || item.title || item.url)}</a>` : esc(title || item.title || item.reference || "")}${item.reference ? ` — ${esc(item.reference)}` : ""}</li>`;
+        })
+        .join("")}</ul>`
+    : `<p class="related-empty">${pick("None recorded.", "Kayıt bulunmuyor.")}</p>`;
+}
+function sourcesMarkup(items) {
+  return list(items).length
+    ? `<ul>${items
+        .map(
+          (item) =>
+            `<li><a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.title)}</a>${item.publisher ? ` — ${esc(item.publisher)}` : ""}</li>`,
+        )
+        .join("")}</ul>`
+    : `<p class="related-empty">${pick("No source attached to this migrated legacy record.", "Bu aktarılan eski kayda kaynak eklenmemiştir.")}</p>`;
+}
+function v2Content(index, entry) {
+  const d = entry.details;
+  if (!d) return "";
+  const formula = d.formula
+      ? `<p><code>${esc(d.formula.expression || "")}</code></p>${detailText(d.formula.notes) ? `<p>${detailText(d.formula.notes)}</p>` : ""}`
+      : `<p class="related-empty">${pick("No formula applies.", "Uygulanabilir formül yoktur.")}</p>`,
+    revision = list(d.revisionHistory)
+      .map(
+        (item) =>
+          `<p><strong>${esc(item.version || "")}</strong> · ${esc(item.date || "")} · ${detailText(item.summary)}${item.reviewer ? ` · ${esc(item.reviewer)}` : ""}</p>`,
+      )
+      .join(""),
+    media = (item, type) =>
+      item?.status === "available" && item.url
+        ? `<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${detailText(item.caption)}</a>`
+        : `<p>${detailText(item?.caption) || esc(pick(`${type} planned.`, `${type} planlandı.`))}</p>`;
+  return `<div class="knowledge-v2-meta"><span>${esc(pick("Difficulty", "Seviye"))}: ${esc(d.difficultyLevel)}</span><span>${esc(d.estimatedReadingTimeMinutes)} ${esc(pick("min read", "dk okuma"))}</span></div>
+    ${expandable("Simple Explanation", "Basit Açıklama", `<p>${detailText(d.simpleExplanation)}</p>`, true)}
+    ${expandable("Professional Explanation", "Profesyonel Açıklama", `<p>${detailText(d.professionalExplanation)}</p>`)}
+    ${expandable("Real World Example", "Gerçek Hayat Örneği", `<p>${detailText(d.realWorldExample)}</p>`)}
+    ${expandable("Site Example", "Şantiye Örneği", `<p>${detailText(d.siteExample)}</p>`)}
+    ${expandable("Office Example", "Ofis Örneği", `<p>${detailText(d.officeExample)}</p>`)}
+    ${expandable("Interview Questions", "Mülakat Soruları", questionsMarkup(d.interviewQuestions))}
+    ${expandable("Formula", "Formül", formula)}
+    ${expandable("Calculator Link", "Hesaplayıcı Bağlantısı", relatedContent(index, entry))}
+    ${expandable("Common Mistakes", "Yaygın Hatalar", detailList(d.commonMistakes))}
+    ${expandable("Practical Tips", "Pratik İpuçları", detailList(d.practicalTips))}
+    ${expandable("Risks", "Riskler", detailList(d.risks))}
+    ${expandable("Best Practice", "İyi Uygulama", detailList(d.bestPractice))}
+    ${expandable("UK Practice", "Birleşik Krallık Uygulaması", `<p>${detailText(d.ukPractice)}</p>`)}
+    ${expandable("Turkey Practice", "Türkiye Uygulaması", `<p>${detailText(d.turkeyPractice)}</p>`)}
+    ${expandable("Related Concepts", "İlgili Kavramlar", `<p>${d.relatedConcepts.map(esc).join(", ") || esc(pick("See related knowledge below.", "Aşağıdaki ilgili bilgilere bakın."))}</p>`)}
+    ${expandable("Related Documents", "İlgili Belgeler", referencesMarkup(d.relatedDocuments))}
+    ${expandable("Related Standards", "İlgili Standartlar", referencesMarkup(d.relatedStandards))}
+    ${expandable("Related Regulations", "İlgili Mevzuat", referencesMarkup(d.relatedRegulations))}
+    ${expandable("Official Sources", "Resmî Kaynaklar", sourcesMarkup(d.officialSources))}
+    ${expandable("Revision History", "Revizyon Geçmişi", revision)}
+    ${expandable("Frequently Asked Questions", "Sık Sorulan Sorular", questionsMarkup(d.frequentlyAskedQuestions))}
+    ${expandable("Visual Illustration", "Görsel Açıklama", media(d.visualIllustration, pick("Illustration", "Görsel")))}
+    ${expandable("Future Video", "Gelecek Video", media(d.futureVideo, "Video"))}`;
+}
+function initializeAssistant() {
+  const form = document.getElementById("assistantForm"),
+    questionInput = document.getElementById("assistantQuestion"),
+    output = document.getElementById("assistantOutput");
+  if (!form || !questionInput || !output || !window.EMCPAssistant) return;
+  window.emcpAssistant = window.EMCPAssistant.create({
+    form,
+    questionInput,
+    output,
+    search: searchKnowledge,
+    getRelatedEntries,
+    getRelatedCalculators,
+    openEntry: openTerm,
+    getLanguage: () => lang,
+    categoryLabel,
+    calculatorLabel,
+  });
+}
+function getFav() {
+  return core.storage.get("emcpFav", [], core.stringList);
+}
+function getRecent() {
+  return core.storage.get("emcpRecent", [], core.stringList);
+}
+function updateStats() {
+  favCount.textContent = getFav().length;
+  recentCount.textContent = getRecent().length;
+  window.emcpWorkspace?.refreshCounts?.();
+}
+function renderCats() {
+  cats.innerHTML = ["Tümü", ...new Set(TERMS.map((x) => x.cat))]
+    .map(
+      (c, index) =>
+        `<button type="button" class="chip ${activeCat === c ? "active" : ""}" aria-pressed="${activeCat === c}" data-category-index="${index}">${esc(c === "Tümü" ? pick("All", "Tümü") : categoryLabel(c))}</button>`,
+    )
+    .join("");
+}
+function searchKnowledge(query) {
+  return knowledge.search(query, CATEGORY_EN);
+}
+function getList() {
+  const q = document.getElementById("q").value.trim();
+  let a = searchKnowledge(q).map((item) => ({
+    ...item.entry,
+    _i: item.index,
+    _s: item._s,
+  }));
+  if (activeCat !== "Tümü") a = a.filter((x) => x.cat === activeCat);
+  return a;
+}
+function render() {
+  const a = getList();
+  count.textContent = pick(`${a.length} results`, `${a.length} sonuç`);
+  const cards = a.map(
+    (t) =>
+      `<button type="button" class="card" data-open-term="${t._i}"><span class="term">${esc(t.term)}</span>${t.abbr ? `<span class="abbr">${esc(t.abbr)}</span>` : ""}<span class="tr">${esc(t.tr)}</span><span class="def">${esc(lang === "tr" ? t.def : t.defEn || t.def)}</span><span class="badge">${esc(categoryLabel(t.cat))}</span></button>`,
+  );
+  window.EMCPVirtualList.render(grid, cards, {
+    empty: `<div class="empty">${pick("No results found.", "Sonuç bulunamadı.")}</div>`,
+  });
+  updateStats();
+}
+let searchRenderSequence = 0;
+async function renderSearch() {
+  const sequence = ++searchRenderSequence,
+    query = q.value.trim(),
+    results = await knowledge.searchAsync(query, CATEGORY_EN);
+  if (sequence !== searchRenderSequence) return;
+  let list = results.map((item) => ({
+    ...item.entry,
+    _i: item.index,
+    _s: item._s,
+  }));
+  if (activeCat !== "Tümü")
+    list = list.filter((entry) => entry.cat === activeCat);
+  count.textContent = pick(`${list.length} results`, `${list.length} sonuç`);
+  window.EMCPVirtualList.render(
+    grid,
+    list.map(
+      (t) =>
+        `<button type="button" class="card" data-open-term="${t._i}"><span class="term">${esc(t.term)}</span>${t.abbr ? `<span class="abbr">${esc(t.abbr)}</span>` : ""}<span class="tr">${esc(t.tr)}</span><span class="def">${esc(lang === "tr" ? t.def : t.defEn || t.def)}</span><span class="badge">${esc(categoryLabel(t.cat))}</span></button>`,
+    ),
+    {
+      empty: `<div class="empty">${pick("No results found.", "Sonuç bulunamadı.")}</div>`,
+    },
+  );
+  window.EMCPOperations?.track("knowledge_search");
+  updateStats();
+}
+function setCat(c) {
+  const values = ["Tümü", ...new Set(TERMS.map((entry) => entry.cat))];
+  if (!values.includes(c)) return false;
+  activeCat = c;
+  renderCats();
+  render();
+  if (c !== "Tümü")
+    knowledge
+      .loadCategory(c)
+      .then(() => {
+        TERMS = knowledge.entries;
+        render();
+      })
+      .catch((error) => console.error("Unable to hydrate category:", error));
+  return true;
+}
+async function openTerm(i) {
+  i = Number(i);
+  if (!Number.isInteger(i) || !TERMS[i]) return false;
+  const hydrated = await knowledge.hydrate(i);
+  if (hydrated) TERMS = knowledge.entries;
+  const t = TERMS[i];
+  if (!t) return false;
+  currentTermIndex = i;
+  let r = getRecent();
+  r = [t.term, ...r.filter((x) => x !== t.term)].slice(0, 30);
+  core.storage.set("emcpRecent", r);
+  const fav = getFav().includes(t.term),
+    definition = lang === "tr" ? t.def : t.defEn || t.def,
+    usage = lang === "tr" ? t.use : t.useEn || t.use,
+    note = window.emcpWorkspace?.knowledgeNoteMarkup?.(i) || "";
+  sheet.innerHTML = `<button type="button" class="close" data-modal-close>×</button><div class="badge">${esc(categoryLabel(t.cat))}</div><h2>${esc(t.term)}</h2>${t.abbr ? `<div class="abbr">${esc(t.abbr)}</div>` : ""}<p><b>${esc(t.tr)}</b></p>${v2Content(i, t) || `<h3>${pick("Definition", "Tanım")}</h3><p>${esc(definition)}</p><h3>${pick("When is it used?", "Ne zaman kullanılır?")}</h3><p>${esc(usage)}</p>`}${note}<div class="actions"><button type="button" data-toggle-favourite="${i}">${fav ? "★" : "☆"} ${pick("Favourite", "Favori")}</button><button type="button" data-collection-picker="${i}">${pick("Collections", "Koleksiyonlar")}</button><button type="button" data-copy-term="${i}">${pick("Copy", "Kopyala")}</button><button type="button" data-share-term="${i}">${pick("Share", "Paylaş")}</button></div>`;
+  window.showModal();
+  updateStats();
+  return true;
+}
+function closeModal() {
+  currentTermIndex = null;
+  window.hideModal();
+}
+function toggleFav(term) {
+  if (typeof term !== "string" || !TERMS.some((entry) => entry.term === term))
+    return;
+  let f = getFav();
+  f = f.includes(term) ? f.filter((x) => x !== term) : [...f, term];
+  core.storage.set("emcpFav", f);
+  closeModal();
+  render();
+  window.emcpWorkspace?.refresh?.();
+}
+window.onEMCPModalClose = () => {
+  currentTermIndex = null;
+};
+function copyTerm(i) {
+  const t = TERMS[Number(i)];
+  if (!t) return false;
+  const definition = lang === "tr" ? t.def : t.defEn || t.def;
+  navigator.clipboard?.writeText(`${t.term} — ${t.tr}\n${definition}`);
+  alert(pick("Copied", "Kopyalandı"));
+  return true;
+}
+function shareTerm(i) {
+  const t = TERMS[Number(i)];
+  if (!t) return false;
+  const definition = lang === "tr" ? t.def : t.defEn || t.def,
+    text = `${t.term} — ${t.tr}\n${definition}`;
+  if (navigator.share) navigator.share({ title: t.term, text }).catch(() => {});
+  else copyTerm(i);
+  return true;
+}
+function showPage(name) {
+  const page = document.getElementById("page-" + name);
+  if (!page) return false;
+  document
+    .querySelectorAll(".page")
+    .forEach((item) => item.classList.remove("active"));
+  page.classList.add("active");
+  if (window.EMCPFeatures?.has(name)) {
+    page.inert = true;
+    page.setAttribute("aria-busy", "true");
+    window.EMCPFeatures.load(name)
+      .then(() => {
+        page.inert = false;
+        page.setAttribute("aria-busy", "false");
+        if (name === "assistant") initializeAssistant();
+      })
+      .catch((error) => {
+        page.inert = false;
+        page.setAttribute("aria-busy", "false");
+        console.error(`Unable to load ${name}:`, error);
+      });
+  }
+  document.querySelectorAll(".bottom button").forEach((b) => {
+    b.classList.remove("active");
+    b.removeAttribute("aria-current");
+  });
+  let activeNav = null;
+  if (name === "home") activeNav = navHome;
+  if (name === "knowledge") activeNav = navKnowledge;
+  if (name === "handbooks") activeNav = navHandbooks;
+  if (name === "calculators") activeNav = navCalc;
+  if (name === "construction") activeNav = navBuild;
+  if (activeNav) {
+    activeNav.classList.add("active");
+    activeNav.setAttribute("aria-current", "page");
+  }
+  window.EMCPAccessibility?.scrollToTop();
+  return true;
+}
+function updateThemeControl() {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  themeBtn.setAttribute("aria-pressed", String(dark));
+  const label = dark
+    ? pick("Use light theme", "Açık temayı kullan")
+    : pick("Use dark theme", "Koyu temayı kullan");
+  themeBtn.setAttribute("aria-label", label);
+  themeBtn.title = label;
+}
+function setLang(l) {
+  lang = l === "en" ? "en" : "tr";
+  if (ui) ui.setLanguage(lang);
+  else core.storage.setRaw("emcpLang", lang);
+  trBtn.classList.toggle("active", lang === "tr");
+  enBtn.classList.toggle("active", lang === "en");
+  trBtn.setAttribute("aria-pressed", String(lang === "tr"));
+  enBtn.setAttribute("aria-pressed", String(lang === "en"));
+  renderCats();
+  render();
+  renderKnowledgeError();
+  updateThemeControl();
+  window.emcpAssistant?.clear?.();
+  if (currentTermIndex !== null) openTerm(currentTermIndex);
+  window.EMCPHandbook?.setLanguage?.(lang);
+}
+function showHelp() {
+  currentTermIndex = null;
+  sheet.innerHTML = `<button type="button" class="close" data-modal-close>×</button><h2>${pick("Very Simple User Guide", "Çok Basit Kullanım Kılavuzu")}</h2><p>${pick("1. Tap a module on Home.<br>2. Search inside Knowledge.<br>3. Enter numbers in Calculators and tap Calculate.<br>4. Enter dimensions in Construction Tools.<br>5. Use the half-moon button for dark mode.<br>6. Open in Safari and Add to Home Screen.", "1. Ana Sayfa’dan bir modüle dokunun.<br>2. Bilgi bölümünde arama yapın.<br>3. Hesaplayıcılara rakamları girip Hesapla’ya basın.<br>4. İnşaat Araçları’na ölçüleri girin.<br>5. Koyu mod için yarım ay düğmesini kullanın.<br>6. Safari’de açıp Ana Ekrana Ekle’yi seçin.")}</p>`;
+  window.showModal();
+}
+q.addEventListener("input", () => {
+  showPage("knowledge");
+  renderSearch();
+});
+clearBtn.addEventListener("click", () => {
+  q.value = "";
+  activeCat = "Tümü";
+  renderCats();
+  render();
+});
+trBtn.addEventListener("click", () => setLang("tr"));
+enBtn.addEventListener("click", () => setLang("en"));
+themeBtn.addEventListener("click", () => {
+  const d = document.documentElement.getAttribute("data-theme") === "dark";
+  document.documentElement.setAttribute("data-theme", d ? "light" : "dark");
+  core.storage.setRaw("emcpTheme", d ? "light" : "dark");
+  updateThemeControl();
+});
+document.documentElement.setAttribute(
+  "data-theme",
+  core.storage.getRaw("emcpTheme") === "dark" ? "dark" : "light",
+);
+updateThemeControl();
+document.addEventListener("click", (event) => {
+  const button = event.target.closest("button");
+  if (!button) return;
+  if (button.dataset.page) showPage(button.dataset.page);
+  if (button.dataset.workspace)
+    window.showWorkspace?.(button.dataset.workspace);
+  if (button.hasAttribute("data-help")) showHelp();
+  if (button.hasAttribute("data-modal-close")) closeModal();
+  if (button.dataset.openTerm !== undefined) openTerm(button.dataset.openTerm);
+  if (button.dataset.categoryIndex !== undefined) {
+    const values = ["Tümü", ...new Set(TERMS.map((entry) => entry.cat))],
+      category = values[Number(button.dataset.categoryIndex)];
+    if (category) setCat(category);
+  }
+  if (button.dataset.calculatorTarget)
+    openCalculator(
+      button.dataset.calculatorTarget,
+      button.dataset.calculatorPage,
+    );
+  if (button.dataset.toggleFavourite !== undefined) {
+    const entry = TERMS[Number(button.dataset.toggleFavourite)];
+    if (entry) toggleFav(entry.term);
+  }
+  if (button.dataset.collectionPicker !== undefined)
+    window.openCollectionPicker?.(Number(button.dataset.collectionPicker));
+  if (button.dataset.copyTerm !== undefined) copyTerm(button.dataset.copyTerm);
+  if (button.dataset.shareTerm !== undefined)
+    shareTerm(button.dataset.shareTerm);
+});
+function renderKnowledgeError() {
+  const panel = window.EMCPDOM.get("knowledgeError");
+  if (!panel) return;
+  panel.hidden = !knowledgeLoadError;
+  if (!knowledgeLoadError) return;
+  knowledgeErrorTitle.textContent = pick(
+    "Knowledge data could not be loaded.",
+    "Bilgi verileri yüklenemedi.",
+  );
+  knowledgeErrorText.textContent = pick(
+    "Check your connection and retry. Previously cached data remains available offline.",
+    "Bağlantınızı kontrol edip yeniden deneyin. Önceden önbelleğe alınan veriler çevrimdışı kullanılabilir.",
+  );
+  retryKnowledge.textContent = pick("Retry", "Yeniden dene");
+}
+async function loadKnowledgeData() {
+  knowledgeLoadError = null;
+  renderKnowledgeError();
+  try {
+    TERMS = await knowledge.load();
+    return true;
+  } catch (error) {
+    knowledgeLoadError = error;
+    TERMS = [];
+    console.error("Failed to load knowledge data:", error);
+    renderKnowledgeError();
+    return false;
+  }
+}
+async function retryKnowledgeData() {
+  retryKnowledge.disabled = true;
+  retryKnowledge.textContent = pick("Loading…", "Yükleniyor…");
+  await loadKnowledgeData();
+  retryKnowledge.disabled = false;
+  renderCats();
+  render();
+  renderKnowledgeError();
+}
+retryKnowledge.addEventListener("click", retryKnowledgeData);
+async function initializeApp() {
+  await loadKnowledgeData();
+  setLang(lang);
+  renderCats();
+  render();
+  updateStats();
+}
+window.EMCPApp = {
+  showPage,
+  setLang,
+  openTerm,
+  closeModal,
+  setCategory: setCat,
+  searchKnowledge,
+  retryKnowledgeData,
+  get entries() {
+    return TERMS.slice();
+  },
+};
 initializeApp();
-if("serviceWorker" in navigator)navigator.serviceWorker.register("/service-worker.js");

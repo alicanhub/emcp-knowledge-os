@@ -1,0 +1,142 @@
+[
+  {
+    "term": "AML",
+    "tr": "Kara para aklamayı önleme",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "Anti-Money Laundering",
+    "def": "Suç gelirlerinin finansal sisteme sokulmasını önlemek için uygulanan kontrol ve yükümlülükler.",
+    "use": "Yatırımcı, müşteri ve fon kaynağı kontrolünde zorunludur.",
+    "example": "The investor must complete AML checks.",
+    "tags": [
+      "compliance",
+      "KYC",
+      "money laundering"
+    ]
+  },
+  {
+    "term": "KYC",
+    "tr": "Müşterini tanı",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "Know Your Customer",
+    "def": "Müşterinin kimliğini, adresini, sahiplik yapısını ve risk profilini doğrulama süreci.",
+    "use": "Finansal ve property işlemlerinde kullanılır.",
+    "example": "We cannot proceed until KYC is complete.",
+    "tags": [
+      "identity",
+      "AML",
+      "compliance"
+    ]
+  },
+  {
+    "term": "Source of Funds",
+    "tr": "Fon kaynağı",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "SoF",
+    "def": "Belirli bir işlemde kullanılacak paranın nereden geldiğinin açıklanması ve doğrulanması.",
+    "use": "Banka hesap dökümü, satış belgesi veya kredi sözleşmesiyle kanıtlanabilir.",
+    "example": "The solicitor requested evidence of source of funds.",
+    "tags": [
+      "AML",
+      "money",
+      "evidence"
+    ]
+  },
+  {
+    "term": "Source of Wealth",
+    "tr": "Servet kaynağı",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "SoW",
+    "def": "Bir kişinin toplam servetini zaman içinde nasıl elde ettiğinin açıklanması.",
+    "use": "Yüksek değerli veya riskli işlemlerde istenir.",
+    "example": "The compliance team is reviewing source of wealth.",
+    "tags": [
+      "AML",
+      "wealth",
+      "compliance"
+    ]
+  },
+  {
+    "term": "PEP",
+    "tr": "Siyasi nüfuz sahibi kişi",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "Politically Exposed Person",
+    "def": "Kamu görevi nedeniyle yolsuzluk riski daha yüksek kabul edilen kişi ve bazı yakın bağlantıları.",
+    "use": "Enhanced due diligence gerektirebilir.",
+    "example": "The client has been identified as a PEP.",
+    "tags": [
+      "compliance",
+      "EDD",
+      "risk"
+    ]
+  },
+  {
+    "term": "CRM",
+    "tr": "Müşteri ilişkileri yönetimi",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "Customer Relationship Management",
+    "def": "İlişkileri, fırsatları, takipleri ve iletişim geçmişini sistemli biçimde yöneten yazılım ve süreç.",
+    "use": "Origination ve investor relations için temel altyapıdır.",
+    "example": "Every interaction must be logged in the CRM.",
+    "tags": [
+      "pipeline",
+      "contacts",
+      "follow-up"
+    ]
+  },
+  {
+    "term": "KPI",
+    "tr": "Temel performans göstergesi",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "Key Performance Indicator",
+    "def": "Bir ekip veya sürecin başarısını ölçmek için kullanılan sayısal hedef.",
+    "use": "Aylık ilişki, toplantı ve dönüşüm ölçümünde kullanılır.",
+    "example": "Qualified investor meetings are a core KPI.",
+    "tags": [
+      "performance",
+      "target",
+      "metric"
+    ]
+  },
+  {
+    "term": "Stakeholder",
+    "tr": "Paydaş",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "",
+    "def": "Bir proje veya karardan etkilenen ya da onu etkileyebilen kişi, kurum veya grup.",
+    "use": "Council, investor, developer, adviser ve community paydaş olabilir.",
+    "example": "We are engaging key regional stakeholders.",
+    "tags": [
+      "partner",
+      "public sector",
+      "relationship"
+    ]
+  },
+  {
+    "term": "Referral",
+    "tr": "Yönlendirme / referans",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "",
+    "def": "Bir kişinin başka bir potansiyel müşteri, yatırımcı veya iş ortağına tavsiye edilmesi.",
+    "use": "Güvene dayalı iş geliştirmede etkilidir.",
+    "example": "The introduction came through a trusted referral.",
+    "tags": [
+      "introduction",
+      "network",
+      "lead"
+    ]
+  },
+  {
+    "term": "Outreach",
+    "tr": "Hedefli iletişim faaliyeti",
+    "cat": "Uyum ve Kurumsal",
+    "abbr": "",
+    "def": "Belirli kişi veya kurumlara e-posta, LinkedIn, telefon veya etkinlik yoluyla planlı biçimde ulaşma süreci.",
+    "use": "Lead generation ve partnership development için kullanılır.",
+    "example": "The team will begin targeted outreach next week.",
+    "tags": [
+      "lead generation",
+      "contact",
+      "marketing"
+    ]
+  }
+]

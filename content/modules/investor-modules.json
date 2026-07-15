@@ -1,0 +1,116 @@
+[
+  {
+    "id": "module.property-finance-fundamentals",
+    "object_type": "learning_module",
+    "title": {
+      "en": "Property Finance Fundamentals",
+      "tr": "Gayrimenkul Finansmanı Temelleri"
+    },
+    "summary": {
+      "en": "A module organising finance entries and ratio topics.",
+      "tr": "Finansman kayıtlarını ve oran konularını düzenleyen modül."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Property Finance Fundamentals and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Gayrimenkul Finansmanı Temelleri konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": ["LTV", "LTC", "DSCR", "ROI", "IRR"],
+    "related_topics": ["topic.property-finance-ratios"],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "child_topics": ["topic.property-finance-ratios"]
+  },
+  {
+    "id": "module.residential-property-fundamentals",
+    "object_type": "learning_module",
+    "title": {
+      "en": "Residential Property Fundamentals",
+      "tr": "Konut Gayrimenkulü Temelleri"
+    },
+    "summary": {
+      "en": "A module for residential ownership, letting and finance.",
+      "tr": "Konut mülkiyeti, kiralama ve finansman modülü."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Residential Property Fundamentals and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Konut Gayrimenkulü Temelleri konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [],
+    "related_topics": [
+      "topic.residential-investment",
+      "topic.property-transactions"
+    ],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "child_topics": [
+      "topic.residential-investment",
+      "topic.property-transactions"
+    ]
+  }
+]

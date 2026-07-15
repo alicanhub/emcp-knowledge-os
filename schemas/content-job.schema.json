@@ -1,0 +1,99 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/content-job.schema.json",
+  "type": "object",
+  "required": [
+    "job_id",
+    "title",
+    "target_pack",
+    "subject_area",
+    "target_audience",
+    "jurisdiction",
+    "difficulty_range",
+    "target_reviewed_entry_count",
+    "target_draft_entry_count",
+    "priority",
+    "dependencies",
+    "required_source_domains",
+    "required_calculators",
+    "required_handbook_chapters",
+    "required_checklists",
+    "required_case_studies",
+    "required_document_guides",
+    "status",
+    "created_date",
+    "started_date",
+    "completed_date",
+    "reviewer",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "job_id": { "type": "string", "pattern": "^job\\.[a-z0-9.-]+$" },
+    "title": { "$ref": "#/$defs/localized" },
+    "target_pack": { "type": "string", "pattern": "^pack\\.[0-9]{3}$" },
+    "subject_area": { "$ref": "#/$defs/localized" },
+    "target_audience": { "$ref": "#/$defs/localized" },
+    "jurisdiction": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 2 }
+    },
+    "difficulty_range": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "enum": ["beginner", "intermediate", "advanced", "expert"] }
+    },
+    "target_reviewed_entry_count": { "type": "integer", "minimum": 0 },
+    "target_draft_entry_count": { "type": "integer", "minimum": 0 },
+    "priority": { "enum": ["low", "normal", "high", "critical"] },
+    "dependencies": { "$ref": "#/$defs/stringList" },
+    "required_source_domains": { "$ref": "#/$defs/stringList" },
+    "required_calculators": { "$ref": "#/$defs/stringList" },
+    "required_handbook_chapters": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "integer", "minimum": 1, "maximum": 999 }
+    },
+    "required_checklists": { "$ref": "#/$defs/stringList" },
+    "required_case_studies": { "$ref": "#/$defs/stringList" },
+    "required_document_guides": { "$ref": "#/$defs/stringList" },
+    "status": {
+      "enum": [
+        "planned",
+        "researching",
+        "drafting",
+        "validating",
+        "awaiting-review",
+        "approved",
+        "imported",
+        "published",
+        "rejected",
+        "blocked"
+      ]
+    },
+    "created_date": { "type": "string", "format": "date" },
+    "started_date": { "type": ["string", "null"], "format": "date" },
+    "completed_date": { "type": ["string", "null"], "format": "date" },
+    "reviewer": { "type": ["string", "null"] },
+    "notes": { "$ref": "#/$defs/localized" }
+  },
+  "$defs": {
+    "localized": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "tr": { "type": "string", "minLength": 1 }
+      }
+    },
+    "stringList": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1 }
+    }
+  }
+}

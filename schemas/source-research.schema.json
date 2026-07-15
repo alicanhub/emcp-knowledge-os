@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/source-research.schema.json",
+  "type": "object",
+  "required": [
+    "record_id",
+    "required_factual_claims",
+    "required_jurisdiction",
+    "preferred_source_type",
+    "current_citations",
+    "missing_citations",
+    "stale_citations",
+    "source_review_status",
+    "last_checked_date",
+    "next_review_date"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "record_id": { "type": "string" },
+    "required_factual_claims": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "required_jurisdiction": { "type": "array", "items": { "type": "string" } },
+    "preferred_source_type": { "type": "array", "items": { "type": "string" } },
+    "current_citations": {
+      "type": "array",
+      "items": { "type": "string", "format": "uri" }
+    },
+    "missing_citations": { "type": "array", "items": { "type": "string" } },
+    "stale_citations": { "type": "array", "items": { "type": "string" } },
+    "source_review_status": {
+      "enum": [
+        "not-started",
+        "researching",
+        "ready-for-review",
+        "verified",
+        "blocked"
+      ]
+    },
+    "last_checked_date": { "type": ["string", "null"], "format": "date" },
+    "next_review_date": { "type": ["string", "null"], "format": "date" }
+  }
+}

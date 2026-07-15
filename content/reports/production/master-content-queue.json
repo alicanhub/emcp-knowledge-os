@@ -1,0 +1,1908 @@
+{
+  "generated_at": "2026-07-14T23:24:44.815Z",
+  "next_recommended_pack": "pack.004",
+  "blocked_packs": [],
+  "human_review_packs": [],
+  "packs": [
+    {
+      "pack_id": "pack.001",
+      "pack_number": 1,
+      "title": {
+        "en": "Everyday Property, Construction and Finance Fundamentals",
+        "tr": "Günlük Gayrimenkul, İnşaat ve Finans Temelleri"
+      },
+      "status": "complete",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 100,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 6,
+      "calculator_coverage": 6,
+      "completion_percentage": 100,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.002",
+      "pack_number": 2,
+      "title": {
+        "en": "Residential Property Fundamentals",
+        "tr": "Konut Gayrimenkulü Temelleri"
+      },
+      "status": "complete",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 100,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 30,
+      "calculator_coverage": 4,
+      "completion_percentage": 100,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.003",
+      "pack_number": 3,
+      "title": {
+        "en": "Property Investor Fundamentals",
+        "tr": "Gayrimenkul Yatırımcılığı Temelleri"
+      },
+      "status": "complete",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 100,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 84,
+      "calculator_coverage": 14,
+      "completion_percentage": 100,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.004",
+      "pack_number": 4,
+      "title": {
+        "en": "Foundation Pack 004",
+        "tr": "Temeller Paketi 004"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.005",
+      "pack_number": 5,
+      "title": {
+        "en": "Foundation Pack 005",
+        "tr": "Temeller Paketi 005"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.006",
+      "pack_number": 6,
+      "title": {
+        "en": "Foundation Pack 006",
+        "tr": "Temeller Paketi 006"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.007",
+      "pack_number": 7,
+      "title": {
+        "en": "Foundation Pack 007",
+        "tr": "Temeller Paketi 007"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.008",
+      "pack_number": 8,
+      "title": {
+        "en": "Foundation Pack 008",
+        "tr": "Temeller Paketi 008"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.009",
+      "pack_number": 9,
+      "title": {
+        "en": "Foundation Pack 009",
+        "tr": "Temeller Paketi 009"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.010",
+      "pack_number": 10,
+      "title": {
+        "en": "Foundation Pack 010",
+        "tr": "Temeller Paketi 010"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.011",
+      "pack_number": 11,
+      "title": {
+        "en": "Residential Property Pack 011",
+        "tr": "Konut Gayrimenkulü Paketi 011"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.012",
+      "pack_number": 12,
+      "title": {
+        "en": "Residential Property Pack 012",
+        "tr": "Konut Gayrimenkulü Paketi 012"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.013",
+      "pack_number": 13,
+      "title": {
+        "en": "Residential Property Pack 013",
+        "tr": "Konut Gayrimenkulü Paketi 013"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.014",
+      "pack_number": 14,
+      "title": {
+        "en": "Residential Property Pack 014",
+        "tr": "Konut Gayrimenkulü Paketi 014"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.015",
+      "pack_number": 15,
+      "title": {
+        "en": "Residential Property Pack 015",
+        "tr": "Konut Gayrimenkulü Paketi 015"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.016",
+      "pack_number": 16,
+      "title": {
+        "en": "Residential Property Pack 016",
+        "tr": "Konut Gayrimenkulü Paketi 016"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.017",
+      "pack_number": 17,
+      "title": {
+        "en": "Residential Property Pack 017",
+        "tr": "Konut Gayrimenkulü Paketi 017"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.018",
+      "pack_number": 18,
+      "title": {
+        "en": "Residential Property Pack 018",
+        "tr": "Konut Gayrimenkulü Paketi 018"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.019",
+      "pack_number": 19,
+      "title": {
+        "en": "Residential Property Pack 019",
+        "tr": "Konut Gayrimenkulü Paketi 019"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.020",
+      "pack_number": 20,
+      "title": {
+        "en": "Residential Property Pack 020",
+        "tr": "Konut Gayrimenkulü Paketi 020"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.021",
+      "pack_number": 21,
+      "title": {
+        "en": "Commercial Property Pack 021",
+        "tr": "Ticari Gayrimenkul Paketi 021"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.022",
+      "pack_number": 22,
+      "title": {
+        "en": "Commercial Property Pack 022",
+        "tr": "Ticari Gayrimenkul Paketi 022"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.023",
+      "pack_number": 23,
+      "title": {
+        "en": "Commercial Property Pack 023",
+        "tr": "Ticari Gayrimenkul Paketi 023"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.024",
+      "pack_number": 24,
+      "title": {
+        "en": "Commercial Property Pack 024",
+        "tr": "Ticari Gayrimenkul Paketi 024"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.025",
+      "pack_number": 25,
+      "title": {
+        "en": "Commercial Property Pack 025",
+        "tr": "Ticari Gayrimenkul Paketi 025"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.026",
+      "pack_number": 26,
+      "title": {
+        "en": "Commercial Property Pack 026",
+        "tr": "Ticari Gayrimenkul Paketi 026"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.027",
+      "pack_number": 27,
+      "title": {
+        "en": "Commercial Property Pack 027",
+        "tr": "Ticari Gayrimenkul Paketi 027"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.028",
+      "pack_number": 28,
+      "title": {
+        "en": "Commercial Property Pack 028",
+        "tr": "Ticari Gayrimenkul Paketi 028"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.029",
+      "pack_number": 29,
+      "title": {
+        "en": "Commercial Property Pack 029",
+        "tr": "Ticari Gayrimenkul Paketi 029"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.030",
+      "pack_number": 30,
+      "title": {
+        "en": "Commercial Property Pack 030",
+        "tr": "Ticari Gayrimenkul Paketi 030"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.031",
+      "pack_number": 31,
+      "title": {
+        "en": "Construction and Development Pack 031",
+        "tr": "İnşaat ve Geliştirme Paketi 031"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.032",
+      "pack_number": 32,
+      "title": {
+        "en": "Construction and Development Pack 032",
+        "tr": "İnşaat ve Geliştirme Paketi 032"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.033",
+      "pack_number": 33,
+      "title": {
+        "en": "Construction and Development Pack 033",
+        "tr": "İnşaat ve Geliştirme Paketi 033"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.034",
+      "pack_number": 34,
+      "title": {
+        "en": "Construction and Development Pack 034",
+        "tr": "İnşaat ve Geliştirme Paketi 034"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.035",
+      "pack_number": 35,
+      "title": {
+        "en": "Construction and Development Pack 035",
+        "tr": "İnşaat ve Geliştirme Paketi 035"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.036",
+      "pack_number": 36,
+      "title": {
+        "en": "Construction and Development Pack 036",
+        "tr": "İnşaat ve Geliştirme Paketi 036"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.037",
+      "pack_number": 37,
+      "title": {
+        "en": "Construction and Development Pack 037",
+        "tr": "İnşaat ve Geliştirme Paketi 037"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.038",
+      "pack_number": 38,
+      "title": {
+        "en": "Construction and Development Pack 038",
+        "tr": "İnşaat ve Geliştirme Paketi 038"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.039",
+      "pack_number": 39,
+      "title": {
+        "en": "Construction and Development Pack 039",
+        "tr": "İnşaat ve Geliştirme Paketi 039"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.040",
+      "pack_number": 40,
+      "title": {
+        "en": "Construction and Development Pack 040",
+        "tr": "İnşaat ve Geliştirme Paketi 040"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.041",
+      "pack_number": 41,
+      "title": {
+        "en": "Finance and Investment Pack 041",
+        "tr": "Finans ve Yatırım Paketi 041"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.042",
+      "pack_number": 42,
+      "title": {
+        "en": "Finance and Investment Pack 042",
+        "tr": "Finans ve Yatırım Paketi 042"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.043",
+      "pack_number": 43,
+      "title": {
+        "en": "Finance and Investment Pack 043",
+        "tr": "Finans ve Yatırım Paketi 043"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.044",
+      "pack_number": 44,
+      "title": {
+        "en": "Finance and Investment Pack 044",
+        "tr": "Finans ve Yatırım Paketi 044"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.045",
+      "pack_number": 45,
+      "title": {
+        "en": "Finance and Investment Pack 045",
+        "tr": "Finans ve Yatırım Paketi 045"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.046",
+      "pack_number": 46,
+      "title": {
+        "en": "Finance and Investment Pack 046",
+        "tr": "Finans ve Yatırım Paketi 046"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.047",
+      "pack_number": 47,
+      "title": {
+        "en": "Finance and Investment Pack 047",
+        "tr": "Finans ve Yatırım Paketi 047"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.048",
+      "pack_number": 48,
+      "title": {
+        "en": "Finance and Investment Pack 048",
+        "tr": "Finans ve Yatırım Paketi 048"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.049",
+      "pack_number": 49,
+      "title": {
+        "en": "Finance and Investment Pack 049",
+        "tr": "Finans ve Yatırım Paketi 049"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.050",
+      "pack_number": 50,
+      "title": {
+        "en": "Finance and Investment Pack 050",
+        "tr": "Finans ve Yatırım Paketi 050"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.051",
+      "pack_number": 51,
+      "title": {
+        "en": "Valuation and Appraisal Pack 051",
+        "tr": "Değerleme ve Analiz Paketi 051"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.052",
+      "pack_number": 52,
+      "title": {
+        "en": "Valuation and Appraisal Pack 052",
+        "tr": "Değerleme ve Analiz Paketi 052"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.053",
+      "pack_number": 53,
+      "title": {
+        "en": "Valuation and Appraisal Pack 053",
+        "tr": "Değerleme ve Analiz Paketi 053"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.054",
+      "pack_number": 54,
+      "title": {
+        "en": "Valuation and Appraisal Pack 054",
+        "tr": "Değerleme ve Analiz Paketi 054"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.055",
+      "pack_number": 55,
+      "title": {
+        "en": "Valuation and Appraisal Pack 055",
+        "tr": "Değerleme ve Analiz Paketi 055"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.056",
+      "pack_number": 56,
+      "title": {
+        "en": "Valuation and Appraisal Pack 056",
+        "tr": "Değerleme ve Analiz Paketi 056"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.057",
+      "pack_number": 57,
+      "title": {
+        "en": "Valuation and Appraisal Pack 057",
+        "tr": "Değerleme ve Analiz Paketi 057"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.058",
+      "pack_number": 58,
+      "title": {
+        "en": "Valuation and Appraisal Pack 058",
+        "tr": "Değerleme ve Analiz Paketi 058"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.059",
+      "pack_number": 59,
+      "title": {
+        "en": "Valuation and Appraisal Pack 059",
+        "tr": "Değerleme ve Analiz Paketi 059"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.060",
+      "pack_number": 60,
+      "title": {
+        "en": "Valuation and Appraisal Pack 060",
+        "tr": "Değerleme ve Analiz Paketi 060"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.061",
+      "pack_number": 61,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 061",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 061"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.062",
+      "pack_number": 62,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 062",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 062"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.063",
+      "pack_number": 63,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 063",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 063"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.064",
+      "pack_number": 64,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 064",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 064"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.065",
+      "pack_number": 65,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 065",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 065"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.066",
+      "pack_number": 66,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 066",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 066"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.067",
+      "pack_number": 67,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 067",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 067"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.068",
+      "pack_number": 68,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 068",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 068"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.069",
+      "pack_number": 69,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 069",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 069"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.070",
+      "pack_number": 70,
+      "title": {
+        "en": "Planning, Law and Compliance Pack 070",
+        "tr": "Planlama, Hukuk ve Uyum Paketi 070"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.071",
+      "pack_number": 71,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 071",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 071"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.072",
+      "pack_number": 72,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 072",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 072"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.073",
+      "pack_number": 73,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 073",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 073"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.074",
+      "pack_number": 74,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 074",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 074"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.075",
+      "pack_number": 75,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 075",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 075"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.076",
+      "pack_number": 76,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 076",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 076"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.077",
+      "pack_number": 77,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 077",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 077"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.078",
+      "pack_number": 78,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 078",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 078"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.079",
+      "pack_number": 79,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 079",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 079"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.080",
+      "pack_number": 80,
+      "title": {
+        "en": "Documents, Contracts and Due Diligence Pack 080",
+        "tr": "Belgeler, Sözleşmeler ve İnceleme Paketi 080"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.081",
+      "pack_number": 81,
+      "title": {
+        "en": "Asset Management and Operations Pack 081",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 081"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.082",
+      "pack_number": 82,
+      "title": {
+        "en": "Asset Management and Operations Pack 082",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 082"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.083",
+      "pack_number": 83,
+      "title": {
+        "en": "Asset Management and Operations Pack 083",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 083"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.084",
+      "pack_number": 84,
+      "title": {
+        "en": "Asset Management and Operations Pack 084",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 084"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.085",
+      "pack_number": 85,
+      "title": {
+        "en": "Asset Management and Operations Pack 085",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 085"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.086",
+      "pack_number": 86,
+      "title": {
+        "en": "Asset Management and Operations Pack 086",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 086"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.087",
+      "pack_number": 87,
+      "title": {
+        "en": "Asset Management and Operations Pack 087",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 087"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.088",
+      "pack_number": 88,
+      "title": {
+        "en": "Asset Management and Operations Pack 088",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 088"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.089",
+      "pack_number": 89,
+      "title": {
+        "en": "Asset Management and Operations Pack 089",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 089"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.090",
+      "pack_number": 90,
+      "title": {
+        "en": "Asset Management and Operations Pack 090",
+        "tr": "Varlık Yönetimi ve Operasyon Paketi 090"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.091",
+      "pack_number": 91,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 091",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 091"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.092",
+      "pack_number": 92,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 092",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 092"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.093",
+      "pack_number": 93,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 093",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 093"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.094",
+      "pack_number": 94,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 094",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 094"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.095",
+      "pack_number": 95,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 095",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 095"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.096",
+      "pack_number": 96,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 096",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 096"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.097",
+      "pack_number": 97,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 097",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 097"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.098",
+      "pack_number": 98,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 098",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 098"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.099",
+      "pack_number": 99,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 099",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 099"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    },
+    {
+      "pack_id": "pack.100",
+      "pack_number": 100,
+      "title": {
+        "en": "Advanced Investor, Portfolio and Strategy Pack 100",
+        "tr": "İleri Yatırımcı, Portföy ve Strateji Paketi 100"
+      },
+      "status": "planned",
+      "target_entry_count": 100,
+      "reviewed_entry_count": 0,
+      "draft_entry_count": 0,
+      "duplicate_count": 0,
+      "missing_source_count": 0,
+      "broken_reference_count": 0,
+      "handbook_coverage": 0,
+      "calculator_coverage": 0,
+      "completion_percentage": 0,
+      "requires_human_review": false
+    }
+  ]
+}

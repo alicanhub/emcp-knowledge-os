@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "construction-roles-stages.site-manager",
+  "title": {
+    "en": "Site Manager",
+    "tr": "Şantiye Müdürü"
+  },
+  "summary": {
+    "en": "The person managing day-to-day site activities within their delegated authority.",
+    "tr": "Devredilen yetkiler kapsamında günlük şantiye faaliyetlerini yöneten kişidir."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "The person managing day-to-day site activities within their delegated authority. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Devredilen yetkiler kapsamında günlük şantiye faaliyetlerini yöneten kişidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "construction-delivery",
+    "en": "Construction and Delivery",
+    "tr": "İnşaat ve Teslim"
+  },
+  "subcategory": {
+    "key": "roles-stages",
+    "en": "Construction roles and stages",
+    "tr": "İnşaat rolleri ve aşamaları"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["construction-roles-stages", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["site", "manager"],
+    "tr": ["şantiye", "müdürü"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Site Manager” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Şantiye Müdürü” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving site manager.",
+    "tr": "Bu kavramı şantiye müdürü içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "construction-roles-stages.subcontractor",
+    "construction-roles-stages.pre-construction-phase"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Managing health and safety in construction",
+      "publisher": "Health and Safety Executive",
+      "url": "https://www.hse.gov.uk/pubns/priced/l153.pdf",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Site Manager; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

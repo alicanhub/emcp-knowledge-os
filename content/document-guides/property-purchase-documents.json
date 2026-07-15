@@ -1,0 +1,753 @@
+[
+  {
+    "id": "document-guide.property-purchase-documents",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Property Purchase Document Guide",
+      "tr": "Taşınmaz Satın Alma Belge Rehberi"
+    },
+    "summary": {
+      "en": "A draft map of common purchase documents and when professional review is needed.",
+      "tr": "Yaygın satın alma belgelerini ve uzman incelemesi gereken noktaları gösteren taslak rehber."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Property Purchase Document Guide and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Taşınmaz Satın Alma Belge Rehberi konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [
+      "Title Register",
+      "Title Plan",
+      "Contract for Sale",
+      "Transfer Deed",
+      "Property Information Form"
+    ],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ]
+  },
+  {
+    "id": "document-guide.mortgage-offer",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Mortgage Offer Guide",
+      "tr": "Konut Kredisi Teklifi Rehberi"
+    },
+    "summary": {
+      "en": "A beginner guide to the purpose, checks and limitations of a residential.mortgages.mortgage-offer.",
+      "tr": "residential.mortgages.mortgage-offer belgesinin amacı, kontrolleri ve sınırlarına ilişkin başlangıç rehberi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Mortgage Offer Guide as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Kredisi Teklifi Rehberi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": ["residential.mortgages.mortgage-offer"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Identify the document, its date, parties, scope, assumptions and matters needing advice.",
+      "tr": "Belgeyi, tarihini, taraflarını, kapsamını, varsayımlarını ve uzman görüşü gerektiren konuları belirlemek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm the latest complete version.",
+        "Check names, property identity, dates and stated conditions.",
+        "Refer material uncertainty to the responsible professional."
+      ],
+      "tr": [
+        "En güncel eksiksiz sürümü doğrulayın.",
+        "Adları, taşınmaz kimliğini, tarihleri ve belirtilen şartları kontrol edin.",
+        "Önemli belirsizlikleri sorumlu uzmana yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.residential-title",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Residential Title Guide",
+      "tr": "Konut Tapu Kaydı Rehberi"
+    },
+    "summary": {
+      "en": "A beginner guide to the purpose, checks and limitations of a Title Register.",
+      "tr": "Title Register belgesinin amacı, kontrolleri ve sınırlarına ilişkin başlangıç rehberi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Residential Title Guide as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Tapu Kaydı Rehberi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": ["Title Register"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Identify the document, its date, parties, scope, assumptions and matters needing advice.",
+      "tr": "Belgeyi, tarihini, taraflarını, kapsamını, varsayımlarını ve uzman görüşü gerektiren konuları belirlemek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm the latest complete version.",
+        "Check names, property identity, dates and stated conditions.",
+        "Refer material uncertainty to the responsible professional."
+      ],
+      "tr": [
+        "En güncel eksiksiz sürümü doğrulayın.",
+        "Adları, taşınmaz kimliğini, tarihleri ve belirtilen şartları kontrol edin.",
+        "Önemli belirsizlikleri sorumlu uzmana yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.tenancy-agreement",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Tenancy Agreement Guide",
+      "tr": "Konut Kira Sözleşmesi Rehberi"
+    },
+    "summary": {
+      "en": "A beginner guide to the purpose, checks and limitations of a Tenancy Agreement.",
+      "tr": "Tenancy Agreement belgesinin amacı, kontrolleri ve sınırlarına ilişkin başlangıç rehberi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Tenancy Agreement Guide as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Kira Sözleşmesi Rehberi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": ["Tenancy Agreement"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Identify the document, its date, parties, scope, assumptions and matters needing advice.",
+      "tr": "Belgeyi, tarihini, taraflarını, kapsamını, varsayımlarını ve uzman görüşü gerektiren konuları belirlemek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm the latest complete version.",
+        "Check names, property identity, dates and stated conditions.",
+        "Refer material uncertainty to the responsible professional."
+      ],
+      "tr": [
+        "En güncel eksiksiz sürümü doğrulayın.",
+        "Adları, taşınmaz kimliğini, tarihleri ve belirtilen şartları kontrol edin.",
+        "Önemli belirsizlikleri sorumlu uzmana yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.property-survey",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Property Survey Guide",
+      "tr": "Taşınmaz İnceleme Raporu Rehberi"
+    },
+    "summary": {
+      "en": "A beginner guide to the purpose, checks and limitations of a residential.surveys.property-survey.",
+      "tr": "residential.surveys.property-survey belgesinin amacı, kontrolleri ve sınırlarına ilişkin başlangıç rehberi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Property Survey Guide as a structured residential-property aid."
+      ],
+      "tr": [
+        "Taşınmaz İnceleme Raporu Rehberi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": ["residential.surveys.property-survey"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Identify the document, its date, parties, scope, assumptions and matters needing advice.",
+      "tr": "Belgeyi, tarihini, taraflarını, kapsamını, varsayımlarını ve uzman görüşü gerektiren konuları belirlemek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm the latest complete version.",
+        "Check names, property identity, dates and stated conditions.",
+        "Refer material uncertainty to the responsible professional."
+      ],
+      "tr": [
+        "En güncel eksiksiz sürümü doğrulayın.",
+        "Adları, taşınmaz kimliğini, tarihleri ve belirtilen şartları kontrol edin.",
+        "Önemli belirsizlikleri sorumlu uzmana yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.leasehold-pack",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Leasehold Information Guide",
+      "tr": "Leasehold Bilgi Paketi Rehberi"
+    },
+    "summary": {
+      "en": "A beginner guide to the purpose, checks and limitations of a residential.documents.leasehold-information-form.",
+      "tr": "residential.documents.leasehold-information-form belgesinin amacı, kontrolleri ve sınırlarına ilişkin başlangıç rehberi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Leasehold Information Guide as a structured residential-property aid."
+      ],
+      "tr": [
+        "Leasehold Bilgi Paketi Rehberi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [
+      "residential.documents.leasehold-information-form"
+    ],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Identify the document, its date, parties, scope, assumptions and matters needing advice.",
+      "tr": "Belgeyi, tarihini, taraflarını, kapsamını, varsayımlarını ve uzman görüşü gerektiren konuları belirlemek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm the latest complete version.",
+        "Check names, property identity, dates and stated conditions.",
+        "Refer material uncertainty to the responsible professional."
+      ],
+      "tr": [
+        "En güncel eksiksiz sürümü doğrulayın.",
+        "Adları, taşınmaz kimliğini, tarihleri ve belirtilen şartları kontrol edin.",
+        "Önemli belirsizlikleri sorumlu uzmana yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.investment-memo",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Investment Memorandum Guide",
+      "tr": "Yatırım Bilgi Notu Rehberi"
+    },
+    "summary": {
+      "en": "A structured guide for preparing and reviewing investment memorandum guide.",
+      "tr": "Yatırım Bilgi Notu Rehberi hazırlama ve inceleme için yapılandırılmış rehberdir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Investment Memorandum Guide to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Bilgi Notu Rehberi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": ["investor.investment-memorandum"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Record evidence, assumptions, calculations, risks, ownership and approval status.",
+      "tr": "Kanıtı, varsayımları, hesaplamaları, riskleri, sorumluluğu ve onay durumunu kaydetmek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm scope, version and author.",
+        "Trace material inputs to dated evidence.",
+        "Reperform key calculations and record unresolved issues."
+      ],
+      "tr": [
+        "Kapsamı, sürümü ve yazarı doğrulayın.",
+        "Önemli girdileri tarihli kanıta bağlayın.",
+        "Temel hesaplamaları yeniden yapın ve çözülmemiş konuları kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.deal-appraisal",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Deal Appraisal Guide",
+      "tr": "Yatırım Fırsatı Değerleme Rehberi"
+    },
+    "summary": {
+      "en": "A structured guide for preparing and reviewing deal appraisal guide.",
+      "tr": "Yatırım Fırsatı Değerleme Rehberi hazırlama ve inceleme için yapılandırılmış rehberdir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Deal Appraisal Guide to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Fırsatı Değerleme Rehberi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": ["investor.deal-appraisal"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Record evidence, assumptions, calculations, risks, ownership and approval status.",
+      "tr": "Kanıtı, varsayımları, hesaplamaları, riskleri, sorumluluğu ve onay durumunu kaydetmek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm scope, version and author.",
+        "Trace material inputs to dated evidence.",
+        "Reperform key calculations and record unresolved issues."
+      ],
+      "tr": [
+        "Kapsamı, sürümü ve yazarı doğrulayın.",
+        "Önemli girdileri tarihli kanıta bağlayın.",
+        "Temel hesaplamaları yeniden yapın ve çözülmemiş konuları kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.finance-terms",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Finance Terms Guide",
+      "tr": "Finansman Şartları Rehberi"
+    },
+    "summary": {
+      "en": "A structured guide for preparing and reviewing finance terms guide.",
+      "tr": "Finansman Şartları Rehberi hazırlama ve inceleme için yapılandırılmış rehberdir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Finance Terms Guide to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Finansman Şartları Rehberi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": ["investor.financing-cost"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Record evidence, assumptions, calculations, risks, ownership and approval status.",
+      "tr": "Kanıtı, varsayımları, hesaplamaları, riskleri, sorumluluğu ve onay durumunu kaydetmek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm scope, version and author.",
+        "Trace material inputs to dated evidence.",
+        "Reperform key calculations and record unresolved issues."
+      ],
+      "tr": [
+        "Kapsamı, sürümü ve yazarı doğrulayın.",
+        "Önemli girdileri tarihli kanıta bağlayın.",
+        "Temel hesaplamaları yeniden yapın ve çözülmemiş konuları kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.risk-register",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Investment Risk Register Guide",
+      "tr": "Yatırım Risk Kaydı Rehberi"
+    },
+    "summary": {
+      "en": "A structured guide for preparing and reviewing investment risk register guide.",
+      "tr": "Yatırım Risk Kaydı Rehberi hazırlama ve inceleme için yapılandırılmış rehberdir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Investment Risk Register Guide to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Risk Kaydı Rehberi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Record evidence, assumptions, calculations, risks, ownership and approval status.",
+      "tr": "Kanıtı, varsayımları, hesaplamaları, riskleri, sorumluluğu ve onay durumunu kaydetmek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm scope, version and author.",
+        "Trace material inputs to dated evidence.",
+        "Reperform key calculations and record unresolved issues."
+      ],
+      "tr": [
+        "Kapsamı, sürümü ve yazarı doğrulayın.",
+        "Önemli girdileri tarihli kanıta bağlayın.",
+        "Temel hesaplamaları yeniden yapın ve çözülmemiş konuları kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "document-guide.post-investment-review",
+    "object_type": "document_guide",
+    "title": {
+      "en": "Post-investment Review Guide",
+      "tr": "Yatırım Sonrası İnceleme Rehberi"
+    },
+    "summary": {
+      "en": "A structured guide for preparing and reviewing post-investment review guide.",
+      "tr": "Yatırım Sonrası İnceleme Rehberi hazırlama ve inceleme için yapılandırılmış rehberdir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Post-investment Review Guide to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Sonrası İnceleme Rehberi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": ["investor.post-investment-review"],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "document_purpose": {
+      "en": "Record evidence, assumptions, calculations, risks, ownership and approval status.",
+      "tr": "Kanıtı, varsayımları, hesaplamaları, riskleri, sorumluluğu ve onay durumunu kaydetmek."
+    },
+    "review_steps": {
+      "en": [
+        "Confirm scope, version and author.",
+        "Trace material inputs to dated evidence.",
+        "Reperform key calculations and record unresolved issues."
+      ],
+      "tr": [
+        "Kapsamı, sürümü ve yazarı doğrulayın.",
+        "Önemli girdileri tarihli kanıta bağlayın.",
+        "Temel hesaplamaları yeniden yapın ve çözülmemiş konuları kaydedin."
+      ]
+    }
+  }
+]

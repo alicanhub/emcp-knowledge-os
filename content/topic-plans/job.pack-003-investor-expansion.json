@@ -1,0 +1,198 @@
+{
+  "job_id": "job.pack-003-investor-expansion",
+  "target_pack": "pack.003",
+  "plan_only": true,
+  "target_draft_count": 50,
+  "approval_required_before_generation": true,
+  "duplicate_check_scope": [
+    "runtime titles",
+    "English and Turkish authored titles",
+    "aliases",
+    "abbreviations",
+    "reviewed records",
+    "draft records"
+  ],
+  "groups": [
+    {
+      "learning_order": 1,
+      "topic": {
+        "en": "Beginner investment decisions",
+        "tr": "Başlangıç yatırım kararları"
+      },
+      "difficulty": "beginner",
+      "concepts": [
+        "Investment objective statement",
+        "Income versus growth objective",
+        "Active versus passive property investment",
+        "Investment constraint",
+        "Personal liquidity buffer",
+        "Opportunity cost of property capital",
+        "Decision bias in property investment",
+        "Evidence threshold for a deal"
+      ],
+      "concepts_tr": [
+        "Yatırım amacı beyanı",
+        "Gelir hedefi ile değer artışı hedefi",
+        "Aktif ve pasif gayrimenkul yatırımı",
+        "Yatırım kısıtı",
+        "Kişisel likidite tamponu",
+        "Gayrimenkul sermayesinin fırsat maliyeti",
+        "Gayrimenkul yatırımında karar yanlılığı",
+        "Bir işlem için kanıt eşiği"
+      ]
+    },
+    {
+      "learning_order": 2,
+      "topic": { "en": "Rental-income analysis", "tr": "Kira geliri analizi" },
+      "difficulty": "beginner",
+      "concepts": [
+        "Passing rent versus market rent",
+        "Rent collection rate",
+        "Recurring rental expense",
+        "Non-recurring rental expense",
+        "Rent stress assumption",
+        "Tenant turnover cost",
+        "Lease-up period",
+        "Rent affordability risk"
+      ],
+      "concepts_tr": [
+        "Mevcut kira ile piyasa kirası",
+        "Kira tahsilat oranı",
+        "Tekrarlayan kira gideri",
+        "Tek seferlik kira gideri",
+        "Kira stres varsayımı",
+        "Kiracı değişim maliyeti",
+        "Kiraya verme hazırlık süresi",
+        "Kira ödeme gücü riski"
+      ]
+    },
+    {
+      "learning_order": 3,
+      "topic": { "en": "Cash-flow thinking", "tr": "Nakit akışı yaklaşımı" },
+      "difficulty": "beginner",
+      "concepts": [
+        "Cash-flow timing",
+        "Cash-flow reserve",
+        "Pre-finance cash flow",
+        "Post-finance cash flow",
+        "Cash-flow shortfall",
+        "Working capital for property",
+        "Annual versus monthly cash flow",
+        "Cash-flow reconciliation"
+      ],
+      "concepts_tr": [
+        "Nakit akışı zamanlaması",
+        "Nakit akışı rezervi",
+        "Finansman öncesi nakit akışı",
+        "Finansman sonrası nakit akışı",
+        "Nakit akışı açığı",
+        "Gayrimenkul işletme sermayesi",
+        "Yıllık ve aylık nakit akışı",
+        "Nakit akışı mutabakatı"
+      ]
+    },
+    {
+      "learning_order": 4,
+      "topic": { "en": "Risk awareness", "tr": "Risk farkındalığı" },
+      "difficulty": "beginner",
+      "concepts": [
+        "Risk register for a property deal",
+        "Risk owner",
+        "Risk likelihood",
+        "Risk impact",
+        "Risk mitigation action",
+        "Residual investment risk",
+        "Risk-adjusted return",
+        "Downside protection"
+      ],
+      "concepts_tr": [
+        "Gayrimenkul işlemi risk kaydı",
+        "Risk sorumlusu",
+        "Risk olasılığı",
+        "Risk etkisi",
+        "Risk azaltma eylemi",
+        "Kalan yatırım riski",
+        "Riske göre düzeltilmiş getiri",
+        "Aşağı yönlü risk koruması"
+      ]
+    },
+    {
+      "learning_order": 5,
+      "topic": { "en": "Financing basics", "tr": "Finansman temelleri" },
+      "difficulty": "beginner",
+      "concepts": [
+        "Debt-service schedule",
+        "Finance offer comparison",
+        "Interest coverage",
+        "Refinancing assumption",
+        "Finance contingency",
+        "Security package overview",
+        "Borrower contribution",
+        "Funding deadline risk"
+      ],
+      "concepts_tr": [
+        "Borç servisi takvimi",
+        "Finansman tekliflerinin karşılaştırılması",
+        "Faiz karşılama oranı",
+        "Yeniden finansman varsayımı",
+        "Finansman ihtiyatı",
+        "Teminat paketine genel bakış",
+        "Borçlu özkaynak katkısı",
+        "Finansman son tarihi riski"
+      ]
+    },
+    {
+      "learning_order": 6,
+      "topic": { "en": "Exit planning", "tr": "Çıkış planlaması" },
+      "difficulty": "intermediate",
+      "concepts": [
+        "Exit timing assumption",
+        "Exit cost allowance",
+        "Saleability assessment",
+        "Refinanceability assessment",
+        "Exit value sensitivity"
+      ],
+      "concepts_tr": [
+        "Çıkış zamanı varsayımı",
+        "Çıkış maliyeti payı",
+        "Satılabilirlik değerlendirmesi",
+        "Yeniden finanse edilebilirlik değerlendirmesi",
+        "Çıkış değeri duyarlılığı"
+      ]
+    },
+    {
+      "learning_order": 7,
+      "topic": {
+        "en": "Common investor mistakes",
+        "tr": "Yaygın yatırımcı hataları"
+      },
+      "difficulty": "beginner",
+      "concepts": [
+        "Confusing profit with cash flow",
+        "Ignoring transaction timing",
+        "Using asking rent as evidence",
+        "Failing to document assumptions",
+        "Changing appraisal assumptions inconsistently"
+      ],
+      "concepts_tr": [
+        "Kârı nakit akışıyla karıştırmak",
+        "İşlem zamanlamasını göz ardı etmek",
+        "İlan kirasını kanıt olarak kullanmak",
+        "Varsayımları belgelendirmemek",
+        "Değerleme varsayımlarını tutarsız biçimde değiştirmek"
+      ]
+    }
+  ],
+  "likely_calculators": [
+    "LTV",
+    "LTC",
+    "ROI",
+    "Rental Yield",
+    "Monthly Loan Payment"
+  ],
+  "handbook_chapters_to_enrich": [
+    1, 3, 4, 7, 10, 11, 14, 15, 27, 28, 32, 36, 40
+  ],
+  "jurisdiction_review_required": true,
+  "status": "awaiting-editorial-approval"
+}

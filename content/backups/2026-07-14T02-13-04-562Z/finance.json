@@ -1,0 +1,1808 @@
+[
+  {
+    "term": "Senior Debt",
+    "tr": "Birinci derece kıdemli borç",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Geri ödeme sıralamasında diğer borç ve öz sermaye türlerinden önce gelen, genellikle birinci derece teminatlı finansman.",
+    "use": "Geliştirme ve yatırım kredilerinde ana borç katmanıdır.",
+    "example": "The acquisition will be funded with senior debt.",
+    "tags": [
+      "loan",
+      "first charge",
+      "debt"
+    ]
+  },
+  {
+    "term": "Mezzanine Finance",
+    "tr": "Ara katman finansmanı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Senior debt ile equity arasında yer alan, daha yüksek riskli ve genellikle daha pahalı finansman.",
+    "use": "Sermaye açığını kapatmak için kullanılır.",
+    "example": "The remaining funding gap may be covered by mezzanine finance.",
+    "tags": [
+      "debt",
+      "capital stack",
+      "gap funding"
+    ]
+  },
+  {
+    "term": "Bridge Loan",
+    "tr": "Köprü kredisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Satın alma, refinansman veya geçici nakit ihtiyacı için kullanılan kısa vadeli finansman.",
+    "use": "Hızlı tamamlanması gereken property işlemlerinde yaygındır.",
+    "example": "The purchase will be completed using a bridge loan.",
+    "tags": [
+      "bridging",
+      "short term",
+      "loan"
+    ]
+  },
+  {
+    "term": "Development Finance",
+    "tr": "Geliştirme finansmanı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Arsa alımı ve inşaat maliyetlerini finanse etmek için kullanılan proje bazlı kredi.",
+    "use": "Drawdown'lar ilerleme raporlarına göre serbest bırakılır.",
+    "example": "The lender has offered development finance at 65% LTGDV.",
+    "tags": [
+      "construction",
+      "loan",
+      "drawdown"
+    ]
+  },
+  {
+    "term": "LTV",
+    "tr": "Kredi / değer oranı",
+    "cat": "Finansman",
+    "abbr": "Loan to Value",
+    "def": "Kredi tutarının gayrimenkulün mevcut değerine oranı.",
+    "use": "Yatırım ve satın alma finansmanında kullanılır.",
+    "example": "The lender is comfortable at 70% LTV.",
+    "tags": [
+      "loan",
+      "value",
+      "ratio"
+    ]
+  },
+  {
+    "term": "LTC",
+    "tr": "Kredi / toplam maliyet oranı",
+    "cat": "Finansman",
+    "abbr": "Loan to Cost",
+    "def": "Kredi tutarının toplam proje maliyetine oranı.",
+    "use": "Geliştirme finansmanında sık kullanılır.",
+    "example": "The facility is capped at 80% LTC.",
+    "tags": [
+      "cost",
+      "loan",
+      "development"
+    ]
+  },
+  {
+    "term": "LTGDV",
+    "tr": "Kredi / tamamlanmış brüt geliştirme değeri oranı",
+    "cat": "Finansman",
+    "abbr": "Loan to Gross Development Value",
+    "def": "Toplam kredi tutarının projenin tamamlandığındaki tahmini brüt değerine oranı.",
+    "use": "Development finance tekliflerinde temel ölçüdür.",
+    "example": "The maximum leverage is 65% LTGDV.",
+    "tags": [
+      "GDV",
+      "development",
+      "leverage"
+    ]
+  },
+  {
+    "term": "GDV",
+    "tr": "Brüt geliştirme değeri",
+    "cat": "Finansman",
+    "abbr": "Gross Development Value",
+    "def": "Bir geliştirme projesinin tamamlandığında beklenen toplam satış veya piyasa değeri.",
+    "use": "Kârlılık ve finansman hesaplarında kullanılır.",
+    "example": "The scheme has an estimated GDV of £18 million.",
+    "tags": [
+      "development value",
+      "valuation",
+      "sales"
+    ]
+  },
+  {
+    "term": "IRR",
+    "tr": "İç verim oranı",
+    "cat": "Finansman",
+    "abbr": "Internal Rate of Return",
+    "def": "Bir yatırımın zaman içindeki nakit akışlarını dikkate alan yıllıklaştırılmış getiri ölçüsü.",
+    "use": "Farklı yatırım senaryolarını karşılaştırmak için kullanılır.",
+    "example": "The target project IRR is 18%.",
+    "tags": [
+      "return",
+      "investment",
+      "yield"
+    ]
+  },
+  {
+    "term": "ROI",
+    "tr": "Yatırım getirisi",
+    "cat": "Finansman",
+    "abbr": "Return on Investment",
+    "def": "Elde edilen kazancın yatırılan sermayeye oranı.",
+    "use": "Basit performans ölçümüdür; zaman değerini tek başına hesaba katmaz.",
+    "example": "The projected ROI is 24%.",
+    "tags": [
+      "return",
+      "profit",
+      "investment"
+    ]
+  },
+  {
+    "term": "Yield",
+    "tr": "Getiri oranı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir varlığın yıllık gelirinin değerine veya satın alma fiyatına oranı.",
+    "use": "Gelir üreten property yatırımlarında kullanılır.",
+    "example": "The asset is being marketed at a 6.5% net initial yield.",
+    "tags": [
+      "income",
+      "property",
+      "return"
+    ]
+  },
+  {
+    "term": "DSCR",
+    "tr": "Borç servisi karşılama oranı",
+    "cat": "Finansman",
+    "abbr": "Debt Service Coverage Ratio",
+    "def": "Net işletme gelirinin borç anapara ve faiz ödemelerini karşılama gücünü gösteren oran.",
+    "use": "Lender kredi değerlendirmesinde kullanır.",
+    "example": "The lender requires a minimum DSCR of 1.25x.",
+    "tags": [
+      "debt service",
+      "income",
+      "ratio"
+    ]
+  },
+  {
+    "term": "Interest Cover",
+    "tr": "Faiz karşılama oranı",
+    "cat": "Finansman",
+    "abbr": "ICR",
+    "def": "Gelirin veya kârın faiz ödemelerini kaç kez karşıladığını gösteren oran.",
+    "use": "Yatırım kredisi ve şirket finansmanında kullanılır.",
+    "example": "The asset must maintain an interest cover ratio above 1.5x.",
+    "tags": [
+      "ICR",
+      "interest",
+      "coverage"
+    ]
+  },
+  {
+    "term": "Drawdown",
+    "tr": "Kredi dilimi kullanımı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Onaylanmış kredi limitinin tamamının veya bir kısmının borçluya serbest bırakılması.",
+    "use": "Development finance'da iş ilerledikçe yapılır.",
+    "example": "The next drawdown is subject to the monitoring surveyor's report.",
+    "tags": [
+      "loan",
+      "release",
+      "facility"
+    ]
+  },
+  {
+    "term": "Exit Strategy",
+    "tr": "Çıkış stratejisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırımın nasıl ve ne zaman nakde çevrileceğini açıklayan plan.",
+    "use": "Satış, refinansman veya uzun vadeli elde tutma seçeneklerini kapsar.",
+    "example": "The primary exit strategy is a refinance on stabilisation.",
+    "tags": [
+      "sale",
+      "refinance",
+      "investment"
+    ]
+  },
+  {
+    "term": "Refinance",
+    "tr": "Yeniden finansman",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Mevcut borcun yeni bir krediyle kapatılması veya yeniden yapılandırılması.",
+    "use": "İnşaat sonrası daha uzun vadeli ve düşük maliyetli krediye geçişte kullanılır.",
+    "example": "The development loan will be refinanced at practical completion.",
+    "tags": [
+      "loan",
+      "exit",
+      "finance"
+    ]
+  },
+  {
+    "term": "Coupon",
+    "tr": "Faiz / kupon oranı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir borç veya yatırım aracında ödenen belirlenmiş faiz oranı.",
+    "use": "Mezzanine, tahvil ve özel borç işlemlerinde görülür.",
+    "example": "The mezzanine facility carries a 12% coupon.",
+    "tags": [
+      "interest",
+      "debt",
+      "rate"
+    ]
+  },
+  {
+    "term": "Arrangement Fee",
+    "tr": "Kredi düzenleme ücreti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Lender tarafından kredinin oluşturulması ve tahsisi için alınan ücret.",
+    "use": "Genellikle kredi tutarının yüzdesi olarak hesaplanır.",
+    "example": "The facility includes a 2% arrangement fee.",
+    "tags": [
+      "loan fee",
+      "lender",
+      "finance"
+    ]
+  },
+  {
+    "term": "First Charge",
+    "tr": "Birinci derece ipotek / teminat",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir varlık üzerinde geri ödeme önceliği sağlayan birinci sıradaki yasal teminat.",
+    "use": "Senior lender tarafından talep edilir.",
+    "example": "The lender will take a first legal charge over the property.",
+    "tags": [
+      "security",
+      "mortgage",
+      "senior debt"
+    ]
+  },
+  {
+    "term": "Early Repayment Charge",
+    "tr": "Erken Ödeme Ücreti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belirli bir borç sözleşmede ücretsiz izin verilenden daha erken kapatıldığında uygulanabilecek ücrettir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Early Repayment Charge” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Fixed-Rate Mortgage",
+    "tr": "Sabit Faizli Konut Kredisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Faiz oranı kararlaştırılan bir süre boyunca sabit kalan konut kredisidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Fixed-Rate Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Interest-Only Mortgage",
+    "tr": "Yalnız Faiz Ödemeli Kredi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Düzenli ödemelerin genellikle faizi karşıladığı, anaparanın ayrıca geri ödenmesi gereken kredidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Interest-Only Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Interest Rate",
+    "tr": "Faiz Oranı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Borçlanma üzerinden alınacak faizi hesaplamak için kullanılan orandır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Interest Rate” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Loan Principal",
+    "tr": "Kredi Anaparası",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gelecekteki faiz hariç olmak üzere geri ödenmesi gereken borç tutarıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Loan Principal” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Mortgage Deposit",
+    "tr": "Konut Kredisi Peşinatı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Alıcının satın almaya kredi kuruluşundan borçlanmadan kendi kaynaklarından kattığı paradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Mortgage Deposit” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Mortgage Term",
+    "tr": "Konut Kredisi Vadesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Konut kredisinin devam etmesi için kararlaştırılan süredir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Mortgage Term” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Mortgage",
+    "tr": "İpotekli Konut Kredisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Genellikle taşınmaz alımını finanse etmek için kullanılan ve taşınmazla teminatlandırılan kredidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Repayment Mortgage",
+    "tr": "Anapara ve Faiz Ödemeli Kredi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Düzenli ödemelerin vade boyunca hem faizi hem de anaparayı azalttığı kredidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Repayment Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Variable-Rate Mortgage",
+    "tr": "Değişken Faizli Konut Kredisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Faiz oranı sözleşme şartlarına göre değişebilen konut kredisidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Variable-Rate Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "mortgages-loans",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Asking Rent",
+    "tr": "Talep Edilen Kira",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Ev sahibinin pazarlık ve sözleşme öncesinde ilanda talep ettiği kiradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Asking Rent” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Building Insurance Premium",
+    "tr": "Bina Sigortası Primi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bina sigortası teminatının belirli bir dönemi için ödenen bedeldir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Building Insurance Premium” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Council Tax",
+    "tr": "Yerel Yönetim Konut Vergisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Birleşik Krallık'ta ilgili bölgenin kurallarına tabi olan konutlara ilişkin yerel vergidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Council Tax” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Ground Rent",
+    "tr": "Arsa Kirası",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bazı uzun süreli kira haklarında taşınmazın bulunduğu arsanın kullanımı için ödenen kiradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Ground Rent” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Maintenance Cost",
+    "tr": "Taşınmaz Bakım Maliyeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Taşınmazı ve sistemlerini kullanılabilir durumda tutmak için harcanan paradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Maintenance Cost” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Market Value",
+    "tr": "Piyasa Değeri",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belirli bir değerleme esası ve tarihi kullanılarak profesyonel biçimde belirlenen değerdir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Market Value” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Repair Cost",
+    "tr": "Taşınmaz Onarım Maliyeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Hasarları, kusurları veya çalışmayan parçaları düzeltmek için gereken paradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Repair Cost” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Service Charge",
+    "tr": "Ortak Hizmet Gideri",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Taşınmaza sağlanan belirli hizmet, bakım veya yönetim giderleri için alınan bedeldir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Service Charge” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Stamp Duty Land Tax",
+    "tr": "Damga Vergisi Arazi Vergisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "İngiltere ve Kuzey İrlanda'daki belirli arazi ve taşınmaz edinimlerine uygulanabilen işlem vergisidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Stamp Duty Land Tax” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Void Cost",
+    "tr": "Boş Kalma Maliyeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kiralanabilir bir taşınmaz boşken oluşan giderler ve kaybedilen gelirdir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Void Cost” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "values-costs-income",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Buy-to-Let",
+    "tr": "Kiraya Vermek İçin Konut Alımı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kira geliri elde etmek amacıyla konut satın alıp kiraya verme; ilgili gider ve riskleri de içeren yatırım yaklaşımıdır.",
+    "use": "Bir konut karar dosyasında kiraya vermek için konut alımı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for buy-to-let, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "investment",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Cash-on-Cash Return",
+    "tr": "Nakit Üzerinden Getiri",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yıllık vergi öncesi nakit akışının, açıklanmış varsayımlarla yatırımcının koyduğu nakde oranıdır.",
+    "use": "Bir konut karar dosyasında nakit üzerinden getiri konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for cash-on-cash return, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "investment",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Gross Rental Yield",
+    "tr": "Brüt Kira Getirisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yıllık brüt kiranın, işletme giderleri düşülmeden seçilen taşınmaz değeri veya alış fiyatına oranıdır.",
+    "use": "Bir konut karar dosyasında brüt kira getirisi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for gross rental yield, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "investment",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Net Rental Yield",
+    "tr": "Net Kira Getirisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlanan işletme giderleri sonrası yıllık kira gelirinin seçilen taşınmaz değeri veya maliyet esasına oranıdır.",
+    "use": "Bir konut karar dosyasında net kira getirisi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for net rental yield, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "investment",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Rental Void Period",
+    "tr": "Kiralama Boşluk Dönemi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kiralanabilir taşınmazın boş veya kiracılıklar arasında olması nedeniyle kira üretmediği dönemdir.",
+    "use": "Bir konut karar dosyasında kiralama boşluk dönemi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for rental void period, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "investment",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Mortgage Affordability Assessment",
+    "tr": "Konut Kredisi Ödeyebilirlik Değerlendirmesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Başvuru sahibinin önerilen kredi ödemelerini sürdürülebilir biçimde karşılayıp karşılayamayacağına ilişkin değerlendirmedir.",
+    "use": "Bir konut karar dosyasında konut kredisi ödeyebilirlik değerlendirmesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for mortgage affordability assessment, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "mortgages",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Mortgage Broker",
+    "tr": "Konut Kredisi Aracısı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Borçlunun hizmet kapsamındaki konut kredisi ürünlerini araştırmasına ve düzenlemesine yardımcı olan aracıdır.",
+    "use": "Bir konut karar dosyasında konut kredisi aracısı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for mortgage broker, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "mortgages",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Mortgage Offer",
+    "tr": "Konut Kredisi Teklifi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kredi kuruluşunun önerilen tutarı, vadeyi, oranı ve şartları belirten resmî teklifidir.",
+    "use": "Bir konut karar dosyasında konut kredisi teklifi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for mortgage offer, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "mortgages",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Mortgage Product Fee",
+    "tr": "Konut Kredisi Ürün Ücreti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belirli bir konut kredisi ürününün seçilmesi veya düzenlenmesiyle bağlantılı ücrettir.",
+    "use": "Bir konut karar dosyasında konut kredisi ürün ücreti konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for mortgage product fee, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "mortgages",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Remortgage",
+    "tr": "Konut Kredisini Yenileme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir taşınmaz üzerindeki konut kredisinin aynı veya başka bir kuruluşun yeni kredisiyle değiştirilmesidir.",
+    "use": "Bir konut karar dosyasında konut kredisini yenileme konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for remortgage, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "mortgages",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Comparable Property",
+    "tr": "Emsal Taşınmaz",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Başka bir taşınmazın değeri değerlendirilirken kanıt olarak kullanılan yeterince benzer taşınmazdır.",
+    "use": "Bir konut karar dosyasında emsal taşınmaz konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for comparable property, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "valuation",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Comparable Sales Analysis",
+    "tr": "Emsal Satış Analizi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir değer görüşünü desteklemek için ilgili taşınmaz işlemlerinin sistematik karşılaştırılmasıdır.",
+    "use": "Bir konut karar dosyasında emsal satış analizi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for comparable sales analysis, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "valuation",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Estate Agent Market Appraisal",
+    "tr": "Emlak Danışmanı Piyasa Görüşü",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Emlak danışmanının olası pazarlama fiyatı veya kirasına ilişkin görüşüdür; başka amaçlı resmî değerlemeden farklıdır.",
+    "use": "Bir konut karar dosyasında emlak danışmanı piyasa görüşü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for estate agent market appraisal, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "valuation",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Valuation Assumption",
+    "tr": "Değerleme Varsayımı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Taşınmaz değeri görüşü oluşturulurken doğru kabul edilen ve açıkça belirtilen koşuldur.",
+    "use": "Bir konut karar dosyasında değerleme varsayımı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for valuation assumption, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "valuation",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Valuation Date",
+    "tr": "Değerleme Tarihi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belirtilen taşınmaz değerinin geçerli olduğu tarihtir.",
+    "use": "Bir konut karar dosyasında değerleme tarihi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for valuation date, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "valuation",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Asset Management",
+    "tr": "Varlık Yönetimi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Varlığın performansını, risk konumunu ve iş planını koruyup geliştirmeyi amaçlayan stratejik gözetimdir.",
+    "use": "Varlık Yönetimi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records asset management, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Base-case Scenario",
+    "tr": "Temel Senaryo",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Karar karşılaştırması için en uygun kabul edilen merkezi değerleme varsayımları kümesidir.",
+    "use": "Temel Senaryo konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records base-case scenario, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Best-case Scenario",
+    "tr": "İyimser Senaryo",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Açıklanmış ve kendi içinde tutarlı, kasıtlı olarak olumlu değerleme varsayımları kümesidir.",
+    "use": "İyimser Senaryo konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records best-case scenario, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Bridging Finance",
+    "tr": "Köprü Finansmanı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlı finansman veya işlem boşluğunu kapatmak için güvenilir geri ödeme yoluyla kullanılan kısa vadeli teminatlı finansmandır.",
+    "use": "Köprü Finansmanı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records bridging finance, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Capital Allocation",
+    "tr": "Sermaye Dağılımı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Mevcut sermayeyi yatırımlar, rezervler ve diğer kullanımlar arasında dağıtma kararıdır.",
+    "use": "Sermaye Dağılımı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records capital allocation, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Common Investor Mistakes",
+    "tr": "Yaygın Yatırımcı Hataları",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kanıtı, değerlemeyi, risk kontrolünü veya uygulamayı zayıflatan tekrarlayan karar hatalarıdır.",
+    "use": "Yaygın Yatırımcı Hataları konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records common investor mistakes, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Comparable Evidence",
+    "tr": "Emsal Kanıt",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Değer veya kira varsayımlarını desteklemek için kullanılan ilgili işlem veya piyasa kanıtıdır.",
+    "use": "Emsal Kanıt konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records comparable evidence, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Concentration Risk",
+    "tr": "Yoğunlaşma Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tek bir varlık, lokasyon, kiracı, strateji, kredi kuruluşu veya risk etkenine aşırı bağımlılıktır.",
+    "use": "Yoğunlaşma Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records concentration risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Construction Risk",
+    "tr": "İnşaat Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tasarım, tedarik, maliyet, kalite, güvenlik, program veya iş tesliminden doğan belirsizliktir.",
+    "use": "İnşaat Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records construction risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Cost Overrun",
+    "tr": "Maliyet Aşımı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gerçekleşen veya tahmin edilen maliyetin onaylı ya da belirtilen bütçe esasını aşmasıdır.",
+    "use": "Maliyet Aşımı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records cost overrun, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Deal Appraisal",
+    "tr": "Yatırım Fırsatı Değerlemesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Olası işlemin hedef ve kısıtlara göre sistematik finansal ve risk değerlendirmesidir.",
+    "use": "Yatırım Fırsatı Değerlemesi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records deal appraisal, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Deal Snapshot",
+    "tr": "Yatırım Fırsatı Özeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırım fırsatının temel girdi, çıktı, varsayım ve risklerinin kısa ve tarihli özetidir.",
+    "use": "Yatırım Fırsatı Özeti konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records deal snapshot, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Deal Sourcing",
+    "tr": "Yatırım Fırsatı Bulma",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Olası gayrimenkul yatırım fırsatlarını belirlemek için kullanılan tekrarlanabilir süreçtir.",
+    "use": "Yatırım Fırsatı Bulma konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records deal sourcing, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Demand Analysis",
+    "tr": "Talep Analizi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Alıcı veya kullanıcı talebinin derinliği, özellikleri ve kanıtlarının değerlendirilmesidir.",
+    "use": "Talep Analizi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records demand analysis, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Development Exit",
+    "tr": "Geliştirme Çıkışı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Geliştirme faaliyeti sonrasında planlanan satış, yeniden finansman veya elde tutma yoludur.",
+    "use": "Geliştirme Çıkışı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records development exit, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Diversification",
+    "tr": "Çeşitlendirme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tek bir sonuca bağımlılığı azaltmak için maruziyeti varlıklar veya risk etkenleri arasında dağıtmaktır.",
+    "use": "Çeşitlendirme konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records diversification, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Environmental Risk",
+    "tr": "Çevresel Risk",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kirlilik, sel, ekoloji, zemin koşulları veya diğer çevresel etkenlerden doğabilecek olumsuz etkilerdir.",
+    "use": "Çevresel Risk konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records environmental risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Equity Multiple",
+    "tr": "Öz Sermaye Çarpanı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Toplam öz sermaye dağıtımlarının toplam öz sermaye katkılarına bölünmesidir; tek başına zamanlamayı ölçmez.",
+    "use": "Öz Sermaye Çarpanı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records equity multiple, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Financing Cost",
+    "tr": "Finansman Maliyeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Borçlanma veya sermaye düzenlemesine atfedilen faiz, ücret ve belirlenmiş diğer maliyetlerdir.",
+    "use": "Finansman Maliyeti konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records financing cost, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Go/No-Go Decision",
+    "tr": "Devam veya Vazgeç Kararı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belirtilen ölçütlere göre fırsata devam etme, bekletme veya reddetme kararıdır.",
+    "use": "Devam veya Vazgeç Kararı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records go/no-go decision, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Hold Strategy",
+    "tr": "Elde Tutma Stratejisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Varlığı gelir, değer artışı veya belirtilen başka amaç için elde tutmaya odaklanan stratejidir.",
+    "use": "Elde Tutma Stratejisi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records hold strategy, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Ignoring Exit Risk",
+    "tr": "Çıkış Riskini Göz Ardı Etme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Planlanan satış, yeniden finansman veya elde tutma yolunun olumsuz koşullarda uygulanabilirliğini test etmeden yatırım kararı almaktır.",
+    "use": "Çıkış Riskini Göz Ardı Etme konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records ignoring exit risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Insurance Cost",
+    "tr": "Sigorta Maliyeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Seçilen sigorta teminatı için dahil edilen primler ve açıklanmış ilgili ücretlerdir.",
+    "use": "Sigorta Maliyeti konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records insurance cost, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Interest-rate Risk",
+    "tr": "Faiz Oranı Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Finansman maliyeti, ödeyebilirlik, değer veya çıkış seçeneklerini etkileyen faiz değişikliklerine maruz kalmadır.",
+    "use": "Faiz Oranı Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records interest-rate risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Break-even Point",
+    "tr": "Yatırım Başabaş Noktası",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlı gelirin tanımlı maliyetlere eşit olduğu çıktı, doluluk, fiyat veya zamandır.",
+    "use": "Yatırım Başabaş Noktası konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment break-even point, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Checklist",
+    "tr": "Yatırım Kontrol Listesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Karardan önce gereken kanıt, hesaplama, risk ve onayların tekrarlanabilir listesidir.",
+    "use": "Yatırım Kontrol Listesi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment checklist, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Contingency",
+    "tr": "Yatırım Beklenmeyen Gider Payı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlı maliyet veya program kapsamındaki belirsizlik için ayrıca belirlenen paydır.",
+    "use": "Yatırım Beklenmeyen Gider Payı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment contingency, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Decision Framework",
+    "tr": "Yatırım Karar Çerçevesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırım kararları için tutarlı ölçüt, kanıt gerekliliği ve onay adımları kümesidir.",
+    "use": "Yatırım Karar Çerçevesi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment decision framework, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Forecasting",
+    "tr": "Yatırım Tahmini",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belgelenmiş varsayımlar ve mevcut kanıtlardan geleceğe yönelik tahminler üretmektir.",
+    "use": "Yatırım Tahmini konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment forecasting, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Lessons Learned",
+    "tr": "Yatırımdan Çıkarılan Dersler",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gelecekteki kararlarda neyin işe yaradığı, başarısız olduğu veya değişmesi gerektiğine ilişkin belgeli gözlemlerdir.",
+    "use": "Yatırımdan Çıkarılan Dersler konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment lessons learned, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Memorandum",
+    "tr": "Yatırım Bilgi Notu",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Fırsatı, kanıtı, varsayımları, değerlemeyi, riskleri ve öneriyi özetleyen karar belgesidir.",
+    "use": "Yatırım Bilgi Notu konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment memorandum, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Performance Tracking",
+    "tr": "Yatırım Performansı Takibi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gerçek yatırım sonuçlarının bütçe, tahmin ve hedeflerle düzenli karşılaştırılmasıdır.",
+    "use": "Yatırım Performansı Takibi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment performance tracking, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Strategy",
+    "tr": "Yatırım Stratejisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırımları seçme, finanse etme, yönetme ve yatırımdan çıkma yaklaşımını belgeleyen plandır.",
+    "use": "Yatırım Stratejisi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment strategy, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investment Time Horizon",
+    "tr": "Yatırım Süresi Ufku",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Sermayenin yatırılmasından planlanan çıkışa veya hedefe kadar beklenen süredir.",
+    "use": "Yatırım Süresi Ufku konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investment time horizon, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Investor Goals",
+    "tr": "Yatırımcı Hedefleri",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırımcının gayrimenkulün desteklemesini istediği belirli finansal ve pratik sonuçlardır.",
+    "use": "Yatırımcı Hedefleri konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records investor goals, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Lease Management",
+    "tr": "Kira Sözleşmesi Yönetimi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kira sözleşmesi tarihleri, yükümlülükleri, ödemeleri, bildirimleri, incelemeleri ve kanıtlarının yönetimidir.",
+    "use": "Kira Sözleşmesi Yönetimi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records lease management, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Liquidity Risk",
+    "tr": "Likidite Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir varlık veya pozisyonun gerektiğinde önemli kayıp olmadan satılamaması, yeniden finanse edilememesi veya nakde çevrilememesi riskidir.",
+    "use": "Likidite Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records liquidity risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Loan Amortisation",
+    "tr": "Kredi Amortismanı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kredi anaparasının zaman içindeki ödemelerle planlı olarak azaltılmasıdır.",
+    "use": "Kredi Amortismanı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records loan amortisation, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Loan Term",
+    "tr": "Kredi Vadesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir kredinin ödenmemiş kalmasının planlandığı sözleşmesel süredir.",
+    "use": "Kredi Vadesi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records loan term, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Location Analysis",
+    "tr": "Lokasyon Analizi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Taşınmazın konumu, bağlantıları, olanakları ve yerel bağlamının kullanım ve beklentileri nasıl etkilediğinin değerlendirilmesidir.",
+    "use": "Lokasyon Analizi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records location analysis, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Maintenance Allowance",
+    "tr": "Bakım Payı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Rutin ve beklenen gayrimenkul bakımı için tahminde ayrılan tutardır.",
+    "use": "Bakım Payı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records maintenance allowance, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Management Cost",
+    "tr": "Yönetim Maliyeti",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gayrimenkul yatırımının kiralanması, idaresi ve gözetimine atfedilen maliyettir.",
+    "use": "Yönetim Maliyeti konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records management cost, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Margin of Safety",
+    "tr": "Güvenlik Marjı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırım varsayımı veya fiyatıyla daha olumsuz sonuç arasında kasıtlı bırakılan tampon paydır.",
+    "use": "Güvenlik Marjı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records margin of safety, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Net Operating Income",
+    "tr": "Net İşletme Geliri",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Belirtilen yönteme göre finansman ve vergi kalemlerinden önce, tanımlı işletme giderleri düşülmüş gayrimenkul geliridir.",
+    "use": "Net İşletme Geliri konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records net operating income, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Net Present Value",
+    "tr": "Net Bugünkü Değer",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tahmini nakit akışlarının seçilen iskonto oranıyla belirtilen değerleme tarihine indirgenmiş toplamıdır.",
+    "use": "Net Bugünkü Değer konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records net present value, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Overestimating Rent",
+    "tr": "Kirayı Yüksek Tahmin Etme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Emsal kanıt ve gerçekçi kiralama varsayımlarının desteklediğinden yüksek kira tahmin etmektir.",
+    "use": "Kirayı Yüksek Tahmin Etme konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records overestimating rent, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Overpaying",
+    "tr": "Fazla Ödeme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırımcının kanıtı, hedefleri ve riske göre değerlemesinin desteklediğinden daha fazla ödeme yapmasıdır.",
+    "use": "Fazla Ödeme konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records overpaying, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Planning Risk",
+    "tr": "Planlama Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Planlama kararları, koşulları, politikası veya zamanlamasının yatırımı olumsuz etkileme belirsizliğidir.",
+    "use": "Planlama Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records planning risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Portfolio Strategy",
+    "tr": "Portföy Stratejisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Birden fazla yatırımın rolü, dengesi, finansmanı ve yaşam döngüsü için koordineli plandır.",
+    "use": "Portföy Stratejisi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records portfolio strategy, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Post-investment Review",
+    "tr": "Yatırım Sonrası İnceleme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırım gerekçesini gerçek uygulama ve sonuçlarla karşılaştıran sistematik incelemedir.",
+    "use": "Yatırım Sonrası İnceleme konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records post-investment review, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Programme Delay",
+    "tr": "Program Gecikmesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "İlerlemenin veya tamamlanmanın onaylı ya da varsayılan programdan daha geç gerçekleşmesidir.",
+    "use": "Program Gecikmesi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records programme delay, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Property Debt",
+    "tr": "Gayrimenkul Borcu",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gayrimenkulün edinilmesi, geliştirilmesi veya elde tutulmasıyla bağlantılı borç sermayedir.",
+    "use": "Gayrimenkul Borcu konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records property debt, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Property Investment Budget",
+    "tr": "Gayrimenkul Yatırım Bütçesi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Bir dönem için beklenen gelir, gider, sermaye harcaması ve finansmanın onaylı planıdır.",
+    "use": "Gayrimenkul Yatırım Bütçesi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records property investment budget, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Property Management",
+    "tr": "Gayrimenkul Yönetimi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kararlaştırılan kapsamda gayrimenkul, kullanıcı, bakım, tedarikçi ve kayıtların günlük yönetimidir.",
+    "use": "Gayrimenkul Yönetimi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records property management, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Property Market Research",
+    "tr": "Gayrimenkul Piyasası Araştırması",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Fiyat, kira, talep, arz ve piyasa faaliyeti hakkındaki kanıtların sistematik biçimde toplanıp analiz edilmesidir.",
+    "use": "Gayrimenkul Piyasası Araştırması konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records property market research, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Property Market Risk",
+    "tr": "Gayrimenkul Piyasa Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gayrimenkul fiyatı, kira, likidite, talep veya arzdaki olumsuz değişikliklere maruz kalmadır.",
+    "use": "Gayrimenkul Piyasa Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records property market risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Property Sale Exit",
+    "tr": "Gayrimenkul Satış Çıkışı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gayrimenkulün veya ilgili hakkın satışıyla yatırımın nakde çevrildiği çıkıştır.",
+    "use": "Gayrimenkul Satış Çıkışı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records property sale exit, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Purchase Price",
+    "tr": "Satın Alma Fiyatı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Ayrıca belirtilen gider ve düzeltmelerden önce varlık için ödenmesi kararlaştırılan fiyattır.",
+    "use": "Satın Alma Fiyatı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records purchase price, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Refinance Exit",
+    "tr": "Yeniden Finansman Çıkışı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Değer, gelir ve kredi koşullarına bağlı olarak yeni finansmanla çıkış veya sermaye serbest bırakma yoludur.",
+    "use": "Yeniden Finansman Çıkışı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records refinance exit, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Regulatory Risk",
+    "tr": "Düzenleyici Risk",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Düzenleyici gereklilik veya değişikliklerin maliyet, kullanım, gelir, uyum veya değeri etkileme belirsizliğidir.",
+    "use": "Düzenleyici Risk konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records regulatory risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Rental Income",
+    "tr": "Kira Geliri",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gayrimenkulün kullanım veya işgal hakkının verilmesinden elde edilen ya da öngörülen gelirdir.",
+    "use": "Kira Geliri konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records rental income, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Return on Capital Employed",
+    "tr": "Kullanılan Sermaye Getirisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlı faaliyet getirisini kullanılan sermayeyle karşılaştıran performans oranıdır.",
+    "use": "Kullanılan Sermaye Getirisi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records return on capital employed, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Return on Equity",
+    "tr": "Öz Sermaye Getirisi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlı getirinin analizde kullanılan öz sermaye esasına bölünmesidir.",
+    "use": "Öz Sermaye Getirisi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records return on equity, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Risk Tolerance",
+    "tr": "Risk Toleransı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Yatırımcının kabul etmeye istekli ve mali açıdan dayanabilecek durumda olduğu belirsizlik ve olası kayıp düzeyidir.",
+    "use": "Risk Toleransı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records risk tolerance, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Scenario Comparison",
+    "tr": "Senaryo Karşılaştırması",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tutarlı biçimde tanımlanmış varsayım kümelerindeki değerleme sonuçlarının yan yana karşılaştırılmasıdır.",
+    "use": "Senaryo Karşılaştırması konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records scenario comparison, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Sensitivity Analysis",
+    "tr": "Duyarlılık Analizi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Seçilen varsayımlar tek tek veya birlikte değiştiğinde değerleme sonuçlarının nasıl değiştiğinin testidir.",
+    "use": "Duyarlılık Analizi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records sensitivity analysis, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Supply Analysis",
+    "tr": "Arz Analizi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Tanımlı bir piyasadaki mevcut, rakip ve planlanan gayrimenkul arzının değerlendirilmesidir.",
+    "use": "Arz Analizi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records supply analysis, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Survey Risk",
+    "tr": "İnceleme Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Durum bilgisinin eksik, yanlış anlaşılmış veya inceleme kapsamı dışında olması riskidir.",
+    "use": "İnceleme Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records survey risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Tax Risk",
+    "tr": "Vergi Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Vergi uygulaması, zamanlama, sınıflandırma, uyum veya gelecekteki değişiklikten doğan belirsizliktir.",
+    "use": "Vergi Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records tax risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Tenant Management",
+    "tr": "Kiracı Yönetimi",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kiracı iletişimi, yükümlülükleri, ödemeleri, hizmeti ve elde tutmanın sistematik yönetimidir.",
+    "use": "Kiracı Yönetimi konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records tenant management, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Tenant Risk",
+    "tr": "Kiracı Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kiracı talebi, ödeme, davranış, elde tutma veya ödeme gücüyle bağlantılı belirsizliktir.",
+    "use": "Kiracı Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records tenant risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Title Risk",
+    "tr": "Tapu Riski",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Gayrimenkulü etkileyen mülkiyet, kayıtlı hak, sınır, yetki veya kısıtlamalardan doğan belirsizliktir.",
+    "use": "Tapu Riski konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records title risk, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Underestimating Costs",
+    "tr": "Maliyetleri Düşük Tahmin Etme",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Olası harcamaları dışlayan, düşük gösteren veya yetersiz pay ayıran maliyet varsayımları kullanmaktır.",
+    "use": "Maliyetleri Düşük Tahmin Etme konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records underestimating costs, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Vacancy Assumption",
+    "tr": "Boşluk Varsayımı",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Kira üretmeyen süre veya alan için tahminde ayrılan paydır.",
+    "use": "Boşluk Varsayımı konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records vacancy assumption, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  },
+  {
+    "term": "Worst-case Scenario",
+    "tr": "Kötümser Senaryo",
+    "cat": "Finansman",
+    "abbr": "",
+    "def": "Olası ve kendi içinde tutarlı, kasıtlı olarak olumsuz varsayımlar kümesidir.",
+    "use": "Kötümser Senaryo konusunu yatırım değerlemesi veya karar kaydında belgelemek.",
+    "example": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records worst-case scenario, and tests whether a reasonable adverse change alters the decision.",
+    "tags": [
+      "property-investment",
+      "pack-003",
+      "beginner"
+    ]
+  }
+]

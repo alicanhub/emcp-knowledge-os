@@ -1,96 +1,809 @@
 <!doctype html>
 <html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#012169">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="EMCP Knowledge OS">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icon.svg">
-<title>EMCP Knowledge OS</title>
-<link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-<header><div class="wrap">
-<div class="top"><div class="brand">EAST MIDLANDS CAPITAL PARTNERS</div><div class="controls">
-<div class="pill"><button id="trBtn" class="active">TR</button><button id="enBtn">EN</button></div>
-<button class="iconbtn" id="themeBtn">◐</button></div></div>
-<h1>EMCP Knowledge OS</h1>
-<div class="tagline">The Operating System for Property, Construction &amp; Investment Professionals.</div>
-<div class="search"><input id="q" placeholder="Bir harf, kelime veya kısaltma yazın…"><button id="clearBtn">Temizle</button></div>
-</div></header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#012169" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="EMCP Knowledge OS" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <title>EMCP Knowledge OS</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#mainContent" data-i18n="skipToContent"
+      >Skip to main content</a
+    >
+    <header>
+      <div class="wrap">
+        <div class="top">
+          <div class="brand">EAST MIDLANDS CAPITAL PARTNERS</div>
+          <div class="controls">
+            <div
+              class="pill"
+              role="group"
+              aria-label="Language"
+              data-i18n-aria="languageSelector"
+            >
+              <button
+                type="button"
+                id="trBtn"
+                class="active"
+                aria-pressed="true"
+                lang="tr"
+              >
+                TR</button
+              ><button type="button" id="enBtn" aria-pressed="false" lang="en">
+                EN
+              </button>
+            </div>
+            <button
+              type="button"
+              class="iconbtn"
+              id="themeBtn"
+              aria-pressed="false"
+              aria-label="Use dark theme"
+              title="Use dark theme"
+            >
+              ◐
+            </button>
+          </div>
+        </div>
+        <h1>EMCP Knowledge OS</h1>
+        <div class="tagline" data-i18n="tagline">
+          The Operating System for Property, Construction &amp; Investment
+          Professionals.
+        </div>
+        <div class="search">
+          <label class="sr-only" for="q" data-i18n="searchLabel"
+            >Search knowledge</label
+          ><input
+            id="q"
+            type="search"
+            autocomplete="off"
+            data-i18n-placeholder="searchPlaceholder"
+            placeholder="Bir harf, kelime veya kısaltma yazın…"
+          /><button type="button" id="clearBtn" data-i18n="clear">
+            Temizle
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      id="connectionStatus"
+      class="connection-status"
+      role="status"
+      hidden
+    ></div>
 
-<main>
-<section id="page-home" class="page active">
-<div class="hero-card"><h2 id="installTitle">Telefonuna uygulama gibi kur</h2><p id="installText">Safari’de aç, Paylaş düğmesine bas ve “Ana Ekrana Ekle”yi seç.</p><button id="installBtn">Kurulum talimatlarını göster</button></div>
+    <main id="mainContent" tabindex="-1">
+      <section id="page-home" class="page active">
+        <div class="hero-card">
+          <h2 id="installTitle" data-i18n="installTitle">
+            Telefonuna uygulama gibi kur
+          </h2>
+          <p id="installText" data-i18n="installText">
+            Safari’de aç, Paylaş düğmesine bas ve “Ana Ekrana Ekle”yi seç.
+          </p>
+          <button id="installBtn" data-i18n="installButton">
+            Kurulum talimatlarını göster
+          </button>
+        </div>
 
-<div class="stats">
-<div class="stat"><b>103</b><span id="sTerms">Knowledge Entries</span></div>
-<div class="stat"><b id="favCount">0</b><span id="sFav">Favourites</span></div>
-<div class="stat"><b id="recentCount">0</b><span id="sRecent">Recent</span></div>
-</div>
+        <div class="stats">
+          <div class="stat">
+            <b>203</b
+            ><span id="sTerms" data-i18n="knowledgeEntries"
+              >Knowledge Entries</span
+            >
+          </div>
+          <button
+            type="button"
+            class="stat stat-button"
+            data-workspace="favourites"
+          >
+            <b id="favCount">0</b
+            ><span id="sFav" data-i18n="favourites">Favourites</span>
+          </button>
+          <button
+            type="button"
+            class="stat stat-button"
+            data-workspace="recent"
+          >
+            <b id="recentCount">0</b
+            ><span id="sRecent" data-i18n="recent">Recent</span>
+          </button>
+        </div>
 
-<h2 class="section-title">Explore the Platform</h2>
-<p class="section-intro">Knowledge, calculators and practical tools built for property, construction and investment professionals.</p>
-<div class="module-grid">
-<div class="module live" onclick="showPage('knowledge')"><div class="emoji">📘</div><h3>Knowledge OS</h3><p>Bilingual terminology, practical guides and professional reference content.</p><span class="tag">ACTIVE</span></div>
-<div class="module live" onclick="showPage('calculators')"><div class="emoji">🧮</div><h3>Calculators</h3><p>Finance, development and construction calculations.</p><span class="tag">ACTIVE</span></div>
-<div class="module live" onclick="showPage('construction')"><div class="emoji">🏗️</div><h3>Construction Tools</h3><p>Material take-off and site measurement tools.</p><span class="tag">ACTIVE</span></div>
-<div class="module"><div class="emoji">⚖️</div><h3>Legal & Compliance</h3><p>UK legal, planning and due diligence guides.</p><span class="tag">PLANNED</span></div>
-<div class="module"><div class="emoji">✉️</div><h3>Email Studio</h3><p>Professional bilingual email templates.</p><span class="tag">PLANNED</span></div>
-<div class="module"><div class="emoji">🤝</div><h3>Meeting Assistant</h3><p>Investor, lender and developer meeting preparation.</p><span class="tag">PLANNED</span></div>
-</div>
-</section>
+        <h2 class="section-title" data-i18n="explore">Explore the Platform</h2>
+        <p class="section-intro" data-i18n="exploreIntro">
+          Knowledge, calculators and practical tools built for property,
+          construction and investment professionals.
+        </p>
+        <div class="module-grid">
+          <button type="button" class="module live" data-page="knowledge">
+            <span class="emoji" aria-hidden="true">📘</span
+            ><span class="module-title">Knowledge OS</span
+            ><span class="module-copy" data-i18n="knowledgeDescription"
+              >Bilingual terminology, practical guides and professional
+              reference content.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="handbooks">
+            <span class="emoji" aria-hidden="true">📗</span
+            ><span class="module-title">Investor Handbook</span
+            ><span class="module-copy"
+              >A progressive bilingual learning handbook for property
+              investors.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="assistant">
+            <span class="emoji" aria-hidden="true">✦</span
+            ><span class="module-title">Ask EMCP</span
+            ><span class="module-copy" data-i18n="assistantDescription"
+              >Ask a question and search the local professional knowledge
+              base.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-workspace="overview">
+            <span class="emoji" aria-hidden="true">◆</span
+            ><span class="module-title" data-i18n="workspace">My Workspace</span
+            ><span class="module-copy" data-i18n="workspaceDescription"
+              >Manage favourites, collections, notes and saved deal
+              scenarios.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="calculators">
+            <span class="emoji" aria-hidden="true">🧮</span
+            ><span class="module-title" data-i18n="calculators"
+              >Calculators</span
+            ><span class="module-copy" data-i18n="calculatorsDescription"
+              >Finance, development and construction calculations.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="construction">
+            <span class="emoji" aria-hidden="true">🏗️</span
+            ><span class="module-title" data-i18n="constructionTools"
+              >Construction Tools</span
+            ><span class="module-copy" data-i18n="constructionDescription"
+              >Material take-off and site measurement tools.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <article class="module planned">
+            <div class="emoji" aria-hidden="true">⚖️</div>
+            <h3 data-i18n="legalCompliance">Legal & Compliance</h3>
+            <p data-i18n="legalDescription">
+              UK legal, planning and due diligence guides.
+            </p>
+            <span class="tag" data-i18n="planned">PLANNED</span>
+          </article>
+          <article class="module planned">
+            <div class="emoji" aria-hidden="true">✉️</div>
+            <h3 data-i18n="emailStudio">Email Studio</h3>
+            <p data-i18n="emailDescription">
+              Professional bilingual email templates.
+            </p>
+            <span class="tag" data-i18n="planned">PLANNED</span>
+          </article>
+          <article class="module planned">
+            <div class="emoji" aria-hidden="true">🤝</div>
+            <h3 data-i18n="meetingAssistant">Meeting Assistant</h3>
+            <p data-i18n="meetingDescription">
+              Investor, lender and developer meeting preparation.
+            </p>
+            <span class="tag" data-i18n="planned">PLANNED</span>
+          </article>
+        </div>
+      </section>
 
-<section id="page-knowledge" class="page">
-<h2 class="section-title">Knowledge OS</h2>
-<div class="chips" id="cats"></div>
-<div class="status"><span id="count"></span><span id="offline">Available offline</span></div>
-<div class="grid" id="grid"></div>
-</section>
+      <section id="page-knowledge" class="page">
+        <h2 class="section-title">Knowledge OS</h2>
+        <div id="knowledgeError" class="data-error" role="alert" hidden>
+          <strong id="knowledgeErrorTitle"></strong
+          ><span id="knowledgeErrorText"></span
+          ><button type="button" id="retryKnowledge"></button>
+        </div>
+        <div
+          class="chips"
+          id="cats"
+          role="group"
+          aria-label="Knowledge categories"
+          data-i18n-aria="knowledgeCategories"
+        ></div>
+        <div class="status">
+          <span id="count" role="status" aria-live="polite"></span
+          ><span id="offline" data-i18n="availableOffline"
+            >Available offline</span
+          >
+        </div>
+        <div class="grid" id="grid"></div>
+      </section>
 
-<section id="page-calculators" class="page">
-<h2 class="section-title">Calculators</h2>
-<div class="tool-nav"><button class="active">Finance</button><button>Development</button><button>Property</button></div>
-<div class="calc-grid">
-<div class="calc"><h3>LTV</h3><label>Loan</label><input id="ltvLoan" type="number"><label>Property Value</label><input id="ltvValue" type="number"><button onclick="calcLTV()">Calculate</button><div class="result" id="ltvResult"></div></div>
-<div class="calc"><h3>LTC</h3><label>Loan</label><input id="ltcLoan" type="number"><label>Total Cost</label><input id="ltcCost" type="number"><button onclick="calcLTC()">Calculate</button><div class="result" id="ltcResult"></div></div>
-<div class="calc"><h3>LTGDV</h3><label>Loan</label><input id="ltgdvLoan" type="number"><label>GDV</label><input id="ltgdvValue" type="number"><button onclick="calcLTGDV()">Calculate</button><div class="result" id="ltgdvResult"></div></div>
-<div class="calc"><h3>ROI</h3><label>Profit</label><input id="roiProfit" type="number"><label>Investment</label><input id="roiCost" type="number"><button onclick="calcROI()">Calculate</button><div class="result" id="roiResult"></div></div>
-<div class="calc"><h3>Rental Yield</h3><label>Annual Rent</label><input id="yieldRent" type="number"><label>Property Value</label><input id="yieldValue" type="number"><button onclick="calcYield()">Calculate</button><div class="result" id="yieldResult"></div></div>
-<div class="calc"><h3>Development Profit</h3><label>GDV</label><input id="devGdv" type="number"><label>Total Development Cost</label><input id="devCost" type="number"><button onclick="calcDevProfit()">Calculate</button><div class="result" id="devResult"></div></div>
-<div class="calc"><h3>Monthly Loan Payment</h3><label>Loan</label><input id="loanPrincipal" type="number"><label>Annual Interest %</label><input id="loanRate" type="number"><label>Term Years</label><input id="loanYears" type="number"><button onclick="calcMonthly()">Calculate</button><div class="result" id="loanResult"></div></div>
-<div class="calc"><h3>Arrangement Fee</h3><label>Loan</label><input id="feeLoan" type="number"><label>Fee %</label><input id="feeRate" type="number"><button onclick="calcFee()">Calculate</button><div class="result" id="feeResult"></div></div>
-<div class="calc"><h3>Interest Roll-up</h3><label>Loan</label><input id="rollLoan" type="number"><label>Annual Interest %</label><input id="rollRate" type="number"><label>Months</label><input id="rollMonths" type="number"><button onclick="calcRollup()">Calculate</button><div class="result" id="rollResult"></div></div>
-<div class="calc"><h3>Stamp Duty Guide</h3><p style="color:var(--muted)">Placeholder module for future live UK SDLT rules.</p><div class="result">Planned</div></div>
-</div>
-</section>
+      <section id="page-handbooks" class="page" aria-labelledby="handbookTitle">
+        <div class="handbook-heading">
+          <div>
+            <span class="badge">Professional Handbook</span>
+            <h2 id="handbookTitle">Property Investor’s Handbook</h2>
+            <p id="handbookSummary"></p>
+          </div>
+          <div class="handbook-progress" aria-live="polite">
+            <strong id="handbookProgress">0%</strong>
+            <span id="handbookProgressLabel">Progress</span>
+          </div>
+        </div>
+        <div class="handbook-toolbar" role="group" aria-label="Handbook navigation">
+          <button type="button" data-handbook-action="resume">Resume last chapter</button>
+          <button type="button" data-handbook-action="saved">Saved chapters</button>
+          <button type="button" data-handbook-action="all">All chapters</button>
+        </div>
+        <div class="handbook-layout">
+          <nav id="handbookChapters" class="handbook-chapters" aria-label="Investor Handbook chapters"></nav>
+          <article id="handbookChapter" class="handbook-chapter" tabindex="-1" aria-live="polite"></article>
+        </div>
+      </section>
 
-<section id="page-construction" class="page">
-<h2 class="section-title">Construction Tools</h2>
-<div class="calc-grid">
-<div class="calc"><h3>Concrete Volume</h3><label>Length m</label><input id="cLen" type="number"><label>Width m</label><input id="cWid" type="number"><label>Depth m</label><input id="cDep" type="number"><button onclick="calcConcrete()">Calculate</button><div class="result" id="cResult"></div></div>
-<div class="calc"><h3>Paint Area</h3><label>Wall Length m</label><input id="pLen" type="number"><label>Wall Height m</label><input id="pHeight" type="number"><label>Number of Coats</label><input id="pCoats" type="number" value="2"><button onclick="calcPaint()">Calculate</button><div class="result" id="pResult"></div></div>
-<div class="calc"><h3>Flooring Area</h3><label>Length m</label><input id="fLen" type="number"><label>Width m</label><input id="fWid" type="number"><label>Waste %</label><input id="fWaste" type="number" value="10"><button onclick="calcFloor()">Calculate</button><div class="result" id="fResult"></div></div>
-<div class="calc"><h3>Plasterboard Sheets</h3><label>Wall Area m²</label><input id="pbArea" type="number"><label>Sheet Area m²</label><input id="pbSheet" type="number" value="2.88"><label>Waste %</label><input id="pbWaste" type="number" value="10"><button onclick="calcPB()">Calculate</button><div class="result" id="pbResult"></div></div>
-<div class="calc"><h3>Insulation Area</h3><label>Wall/Ceiling Area m²</label><input id="insArea" type="number"><label>Waste %</label><input id="insWaste" type="number" value="5"><button onclick="calcIns()">Calculate</button><div class="result" id="insResult"></div></div>
-<div class="calc"><h3>Tiles Quantity</h3><label>Total Area m²</label><input id="tileArea" type="number"><label>Tile Area m²</label><input id="tileSize" type="number" value="0.09"><label>Waste %</label><input id="tileWaste" type="number" value="10"><button onclick="calcTiles()">Calculate</button><div class="result" id="tileResult"></div></div>
-</div>
-</section>
-</main>
+      <section id="page-assistant" class="page">
+        <h2 class="section-title">Ask EMCP</h2>
+        <div class="assistant-card">
+          <p data-i18n="assistantIntro">
+            Ask about property, construction, investment, finance or compliance.
+            EMCP searches its local knowledge first.
+          </p>
+          <form id="assistantForm" class="assistant-form">
+            <label
+              class="sr-only"
+              for="assistantQuestion"
+              data-i18n="yourQuestion"
+              >Your question</label
+            ><textarea
+              id="assistantQuestion"
+              rows="3"
+              data-i18n-placeholder="assistantPlaceholder"
+              placeholder="Ask a professional question…"
+              required
+            ></textarea
+            ><button type="submit" data-i18n="askEmcp">Ask EMCP</button>
+          </form>
+          <div
+            id="assistantOutput"
+            class="assistant-output"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
 
-<nav class="bottom">
-<button class="active" id="navHome" onclick="showPage('home')">⌂ <span>Home</span></button>
-<button id="navKnowledge" onclick="showPage('knowledge')">📘 <span>Knowledge</span></button>
-<button id="navCalc" onclick="showPage('calculators')">🧮 <span>Calculators</span></button>
-<button id="navBuild" onclick="showPage('construction')">🏗️ <span>Build</span></button>
-<button id="navHelp">? <span>Help</span></button>
-</nav>
+      <section id="page-workspace" class="page">
+        <div class="workspace-page-heading">
+          <div>
+            <h2 class="section-title" data-i18n="workspace">My Workspace</h2>
+            <p data-i18n="workspaceIntro">
+              Your personal knowledge and deal workspace. Data stays on this
+              device by default.
+            </p>
+          </div>
+          <span class="workspace-privacy" data-i18n="onDevice"
+            >On this device only</span
+          >
+        </div>
+        <div
+          class="workspace-tabs"
+          role="tablist"
+          aria-label="Workspace views"
+          data-i18n-aria="workspaceViews"
+        >
+          <button
+            type="button"
+            role="tab"
+            class="active"
+            aria-selected="true"
+            tabindex="0"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="overview"
+            data-i18n="overview"
+          >
+            Overview</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="favourites"
+            data-i18n="favourites"
+          >
+            Favourites</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="recent"
+            data-i18n="recent"
+          >
+            Recent</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="collections"
+            data-i18n="collections"
+          >
+            Collections</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="scenarios"
+            data-i18n="scenarios"
+          >
+            Scenarios
+          </button>
+        </div>
+        <div
+          id="workspaceOutput"
+          class="workspace-output"
+          role="tabpanel"
+          aria-live="polite"
+        ></div>
+        <section class="workspace-data-tools">
+          <h3 data-i18n="dataTools">Data Backup</h3>
+          <p id="workspacePrivacyText" data-i18n="privacyText">
+            Exports and imports happen locally in your browser. Nothing is
+            uploaded.
+          </p>
+          <div class="workspace-data-actions">
+            <button type="button" id="exportWorkspace" data-i18n="exportData">
+              Export data</button
+            ><label class="workspace-import"
+              ><span data-i18n="importData">Import data</span
+              ><input
+                id="importWorkspace"
+                type="file"
+                accept="application/json,.json"
+              /><small data-i18n="importFile"
+                >Choose workspace backup</small
+              ></label
+            >
+          </div>
+          <div
+            id="workspaceStatus"
+            class="workspace-status"
+            aria-live="polite"
+          ></div>
+        </section>
+      </section>
 
-<div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
+      <section id="page-calculators" class="page">
+        <h2 class="section-title" data-i18n="calculators">Calculators</h2>
+        <section class="deal-workspace" aria-labelledby="dealSnapshotTitle">
+          <div class="workspace-heading">
+            <div>
+              <h3 id="dealSnapshotTitle" data-i18n="dealSnapshot">
+                Deal Snapshot
+              </h3>
+              <p data-i18n="dealIntro">
+                Combine leverage, cost, value, profit and return metrics in one
+                reusable scenario.
+              </p>
+            </div>
+            <span class="workspace-badge" data-i18n="savedLocally"
+              >Saved locally</span
+            >
+          </div>
+          <div class="snapshot-fields">
+            <label
+              ><span data-i18n="scenarioName">Scenario name</span
+              ><input
+                id="dealName"
+                type="text"
+                data-i18n-placeholder="scenarioPlaceholder"
+                placeholder="e.g. Nottingham acquisition"
+            /></label>
+            <label
+              ><span data-i18n="loanPounds">Loan (£)</span
+              ><input id="dealLoan" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="propertyValuePounds">Property value (£)</span
+              ><input id="dealPropertyValue" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="totalCostPounds"
+                >Total development cost (£)</span
+              ><input id="dealCost" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="gdvPounds">Gross development value (£)</span
+              ><input id="dealGdv" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="annualRentPounds">Annual rent (£)</span
+              ><input id="dealRent" type="number" min="0" step="any"
+            /></label>
+          </div>
+          <div class="snapshot-actions">
+            <button
+              type="button"
+              id="calculateDeal"
+              data-i18n="calculateSnapshot"
+            >
+              Calculate snapshot</button
+            ><button
+              type="button"
+              class="secondary"
+              id="exampleDeal"
+              data-i18n="useExample"
+            >
+              Use example</button
+            ><button
+              type="button"
+              class="secondary"
+              id="resetDeal"
+              data-i18n="reset"
+            >
+              Reset
+            </button>
+          </div>
+          <div
+            id="dealErrors"
+            class="workspace-errors"
+            aria-live="polite"
+          ></div>
+          <div
+            id="dealResults"
+            class="snapshot-results"
+            aria-live="polite"
+          ></div>
+          <div
+            id="dealResultActions"
+            class="snapshot-actions result-actions"
+            hidden
+          >
+            <button type="button" id="saveDeal" data-i18n="saveScenario">
+              Save scenario</button
+            ><button
+              type="button"
+              class="secondary"
+              id="copyDeal"
+              data-i18n="copySummary"
+            >
+              Copy summary</button
+            ><button
+              type="button"
+              class="secondary"
+              id="shareDeal"
+              data-i18n="shareSummary"
+            >
+              Share summary
+            </button>
+          </div>
+          <div class="saved-scenarios">
+            <h4 data-i18n="savedScenarios">Saved scenarios</h4>
+            <div id="savedScenarioList" class="scenario-list">
+              <p class="scenario-empty" data-i18n="noScenarios">
+                No saved scenarios yet.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div
+          class="tool-nav"
+          data-i18n-aria="calculatorCategories"
+          aria-label="Calculator categories"
+        >
+          <button
+            type="button"
+            class="active"
+            data-calculator-filter="all"
+            data-i18n="all"
+          >
+            All</button
+          ><button
+            type="button"
+            data-calculator-filter="finance"
+            data-i18n="finance"
+          >
+            Finance</button
+          ><button
+            type="button"
+            data-calculator-filter="development"
+            data-i18n="development"
+          >
+            Development</button
+          ><button
+            type="button"
+            data-calculator-filter="property"
+            data-i18n="property"
+          >
+            Property
+          </button>
+        </div>
+        <div class="calc-grid">
+          <div class="calc">
+            <h3>LTV</h3>
+            <label>Loan</label><input id="ltvLoan" type="number" /><label
+              >Property Value</label
+            ><input id="ltvValue" type="number" /><button
+              type="button"
+              data-calculate="ltv"
+            >
+              Calculate
+            </button>
+            <div class="result" id="ltvResult"></div>
+          </div>
+          <div class="calc">
+            <h3>LTC</h3>
+            <label>Loan</label><input id="ltcLoan" type="number" /><label
+              >Total Cost</label
+            ><input id="ltcCost" type="number" /><button
+              type="button"
+              data-calculate="ltc"
+            >
+              Calculate
+            </button>
+            <div class="result" id="ltcResult"></div>
+          </div>
+          <div class="calc">
+            <h3>LTGDV</h3>
+            <label>Loan</label><input id="ltgdvLoan" type="number" /><label
+              >GDV</label
+            ><input id="ltgdvValue" type="number" /><button
+              type="button"
+              data-calculate="ltgdv"
+            >
+              Calculate
+            </button>
+            <div class="result" id="ltgdvResult"></div>
+          </div>
+          <div class="calc">
+            <h3>ROI</h3>
+            <label>Profit</label><input id="roiProfit" type="number" /><label
+              >Investment</label
+            ><input id="roiCost" type="number" /><button
+              type="button"
+              data-calculate="roi"
+            >
+              Calculate
+            </button>
+            <div class="result" id="roiResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Rental Yield</h3>
+            <label>Annual Rent</label
+            ><input id="yieldRent" type="number" /><label>Property Value</label
+            ><input id="yieldValue" type="number" /><button
+              type="button"
+              data-calculate="yield"
+            >
+              Calculate
+            </button>
+            <div class="result" id="yieldResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Development Profit</h3>
+            <label>GDV</label><input id="devGdv" type="number" /><label
+              >Total Development Cost</label
+            ><input id="devCost" type="number" /><button
+              type="button"
+              data-calculate="development-profit"
+            >
+              Calculate
+            </button>
+            <div class="result" id="devResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Monthly Loan Payment</h3>
+            <label>Loan</label><input id="loanPrincipal" type="number" /><label
+              >Annual Interest %</label
+            ><input id="loanRate" type="number" /><label>Term Years</label
+            ><input id="loanYears" type="number" /><button
+              type="button"
+              data-calculate="monthly-payment"
+            >
+              Calculate
+            </button>
+            <div class="result" id="loanResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Arrangement Fee</h3>
+            <label>Loan</label><input id="feeLoan" type="number" /><label
+              >Fee %</label
+            ><input id="feeRate" type="number" /><button
+              type="button"
+              data-calculate="arrangement-fee"
+            >
+              Calculate
+            </button>
+            <div class="result" id="feeResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Interest Roll-up</h3>
+            <label>Loan</label><input id="rollLoan" type="number" /><label
+              >Annual Interest %</label
+            ><input id="rollRate" type="number" /><label>Months</label
+            ><input id="rollMonths" type="number" /><button
+              type="button"
+              data-calculate="interest-rollup"
+            >
+              Calculate
+            </button>
+            <div class="result" id="rollResult"></div>
+          </div>
+          <div class="calc" data-calculator-groups="property">
+            <h3 data-i18n="stampDutyGuide">Stamp Duty Guide</h3>
+            <p class="muted" data-i18n="stampDutyPlaceholder">
+              Placeholder module for future live UK SDLT rules.
+            </p>
+            <div class="result" data-i18n="planned">Planned</div>
+          </div>
+        </div>
+      </section>
 
-<script src="js/app.js" defer></script>
-</body></html>
+      <section id="page-construction" class="page">
+        <h2 class="section-title" data-i18n="constructionTools">
+          Construction Tools
+        </h2>
+        <div class="calc-grid">
+          <div class="calc">
+            <h3>Concrete Volume</h3>
+            <label>Length m</label><input id="cLen" type="number" /><label
+              >Width m</label
+            ><input id="cWid" type="number" /><label>Depth m</label
+            ><input id="cDep" type="number" /><button
+              type="button"
+              data-calculate="concrete"
+            >
+              Calculate
+            </button>
+            <div class="result" id="cResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Paint Area</h3>
+            <label>Wall Length m</label><input id="pLen" type="number" /><label
+              >Wall Height m</label
+            ><input id="pHeight" type="number" /><label>Number of Coats</label
+            ><input id="pCoats" type="number" value="2" /><button
+              type="button"
+              data-calculate="paint"
+            >
+              Calculate
+            </button>
+            <div class="result" id="pResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Flooring Area</h3>
+            <label>Length m</label><input id="fLen" type="number" /><label
+              >Width m</label
+            ><input id="fWid" type="number" /><label>Waste %</label
+            ><input id="fWaste" type="number" value="10" /><button
+              type="button"
+              data-calculate="flooring"
+            >
+              Calculate
+            </button>
+            <div class="result" id="fResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Plasterboard Sheets</h3>
+            <label>Wall Area m²</label><input id="pbArea" type="number" /><label
+              >Sheet Area m²</label
+            ><input id="pbSheet" type="number" value="2.88" /><label
+              >Waste %</label
+            ><input id="pbWaste" type="number" value="10" /><button
+              type="button"
+              data-calculate="plasterboard"
+            >
+              Calculate
+            </button>
+            <div class="result" id="pbResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Insulation Area</h3>
+            <label>Wall/Ceiling Area m²</label
+            ><input id="insArea" type="number" /><label>Waste %</label
+            ><input id="insWaste" type="number" value="5" /><button
+              type="button"
+              data-calculate="insulation"
+            >
+              Calculate
+            </button>
+            <div class="result" id="insResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Tiles Quantity</h3>
+            <label>Total Area m²</label
+            ><input id="tileArea" type="number" /><label>Tile Area m²</label
+            ><input id="tileSize" type="number" value="0.09" /><label
+              >Waste %</label
+            ><input id="tileWaste" type="number" value="10" /><button
+              type="button"
+              data-calculate="tiles"
+            >
+              Calculate
+            </button>
+            <div class="result" id="tileResult"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav
+      class="bottom"
+      aria-label="Primary navigation"
+      data-i18n-aria="primaryNavigation"
+    >
+      <button class="active" aria-current="page" id="navHome" data-page="home">
+        <span aria-hidden="true">⌂</span> <span data-i18n="home">Home</span>
+      </button>
+      <button id="navKnowledge" data-page="knowledge">
+        <span aria-hidden="true">📘</span>
+        <span data-i18n="knowledge">Knowledge</span>
+      </button>
+      <button id="navHandbooks" data-page="handbooks">
+        <span aria-hidden="true">📗</span>
+        <span>Handbooks</span>
+      </button>
+      <button id="navCalc" data-page="calculators">
+        <span aria-hidden="true">🧮</span>
+        <span data-i18n="calculators">Calculators</span>
+      </button>
+      <button id="navBuild" data-page="construction">
+        <span aria-hidden="true">🏗️</span> <span data-i18n="build">Build</span>
+      </button>
+      <button id="navHelp" data-help>
+        <span aria-hidden="true">?</span> <span data-i18n="help">Help</span>
+      </button>
+    </nav>
+
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="sheet" id="sheet" tabindex="-1"></div>
+    </div>
+    <aside id="pwaUpdate" class="pwa-update" role="status" hidden>
+      <div>
+        <strong id="pwaUpdateTitle"></strong><span id="pwaUpdateText"></span>
+      </div>
+      <div>
+        <button type="button" id="applyUpdate"></button
+        ><button type="button" class="secondary" id="dismissUpdate"></button>
+      </div>
+    </aside>
+
+    <script src="js/core.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/knowledge.js" defer></script>
+    <script src="js/calculator-model.js" defer></script>
+    <script src="js/dom.js" defer></script>
+    <script src="js/accessibility.js" defer></script>
+    <script src="js/virtual-list.js" defer></script>
+    <script src="js/operations.js" defer></script>
+    <script src="js/features.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/workspace.js" defer></script>
+    <script src="js/pwa.js" defer></script>
+  </body>
+</html>

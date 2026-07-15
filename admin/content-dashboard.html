@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex,nofollow" />
+    <title>EMCP Local Content Dashboard</title>
+    <link rel="stylesheet" href="content-dashboard.css" />
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">Local administration</p>
+      <h1>EMCP Content Production Dashboard</h1>
+      <p class="notice" role="note">
+        Read-only publishing diagnostics. This page contains no editing or
+        approval controls and should not be deployed publicly.
+      </p>
+      <p id="status" role="status">Loading dashboard data…</p>
+      <section id="summary" aria-label="Content summary"></section>
+      <div class="columns">
+        <section>
+          <h2>Entries by category</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Entries</th>
+              </tr>
+            </thead>
+            <tbody id="categories"></tbody>
+          </table>
+        </section>
+        <section>
+          <h2>Entries by difficulty</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Difficulty</th>
+                <th>Entries</th>
+              </tr>
+            </thead>
+            <tbody id="difficulty"></tbody>
+          </table>
+        </section>
+      </div>
+    </main>
+    <script src="content-dashboard.js" defer></script>
+  </body>
+</html>
