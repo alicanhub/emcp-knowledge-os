@@ -1,0 +1,201 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "mortgages-loans.interest-only-mortgage",
+  "title": {
+    "en": "Interest-Only Mortgage",
+    "tr": "Yalnız Faiz Ödemeli Kredi"
+  },
+  "summary": {
+    "en": "A mortgage where scheduled payments generally cover interest while principal must be repaid separately.",
+    "tr": "Düzenli ödemelerin genellikle faizi karşıladığı, anaparanın ayrıca geri ödenmesi gereken kredidir."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "A mortgage where scheduled payments generally cover interest while principal must be repaid separately. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Düzenli ödemelerin genellikle faizi karşıladığı, anaparanın ayrıca geri ödenmesi gereken kredidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "mortgages-loans",
+    "en": "Mortgages, loans and deposits",
+    "tr": "İpotekli krediler ve borçlanma"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["mortgages-loans", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["interest-only", "mortgage"],
+    "tr": ["yalnız", "faiz", "ödemeli", "kredi"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Interest-Only Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Yalnız Faiz Ödemeli Kredi” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving interest-only mortgage.",
+    "tr": "Bu kavramı yalnız faiz ödemeli kredi içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "mortgages-loans.repayment-mortgage",
+    "mortgages-loans.mortgage-term"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Interest-only and repayment mortgages explained",
+      "publisher": "MoneyHelper",
+      "url": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Interest-Only Mortgage; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "A mortgage where scheduled payments generally cover interest while principal must be repaid separately.",
+    "tr": "Düzenli ödemelerin genellikle faizi karşıladığı, anaparanın ayrıca geri ödenmesi gereken kredidir."
+  },
+  "professional_explanation": {
+    "en": "A mortgage where scheduled payments generally cover interest while principal must be repaid separately. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Düzenli ödemelerin genellikle faizi karşıladığı, anaparanın ayrıca geri ödenmesi gereken kredidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "real_world_example": {
+    "en": "Example: before relying on “Interest-Only Mortgage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Yalnız Faiz Ödemeli Kredi” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "office_example": {
+    "en": "Use this concept when reading, discussing or checking property work involving interest-only mortgage.",
+    "tr": "Bu kavramı yalnız faiz ödemeli kredi içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "What should be checked when using Interest-Only Mortgage?",
+        "answer": "Check the current source, transaction documents, evidence and jurisdiction-specific requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yalnız Faiz Ödemeli Kredi kullanılırken neler kontrol edilmelidir?",
+        "answer": "Güncel kaynağı, işlem belgelerini, kanıtı ve bölgeye özel gereklilikleri kontrol edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "best_practice": {
+    "en": [
+      "Retain dated evidence and obtain qualified advice for material decisions."
+    ],
+    "tr": [
+      "Tarihli kanıtı saklayın ve önemli kararlar için nitelikli uzman görüşü alın."
+    ]
+  },
+  "uk_practice": {
+    "en": "Check the current rules for the relevant UK nation and transaction date.",
+    "tr": "İlgili Birleşik Krallık ülkesi ve işlem tarihi için güncel kuralları kontrol edin."
+  },
+  "turkey_practice": {
+    "en": "Confirm the equivalent Turkish legal and market practice with a qualified local professional.",
+    "tr": "Türkiye'deki karşılık gelen hukuk ve piyasa uygulamasını nitelikli yerel bir uzmanla doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 4,
+  "revision_history": [
+    {
+      "version": "1.1.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 002 residential learning enrichment.",
+        "tr": "Pack 002 konut öğrenme zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    },
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ],
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Does Interest-Only Mortgage work identically everywhere?",
+        "answer": "No. Verify the current jurisdiction, documents and professional guidance."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yalnız Faiz Ödemeli Kredi her yerde aynı şekilde mi uygulanır?",
+        "answer": "Hayır. Güncel hukuk bölgesini, belgeleri ve mesleki rehberi doğrulayın."
+      }
+    ]
+  },
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "Visual explanation planned.",
+      "tr": "Görsel açıklama planlandı."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "Beginner video planned.",
+      "tr": "Başlangıç videosu planlandı."
+    },
+    "url": null
+  }
+}

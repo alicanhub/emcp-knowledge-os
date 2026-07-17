@@ -1,0 +1,59 @@
+{
+  "backup_id": "2026-07-14T02-13-04-562Z",
+  "created_at": "2026-07-14T02:13:04.566Z",
+  "runtime_count": 378,
+  "files": [
+    {
+      "path": "data/knowledge/capital-investment.json",
+      "sha256": "283602b28864f49c884252ccaeba34f305800cef14871d6b50646c3c92018b18"
+    },
+    {
+      "path": "data/knowledge/commercial-documents.json",
+      "sha256": "e951c59c0ffa889bb6a63a5629a1672e33123feb6b0614e1298d6cc480a109f7"
+    },
+    {
+      "path": "data/knowledge/compliance-corporate.json",
+      "sha256": "e5a866b9f4b5a583657704ce6568534849cb1f9b9395966296bd507a57153cc4"
+    },
+    {
+      "path": "data/knowledge/construction.json",
+      "sha256": "4bc5cba63e9e57f429a2d457fd1f8cedadb0de613f30446183663bdbc6e7e023"
+    },
+    {
+      "path": "data/knowledge/details.json",
+      "sha256": "137095f6af85b25c976aa982af0bf861e2a42a7303ec1220bda9112310005e2f"
+    },
+    {
+      "path": "data/knowledge/en.json",
+      "sha256": "1a5147c4d5742f82d7dc9a0124ea08f822cb3df8f6f3227a5fdc8ccd3f381b1b"
+    },
+    {
+      "path": "data/knowledge/finance.json",
+      "sha256": "891f67c90aa8cbea6a8e955b61e7d894c3a3085e1b40abbb71343628a53b88ac"
+    },
+    {
+      "path": "data/knowledge/index.json",
+      "sha256": "537b724d31815c1a7af666233c1d31ba52779167f0da672ea8b62499fdbb6c2a"
+    },
+    {
+      "path": "data/knowledge/legal.json",
+      "sha256": "ed0e281678021b5ca34f89b61dca2371562abb3c5e1d8a6adb82bd8834e5af9b"
+    },
+    {
+      "path": "data/knowledge/planning.json",
+      "sha256": "a5f1da929498dd1ef8796643c6731f11066e8816391473a662d635860e54c23f"
+    },
+    {
+      "path": "data/knowledge/property-development.json",
+      "sha256": "b60a2cca5782edaee7b19691865983a9f7609da703b0f4351b948033dc0ba3e6"
+    },
+    {
+      "path": "data/knowledge/relationships.json",
+      "sha256": "6037b0cd326ccd543f6719e4aced35b5cc321f31a96f94019f73128a6616a719"
+    },
+    {
+      "path": "data/knowledge/search-index.json",
+      "sha256": "c466248da21cf8470797b6d98080eddd3892186862b1c54aa6ceca1df0297689"
+    }
+  ]
+}

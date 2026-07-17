@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schemas/content-entry.schema.json",
+  "id": "finance.irr",
+  "legacy_term": "IRR",
+  "title": {
+    "en": "IRR",
+    "tr": "İç verim oranı"
+  },
+  "abbreviation": "Internal Rate of Return",
+  "definition": {
+    "en": "An annualised return measure that accounts for the timing of an investment's cash flows.",
+    "tr": "Bir yatırımın zaman içindeki nakit akışlarını dikkate alan yıllıklaştırılmış getiri ölçüsü."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "finance.returns",
+    "en": "Investment returns",
+    "tr": "Yatırım getirileri"
+  },
+  "aliases": {
+    "en": ["Internal rate of return"],
+    "tr": ["İç kârlılık oranı"]
+  },
+  "tags": ["return", "investment", "yield"],
+  "keywords": {
+    "en": ["cash flow", "discount rate"],
+    "tr": ["nakit akışı", "iskonto oranı"]
+  },
+  "formula": {
+    "expression": "0 = Σ(CFt / (1 + IRR)^t)",
+    "variables": [
+      {
+        "symbol": "CFt",
+        "description": {
+          "en": "Cash flow at time t.",
+          "tr": "t zamanındaki nakit akışı."
+        }
+      },
+      {
+        "symbol": "t",
+        "description": {
+          "en": "Cash-flow period.",
+          "tr": "Nakit akışı dönemi."
+        }
+      }
+    ],
+    "notes": {
+      "en": "IRR is normally solved iteratively and can be ambiguous for non-conventional cash flows.",
+      "tr": "IRR genellikle yinelemeli olarak çözülür ve geleneksel olmayan nakit akışlarında belirsiz olabilir."
+    }
+  },
+  "worked_example": {
+    "en": "A development model reports an 18% target project IRR after applying the dated cash flows.",
+    "tr": "Tarihli nakit akışları uygulandıktan sonra geliştirme modeli %18 hedef proje IRR'si gösterir."
+  },
+  "use_cases": {
+    "en": ["Used to compare investment scenarios."],
+    "tr": ["Farklı yatırım senaryolarını karşılaştırmak için kullanılır."]
+  },
+  "risks": {
+    "en": [
+      "IRR can favour shorter investments and can hide differences in absolute profit."
+    ],
+    "tr": [
+      "IRR daha kısa yatırımları tercih edebilir ve mutlak kâr farklarını gizleyebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Comparing IRRs calculated with different timing or cash-flow conventions."
+    ],
+    "tr": [
+      "Farklı zamanlama veya nakit akışı kurallarıyla hesaplanan IRR'leri karşılaştırmak."
+    ]
+  },
+  "related_concepts": ["finance.gdv", "finance.dscr"],
+  "related_calculators": ["roi", "development-profit"],
+  "related_documents": [],
+  "jurisdiction": ["United Kingdom", "International"],
+  "sources": [
+    {
+      "title": "The Green Book: appraisal and evaluation in central government",
+      "publisher": "HM Treasury",
+      "url": "https://www.gov.uk/government/publications/the-green-book-appraisal-and-evaluation-in-central-government",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "UK public-sector appraisal guidance covering discounted cash-flow evaluation."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Review Board (sample)",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "The discount rate that makes the net present value of a specified cash-flow series equal to zero.",
+    "tr": "Belirli nakit akışı dizisinin net bugünkü değerini sıfıra eşitleyen iskonto oranıdır."
+  },
+  "professional_explanation": {
+    "en": "The discount rate that makes the net present value of a specified cash-flow series equal to zero. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Belirli nakit akışı dizisinin net bugünkü değerini sıfıra eşitleyen iskonto oranıdır. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for irr before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce iç verim oranı için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the irr assumption.",
+    "tr": "Değerleme dosyası iç verim oranı varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify IRR?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "İç Verim Oranı nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can IRR be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "İç Verim Oranı esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

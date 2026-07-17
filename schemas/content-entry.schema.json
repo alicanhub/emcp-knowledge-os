@@ -1,0 +1,331 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/content-entry.schema.json",
+  "title": "EMCP reviewed knowledge entry",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "abbreviation",
+    "definition",
+    "category",
+    "subcategory",
+    "aliases",
+    "tags",
+    "keywords",
+    "formula",
+    "worked_example",
+    "use_cases",
+    "risks",
+    "common_mistakes",
+    "related_concepts",
+    "related_calculators",
+    "related_documents",
+    "jurisdiction",
+    "sources",
+    "created_date",
+    "reviewed_date",
+    "reviewer",
+    "review_status",
+    "content_version"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": { "type": "string" },
+    "draft_id": { "type": "string", "minLength": 1, "maxLength": 220 },
+    "source_pack": { "type": "string", "minLength": 1, "maxLength": 160 },
+    "planner_job_id": { "type": "string", "minLength": 1, "maxLength": 220 },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "generated_at": { "type": "string", "format": "date-time" },
+    "updated_at": { "type": "string", "format": "date-time" },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$",
+      "maxLength": 160
+    },
+    "legacy_term": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "title": { "$ref": "#/$defs/localizedText" },
+    "summary": { "$ref": "#/$defs/localizedText" },
+    "simple_explanation": { "$ref": "#/$defs/localizedText" },
+    "professional_explanation": { "$ref": "#/$defs/localizedText" },
+    "real_world_example": { "$ref": "#/$defs/localizedText" },
+    "site_example": { "$ref": "#/$defs/localizedText" },
+    "office_example": { "$ref": "#/$defs/localizedText" },
+    "interview_questions": { "$ref": "#/$defs/localizedQuestions" },
+    "abbreviation": { "type": "string", "maxLength": 80 },
+    "definition": { "$ref": "#/$defs/localizedText" },
+    "category": { "$ref": "#/$defs/taxonomy" },
+    "subcategory": { "$ref": "#/$defs/taxonomy" },
+    "aliases": { "$ref": "#/$defs/localizedList" },
+    "tags": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 100,
+      "items": { "type": "string", "minLength": 1, "maxLength": 100 }
+    },
+    "keywords": { "$ref": "#/$defs/localizedList" },
+    "formula": {
+      "oneOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "required": ["expression", "variables", "notes"],
+          "additionalProperties": false,
+          "properties": {
+            "expression": {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 1000
+            },
+            "variables": {
+              "type": "array",
+              "maxItems": 50,
+              "items": {
+                "type": "object",
+                "required": ["symbol", "description"],
+                "additionalProperties": false,
+                "properties": {
+                  "symbol": {
+                    "type": "string",
+                    "minLength": 1,
+                    "maxLength": 40
+                  },
+                  "description": { "$ref": "#/$defs/localizedText" }
+                }
+              }
+            },
+            "notes": { "$ref": "#/$defs/localizedText" }
+          }
+        }
+      ]
+    },
+    "worked_example": { "$ref": "#/$defs/localizedText" },
+    "when_to_use": { "$ref": "#/$defs/localizedText" },
+    "use_cases": { "$ref": "#/$defs/localizedListNonEmpty" },
+    "risks": { "$ref": "#/$defs/localizedList" },
+    "common_mistakes": { "$ref": "#/$defs/localizedList" },
+    "practical_tips": { "$ref": "#/$defs/localizedList" },
+    "best_practice": { "$ref": "#/$defs/localizedList" },
+    "uk_practice": { "$ref": "#/$defs/localizedText" },
+    "turkey_practice": { "$ref": "#/$defs/localizedText" },
+    "related_concepts": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 100,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$" }
+    },
+    "related_calculators": {
+      "type": "array",
+      "uniqueItems": true,
+      "maxItems": 50,
+      "items": { "type": "string", "minLength": 1, "maxLength": 160 }
+    },
+    "related_documents": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": ["title", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "$ref": "#/$defs/localizedText" },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" }
+        }
+      }
+    },
+    "related_standards": { "$ref": "#/$defs/localizedReferences" },
+    "related_regulations": { "$ref": "#/$defs/localizedReferences" },
+    "revision_history": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": ["version", "date", "summary", "reviewer"],
+        "additionalProperties": false,
+        "properties": {
+          "version": {
+            "type": "string",
+            "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+          },
+          "date": { "type": "string", "format": "date" },
+          "summary": { "$ref": "#/$defs/localizedText" },
+          "reviewer": { "type": "string", "minLength": 1, "maxLength": 300 }
+        }
+      }
+    },
+    "difficulty_level": {
+      "enum": ["beginner", "intermediate", "advanced", "expert"]
+    },
+    "estimated_reading_time_minutes": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 240
+    },
+    "frequently_asked_questions": { "$ref": "#/$defs/localizedQuestions" },
+    "visual_illustration": { "$ref": "#/$defs/mediaPlaceholder" },
+    "future_video": { "$ref": "#/$defs/mediaPlaceholder" },
+    "generation_warnings": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string", "minLength": 1, "maxLength": 2000 }
+    },
+    "jurisdiction": {
+      "type": "array",
+      "uniqueItems": true,
+      "minItems": 1,
+      "maxItems": 20,
+      "items": { "type": "string", "minLength": 2, "maxLength": 100 }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "title",
+          "publisher",
+          "url",
+          "accessed_date",
+          "citation_note"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "type": "string", "minLength": 1, "maxLength": 500 },
+          "publisher": { "type": "string", "minLength": 1, "maxLength": 300 },
+          "url": { "type": "string", "format": "uri", "pattern": "^https://" },
+          "publication_date": { "type": ["string", "null"], "format": "date" },
+          "accessed_date": { "type": "string", "format": "date" },
+          "citation_note": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 1000
+          }
+        }
+      }
+    },
+    "created_date": { "type": "string", "format": "date" },
+    "reviewed_date": { "type": ["string", "null"], "format": "date" },
+    "reviewer": { "type": ["string", "null"], "maxLength": 300 },
+    "review_status": { "enum": ["draft", "in_review", "reviewed", "rejected"] },
+    "content_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": { "type": "string", "minLength": 1, "maxLength": 20000 },
+        "tr": { "type": "string", "minLength": 1, "maxLength": 20000 }
+      }
+    },
+    "localizedList": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "array",
+          "uniqueItems": true,
+          "maxItems": 100,
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        },
+        "tr": {
+          "type": "array",
+          "uniqueItems": true,
+          "maxItems": 100,
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        }
+      }
+    },
+    "localizedListNonEmpty": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "maxItems": 100,
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        },
+        "tr": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "maxItems": 100,
+          "items": { "type": "string", "minLength": 1, "maxLength": 1000 }
+        }
+      }
+    },
+    "localizedQuestions": {
+      "type": "object",
+      "required": ["en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "en": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "$ref": "#/$defs/questionAnswer" }
+        },
+        "tr": {
+          "type": "array",
+          "maxItems": 100,
+          "items": { "$ref": "#/$defs/questionAnswer" }
+        }
+      }
+    },
+    "questionAnswer": {
+      "type": "object",
+      "required": ["question", "answer"],
+      "additionalProperties": false,
+      "properties": {
+        "question": { "type": "string", "minLength": 1, "maxLength": 2000 },
+        "answer": { "type": "string", "minLength": 1, "maxLength": 10000 }
+      }
+    },
+    "localizedReferences": {
+      "type": "array",
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": ["title", "reference", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "title": { "$ref": "#/$defs/localizedText" },
+          "reference": { "type": "string", "maxLength": 300 },
+          "url": { "type": ["string", "null"], "format": "uri" }
+        }
+      }
+    },
+    "mediaPlaceholder": {
+      "type": "object",
+      "required": ["status", "caption", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "status": { "enum": ["planned", "available", "not_applicable"] },
+        "caption": { "$ref": "#/$defs/localizedText" },
+        "url": { "type": ["string", "null"], "format": "uri" }
+      }
+    },
+    "taxonomy": {
+      "type": "object",
+      "required": ["key", "en", "tr"],
+      "additionalProperties": false,
+      "properties": {
+        "key": {
+          "type": "string",
+          "pattern": "^[a-z0-9]+(?:[._-][a-z0-9]+)*$",
+          "maxLength": 160
+        },
+        "en": { "type": "string", "minLength": 1, "maxLength": 160 },
+        "tr": { "type": "string", "minLength": 1, "maxLength": 160 }
+      }
+    }
+  }
+}

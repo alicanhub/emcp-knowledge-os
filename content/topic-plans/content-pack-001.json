@@ -1,0 +1,1369 @@
+{
+  "topic_plan_id": "content-pack-001",
+  "title": {
+    "en": "Everyday Property, Construction and Finance Fundamentals",
+    "tr": "Günlük Gayrimenkul, İnşaat ve Finans Temelleri"
+  },
+  "owner": "EMCP Editorial",
+  "target_jurisdictions": ["England and Wales", "United Kingdom where stated"],
+  "audience": [
+    "Property owners",
+    "Investors",
+    "Developers",
+    "Contractors",
+    "Estate agents",
+    "Construction professionals"
+  ],
+  "objectives": {
+    "en": ["Publish 100 practical, beginner-friendly, non-duplicate concepts."],
+    "tr": [
+      "Başlangıç seviyesine uygun, pratik ve tekrarsız 100 kavram yayımlamak."
+    ]
+  },
+  "proposed_entries": [
+    {
+      "id": "buying-owning.asking-price",
+      "title": {
+        "en": "Asking Price",
+        "tr": "İlan Fiyatı"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.property-offer",
+      "title": {
+        "en": "Property Offer",
+        "tr": "Taşınmaz Teklifi"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.property-chain",
+      "title": {
+        "en": "Property Chain",
+        "tr": "Taşınmaz Zinciri"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.conveyancing",
+      "title": {
+        "en": "Conveyancing",
+        "tr": "Tapu Devir Hukuk İşlemleri"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.exchange-of-contracts",
+      "title": {
+        "en": "Exchange of Contracts",
+        "tr": "Sözleşmelerin Teatisi"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.legal-completion",
+      "title": {
+        "en": "Legal Completion",
+        "tr": "Hukuki Tamamlama"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.title-register",
+      "title": {
+        "en": "Title Register",
+        "tr": "Tapu Sicil Kaydı"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.title-plan",
+      "title": {
+        "en": "Title Plan",
+        "tr": "Tapu Planı"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.property-searches",
+      "title": {
+        "en": "Property Searches",
+        "tr": "Taşınmaz Araştırmaları"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "buying-owning.joint-ownership",
+      "title": {
+        "en": "Joint Property Ownership",
+        "tr": "Ortak Taşınmaz Mülkiyeti"
+      },
+      "category": "buying-owning",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.gov.uk/buying-a-home"]
+    },
+    {
+      "id": "renting-leasing.tenancy-agreement",
+      "title": {
+        "en": "Tenancy Agreement",
+        "tr": "Konut Kira Sözleşmesi"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.landlord",
+      "title": {
+        "en": "Landlord",
+        "tr": "Ev Sahibi"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.tenant",
+      "title": {
+        "en": "Tenant",
+        "tr": "Kiracı"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.rent",
+      "title": {
+        "en": "Rent",
+        "tr": "Kira Bedeli"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.tenancy-deposit",
+      "title": {
+        "en": "Tenancy Deposit",
+        "tr": "Kira Güvence Bedeli"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.holding-deposit",
+      "title": {
+        "en": "Holding Deposit",
+        "tr": "Rezervasyon Depozitosu"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.rental-inventory",
+      "title": {
+        "en": "Rental Inventory",
+        "tr": "Kiralama Envanteri"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.rent-arrears",
+      "title": {
+        "en": "Rent Arrears",
+        "tr": "Kira Borcu Gecikmesi"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.break-clause",
+      "title": {
+        "en": "Break Clause",
+        "tr": "Erken Fesih Maddesi"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "renting-leasing.rent-review",
+      "title": {
+        "en": "Rent Review",
+        "tr": "Kira Gözden Geçirmesi"
+      },
+      "category": "renting-leasing",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/browse/housing-local-services/renting-property"
+      ]
+    },
+    {
+      "id": "mortgages-loans.mortgage",
+      "title": {
+        "en": "Mortgage",
+        "tr": "İpotekli Konut Kredisi"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.mortgage-deposit",
+      "title": {
+        "en": "Mortgage Deposit",
+        "tr": "Konut Kredisi Peşinatı"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.loan-principal",
+      "title": {
+        "en": "Loan Principal",
+        "tr": "Kredi Anaparası"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.interest-rate",
+      "title": {
+        "en": "Interest Rate",
+        "tr": "Faiz Oranı"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.fixed-rate-mortgage",
+      "title": {
+        "en": "Fixed-Rate Mortgage",
+        "tr": "Sabit Faizli Konut Kredisi"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.variable-rate-mortgage",
+      "title": {
+        "en": "Variable-Rate Mortgage",
+        "tr": "Değişken Faizli Konut Kredisi"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.repayment-mortgage",
+      "title": {
+        "en": "Repayment Mortgage",
+        "tr": "Anapara ve Faiz Ödemeli Kredi"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.interest-only-mortgage",
+      "title": {
+        "en": "Interest-Only Mortgage",
+        "tr": "Yalnız Faiz Ödemeli Kredi"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.mortgage-term",
+      "title": {
+        "en": "Mortgage Term",
+        "tr": "Konut Kredisi Vadesi"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "mortgages-loans.early-repayment-charge",
+      "title": {
+        "en": "Early Repayment Charge",
+        "tr": "Erken Ödeme Ücreti"
+      },
+      "category": "mortgages-loans",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options"
+      ]
+    },
+    {
+      "id": "investment-returns.capital-growth",
+      "title": {
+        "en": "Capital Growth",
+        "tr": "Sermaye Değer Artışı"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.rental-cash-flow",
+      "title": {
+        "en": "Rental Cash Flow",
+        "tr": "Kira Nakit Akışı"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.gross-rental-income",
+      "title": {
+        "en": "Gross Rental Income",
+        "tr": "Brüt Kira Geliri"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.net-rental-income",
+      "title": {
+        "en": "Net Rental Income",
+        "tr": "Net Kira Geliri"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.operating-expenses",
+      "title": {
+        "en": "Property Operating Expenses",
+        "tr": "Taşınmaz İşletme Giderleri"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.vacancy-rate",
+      "title": {
+        "en": "Vacancy Rate",
+        "tr": "Boşluk Oranı"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.break-even-occupancy",
+      "title": {
+        "en": "Break-Even Occupancy",
+        "tr": "Başabaş Doluluk Oranı"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.payback-period",
+      "title": {
+        "en": "Payback Period",
+        "tr": "Geri Ödeme Süresi"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.investment-leverage",
+      "title": {
+        "en": "Investment Leverage",
+        "tr": "Yatırım Kaldıracı"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "investment-returns.total-return",
+      "title": {
+        "en": "Property Total Return",
+        "tr": "Toplam Taşınmaz Getirisi"
+      },
+      "category": "investment-returns",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.rics.org/consumer-guides"]
+    },
+    {
+      "id": "values-costs-income.market-value",
+      "title": {
+        "en": "Market Value",
+        "tr": "Piyasa Değeri"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.asking-rent",
+      "title": {
+        "en": "Asking Rent",
+        "tr": "Talep Edilen Kira"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.service-charge",
+      "title": {
+        "en": "Service Charge",
+        "tr": "Ortak Hizmet Gideri"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.ground-rent",
+      "title": {
+        "en": "Ground Rent",
+        "tr": "Arsa Kirası"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.council-tax",
+      "title": {
+        "en": "Council Tax",
+        "tr": "Yerel Yönetim Konut Vergisi"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.stamp-duty-land-tax",
+      "title": {
+        "en": "Stamp Duty Land Tax",
+        "tr": "Damga Vergisi Arazi Vergisi"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.building-insurance-premium",
+      "title": {
+        "en": "Building Insurance Premium",
+        "tr": "Bina Sigortası Primi"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.maintenance-cost",
+      "title": {
+        "en": "Property Maintenance Cost",
+        "tr": "Taşınmaz Bakım Maliyeti"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.repair-cost",
+      "title": {
+        "en": "Property Repair Cost",
+        "tr": "Taşınmaz Onarım Maliyeti"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "values-costs-income.void-cost",
+      "title": {
+        "en": "Void Cost",
+        "tr": "Boş Kalma Maliyeti"
+      },
+      "category": "values-costs-income",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "construction-roles-stages.construction-client",
+      "title": {
+        "en": "Construction Client",
+        "tr": "İnşaat İşvereni"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.architect",
+      "title": {
+        "en": "Architect",
+        "tr": "Mimar"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.structural-engineer",
+      "title": {
+        "en": "Structural Engineer",
+        "tr": "İnşaat Mühendisi"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.quantity-surveyor",
+      "title": {
+        "en": "Quantity Surveyor",
+        "tr": "Maliyet ve Metraj Uzmanı"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.principal-designer",
+      "title": {
+        "en": "Principal Designer",
+        "tr": "Ana Tasarımcı"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.principal-contractor",
+      "title": {
+        "en": "Principal Contractor",
+        "tr": "Ana Yüklenici"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.subcontractor",
+      "title": {
+        "en": "Subcontractor",
+        "tr": "Alt Yüklenici"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.site-manager",
+      "title": {
+        "en": "Site Manager",
+        "tr": "Şantiye Müdürü"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.pre-construction-phase",
+      "title": {
+        "en": "Pre-Construction Phase",
+        "tr": "İnşaat Öncesi Aşama"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "construction-roles-stages.project-handover",
+      "title": {
+        "en": "Project Handover",
+        "tr": "Proje Teslimi"
+      },
+      "category": "construction-roles-stages",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": ["https://www.hse.gov.uk/pubns/priced/l153.pdf"]
+    },
+    {
+      "id": "planning-building-control.planning-application",
+      "title": {
+        "en": "Planning Application",
+        "tr": "Planlama İzni Başvurusu"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.permitted-development-rights",
+      "title": {
+        "en": "Permitted Development Rights",
+        "tr": "İzinli Geliştirme Hakları"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.planning-condition",
+      "title": {
+        "en": "Planning Condition",
+        "tr": "Planlama Koşulu"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.listed-building-consent",
+      "title": {
+        "en": "Listed Building Consent",
+        "tr": "Tescilli Yapı İzni"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.conservation-area",
+      "title": {
+        "en": "Conservation Area",
+        "tr": "Koruma Alanı"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.building-regulations",
+      "title": {
+        "en": "Building Regulations",
+        "tr": "Yapı Yönetmelikleri"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.building-control-approval",
+      "title": {
+        "en": "Building Control Approval",
+        "tr": "Yapı Kontrol Onayı"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.building-control-body",
+      "title": {
+        "en": "Building Control Body",
+        "tr": "Yapı Kontrol Kuruluşu"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.building-completion-certificate",
+      "title": {
+        "en": "Building Completion Certificate",
+        "tr": "Yapı Tamamlama Belgesi"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "planning-building-control.party-wall",
+      "title": {
+        "en": "Party Wall",
+        "tr": "Ortak Duvar"
+      },
+      "category": "planning-building-control",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/"
+      ]
+    },
+    {
+      "id": "property-documents.memorandum-of-sale",
+      "title": {
+        "en": "Memorandum of Sale",
+        "tr": "Satış Bilgi Özeti"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.contract-for-sale",
+      "title": {
+        "en": "Contract for Sale",
+        "tr": "Taşınmaz Satış Sözleşmesi"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.transfer-deed",
+      "title": {
+        "en": "Transfer Deed",
+        "tr": "Devir Senedi"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.mortgage-deed",
+      "title": {
+        "en": "Mortgage Deed",
+        "tr": "İpotek Senedi"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.energy-performance-certificate",
+      "title": {
+        "en": "Energy Performance Certificate",
+        "tr": "Enerji Performans Belgesi"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.property-information-form",
+      "title": {
+        "en": "Property Information Form",
+        "tr": "Taşınmaz Bilgi Formu"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.fixtures-fittings-form",
+      "title": {
+        "en": "Fixtures and Fittings Form",
+        "tr": "Demirbaş ve Eşya Formu"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.property-lease",
+      "title": {
+        "en": "Property Lease",
+        "tr": "Taşınmaz Kira Belgesi"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.rent-statement",
+      "title": {
+        "en": "Rent Statement",
+        "tr": "Kira Hesap Dökümü"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "property-documents.schedule-of-condition",
+      "title": {
+        "en": "Schedule of Condition",
+        "tr": "Durum Tespit Çizelgesi"
+      },
+      "category": "property-documents",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry"
+      ]
+    },
+    {
+      "id": "risks-inspections.home-survey",
+      "title": {
+        "en": "Home Survey",
+        "tr": "Konut Durum İncelemesi"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.mortgage-valuation",
+      "title": {
+        "en": "Mortgage Valuation",
+        "tr": "Kredi Değerlemesi"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.building-survey",
+      "title": {
+        "en": "Building Survey",
+        "tr": "Ayrıntılı Bina İncelemesi"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.damp",
+      "title": {
+        "en": "Damp",
+        "tr": "Rutubet"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.subsidence",
+      "title": {
+        "en": "Subsidence",
+        "tr": "Zemin Kaynaklı Oturma"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.asbestos-containing-material",
+      "title": {
+        "en": "Asbestos-Containing Material",
+        "tr": "Asbest İçeren Malzeme"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.flood-risk",
+      "title": {
+        "en": "Flood Risk",
+        "tr": "Sel Riski"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.land-contamination",
+      "title": {
+        "en": "Land Contamination",
+        "tr": "Arazi Kirliliği"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.japanese-knotweed",
+      "title": {
+        "en": "Japanese Knotweed",
+        "tr": "Japon Madımağı"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "risks-inspections.electrical-condition-report",
+      "title": {
+        "en": "Electrical Installation Condition Report",
+        "tr": "Elektrik Tesisatı Durum Raporu"
+      },
+      "category": "risks-inspections",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/consumer-guides/house-surveys-uk-the-costs-types-and-benefits-of-an-rics-home-survey"
+      ]
+    },
+    {
+      "id": "commercial-property.business-lease",
+      "title": {
+        "en": "Business Lease",
+        "tr": "Ticari Kira Sözleşmesi"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.passing-rent",
+      "title": {
+        "en": "Passing Rent",
+        "tr": "Geçerli Kira"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.rent-free-period",
+      "title": {
+        "en": "Rent-Free Period",
+        "tr": "Kirasız Dönem"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.service-charge-budget",
+      "title": {
+        "en": "Service Charge Budget",
+        "tr": "Hizmet Gideri Bütçesi"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.service-charge-reconciliation",
+      "title": {
+        "en": "Service Charge Reconciliation",
+        "tr": "Hizmet Gideri Mutabakatı"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.repairing-obligation",
+      "title": {
+        "en": "Repairing Obligation",
+        "tr": "Onarım Yükümlülüğü"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.full-repairing-insuring-lease",
+      "title": {
+        "en": "Full Repairing and Insuring Lease",
+        "tr": "Tam Onarım ve Sigorta Yükümlü Kira"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.lease-assignment",
+      "title": {
+        "en": "Lease Assignment",
+        "tr": "Kira Hakkının Devri"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.subletting",
+      "title": {
+        "en": "Subletting",
+        "tr": "Alt Kiralama"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    },
+    {
+      "id": "commercial-property.dilapidations",
+      "title": {
+        "en": "Dilapidations",
+        "tr": "Kira Sonu Onarım Talepleri"
+      },
+      "category": "commercial-property",
+      "priority": "high",
+      "overlap_check": "new",
+      "dependencies": [],
+      "suggested_sources": [
+        "https://www.rics.org/dispute-resolution-service/drs-services/rent-and-property-disputes"
+      ]
+    }
+  ],
+  "reviewers": ["EMCP Content Pack 001 source review"],
+  "status": "reviewed",
+  "target_review_date": "2026-07-14",
+  "notes": "Compared against all 103 runtime titles before authoring. Existing concepts were excluded. Legal, tax, lending, planning and technical consequences require property-specific professional advice."
+}

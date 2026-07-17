@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "mortgages-loans.mortgage-term",
+  "title": {
+    "en": "Mortgage Term",
+    "tr": "Konut Kredisi Vadesi"
+  },
+  "summary": {
+    "en": "The agreed period over which a mortgage is scheduled to run.",
+    "tr": "Konut kredisinin devam etmesi için kararlaştırılan süredir."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "The agreed period over which a mortgage is scheduled to run. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Konut kredisinin devam etmesi için kararlaştırılan süredir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "mortgages-loans",
+    "en": "Mortgages, loans and deposits",
+    "tr": "İpotekli krediler ve borçlanma"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["mortgages-loans", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["mortgage", "term"],
+    "tr": ["konut", "kredisi", "vadesi"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Mortgage Term” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Konut Kredisi Vadesi” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving mortgage term.",
+    "tr": "Bu kavramı konut kredisi vadesi içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "mortgages-loans.interest-only-mortgage",
+    "mortgages-loans.early-repayment-charge"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Interest-only and repayment mortgages explained",
+      "publisher": "MoneyHelper",
+      "url": "https://www.moneyhelper.org.uk/en/homes/buying-a-home/mortgage-repayment-options",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Mortgage Term; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

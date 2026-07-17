@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-07-14T02:13:30.402Z",
+  "runtime_entries": 378,
+  "reviewed_entries": 286,
+  "draft_entries": 0,
+  "rejected_entries": 0,
+  "completed_packs": 3,
+  "active_packs": 0,
+  "next_recommended_pack": "pack.004",
+  "entries_by_category": {
+    "Capital and Investment": 10,
+    "Construction and Delivery": 10,
+    "Construction and Handover": 15,
+    "Finance": 121,
+    "Legal and Due Diligence": 20,
+    "Legal and Review": 20,
+    "Planning and Public": 15,
+    "Property and Development": 75
+  },
+  "entries_by_difficulty": {
+    "beginner": 213
+  },
+  "entries_by_jurisdiction": {
+    "England and Wales (verify devolved and local rules)": 80,
+    "United Kingdom": 3,
+    "United Kingdom (general; verify locally)": 20,
+    "United Kingdom — educational overview, Turkey — local professional verification required": 181,
+    "United Kingdom, International": 2
+  },
+  "source_coverage_percentage": 100,
+  "bilingual_coverage_percentage": 100,
+  "handbook_coverage_percentage": 1.2,
+  "calculator_link_coverage_percentage": 6.6,
+  "broken_references": 0,
+  "records_due_for_review": 0,
+  "stale_records": 0,
+  "recent_imports": []
+}

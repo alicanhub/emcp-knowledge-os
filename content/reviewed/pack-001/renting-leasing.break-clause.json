@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "renting-leasing.break-clause",
+  "title": {
+    "en": "Break Clause",
+    "tr": "Erken Fesih Maddesi"
+  },
+  "summary": {
+    "en": "A lease term allowing an eligible party to end the agreement early if stated conditions are met.",
+    "tr": "Belirtilen şartlar sağlanırsa yetkili tarafa sözleşmeyi erken sona erdirme imkânı veren maddedir."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "A lease term allowing an eligible party to end the agreement early if stated conditions are met. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Belirtilen şartlar sağlanırsa yetkili tarafa sözleşmeyi erken sona erdirme imkânı veren maddedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "property-development",
+    "en": "Property and Development",
+    "tr": "Gayrimenkul ve Geliştirme"
+  },
+  "subcategory": {
+    "key": "renting-leasing",
+    "en": "Renting and leasing",
+    "tr": "Kiralama"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["renting-leasing", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["break", "clause"],
+    "tr": ["erken", "fesih", "maddesi"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Break Clause” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Erken Fesih Maddesi” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving break clause.",
+    "tr": "Bu kavramı erken fesih maddesi içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "renting-leasing.rent-arrears",
+    "renting-leasing.rent-review"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Renting a property",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/browse/housing-local-services/renting-property",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Break Clause; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

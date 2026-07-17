@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/content-review.schema.json",
+  "type": "object",
+  "required": [
+    "record_id",
+    "reviewer",
+    "reviewed_date",
+    "checks",
+    "outcome",
+    "notes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "record_id": { "type": "string" },
+    "reviewer": { "type": ["string", "null"] },
+    "reviewed_date": { "type": ["string", "null"], "format": "date" },
+    "checks": {
+      "type": "object",
+      "required": [
+        "factual_accuracy",
+        "source_reliability",
+        "bilingual_quality",
+        "turkish_naturalness",
+        "professional_terminology",
+        "formula_accuracy",
+        "calculation_accuracy",
+        "legal_risk_wording",
+        "tax_risk_wording",
+        "financial_risk_wording",
+        "jurisdiction_clarity",
+        "duplicate_detection",
+        "related_concept_accuracy",
+        "calculator_reference_accuracy",
+        "document_reference_accuracy",
+        "handbook_relevance"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "factual_accuracy": { "$ref": "#/$defs/check" },
+        "source_reliability": { "$ref": "#/$defs/check" },
+        "bilingual_quality": { "$ref": "#/$defs/check" },
+        "turkish_naturalness": { "$ref": "#/$defs/check" },
+        "professional_terminology": { "$ref": "#/$defs/check" },
+        "formula_accuracy": { "$ref": "#/$defs/check" },
+        "calculation_accuracy": { "$ref": "#/$defs/check" },
+        "legal_risk_wording": { "$ref": "#/$defs/check" },
+        "tax_risk_wording": { "$ref": "#/$defs/check" },
+        "financial_risk_wording": { "$ref": "#/$defs/check" },
+        "jurisdiction_clarity": { "$ref": "#/$defs/check" },
+        "duplicate_detection": { "$ref": "#/$defs/check" },
+        "related_concept_accuracy": { "$ref": "#/$defs/check" },
+        "calculator_reference_accuracy": { "$ref": "#/$defs/check" },
+        "document_reference_accuracy": { "$ref": "#/$defs/check" },
+        "handbook_relevance": { "$ref": "#/$defs/check" }
+      }
+    },
+    "outcome": {
+      "enum": [
+        "pending",
+        "approve",
+        "approve-with-edits",
+        "return-to-draft",
+        "reject",
+        "require-professional-review"
+      ]
+    },
+    "notes": { "type": "string" }
+  },
+  "$defs": {
+    "check": {
+      "enum": [
+        "pending",
+        "pass",
+        "fail",
+        "not-applicable",
+        "professional-review-required"
+      ]
+    }
+  }
+}

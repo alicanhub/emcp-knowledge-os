@@ -1,0 +1,541 @@
+[
+  {
+    "id": "pack.001",
+    "object_type": "content_pack",
+    "title": {
+      "en": "Everyday Property, Construction and Finance Fundamentals",
+      "tr": "Günlük Gayrimenkul, İnşaat ve Finans Temelleri"
+    },
+    "summary": {
+      "en": "The existing 100-entry reviewed foundation pack.",
+      "tr": "Mevcut 100 kayıtlık incelenmiş temel paket."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Everyday Property, Construction and Finance Fundamentals and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Günlük Gayrimenkul, İnşaat ve Finans Temelleri konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [
+      "buying-owning.asking-price",
+      "buying-owning.conveyancing",
+      "buying-owning.exchange-of-contracts",
+      "buying-owning.joint-ownership",
+      "buying-owning.legal-completion",
+      "buying-owning.property-chain",
+      "buying-owning.property-offer",
+      "buying-owning.property-searches",
+      "buying-owning.title-plan",
+      "buying-owning.title-register",
+      "commercial-property.business-lease",
+      "commercial-property.dilapidations",
+      "commercial-property.full-repairing-insuring-lease",
+      "commercial-property.lease-assignment",
+      "commercial-property.passing-rent",
+      "commercial-property.rent-free-period",
+      "commercial-property.repairing-obligation",
+      "commercial-property.service-charge-budget",
+      "commercial-property.service-charge-reconciliation",
+      "commercial-property.subletting",
+      "construction-roles-stages.architect",
+      "construction-roles-stages.construction-client",
+      "construction-roles-stages.pre-construction-phase",
+      "construction-roles-stages.principal-contractor",
+      "construction-roles-stages.principal-designer",
+      "construction-roles-stages.project-handover",
+      "construction-roles-stages.quantity-surveyor",
+      "construction-roles-stages.site-manager",
+      "construction-roles-stages.structural-engineer",
+      "construction-roles-stages.subcontractor",
+      "investment-returns.break-even-occupancy",
+      "investment-returns.capital-growth",
+      "investment-returns.gross-rental-income",
+      "investment-returns.investment-leverage",
+      "investment-returns.net-rental-income",
+      "investment-returns.operating-expenses",
+      "investment-returns.payback-period",
+      "investment-returns.rental-cash-flow",
+      "investment-returns.total-return",
+      "investment-returns.vacancy-rate",
+      "mortgages-loans.early-repayment-charge",
+      "mortgages-loans.fixed-rate-mortgage",
+      "mortgages-loans.interest-only-mortgage",
+      "mortgages-loans.interest-rate",
+      "mortgages-loans.loan-principal",
+      "mortgages-loans.mortgage",
+      "mortgages-loans.mortgage-deposit",
+      "mortgages-loans.mortgage-term",
+      "mortgages-loans.repayment-mortgage",
+      "mortgages-loans.variable-rate-mortgage",
+      "planning-building-control.building-completion-certificate",
+      "planning-building-control.building-control-approval",
+      "planning-building-control.building-control-body",
+      "planning-building-control.building-regulations",
+      "planning-building-control.conservation-area",
+      "planning-building-control.listed-building-consent",
+      "planning-building-control.party-wall",
+      "planning-building-control.permitted-development-rights",
+      "planning-building-control.planning-application",
+      "planning-building-control.planning-condition",
+      "property-documents.contract-for-sale",
+      "property-documents.energy-performance-certificate",
+      "property-documents.fixtures-fittings-form",
+      "property-documents.memorandum-of-sale",
+      "property-documents.mortgage-deed",
+      "property-documents.property-information-form",
+      "property-documents.property-lease",
+      "property-documents.rent-statement",
+      "property-documents.schedule-of-condition",
+      "property-documents.transfer-deed",
+      "renting-leasing.break-clause",
+      "renting-leasing.holding-deposit",
+      "renting-leasing.landlord",
+      "renting-leasing.rent",
+      "renting-leasing.rent-arrears",
+      "renting-leasing.rent-review",
+      "renting-leasing.rental-inventory",
+      "renting-leasing.tenancy-agreement",
+      "renting-leasing.tenancy-deposit",
+      "renting-leasing.tenant",
+      "risks-inspections.asbestos-containing-material",
+      "risks-inspections.building-survey",
+      "risks-inspections.damp",
+      "risks-inspections.electrical-condition-report",
+      "risks-inspections.flood-risk",
+      "risks-inspections.home-survey",
+      "risks-inspections.japanese-knotweed",
+      "risks-inspections.land-contamination",
+      "risks-inspections.mortgage-valuation",
+      "risks-inspections.subsidence",
+      "values-costs-income.asking-rent",
+      "values-costs-income.building-insurance-premium",
+      "values-costs-income.council-tax",
+      "values-costs-income.ground-rent",
+      "values-costs-income.maintenance-cost",
+      "values-costs-income.market-value",
+      "values-costs-income.repair-cost",
+      "values-costs-income.service-charge",
+      "values-costs-income.stamp-duty-land-tax",
+      "values-costs-income.void-cost"
+    ],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "reviewed",
+    "reviewer": "EMCP Content Pack 001 source review",
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "child_modules": ["module.property-finance-fundamentals"]
+  },
+  {
+    "id": "pack.002",
+    "object_type": "content_pack",
+    "title": {
+      "en": "Residential Property Fundamentals",
+      "tr": "Konut Gayrimenkulü Temelleri"
+    },
+    "summary": {
+      "en": "A planned pack covering practical residential property concepts.",
+      "tr": "Pratik konut gayrimenkulü kavramlarını kapsayan planlı paket."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Residential Property Fundamentals and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Konut Gayrimenkulü Temelleri konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": ["pack.001"],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [
+      "residential.ownership.legal-owner",
+      "residential.ownership.beneficial-owner",
+      "residential.ownership.sole-ownership",
+      "residential.ownership.co-ownership-agreement",
+      "residential.ownership.general-boundary",
+      "residential.buying.agreement-in-principle",
+      "residential.buying.reservation-agreement",
+      "residential.buying.gazumping",
+      "residential.buying.gazundering",
+      "residential.buying.completion-statement",
+      "residential.mortgages.mortgage-offer",
+      "residential.mortgages.mortgage-affordability-assessment",
+      "residential.mortgages.remortgage",
+      "residential.mortgages.mortgage-broker",
+      "residential.mortgages.mortgage-product-fee",
+      "residential.valuation.comparable-property",
+      "residential.valuation.comparable-sales-analysis",
+      "residential.valuation.valuation-date",
+      "residential.valuation.market-appraisal",
+      "residential.valuation.valuation-assumption",
+      "residential.tenancy.tenancy-notice-period",
+      "residential.tenancy.tenant-guarantor",
+      "residential.tenancy.tenant-referencing",
+      "residential.tenancy.check-in-report",
+      "residential.tenancy.check-out-report",
+      "residential.leasehold.commonhold",
+      "residential.leasehold.unexpired-lease-term",
+      "residential.leasehold.lease-extension",
+      "residential.leasehold.collective-enfranchisement",
+      "residential.leasehold.leasehold-managing-agent",
+      "residential.surveys.property-survey",
+      "residential.surveys.condition-rating",
+      "residential.surveys.invasive-inspection",
+      "residential.surveys.drainage-survey",
+      "residential.surveys.roof-inspection",
+      "residential.defects.condensation",
+      "residential.defects.mould-growth",
+      "residential.defects.structural-movement",
+      "residential.defects.dry-rot",
+      "residential.defects.wet-rot",
+      "residential.energy.smart-meter",
+      "residential.energy.utility-meter-reading",
+      "residential.energy.loft-insulation",
+      "residential.energy.double-glazing",
+      "residential.energy.boiler-efficiency",
+      "residential.insurance.contents-insurance",
+      "residential.insurance.landlord-insurance",
+      "residential.insurance.insurance-excess",
+      "residential.insurance.insured-peril",
+      "residential.insurance.underinsurance",
+      "residential.documents.leasehold-information-form",
+      "residential.documents.gas-safety-record",
+      "residential.documents.electrical-safety-report",
+      "residential.documents.boiler-service-record",
+      "residential.documents.new-build-warranty-document",
+      "residential.investment.buy-to-let",
+      "residential.investment.gross-rental-yield",
+      "residential.investment.net-rental-yield",
+      "residential.investment.cash-on-cash-return",
+      "residential.investment.rental-void-period",
+      "residential.landlord.deposit-protection",
+      "residential.landlord.landlord-repair-duty",
+      "residential.landlord.right-to-rent-check",
+      "residential.landlord.smoke-alarm-check",
+      "residential.landlord.landlord-access-notice",
+      "residential.tenant.rent-due-date",
+      "residential.tenant.reporting-repairs",
+      "residential.tenant.tenant-reasonable-care",
+      "residential.tenant.access-appointment",
+      "residential.tenant.end-of-tenancy-cleaning",
+      "residential.management.letting-agent-fee",
+      "residential.management.property-management-fee",
+      "residential.management.rent-collection-service",
+      "residential.management.maintenance-request",
+      "residential.management.periodic-property-inspection",
+      "residential.renovation.residential-refurbishment",
+      "residential.renovation.residential-renovation",
+      "residential.renovation.planned-maintenance",
+      "residential.renovation.reactive-maintenance",
+      "residential.renovation.maintenance-schedule",
+      "residential.planning.planning-permission",
+      "residential.planning.building-control-inspection",
+      "residential.planning.building-notice",
+      "residential.planning.full-plans-application",
+      "residential.planning.lawful-development-certificate",
+      "residential.communal.major-works",
+      "residential.communal.reserve-fund",
+      "residential.communal.right-to-manage",
+      "residential.communal.service-charge-demand",
+      "residential.communal.communal-area",
+      "residential.moving.key-handover",
+      "residential.moving.meter-handover-reading",
+      "residential.moving.moving-in-checklist",
+      "residential.moving.forwarding-address",
+      "residential.moving.vacant-possession-handover",
+      "residential.exit.open-market-sale",
+      "residential.exit.auction-sale",
+      "residential.exit.probate-property",
+      "residential.exit.repossessed-property",
+      "residential.exit.portfolio-disposal"
+    ],
+    "related_topics": [],
+    "related_calculators": ["Rental Yield", "ROI", "Monthly Loan Payment"],
+    "related_documents": [
+      "document-guide.mortgage-offer",
+      "document-guide.residential-title",
+      "document-guide.tenancy-agreement",
+      "document-guide.property-survey",
+      "document-guide.leasehold-pack"
+    ],
+    "related_case_studies": [
+      "case-study.first-home",
+      "case-study.beginner-landlord",
+      "case-study.leasehold-flat"
+    ],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      },
+      {
+        "title": "RICS consumer guides",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Pack 002 linked to 100 reviewed entries and residential learning resources.",
+          "tr": "Pack 002, 100 incelenmiş kayıt ve konut öğrenme kaynağına bağlandı."
+        }
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Pack 002 linked to 100 reviewed entries and residential learning resources.",
+          "tr": "Pack 002, 100 incelenmiş kayıt ve konut öğrenme kaynağına bağlandı."
+        }
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Pack 002 linked to 100 reviewed entries and residential learning resources.",
+          "tr": "Pack 002, 100 incelenmiş kayıt ve konut öğrenme kaynağına bağlandı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.1.0",
+    "review_status": "reviewed",
+    "reviewer": "EMCP Editorial Review",
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "child_modules": ["module.residential-property-fundamentals"]
+  },
+  {
+    "id": "pack.003",
+    "object_type": "content_pack",
+    "title": {
+      "en": "Property Investor Fundamentals",
+      "tr": "Gayrimenkul Yatırımcılığı Temelleri"
+    },
+    "summary": {
+      "en": "A planned pack connecting investment decisions, finance and risk.",
+      "tr": "Yatırım kararlarını, finansmanı ve riski birleştiren planlı paket."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Property Investor Fundamentals and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Gayrimenkul Yatırımcılığı Temelleri konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": ["pack.001", "pack.002"],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [
+      "investor.investor-goals",
+      "investor.investment-strategy",
+      "investor.risk-tolerance",
+      "investor.investment-time-horizon",
+      "investor.capital-allocation",
+      "investor.deal-sourcing",
+      "investor.property-market-research",
+      "investor.location-analysis",
+      "investor.demand-analysis",
+      "investor.supply-analysis",
+      "investor.comparable-evidence",
+      "investor.purchase-price",
+      "values-costs-income.market-value",
+      "finance.gdv",
+      "investor.rental-income",
+      "residential.investment.gross-rental-yield",
+      "residential.investment.net-rental-yield",
+      "investment-returns.rental-cash-flow",
+      "investment-returns.operating-expenses",
+      "investor.net-operating-income",
+      "investor.vacancy-assumption",
+      "investor.maintenance-allowance",
+      "investor.management-cost",
+      "investor.insurance-cost",
+      "investor.financing-cost",
+      "mortgages-loans.mortgage-deposit",
+      "investor.equity",
+      "investor.property-debt",
+      "investment-returns.investment-leverage",
+      "finance.ltv",
+      "finance.ltc",
+      "finance.dscr",
+      "mortgages-loans.interest-rate",
+      "investor.loan-term",
+      "investor.loan-amortisation",
+      "mortgages-loans.interest-only-mortgage",
+      "mortgages-loans.repayment-mortgage",
+      "investor.bridging-finance",
+      "investor.development-finance",
+      "investor.refinance",
+      "investor.roi",
+      "investor.return-on-equity",
+      "investor.return-on-capital-employed",
+      "residential.investment.cash-on-cash-return",
+      "finance.irr",
+      "investor.net-present-value",
+      "investor.equity-multiple",
+      "investment-returns.capital-growth",
+      "investment-returns.total-return",
+      "investor.investment-break-even-point",
+      "investor.sensitivity-analysis",
+      "investor.best-case-scenario",
+      "investor.base-case-scenario",
+      "investor.worst-case-scenario",
+      "investor.investment-contingency",
+      "investor.cost-overrun",
+      "investor.programme-delay",
+      "investor.planning-risk",
+      "investor.construction-risk",
+      "investor.tenant-risk",
+      "investor.property-market-risk",
+      "investor.interest-rate-risk",
+      "investor.liquidity-risk",
+      "investor.regulatory-risk",
+      "investor.tax-risk",
+      "investor.due-diligence",
+      "investor.title-risk",
+      "investor.survey-risk",
+      "investor.environmental-risk",
+      "risks-inspections.flood-risk",
+      "investor.exit-strategy",
+      "investor.property-sale-exit",
+      "investor.refinance-exit",
+      "investor.hold-strategy",
+      "investor.development-exit",
+      "investor.portfolio-strategy",
+      "investor.diversification",
+      "investor.concentration-risk",
+      "investor.asset-management",
+      "investor.property-management",
+      "investor.tenant-management",
+      "investor.lease-management",
+      "investor.investment-performance-tracking",
+      "investor.property-investment-budget",
+      "investor.investment-forecasting",
+      "investor.deal-appraisal",
+      "investor.investment-memorandum",
+      "investor.investment-decision-framework",
+      "investor.go-no-go-decision",
+      "investor.margin-of-safety",
+      "investor.investment-checklist",
+      "investor.deal-snapshot",
+      "investor.scenario-comparison",
+      "investor.investment-lessons-learned",
+      "investor.post-investment-review",
+      "investor.common-investor-mistakes",
+      "investor.overpaying",
+      "investor.underestimating-costs",
+      "investor.overestimating-rent",
+      "investor.ignoring-exit-risk"
+    ],
+    "related_topics": [],
+    "related_calculators": [
+      "LTV",
+      "LTC",
+      "ROI",
+      "Rental Yield",
+      "Development Profit",
+      "Monthly Loan Payment",
+      "Arrangement Fee",
+      "Interest Roll-up",
+      "LTGDV"
+    ],
+    "related_documents": [
+      "document-guide.investment-memo",
+      "document-guide.deal-appraisal",
+      "document-guide.finance-terms",
+      "document-guide.risk-register",
+      "document-guide.post-investment-review"
+    ],
+    "related_case_studies": [
+      "case-study.investor-first-rental",
+      "case-study.investor-refurbishment",
+      "case-study.investor-refinance",
+      "case-study.investor-small-portfolio",
+      "case-study.investor-no-go",
+      "case-study.scenario-rent",
+      "case-study.scenario-interest",
+      "case-study.scenario-exit",
+      "case-study.appraisal-rental",
+      "case-study.appraisal-refurbishment",
+      "case-study.appraisal-development"
+    ],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      },
+      {
+        "version": "1.1.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Pack 003 linked to its 100-concept plan and investor learning resources.",
+          "tr": "Pack 003, 100 kavramlık planına ve yatırımcı öğrenme kaynaklarına bağlandı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.1.0",
+    "review_status": "reviewed",
+    "reviewer": "EMCP Editorial Review",
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ]
+  }
+]

@@ -1,0 +1,1206 @@
+[
+  {
+    "term": "BTR",
+    "tr": "Kiralamak için inşa edilen konut",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "Build to Rent",
+    "def": "Tek bir kurumsal sahip tarafından uzun vadeli kiralama amacıyla geliştirilen konut projesi.",
+    "use": "Kurumsal yatırım ve forward funding işlemlerinde kullanılır.",
+    "example": "The site is suitable for a 220-unit BTR scheme.",
+    "tags": [
+      "residential",
+      "rental",
+      "institutional"
+    ]
+  },
+  {
+    "term": "PBSA",
+    "tr": "Amaca özel öğrenci konaklaması",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "Purpose-Built Student Accommodation",
+    "def": "Öğrenciler için özel olarak tasarlanmış ve işletilen konaklama projesi.",
+    "use": "Üniversite şehirlerinde yatırım sınıfıdır.",
+    "example": "The proposal includes 450 PBSA beds.",
+    "tags": [
+      "student",
+      "accommodation",
+      "development"
+    ]
+  },
+  {
+    "term": "HMO",
+    "tr": "Birden fazla kişinin paylaştığı konut",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "House in Multiple Occupation",
+    "def": "Birden fazla ayrı hane tarafından paylaşılan konut türü.",
+    "use": "Lisans, yangın ve mekânsal standartlara tabi olabilir.",
+    "example": "The property requires a mandatory HMO licence.",
+    "tags": [
+      "residential",
+      "licence",
+      "shared house"
+    ]
+  },
+  {
+    "term": "Mixed-use",
+    "tr": "Karma kullanımlı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Konut, ticaret, ofis, otel veya toplumsal kullanımların aynı proje içinde birleştiği geliştirme.",
+    "use": "Şehir merkezi rejenerasyonunda yaygındır.",
+    "example": "The masterplan proposes a mixed-use regeneration scheme.",
+    "tags": [
+      "development",
+      "regeneration",
+      "planning"
+    ]
+  },
+  {
+    "term": "Regeneration",
+    "tr": "Kentsel yenileme / canlandırma",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Ekonomik, fiziksel veya sosyal olarak gerilemiş bir alanın kapsamlı biçimde yeniden geliştirilmesi.",
+    "use": "Kamu-özel ortaklıklarında kullanılır.",
+    "example": "The project forms part of the city-centre regeneration programme.",
+    "tags": [
+      "urban renewal",
+      "public sector",
+      "development"
+    ]
+  },
+  {
+    "term": "Strategic Land",
+    "tr": "Stratejik geliştirme arazisi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Henüz geliştirme izni bulunmayabilen, fakat orta veya uzun vadede planlama potansiyeli taşıyan arazi.",
+    "use": "Promoter ve landowner işlemlerinde kullanılır.",
+    "example": "The portfolio includes strategic land on the edge of the settlement.",
+    "tags": [
+      "land",
+      "planning",
+      "promotion"
+    ]
+  },
+  {
+    "term": "Freehold",
+    "tr": "Mülkiyet hakkı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Arazi ve üzerindeki yapının süresiz mülkiyet hakkı.",
+    "use": "İngiltere mülkiyet sisteminin temel hak türlerinden biridir.",
+    "example": "The property is offered for sale freehold.",
+    "tags": [
+      "title",
+      "ownership",
+      "property"
+    ]
+  },
+  {
+    "term": "Leasehold",
+    "tr": "Süreli kullanım / kira mülkiyeti",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir taşınmazı belirli süre ve sözleşme şartlarıyla kullanma hakkı.",
+    "use": "Daire, ticari mülk ve uzun süreli kiralamalarda kullanılır.",
+    "example": "The unit is held on a 125-year leasehold interest.",
+    "tags": [
+      "lease",
+      "title",
+      "property"
+    ]
+  },
+  {
+    "term": "Net Initial Yield",
+    "tr": "Net başlangıç getirisi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "NIY",
+    "def": "Yıllık net kira gelirinin, satın alma masrafları dahil toplam satın alma maliyetine oranı.",
+    "use": "Ticari gayrimenkul değerlemesinde kullanılır.",
+    "example": "The asset is priced at a 6.25% NIY.",
+    "tags": [
+      "yield",
+      "rent",
+      "valuation"
+    ]
+  },
+  {
+    "term": "ERV",
+    "tr": "Tahmini piyasa kira değeri",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "Estimated Rental Value",
+    "def": "Bir mülkün mevcut piyasa koşullarında elde edebileceği tahmini kira.",
+    "use": "Değerleme ve asset management için kullanılır.",
+    "example": "The current rent is 12% below ERV.",
+    "tags": [
+      "rent",
+      "valuation",
+      "income"
+    ]
+  },
+  {
+    "term": "Vacant Possession",
+    "tr": "Boş teslim",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "VP",
+    "def": "Mülkün kiracı, kullanıcı veya eşya olmadan alıcıya teslim edilmesi.",
+    "use": "Satış ve lease anlaşmalarında kullanılır.",
+    "example": "The property is available with vacant possession.",
+    "tags": [
+      "completion",
+      "property",
+      "possession"
+    ]
+  },
+  {
+    "term": "Asking Price",
+    "tr": "İlan Fiyatı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Satıcının taşınmaz için ilanda belirttiği fiyattır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Asking Price” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Conveyancing",
+    "tr": "Tapu Devir Hukuk İşlemleri",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Taşınmaz mülkiyetini devretmek için yapılan hukuki ve idari işlemlerdir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Conveyancing” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Exchange of Contracts",
+    "tr": "Sözleşmelerin Teatisi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "İngiltere ve Galler'de imzalı satış sözleşmelerinin karşılıklı verildiği ve işlemin bağlayıcı hâle geldiği aşamadır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Exchange of Contracts” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Joint Property Ownership",
+    "tr": "Ortak Taşınmaz Mülkiyeti",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir taşınmazın seçilen hukuki düzen içinde iki veya daha fazla kişi tarafından sahiplenilmesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Joint Property Ownership” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Legal Completion",
+    "tr": "Hukuki Tamamlama",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Satış bedelinin aktarıldığı ve mülkiyet devrinin tamamlandığı aşamadır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Legal Completion” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Chain",
+    "tr": "Taşınmaz Zinciri",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Her işlemin başka bir işleme bağlı olduğu bağlantılı alım-satım dizisidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Chain” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Offer",
+    "tr": "Taşınmaz Teklifi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Alıcının taşınmazı satın almak için önerdiği fiyat ve şartlardır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Offer” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Searches",
+    "tr": "Taşınmaz Araştırmaları",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Satın alma sırasında, incelemede görülmeyebilecek bilgileri öğrenmek için yaptırılan araştırmalardır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Searches” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Title Plan",
+    "tr": "Tapu Planı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kayıtlı taşınmazın konumunu ve genel sınırlarını gösteren tapu planıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Title Plan” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Title Register",
+    "tr": "Tapu Sicil Kaydı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kayıtlı bir taşınmazın malikini ve sicile işlenmiş hakları gösteren HM Land Registry kaydıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Title Register” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "buying-owning",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Business Lease",
+    "tr": "Ticari Kira Sözleşmesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir işyerini belirli şartlarla ticari amaçla kullanma hakkı veren kira sözleşmesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Business Lease” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Dilapidations",
+    "tr": "Kira Sonu Onarım Talepleri",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Taşınmazın onarım, eski hâle getirme veya durum yükümlülüklerine ilişkin kira sözleşmesi talepleridir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Dilapidations” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Full Repairing and Insuring Lease",
+    "tr": "Tam Onarım ve Sigorta Yükümlü Kira",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Tanımlanan onarım ve sigorta maliyetlerini doğrudan veya tahsil yoluyla kiracıya yüklemeyi amaçlayan ticari kira sözleşmesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Full Repairing and Insuring Lease” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Lease Assignment",
+    "tr": "Kira Hakkının Devri",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Mevcut kiracının kira hakkını sözleşme ve hukuka bağlı olarak başka bir tarafa devretmesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Lease Assignment” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Passing Rent",
+    "tr": "Geçerli Kira",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Mevcut kira sözleşmesi kapsamında hâlen ödenmesi gereken kiradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Passing Rent” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rent-Free Period",
+    "tr": "Kirasız Dönem",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kira şartlarına bağlı olarak sözleşmesel kiranın sıfıra indirildiği kararlaştırılmış dönemdir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rent-Free Period” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Repairing Obligation",
+    "tr": "Onarım Yükümlülüğü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Belirli onarım ve durum konularındaki sorumluluğu taraflara dağıtan kira yükümlülüğüdür. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Repairing Obligation” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Service Charge Budget",
+    "tr": "Hizmet Gideri Bütçesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Gelecekteki hizmet gideri dönemi için ortak hizmetlere ilişkin tahsil edilebilir harcama tahminidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Service Charge Budget” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Service Charge Reconciliation",
+    "tr": "Hizmet Gideri Mutabakatı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Dönem sonunda bütçelenen hizmet giderleriyle gerçekleşen uygun harcamaların karşılaştırılmasıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Service Charge Reconciliation” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Subletting",
+    "tr": "Alt Kiralama",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracının izin verildiği ölçüde kiralananın tamamı veya bir kısmı üzerinde başka bir kullanıcıya hak vermesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Subletting” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "commercial-property",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Break Clause",
+    "tr": "Erken Fesih Maddesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Belirtilen şartlar sağlanırsa yetkili tarafa sözleşmeyi erken sona erdirme imkânı veren maddedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Break Clause” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Holding Deposit",
+    "tr": "Rezervasyon Depozitosu",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kontroller ve belgeler tamamlanırken planlanan kiralamayı ayırmak için yapılan ödemedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Holding Deposit” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Landlord",
+    "tr": "Ev Sahibi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kira karşılığında bir taşınmazı kullanma hakkı veren kişi veya kuruluştur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Landlord” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rent Arrears",
+    "tr": "Kira Borcu Gecikmesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Sözleşmeye göre vadesi geldiği hâlde zamanında ödenmemiş kira borcudur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rent Arrears” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rent Review",
+    "tr": "Kira Gözden Geçirmesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiranın belirlenmiş zamanlarda veya olaylarda yeniden değerlendirilmesini sağlayan sözleşmesel süreçtir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rent Review” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rent",
+    "tr": "Kira Bedeli",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir taşınmazı kullanma veya taşınmazda oturma hakkı için düzenli ödenen bedeldir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rent” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rental Inventory",
+    "tr": "Kiralama Envanteri",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiralanan taşınmazın eşyalarını ve durumunu tarihli olarak kaydeden belgedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rental Inventory” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Tenancy Agreement",
+    "tr": "Konut Kira Sözleşmesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracının bir konutta hangi şartlarla oturacağını belirleyen sözleşmedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Tenancy Agreement” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Tenancy Deposit",
+    "tr": "Kira Güvence Bedeli",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kira sözleşmesindeki belirli yükümlülüklere karşı güvence olarak tutulan paradır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Tenancy Deposit” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Tenant",
+    "tr": "Kiracı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kira sözleşmesi kapsamında taşınmazı kullanma hakkına sahip kişi veya kuruluştur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Tenant” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "renting-leasing",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Mortgage Agreement in Principle",
+    "tr": "Ön Kredi Uygunluk Yazısı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kredi kuruluşunun kontroller ve tam başvuruya bağlı olarak verebileceği tutara ilişkin ön göstergesidir.",
+    "use": "Bir konut karar dosyasında ön kredi uygunluk yazısı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for mortgage agreement in principle, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "buying",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Completion Statement",
+    "tr": "Tamamlama Hesap Özeti",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Satış bedelini, düzeltmeleri, ücretleri ve işlemi tamamlamak için gereken bakiyeyi gösteren hesap özetidir.",
+    "use": "Bir konut karar dosyasında tamamlama hesap özeti konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for completion statement, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "buying",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Gazumping",
+    "tr": "Daha Yüksek Teklifi Kabul Etme",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "İlk işlem bağlayıcı hâle gelmeden satıcının başka bir alıcının daha yüksek teklifini kabul etmesidir.",
+    "use": "Bir konut karar dosyasında daha yüksek teklifi kabul etme konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for gazumping, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "buying",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Gazundering",
+    "tr": "Son Aşamada Teklifi Düşürme",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "İşlem bağlayıcı hâle gelmeden alıcının geç bir aşamada teklifini düşürmesidir.",
+    "use": "Bir konut karar dosyasında son aşamada teklifi düşürme konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for gazundering, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "buying",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Reservation Agreement",
+    "tr": "Taşınmaz Rezervasyon Sözleşmesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Satın alma ilerlerken taşınmazı belirli bir süre için ayırmak amacıyla kullanılan sözleşmedir.",
+    "use": "Bir konut karar dosyasında taşınmaz rezervasyon sözleşmesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property reservation agreement, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "buying",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Boiler Efficiency",
+    "tr": "Kazan Verimliliği",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir kazanın sağlanan enerjiyi yararlı ısıya ne kadar etkili dönüştürdüğünü gösteren ölçüdür.",
+    "use": "Bir konut karar dosyasında kazan verimliliği konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for boiler efficiency, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "energy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Double Glazing",
+    "tr": "Çift Cam",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Tek cama göre ısıl performansı artırmak için kapalı bir boşlukla ayrılmış iki cam kullanan ünitedir.",
+    "use": "Bir konut karar dosyasında çift cam konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for double glazing, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "energy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Loft Insulation",
+    "tr": "Çatı Arası Yalıtımı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Konutun üst bölümünden ısı geçişini azaltmak için çatı veya tavan seviyesinde uygulanan ısı yalıtımıdır.",
+    "use": "Bir konut karar dosyasında çatı arası yalıtımı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for loft insulation, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "energy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Smart Meter",
+    "tr": "Akıllı Sayaç",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Tüketimi kaydedebilen ve desteklediği sistem üzerinden ölçümleri iletebilen altyapı sayacıdır.",
+    "use": "Bir konut karar dosyasında akıllı sayaç konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for smart meter, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "energy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Utility Meter Reading",
+    "tr": "Altyapı Sayacı Okuması",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Belirli bir tarihte tüketimi belirlemek için kaydedilen elektrik, gaz veya su sayacı değeridir.",
+    "use": "Bir konut karar dosyasında altyapı sayacı okuması konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for utility meter reading, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "energy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Residential Auction Sale",
+    "tr": "Konut Müzayede Satışı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Belirtilen teklif ve sözleşme kurallarıyla müzayede süreci üzerinden yapılan konut satışıdır.",
+    "use": "Bir konut karar dosyasında konut müzayede satışı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for residential auction sale, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "exit",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Open Market Sale",
+    "tr": "Açık Piyasa Satışı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Konutun geniş pazara sunulması ve uygun bir alıcıyla satışın görüşülmesidir.",
+    "use": "Bir konut karar dosyasında açık piyasa satışı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for open market sale, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "exit",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Residential Portfolio Disposal",
+    "tr": "Konut Portföyü Satışı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Birden fazla konut varlığının birlikte veya koordineli sırayla planlı satışıdır.",
+    "use": "Bir konut karar dosyasında konut portföyü satışı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for residential portfolio disposal, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "exit",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Probate Property",
+    "tr": "Miras Sürecindeki Taşınmaz",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Vefat eden kişinin tereke yönetimi sürecinde satılan veya yönetilen taşınmazdır.",
+    "use": "Bir konut karar dosyasında miras sürecindeki taşınmaz konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for probate property, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "exit",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Repossessed Property",
+    "tr": "Kredi Kuruluşunca Geri Alınmış Taşınmaz",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Teminatlı kredi kuruluşu veya yetkili tarafça uygulanabilir hukuki süreçle zilyetliği alınmış taşınmazdır.",
+    "use": "Bir konut karar dosyasında kredi kuruluşunca geri alınmış taşınmaz konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for repossessed property, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "exit",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Contents Insurance",
+    "tr": "Ev Eşyası Sigortası",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Poliçe şartlarına bağlı olarak belirli ev eşyalarını sigortalı olaylara karşı korumayı amaçlayan sigortadır.",
+    "use": "Bir konut karar dosyasında ev eşyası sigortası konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for contents insurance, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "insurance",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Insurance Excess",
+    "tr": "Sigorta Muafiyet Tutarı",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Uygun bir hasarda sigorta ödemesinden önce veya onunla birlikte sigortalının karşılaması gereken tutardır.",
+    "use": "Bir konut karar dosyasında sigorta muafiyet tutarı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for insurance excess, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "insurance",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Insured Peril",
+    "tr": "Sigortalı Tehlike",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir sigorta poliçesinin açıkça teminat altına aldığı olay veya zarar nedenidir.",
+    "use": "Bir konut karar dosyasında sigortalı tehlike konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for insured peril, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "insurance",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Landlord Insurance",
+    "tr": "Ev Sahibi Sigortası",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Seçilen teminat kapsamında konut sahibi olma ve kiraya verme riskleri için tasarlanmış sigortadır.",
+    "use": "Bir konut karar dosyasında ev sahibi sigortası konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for landlord insurance, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "insurance",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Underinsurance",
+    "tr": "Eksik Sigorta",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Sigorta bedelinin veya beyan edilen riskin maruz kalan taşınmaz ya da eşyalar için yetersiz olduğu durumdur.",
+    "use": "Bir konut karar dosyasında eksik sigorta konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for underinsurance, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "insurance",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenancy Deposit Protection",
+    "tr": "Kira Depozitosu Koruması",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "İlgili düzen kapsamında kira depozitosunu koruma ve gerekli bilgileri sağlama sürecidir.",
+    "use": "Bir konut karar dosyasında kira depozitosu koruması konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenancy deposit protection, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "landlord",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Landlord Access Notice",
+    "tr": "Ev Sahibi Giriş Bildirimi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracılık ve uygulanabilir kurallara bağlı olarak belirtilen meşru amaçla kiralık konuta giriş talep eden bildirimdir.",
+    "use": "Bir konut karar dosyasında ev sahibi giriş bildirimi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for landlord access notice, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "landlord",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Landlord Repair Duty",
+    "tr": "Ev Sahibinin Onarım Yükümlülüğü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Sözleşme ve uygulanabilir hukuka göre belirlenen, ev sahibinin belirli onarımlara ilişkin sorumluluğudur.",
+    "use": "Bir konut karar dosyasında ev sahibinin onarım yükümlülüğü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for landlord repair duty, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "landlord",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Right to Rent Check",
+    "tr": "Kiraya Verme Uygunluk Kontrolü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Uygulanabilir kurallar gerektiriyorsa yetişkin kullanıcının uygunluğuna ilişkin bölgeye özel kontroldür.",
+    "use": "Bir konut karar dosyasında kiraya verme uygunluk kontrolü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for right to rent check, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "landlord",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Smoke Alarm Check",
+    "tr": "Duman Alarmı Kontrolü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "İlgili duman alarmlarının gerekli veya kararlaştırılan kapsamda mevcut ve çalışır olduğunu belgeleyen kontroldür.",
+    "use": "Bir konut karar dosyasında duman alarmı kontrolü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for smoke alarm check, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "landlord",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Letting Agent Fee",
+    "tr": "Kiralama Aracısı Ücreti",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Belirli kiralama veya kiracılık hizmetleri için açıklanmış ücrettir.",
+    "use": "Bir konut karar dosyasında kiralama aracısı ücreti konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for letting agent fee, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "management",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Maintenance Request",
+    "tr": "Taşınmaz Bakım Talebi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bakım sorununu, önceliğini, giriş bilgilerini ve gereken takibi açıklayan kayıtlı taleptir.",
+    "use": "Bir konut karar dosyasında taşınmaz bakım talebi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property maintenance request, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "management",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Periodic Property Inspection",
+    "tr": "Periyodik Taşınmaz Kontrolü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kullanılan veya yönetilen taşınmazın kararlaştırılmış ve hukuka uygun kapsamda planlı kontrolüdür.",
+    "use": "Bir konut karar dosyasında periyodik taşınmaz kontrolü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for periodic property inspection, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "management",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Management Fee",
+    "tr": "Taşınmaz Yönetim Ücreti",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Tanımlanmış sürekli taşınmaz yönetimi hizmetleri için ödenen ücrettir.",
+    "use": "Bir konut karar dosyasında taşınmaz yönetim ücreti konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property management fee, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "management",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Rent Collection Service",
+    "tr": "Kira Tahsilat Hizmeti",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kararlaştırılan yönetim kapsamında kira ödemelerini alan, kaydeden ve raporlayan hizmettir.",
+    "use": "Bir konut karar dosyasında kira tahsilat hizmeti konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for rent collection service, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "management",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Condition Rating",
+    "tr": "Taşınmaz Durum Derecesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "İncelemede gözlenen bir durumun göreli önemini veya aciliyetini aktarmak için kullanılan derecedir.",
+    "use": "Bir konut karar dosyasında taşınmaz durum derecesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property condition rating, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "surveys",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Drainage Survey",
+    "tr": "Drenaj İncelemesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Genellikle özel ekipmanla drenajın durumunu ve performansını inceleyen çalışmadır.",
+    "use": "Bir konut karar dosyasında drenaj incelemesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for drainage survey, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "surveys",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Invasive Inspection",
+    "tr": "Müdahaleli İnceleme",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Gizli yapıyı araştırmak için kaplama açılması, sökülmesi veya bozulmasını gerektiren incelemedir.",
+    "use": "Bir konut karar dosyasında müdahaleli inceleme konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for invasive inspection, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "surveys",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Survey",
+    "tr": "Taşınmaz İncelemesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Bir taşınmazın durumunu kararlaştırılmış kapsamda ele alan mesleki inceleme ve rapordur.",
+    "use": "Bir konut karar dosyasında taşınmaz incelemesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property survey, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "surveys",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Roof Inspection",
+    "tr": "Çatı İncelemesi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Erişilebilir çatı elemanlarında görünür durum, kusur ve bakım ihtiyacını belirleyen incelemedir.",
+    "use": "Bir konut karar dosyasında çatı incelemesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for roof inspection, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "surveys",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenancy Check-in Report",
+    "tr": "Kiracılık Giriş Raporu",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracılığın başlangıcında durumu, eşyaları ve ilgili sayaç değerlerini kaydeden tarihli rapordur.",
+    "use": "Bir konut karar dosyasında kiracılık giriş raporu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenancy check-in report, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenancy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenancy Check-out Report",
+    "tr": "Kiracılık Çıkış Raporu",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Taşınmaz durumunu kararlaştırılan başlangıç kaydıyla karşılaştırmak için kullanılan kiracılık sonu raporudur.",
+    "use": "Bir konut karar dosyasında kiracılık çıkış raporu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenancy check-out report, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenancy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenancy Notice Period",
+    "tr": "Kira Bildirim Süresi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Sözleşme ve yürürlükteki hukuka bağlı olarak kiracılıkla ilgili bir işlemin yürürlüğe girmesinden önce gereken bildirim süresidir.",
+    "use": "Bir konut karar dosyasında kira bildirim süresi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenancy notice period, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenancy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenant Guarantor",
+    "tr": "Kiracı Garantörü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracı yerine getirmezse belirli kiracı yükümlülüklerini karşılamayı kabul eden kişi veya kuruluştur.",
+    "use": "Bir konut karar dosyasında kiracı garantörü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenant guarantor, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenancy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenant Referencing",
+    "tr": "Kiracı Referans Kontrolü",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Ev sahibinin veya aracının aday kiracıyı açıklanmış ölçütlere göre değerlendirmesine yardımcı olan kontrollerdir.",
+    "use": "Bir konut karar dosyasında kiracı referans kontrolü konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenant referencing, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenancy",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Access Appointment",
+    "tr": "Taşınmaza Giriş Randevusu",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kullanılan konuta yetkili inceleme, onarım veya başka bir giriş için kararlaştırılmış zamandır.",
+    "use": "Bir konut karar dosyasında taşınmaza giriş randevusu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property access appointment, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenant",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "End-of-Tenancy Cleaning",
+    "tr": "Kiracılık Sonu Temizliği",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracılık sona ererken yapılan ve sözleşme ile kanıtlanmış başlangıç durumuna göre değerlendirilen temizliktir.",
+    "use": "Bir konut karar dosyasında kiracılık sonu temizliği konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for end-of-tenancy cleaning, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenant",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Rent Due Date",
+    "tr": "Kira Ödeme Tarihi",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kira sözleşmesine göre kira bedelinin ödenmesi gereken tarihtir.",
+    "use": "Bir konut karar dosyasında kira ödeme tarihi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for rent due date, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenant",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Reporting Repairs",
+    "tr": "Onarım İhtiyacını Bildirme",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracının onarım ihtiyacını ev sahibine veya yöneticiye bildirdiği ve kayıt tuttuğu süreçtir.",
+    "use": "Bir konut karar dosyasında onarım ihtiyacını bildirme konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for reporting repairs, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenant",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Tenant Reasonable Care",
+    "tr": "Kiracının Makul Özeni",
+    "cat": "Gayrimenkul ve Geliştirme",
+    "abbr": "",
+    "def": "Kiracılık ve uygulanabilir hukuka bağlı olarak önlenebilir zararı engellemek için kullanıcıdan beklenen günlük özendir.",
+    "use": "Bir konut karar dosyasında kiracının makul özeni konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for tenant reasonable care, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "tenant",
+      "pack-002"
+    ]
+  }
+]

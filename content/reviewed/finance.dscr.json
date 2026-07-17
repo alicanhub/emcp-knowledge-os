@@ -1,0 +1,174 @@
+{
+  "$schema": "../../schemas/content-entry.schema.json",
+  "id": "finance.dscr",
+  "legacy_term": "DSCR",
+  "title": {
+    "en": "DSCR",
+    "tr": "Borç servisi karşılama oranı"
+  },
+  "abbreviation": "Debt Service Coverage Ratio",
+  "definition": {
+    "en": "The ratio showing how well net operating income covers principal and interest payments.",
+    "tr": "Net işletme gelirinin borç anapara ve faiz ödemelerini karşılama gücünü gösteren oran."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "finance.credit",
+    "en": "Credit assessment",
+    "tr": "Kredi değerlendirmesi"
+  },
+  "aliases": {
+    "en": ["Debt-service coverage ratio"],
+    "tr": ["Borç ödeme karşılama oranı"]
+  },
+  "tags": ["debt service", "income", "ratio"],
+  "keywords": {
+    "en": ["credit assessment", "net operating income"],
+    "tr": ["kredi değerlendirmesi", "net işletme geliri"]
+  },
+  "formula": {
+    "expression": "DSCR = Net operating income / Total debt service",
+    "variables": [
+      {
+        "symbol": "Net operating income",
+        "description": {
+          "en": "Income available for debt service under the agreed definition.",
+          "tr": "Mutabık kalınan tanıma göre borç servisine ayrılabilen gelir."
+        }
+      },
+      {
+        "symbol": "Total debt service",
+        "description": {
+          "en": "Principal and interest due for the measured period.",
+          "tr": "Ölçülen dönemde ödenecek anapara ve faiz."
+        }
+      }
+    ],
+    "notes": {
+      "en": "Definitions of income and debt service must match the financing documents.",
+      "tr": "Gelir ve borç servisi tanımları finansman belgeleriyle uyumlu olmalıdır."
+    }
+  },
+  "worked_example": {
+    "en": "£125,000 net operating income divided by £100,000 debt service produces 1.25x DSCR.",
+    "tr": "125.000 £ net işletme gelirinin 100.000 £ borç servisine bölünmesi 1,25x DSCR oluşturur."
+  },
+  "use_cases": {
+    "en": ["Used by lenders in credit assessment."],
+    "tr": ["Lender kredi değerlendirmesinde kullanır."]
+  },
+  "risks": {
+    "en": [
+      "Income volatility or higher debt costs can reduce covenant headroom."
+    ],
+    "tr": [
+      "Gelir dalgalanması veya daha yüksek borç maliyeti sözleşme payını azaltabilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Mixing annual income with debt service from a different measurement period."
+    ],
+    "tr": [
+      "Yıllık geliri farklı bir ölçüm dönemine ait borç servisiyle karşılaştırmak."
+    ]
+  },
+  "related_concepts": ["finance.ltv", "finance.irr"],
+  "related_calculators": ["monthly-payment"],
+  "related_documents": [],
+  "jurisdiction": ["United Kingdom", "International"],
+  "sources": [
+    {
+      "title": "Supervisory Statement 13/13: Funding and liquidity risk management",
+      "publisher": "Bank of England Prudential Regulation Authority",
+      "url": "https://www.bankofengland.co.uk/prudential-regulation/publication/2013/funding-and-liquidity-risk-management-ss",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Primary prudential context for lender assessment of funding and repayment capacity."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Review Board (sample)",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "Defined income available for debt service divided by the debt service due for the same period.",
+    "tr": "Borç servisi için tanımlanan gelirin aynı dönemdeki borç servisine bölünmesidir."
+  },
+  "professional_explanation": {
+    "en": "Defined income available for debt service divided by the debt service due for the same period. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Borç servisi için tanımlanan gelirin aynı dönemdeki borç servisine bölünmesidir. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for dscr before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce borç servisi karşılama oranı için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the dscr assumption.",
+    "tr": "Değerleme dosyası borç servisi karşılama oranı varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify DSCR?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Borç Servisi Karşılama Oranı nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can DSCR be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Borç Servisi Karşılama Oranı esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

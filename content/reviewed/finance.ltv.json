@@ -1,0 +1,172 @@
+{
+  "$schema": "../../schemas/content-entry.schema.json",
+  "id": "finance.ltv",
+  "legacy_term": "LTV",
+  "title": {
+    "en": "LTV",
+    "tr": "Kredi / değer oranı"
+  },
+  "abbreviation": "Loan to Value",
+  "definition": {
+    "en": "The ratio of the loan amount to the property's current value.",
+    "tr": "Kredi tutarının gayrimenkulün mevcut değerine oranı."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "finance.leverage",
+    "en": "Leverage",
+    "tr": "Kaldıraç"
+  },
+  "aliases": {
+    "en": ["Loan-to-value ratio"],
+    "tr": ["Kredi değer oranı"]
+  },
+  "tags": ["loan", "value", "ratio"],
+  "keywords": {
+    "en": ["property finance", "leverage"],
+    "tr": ["gayrimenkul finansmanı", "kaldıraç"]
+  },
+  "formula": {
+    "expression": "LTV (%) = Loan amount / Property value × 100",
+    "variables": [
+      {
+        "symbol": "Loan amount",
+        "description": {
+          "en": "Total loan balance being measured.",
+          "tr": "Ölçülen toplam kredi bakiyesi."
+        }
+      },
+      {
+        "symbol": "Property value",
+        "description": {
+          "en": "Current property value used by the lender.",
+          "tr": "Kredi verenin kullandığı güncel gayrimenkul değeri."
+        }
+      }
+    ],
+    "notes": {
+      "en": "Confirm which valuation basis and loan components are included.",
+      "tr": "Hangi değerleme esasının ve kredi bileşenlerinin dahil edildiğini doğrulayın."
+    }
+  },
+  "worked_example": {
+    "en": "A £700,000 loan against a £1,000,000 property produces 70% LTV.",
+    "tr": "1.000.000 £ değerindeki bir gayrimenkule karşı 700.000 £ kredi, %70 LTV oluşturur."
+  },
+  "use_cases": {
+    "en": ["Used in investment and acquisition finance."],
+    "tr": ["Yatırım ve satın alma finansmanında kullanılır."]
+  },
+  "risks": {
+    "en": ["A valuation fall can increase LTV and breach a covenant."],
+    "tr": [
+      "Değer düşüşü LTV'yi artırabilir ve sözleşme şartının ihlaline yol açabilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Using purchase price when the facility requires current market value."
+    ],
+    "tr": [
+      "Kredi güncel piyasa değeri gerektirirken satın alma fiyatını kullanmak."
+    ]
+  },
+  "related_concepts": ["finance.ltc", "finance.gdv", "finance.dscr"],
+  "related_calculators": ["ltv"],
+  "related_documents": [],
+  "jurisdiction": ["United Kingdom"],
+  "sources": [
+    {
+      "title": "Mortgages and Home Finance: Conduct of Business sourcebook",
+      "publisher": "Financial Conduct Authority",
+      "url": "https://www.handbook.fca.org.uk/handbook/MCOB/",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Primary UK regulatory context for mortgage lending and valuation terminology."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Review Board (sample)",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "Loan amount divided by the stated property value, expressed as a percentage.",
+    "tr": "Kredi tutarının belirtilen gayrimenkul değerine bölünerek yüzde olarak ifade edilmesidir."
+  },
+  "professional_explanation": {
+    "en": "Loan amount divided by the stated property value, expressed as a percentage. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Kredi tutarının belirtilen gayrimenkul değerine bölünerek yüzde olarak ifade edilmesidir. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for ltv before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce kredi değer oranı için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the ltv assumption.",
+    "tr": "Değerleme dosyası kredi değer oranı varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify LTV?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kredi Değer Oranı nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can LTV be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kredi Değer Oranı esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

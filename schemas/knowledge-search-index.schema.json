@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/knowledge-search-index.schema.json",
+  "type": "array",
+  "minItems": 1,
+  "maxItems": 1000,
+  "items": {
+    "type": "object",
+    "required": ["term", "tr", "def", "defEn", "cat", "source"],
+    "additionalProperties": false,
+    "properties": {
+      "term": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "tr": { "type": "string", "minLength": 1, "maxLength": 300 },
+      "abbr": { "type": "string", "maxLength": 80 },
+      "def": { "type": "string", "minLength": 1, "maxLength": 20000 },
+      "defEn": { "type": "string", "minLength": 1, "maxLength": 20000 },
+      "cat": { "type": "string", "minLength": 1, "maxLength": 120 },
+      "source": { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]*\\.json$" },
+      "aliases": {
+        "type": "array",
+        "items": { "type": "string" },
+        "maxItems": 100
+      },
+      "tags": {
+        "type": "array",
+        "items": { "type": "string" },
+        "maxItems": 100
+      },
+      "keywords": {
+        "type": "array",
+        "items": { "type": "string" },
+        "maxItems": 100
+      }
+    }
+  }
+}

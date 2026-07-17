@@ -1,0 +1,183 @@
+{
+  "id": "investor.overpaying",
+  "title": {
+    "en": "Overpaying",
+    "tr": "Fazla Ödeme"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "Paying more than the amount supported by the investor's evidence, objectives and risk-adjusted appraisal.",
+    "tr": "Yatırımcının kanıtı, hedefleri ve riske göre değerlemesinin desteklediğinden daha fazla ödeme yapmasıdır."
+  },
+  "definition": {
+    "en": "Paying more than the amount supported by the investor's evidence, objectives and risk-adjusted appraisal.",
+    "tr": "Yatırımcının kanıtı, hedefleri ve riske göre değerlemesinin desteklediğinden daha fazla ödeme yapmasıdır."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "investor-fundamentals",
+    "en": "Property Investor Fundamentals",
+    "tr": "Gayrimenkul Yatırımcısı Temelleri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["property-investment", "pack-003", "beginner"],
+  "keywords": {
+    "en": ["overpaying"],
+    "tr": ["fazla ödeme"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records overpaying, and tests whether a reasonable adverse change alters the decision.",
+    "tr": "Öğrenci varsayımsal taşınmazın kanıtını tarihli değerlemeye girer, fazla ödeme değerini hesaplar veya kaydeder ve makul olumsuz değişikliğin kararı değiştirip değiştirmediğini test eder."
+  },
+  "when_to_use": {
+    "en": "Use overpaying when it is relevant to screening, financing, managing or exiting a property investment.",
+    "tr": "Fazla Ödeme kavramını gayrimenkul yatırımını ön eleme, finanse etme, yönetme veya yatırımdan çıkmada ilgili olduğunda kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Document overpaying in an investment appraisal or decision record."
+    ],
+    "tr": [
+      "Fazla Ödeme konusunu yatırım değerlemesi veya karar kaydında belgelemek."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Incorrect definitions, periods or unsupported assumptions can materially distort the decision."
+    ],
+    "tr": [
+      "Yanlış tanım, dönem veya desteksiz varsayımlar kararı önemli ölçüde bozabilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Using a number without recording its source, date, units and exclusions."
+    ],
+    "tr": [
+      "Bir rakamı kaynağı, tarihi, birimi ve hariç kalemleri olmadan kullanmak."
+    ]
+  },
+  "related_concepts": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "Overpaying decision diagram planned.",
+      "tr": "Fazla Ödeme karar şeması planlandı."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "Overpaying beginner lesson planned.",
+      "tr": "Fazla Ödeme başlangıç dersi planlandı."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Property investment professional guidance",
+      "publisher": "Royal Institution of Chartered Surveyors",
+      "url": "https://www.rics.org/consumer-guides",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative professional starting point; transaction-specific assumptions and current requirements require verification."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0",
+  "simple_explanation": {
+    "en": "Paying more than the amount supported by the investor's evidence, objectives and risk-adjusted appraisal.",
+    "tr": "Yatırımcının kanıtı, hedefleri ve riske göre değerlemesinin desteklediğinden daha fazla ödeme yapmasıdır."
+  },
+  "professional_explanation": {
+    "en": "Paying more than the amount supported by the investor's evidence, objectives and risk-adjusted appraisal. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Yatırımcının kanıtı, hedefleri ve riske göre değerlemesinin desteklediğinden daha fazla ödeme yapmasıdır. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for overpaying before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce fazla ödeme için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the overpaying assumption.",
+    "tr": "Değerleme dosyası fazla ödeme varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify Overpaying?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Fazla Ödeme nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can Overpaying be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Fazla Ödeme esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 003 reviewed edition.",
+        "tr": "İlk Pack 003 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

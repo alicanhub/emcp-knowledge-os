@@ -1,0 +1,758 @@
+[
+  {
+    "term": "Due Diligence",
+    "tr": "Detaylı inceleme",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "DD",
+    "def": "Bir yatırım veya işlem öncesinde hukuki, mali, teknik, ticari ve çevresel risklerin sistemli incelenmesi.",
+    "use": "Yatırım kararı ve sözleşme öncesinde yapılır.",
+    "example": "The transaction remains subject to legal and technical due diligence.",
+    "tags": [
+      "DD",
+      "review",
+      "risk"
+    ]
+  },
+  {
+    "term": "NDA",
+    "tr": "Gizlilik sözleşmesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "Non-Disclosure Agreement",
+    "def": "Tarafların paylaşılan gizli bilgileri korumasını düzenleyen sözleşme.",
+    "use": "Data room veya hassas proje bilgileri paylaşılmadan önce imzalanır.",
+    "example": "Please sign the NDA before we grant data room access.",
+    "tags": [
+      "confidentiality",
+      "agreement",
+      "legal"
+    ]
+  },
+  {
+    "term": "Heads of Terms",
+    "tr": "Ana ticari şartlar",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "HoT",
+    "def": "Tarafların planlanan işlemde anlaştığı temel ticari maddeleri özetleyen, çoğunlukla kısmen bağlayıcı belge.",
+    "use": "Detaylı sözleşme öncesinde hazırlanır.",
+    "example": "The parties have agreed the heads of terms.",
+    "tags": [
+      "HoT",
+      "terms",
+      "agreement"
+    ]
+  },
+  {
+    "term": "LOI",
+    "tr": "Niyet mektubu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "Letter of Intent",
+    "def": "Bir tarafın işlem veya ortaklık niyetini ve temel şartlarını yazılı olarak ifade ettiği belge.",
+    "use": "Satın alma ve yatırım görüşmelerinin erken aşamasında kullanılır.",
+    "example": "The investor submitted a non-binding LOI.",
+    "tags": [
+      "intent",
+      "offer",
+      "letter"
+    ]
+  },
+  {
+    "term": "MOU",
+    "tr": "Mutabakat zaptı",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "Memorandum of Understanding",
+    "def": "Tarafların işbirliği niyetini, rollerini ve temel çerçeveyi kayda aldığı belge.",
+    "use": "Ortaklık ve kurumsal işbirliklerinde kullanılır.",
+    "example": "The parties signed an MOU to explore joint opportunities.",
+    "tags": [
+      "cooperation",
+      "agreement",
+      "mutabakat"
+    ]
+  },
+  {
+    "term": "SPA",
+    "tr": "Hisse satın alma sözleşmesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "Share Purchase Agreement",
+    "def": "Bir şirketteki hisselerin satış şartlarını düzenleyen sözleşme.",
+    "use": "Şirket veya SPV satın alımında kullanılır.",
+    "example": "Completion will take place under the SPA.",
+    "tags": [
+      "shares",
+      "purchase",
+      "company"
+    ]
+  },
+  {
+    "term": "Asset Purchase Agreement",
+    "tr": "Varlık satın alma sözleşmesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "APA",
+    "def": "Belirli işletme veya proje varlıklarının satışını düzenleyen sözleşme.",
+    "use": "Hisse yerine seçilmiş varlıkların satın alınmasında kullanılır.",
+    "example": "The business assets will transfer under an APA.",
+    "tags": [
+      "asset",
+      "purchase",
+      "agreement"
+    ]
+  },
+  {
+    "term": "JVA",
+    "tr": "Ortak girişim sözleşmesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "Joint Venture Agreement",
+    "def": "JV taraflarının sermaye katkılarını, yönetimini, kararlarını, kâr paylaşımını ve çıkışını düzenleyen sözleşme.",
+    "use": "Gayrimenkul geliştirme ortaklıklarında kullanılır.",
+    "example": "The parties are negotiating the JVA.",
+    "tags": [
+      "JV",
+      "agreement",
+      "partnership"
+    ]
+  },
+  {
+    "term": "Exclusivity",
+    "tr": "Münhasırlık",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Belirli bir süre boyunca taraflardan birinin alternatif alıcı, yatırımcı veya danışmanlarla görüşmesini sınırlayan düzenleme.",
+    "use": "İşlem müzakeresi sırasında ciddiyeti korumak için kullanılır.",
+    "example": "The buyer has requested six weeks of exclusivity.",
+    "tags": [
+      "lockout",
+      "negotiation",
+      "exclusive"
+    ]
+  },
+  {
+    "term": "Longstop Date",
+    "tr": "Nihai son tarih",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Belirli koşulların tamamlanması veya işlemin kapanması için sözleşmede belirlenen en son tarih.",
+    "use": "Conditional contracts ve development anlaşmalarında kullanılır.",
+    "example": "The longstop date is 31 December 2027.",
+    "tags": [
+      "deadline",
+      "completion",
+      "contract"
+    ]
+  },
+  {
+    "term": "Condition Precedent",
+    "tr": "Ön koşul",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "CP",
+    "def": "Sözleşmenin yürürlüğe girmesi veya işlem kapanışı için önceden yerine getirilmesi gereken şart.",
+    "use": "Planning, finance ve consent koşullarında kullanılır.",
+    "example": "Planning consent is a condition precedent to completion.",
+    "tags": [
+      "CP",
+      "condition",
+      "completion"
+    ]
+  },
+  {
+    "term": "Warranty",
+    "tr": "Sözleşmesel garanti",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir tarafın belirli bir hususun doğru olduğuna dair verdiği sözleşmesel güvence.",
+    "use": "Yanlış çıkarsa tazminat talebi doğabilir.",
+    "example": "The seller gives warranties regarding title and litigation.",
+    "tags": [
+      "representation",
+      "claim",
+      "contract"
+    ]
+  },
+  {
+    "term": "Indemnity",
+    "tr": "Tazmin yükümlülüğü",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Belirli bir kayıp veya risk gerçekleşirse zararın karşılanmasını öngören sözleşme hükmü.",
+    "use": "Bilinen spesifik risklerde kullanılır.",
+    "example": "The seller will provide an indemnity for the tax liability.",
+    "tags": [
+      "loss",
+      "risk",
+      "contract"
+    ]
+  },
+  {
+    "term": "Data Room",
+    "tr": "Belge inceleme odası",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir işlemle ilgili hukuki, mali, teknik ve ticari belgelerin güvenli şekilde paylaşıldığı dijital ortam.",
+    "use": "Due diligence sürecinin merkezidir.",
+    "example": "The legal documents are available in the virtual data room.",
+    "tags": [
+      "VDR",
+      "documents",
+      "DD"
+    ]
+  },
+  {
+    "term": "Contract for Sale",
+    "tr": "Taşınmaz Satış Sözleşmesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Taşınmaz satışının kararlaştırılan hukuki şartlarını kaydeden sözleşmedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Contract for Sale” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Energy Performance Certificate",
+    "tr": "Enerji Performans Belgesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir binanın değerlendirilmiş enerji verimliliği derecesini ve önerileri gösteren belgedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Energy Performance Certificate” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Fixtures and Fittings Form",
+    "tr": "Demirbaş ve Eşya Formu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Satışa hangi eşyaların dâhil, hariç veya ayrıca teklif edildiğini kaydeden formdur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Fixtures and Fittings Form” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Memorandum of Sale",
+    "tr": "Satış Bilgi Özeti",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Teklif kabul edildikten sonra tarafların devir işlemlerine başlamasına yardımcı olmak için dağıtılan işlem özetidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Memorandum of Sale” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Mortgage Deed",
+    "tr": "İpotek Senedi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Konut kredisi için kredi veren lehine taşınmaz üzerinde hukuki teminat kuran senettir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Mortgage Deed” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Information Form",
+    "tr": "Taşınmaz Bilgi Formu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Satıcının konut ve ilgili konular hakkında standart bilgiler verdiği formdur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Information Form” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Lease",
+    "tr": "Taşınmaz Kira Belgesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Belirli şartlarla ve süreyle taşınmazı kullanma veya taşınmazda bulunma hakkı veren hukuki belgedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Lease” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rent Statement",
+    "tr": "Kira Hesap Dökümü",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir kiralama için kira tahakkuklarını, ödemeleri, alacakları ve bakiyeyi gösteren kayıttır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rent Statement” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Schedule of Condition",
+    "tr": "Durum Tespit Çizelgesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Taşınmazın belirli bir tarihteki durumunu yazılı ve çoğu zaman fotoğraflı olarak kaydeden belgedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Schedule of Condition” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Transfer Deed",
+    "tr": "Devir Senedi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Kayıtlı taşınmaz mülkiyetini bir taraftan diğerine devretmek için kullanılan senettir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Transfer Deed” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "property-documents",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Asbestos-Containing Material",
+    "tr": "Asbest İçeren Malzeme",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Asbest içeren ve riske dayalı tespit ile yönetim gerektiren malzemedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Asbestos-Containing Material” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Building Survey",
+    "tr": "Ayrıntılı Bina İncelemesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Daha derin durum analizi gereken taşınmazlara uygun ayrıntılı profesyonel inceleme ve rapordur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Building Survey” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Damp",
+    "tr": "Rutubet",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Yapı malzemelerinde veya iç mekânlarda istenmeyen fazla nemdir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Damp” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Electrical Installation Condition Report",
+    "tr": "Elektrik Tesisatı Durum Raporu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Elektrik tesisatının inceleme tarihindeki gözlenen durumunu ve güvenliğini değerlendiren rapordur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Electrical Installation Condition Report” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Flood Risk",
+    "tr": "Sel Riski",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir taşınmaz veya sahada sel meydana gelme olasılığı ve olası sonuçlarıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Flood Risk” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Home Survey",
+    "tr": "Konut Durum İncelemesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir konutun durumuna ilişkin belirli hizmet seviyesinde yapılan profesyonel görsel inceleme ve rapordur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Home Survey” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Japanese Knotweed",
+    "tr": "Japon Madımağı",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Varlığı taşınmaz yönetimini etkileyebilen ve uzman değerlendirmesi gerektirebilen istilacı bitkidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Japanese Knotweed” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Land Contamination",
+    "tr": "Arazi Kirliliği",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Arazide bulunup inceleme, risk değerlendirmesi veya iyileştirme gerektirebilen zararlı maddelerdir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Land Contamination” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Mortgage Valuation",
+    "tr": "Kredi Değerlemesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Tam durum incelemesi yerine kredi kararı amacıyla kredi veren tarafından yaptırılan değerlemedir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Mortgage Valuation” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Subsidence",
+    "tr": "Zemin Kaynaklı Oturma",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir binayı taşıyan zeminin temelleri etkileyebilecek biçimde aşağı hareket etmesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Subsidence” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "risks-inspections",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Communal Area",
+    "tr": "Ortak Alan",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir bağımsız bölümün özel kullanımından ziyade ortak kullanım için ayrılmış bina veya site bölümüdür.",
+    "use": "Bir konut karar dosyasında ortak alan konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for communal area, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "communal",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Leasehold Major Works",
+    "tr": "Leasehold Büyük Onarım İşleri",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Maliyeti sözleşmeler ve uygulanabilir süreçlere göre leasehold sahiplerinden alınabilen önemli bina işleridir.",
+    "use": "Bir konut karar dosyasında leasehold büyük onarım işleri konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for leasehold major works, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "communal",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Property Reserve Fund",
+    "tr": "Taşınmaz Yedek Fonu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bina veya site için gelecekte beklenen büyük giderlere ayrılmak üzere toplanan paradır.",
+    "use": "Bir konut karar dosyasında taşınmaz yedek fonu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for property reserve fund, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "communal",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Right to Manage",
+    "tr": "Yönetimi Devralma Hakkı",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Şartları sağlayan leasehold sahiplerinin belirli yönetim işlevlerini devralabildiği, gerekliliklere bağlı yasal yoldur.",
+    "use": "Bir konut karar dosyasında yönetimi devralma hakkı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for right to manage, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "communal",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Service Charge Demand",
+    "tr": "Hizmet Gideri Talebi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Leasehold sözleşmesi ve uygulanabilir gereklilikler kapsamında yapılan hizmet gideri ödeme talebidir.",
+    "use": "Bir konut karar dosyasında hizmet gideri talebi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for service charge demand, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "communal",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Boiler Service Record",
+    "tr": "Kazan Bakım Kaydı",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Kazan bakım çalışmalarını ve kapsam içindeki gözlemleri tarihli olarak kaydeden belgedir.",
+    "use": "Bir konut karar dosyasında kazan bakım kaydı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for boiler service record, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "documents",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Electrical Safety Report",
+    "tr": "Elektrik Güvenliği Raporu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Taşınmazın elektrik tesisatı incelemesi veya testinin kapsamını ve sonucunu kaydeden rapordur.",
+    "use": "Bir konut karar dosyasında elektrik güvenliği raporu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for electrical safety report, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "documents",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Gas Safety Record",
+    "tr": "Gaz Güvenliği Kaydı",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Uygun nitelikte bir kişinin yaptığı ilgili gaz güvenliği kontrolünün sonucunu belgeleyen kayıttır.",
+    "use": "Bir konut karar dosyasında gaz güvenliği kaydı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for gas safety record, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "documents",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Leasehold Information Form",
+    "tr": "Leasehold Bilgi Formu",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Leasehold taşınmaz ve yönetimi hakkında belirli bilgileri sunmak için işlemde kullanılan formdur.",
+    "use": "Bir konut karar dosyasında leasehold bilgi formu konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for leasehold information form, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "documents",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "New-build Warranty Document",
+    "tr": "Yeni Konut Garanti Belgesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Yeni konut garanti düzenlemesinin sağlayıcısını, süresini, kapsamını, şartlarını ve istisnalarını belirten belgedir.",
+    "use": "Bir konut karar dosyasında yeni konut garanti belgesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for new-build warranty document, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "documents",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Collective Enfranchisement",
+    "tr": "Toplu Mülkiyet Devralma",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Şartları sağlayan leasehold sahiplerinin uygulanabilir gerekliliklere bağlı olarak freehold hakkını birlikte edinme sürecidir.",
+    "use": "Bir konut karar dosyasında toplu mülkiyet devralma konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for collective enfranchisement, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "leasehold",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Commonhold",
+    "tr": "Commonhold Ortak Mülkiyet",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bağımsız bölüm mülkiyetini ortak alanları yöneten bir birliğe üyelikle birleştiren mülkiyet biçimidir.",
+    "use": "Bir konut karar dosyasında commonhold ortak mülkiyet konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for commonhold, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "leasehold",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Residential Lease Extension",
+    "tr": "Konut Leasehold Süre Uzatımı",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Konut leasehold sözleşmesinin kalan süresini anlaşmayla veya uygulanabilir yasal yolla artıran süreçtir.",
+    "use": "Bir konut karar dosyasında konut leasehold süre uzatımı konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for residential lease extension, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "leasehold",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Leasehold Managing Agent",
+    "tr": "Leasehold Yönetim Şirketi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Yetkisi kapsamında leasehold binanın hizmetlerini, bakımını ve giderlerini yöneten aracıdır.",
+    "use": "Bir konut karar dosyasında leasehold yönetim şirketi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for leasehold managing agent, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "leasehold",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Unexpired Lease Term",
+    "tr": "Kalan Leasehold Süresi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir leasehold sözleşmesinin kararlaştırılmış bitiş tarihine kadar kalan süredir.",
+    "use": "Bir konut karar dosyasında kalan leasehold süresi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for unexpired lease term, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "leasehold",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Beneficial Owner",
+    "tr": "Ekonomik Hak Sahibi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Taşınmazın ekonomik faydasından yararlanan ve kayıtlı hukuki malikten farklı olabilen kişidir.",
+    "use": "Bir konut karar dosyasında ekonomik hak sahibi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for beneficial owner, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "ownership",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Co-ownership Agreement",
+    "tr": "Ortak Mülkiyet Sözleşmesi",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Ortak maliklerin giderleri, kararları ve satış gelirini nasıl paylaşmayı planladığını kaydeden belgedir.",
+    "use": "Bir konut karar dosyasında ortak mülkiyet sözleşmesi konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for co-ownership agreement, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "ownership",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "General Boundary",
+    "tr": "Genel Sınır",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Kayıtlı taşınmaz sınırını gösteren ancak kesin hukuki çizgiyi her zaman belirlemeyen harita gösterimidir.",
+    "use": "Bir konut karar dosyasında genel sınır konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for general boundary, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "ownership",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Legal Owner",
+    "tr": "Hukuki Malik",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir konutun hukuki mülkiyetine sahip olduğu kaydedilen kişi veya kuruluştur.",
+    "use": "Bir konut karar dosyasında hukuki malik konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for legal owner, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "ownership",
+      "pack-002"
+    ]
+  },
+  {
+    "term": "Sole Ownership",
+    "tr": "Tek Başına Mülkiyet",
+    "cat": "Hukuk ve İnceleme",
+    "abbr": "",
+    "def": "Bir taşınmazın tek bir hukuki malike ait olmasıdır.",
+    "use": "Bir konut karar dosyasında tek başına mülkiyet konusunu kaydedip paylaşmak.",
+    "example": "In a simple home review, the user records the relevant facts for sole ownership, keeps the supporting document and flags anything requiring professional advice.",
+    "tags": [
+      "residential-property",
+      "ownership",
+      "pack-002"
+    ]
+  }
+]

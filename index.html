@@ -1,215 +1,809 @@
 <!doctype html>
 <html lang="tr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#012169">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="default">
-<meta name="apple-mobile-web-app-title" content="EMCP Knowledge OS">
-<link rel="manifest" href="/manifest.webmanifest">
-<link rel="icon" href="/icon.svg" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/icon.svg">
-<title>EMCP Knowledge OS</title>
-<style>
-:root{--navy:#012169;--navy2:#003399;--red:#C8102E;--bg:#F3F6FB;--card:#fff;--ink:#101828;--muted:#667085;--line:#D0D5DD;--shadow:0 14px 40px #01216916;--glass:#ffffffd9}
-[data-theme="dark"]{--bg:#07111f;--card:#0e1b2c;--ink:#f7f9fc;--muted:#a8b3c4;--line:#22324a;--shadow:0 16px 40px #0006;--glass:#0e1b2cdd}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);padding-bottom:92px;transition:.25s}
-button,input,select{font:inherit}
-header{position:sticky;top:0;z-index:20;color:#fff;background:linear-gradient(135deg,var(--navy),var(--navy2));padding:calc(14px + env(safe-area-inset-top)) 16px 18px;box-shadow:0 8px 30px #01216955;overflow:hidden}
-header:after{content:"";position:absolute;right:-80px;bottom:-120px;width:260px;height:260px;background:var(--red);transform:rotate(45deg);opacity:.95}
-.wrap{max-width:1120px;margin:auto;position:relative;z-index:1}
-.top{display:flex;justify-content:space-between;align-items:center;gap:12px}
-.brand{font-size:.73rem;letter-spacing:.16em;font-weight:900}
-.controls{display:flex;gap:8px;align-items:center}
-.pill{display:flex;border:1px solid #ffffff55;border-radius:13px;padding:3px;background:#ffffff16;backdrop-filter:blur(14px)}
-.pill button{border:0;background:transparent;color:#fff;padding:8px 10px;border-radius:9px;font-weight:900}
-.pill button.active{background:#fff;color:var(--navy)}
-.iconbtn{border:1px solid #ffffff55;background:#ffffff16;color:#fff;border-radius:13px;width:44px;height:44px}
-h1{font-size:clamp(2.1rem,8vw,4.8rem);line-height:.94;letter-spacing:-.05em;margin:14px 0 6px}
-.tagline{font-size:1.02rem;font-weight:800;line-height:1.35;max-width:720px;margin-bottom:16px}
-.search{display:flex;gap:8px;background:var(--glass);padding:8px;border-radius:20px;box-shadow:0 12px 30px #0003;backdrop-filter:blur(16px)}
-.search input{width:100%;border:0;outline:0;background:transparent;padding:14px;font-size:1.15rem;color:var(--ink)}
-.search button{border:0;background:var(--red);color:#fff;border-radius:14px;padding:12px 16px;font-weight:900}
-main{max-width:1120px;margin:auto;padding:18px}
-.hero-card{background:linear-gradient(135deg,var(--navy),#0a397e);color:#fff;border-radius:24px;padding:20px;box-shadow:var(--shadow);margin-bottom:18px}
-.hero-card h2{margin:0 0 7px;font-size:1.55rem}
-.hero-card p{margin:0;opacity:.9;line-height:1.5}
-.hero-card button{margin-top:14px;width:100%;border:0;background:var(--red);color:#fff;border-radius:14px;padding:14px;font-weight:900}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:var(--shadow)}
-.stat b{font-size:1.8rem;color:var(--navy)}
-[data-theme="dark"] .stat b{color:#fff}
-.stat span{display:block;color:var(--muted);font-weight:700;margin-top:4px}
-.section-title{font-size:1.55rem;color:var(--navy);margin:26px 0 12px}
-[data-theme="dark"] .section-title{color:#fff}
-.module-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px}
-.module{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:18px;box-shadow:var(--shadow);transition:.2s;position:relative;overflow:hidden;cursor:pointer}
-.module:hover{transform:translateY(-3px)}
-.module.live{border-top:6px solid var(--navy)}
-.module .emoji{font-size:2rem}
-.module h3{margin:8px 0 6px;color:var(--navy);font-size:1.15rem}
-[data-theme="dark"] .module h3{color:#fff}
-.module p{margin:0;color:var(--muted);line-height:1.45}
-.tag{display:inline-block;margin-top:12px;padding:7px 10px;border-radius:10px;background:#EEF2F8;color:var(--navy);font-size:.7rem;font-weight:900}
-.page{display:none}
-.page.active{display:block}
-.tool-nav{display:flex;gap:9px;overflow:auto;padding-bottom:8px}
-.tool-nav button{white-space:nowrap;border:1px solid var(--line);background:var(--card);color:var(--navy);padding:10px 13px;border-radius:12px;font-weight:900}
-.tool-nav button.active{background:var(--navy);color:#fff}
-.calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:14px}
-.calc{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:var(--shadow)}
-.calc h3{margin:0 0 10px;color:var(--navy)}
-[data-theme="dark"] .calc h3{color:#fff}
-.calc label{display:block;font-size:.84rem;font-weight:800;color:var(--muted);margin-top:8px}
-.calc input{width:100%;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:12px;padding:12px;margin:6px 0}
-.calc button{width:100%;border:0;background:var(--navy);color:#fff;border-radius:12px;padding:12px;margin-top:8px;font-weight:900}
-.result{margin-top:12px;font-size:1.2rem;font-weight:900;color:var(--red);min-height:1.4em}
-.chips{display:flex;gap:9px;overflow:auto;padding-bottom:5px;scrollbar-width:none}
-.chip{white-space:nowrap;border:2px solid var(--navy);color:var(--navy);background:var(--card);border-radius:999px;padding:10px 14px;font-weight:900}
-.chip.active{background:var(--navy);color:#fff}
-.status{display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-weight:800;margin:15px 2px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:15px}
-.card{background:var(--card);border:1px solid var(--line);border-top:6px solid var(--navy);border-radius:22px;padding:19px;box-shadow:var(--shadow);animation:rise .3s ease both;cursor:pointer}
-@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-.term{font-size:1.5rem;font-weight:950;color:var(--navy);line-height:1.08}
-[data-theme="dark"] .term{color:#fff}
-.abbr{font-size:.73rem;color:var(--red);font-weight:950;letter-spacing:.08em;margin-top:5px}
-.tr{font-size:1.05rem;font-weight:850;margin:8px 0}
-.def{font-size:.96rem;line-height:1.5;color:var(--muted)}
-.badge{display:inline-block;margin-top:12px;padding:7px 9px;border-radius:9px;background:#EEF2F8;color:var(--navy);font-size:.72rem;font-weight:900}
-.bottom{position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--glass);border-top:1px solid var(--line);padding:8px 8px calc(8px + env(safe-area-inset-bottom));display:flex;justify-content:space-around;backdrop-filter:blur(18px)}
-.bottom button{border:0;background:transparent;color:var(--navy);font-weight:900;padding:10px 8px;border-radius:11px;font-size:.78rem}
-[data-theme="dark"] .bottom button{color:#fff}
-.bottom button.active{background:#EEF2F8;color:var(--navy)}
-.modal{position:fixed;inset:0;background:#0009;z-index:50;display:none;align-items:flex-end}
-.modal.show{display:flex}
-.sheet{background:var(--card);color:var(--ink);width:min(900px,100%);max-height:92vh;overflow:auto;border-radius:28px 28px 0 0;padding:22px 22px calc(32px + env(safe-area-inset-bottom))}
-.close{float:right;border:0;background:var(--navy);color:#fff;border-radius:50%;width:44px;height:44px;font-size:1.4rem}
-.sheet h2{font-size:2.15rem;color:var(--navy);margin:8px 0}
-[data-theme="dark"] .sheet h2{color:#fff}
-.sheet h3{font-size:.9rem;color:var(--red);text-transform:uppercase;letter-spacing:.08em;margin:22px 0 5px}
-.sheet p{font-size:1.05rem;line-height:1.55;margin:0}
-.actions{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:18px}
-.actions button{border:0;border-radius:12px;padding:11px;font-weight:900;background:#EEF2F8;color:var(--navy)}
-.empty{background:var(--card);border:2px dashed var(--line);border-radius:18px;padding:35px;text-align:center}
-@media(max-width:650px){.module-grid{grid-template-columns:1fr 1fr}.stats{grid-template-columns:1fr 1fr 1fr}.stat{padding:12px}.stat b{font-size:1.4rem}}
-</style>
-</head>
-<body>
-<header><div class="wrap">
-<div class="top"><div class="brand">EAST MIDLANDS CAPITAL PARTNERS</div><div class="controls">
-<div class="pill"><button id="trBtn" class="active">TR</button><button id="enBtn">EN</button></div>
-<button class="iconbtn" id="themeBtn">◐</button></div></div>
-<h1>EMCP Knowledge OS</h1>
-<div class="tagline">The Operating System for Property, Construction &amp; Investment Professionals.</div>
-<div class="search"><input id="q" placeholder="Bir harf, kelime veya kısaltma yazın…"><button id="clearBtn">Temizle</button></div>
-</div></header>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1,viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#012169" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="EMCP Knowledge OS" />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="icon" href="icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <title>EMCP Knowledge OS</title>
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/components.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#mainContent" data-i18n="skipToContent"
+      >Skip to main content</a
+    >
+    <header>
+      <div class="wrap">
+        <div class="top">
+          <div class="brand">EAST MIDLANDS CAPITAL PARTNERS</div>
+          <div class="controls">
+            <div
+              class="pill"
+              role="group"
+              aria-label="Language"
+              data-i18n-aria="languageSelector"
+            >
+              <button
+                type="button"
+                id="trBtn"
+                class="active"
+                aria-pressed="true"
+                lang="tr"
+              >
+                TR</button
+              ><button type="button" id="enBtn" aria-pressed="false" lang="en">
+                EN
+              </button>
+            </div>
+            <button
+              type="button"
+              class="iconbtn"
+              id="themeBtn"
+              aria-pressed="false"
+              aria-label="Use dark theme"
+              title="Use dark theme"
+            >
+              ◐
+            </button>
+          </div>
+        </div>
+        <h1>EMCP Knowledge OS</h1>
+        <div class="tagline" data-i18n="tagline">
+          The Operating System for Property, Construction &amp; Investment
+          Professionals.
+        </div>
+        <div class="search">
+          <label class="sr-only" for="q" data-i18n="searchLabel"
+            >Search knowledge</label
+          ><input
+            id="q"
+            type="search"
+            autocomplete="off"
+            data-i18n-placeholder="searchPlaceholder"
+            placeholder="Bir harf, kelime veya kısaltma yazın…"
+          /><button type="button" id="clearBtn" data-i18n="clear">
+            Temizle
+          </button>
+        </div>
+      </div>
+    </header>
+    <div
+      id="connectionStatus"
+      class="connection-status"
+      role="status"
+      hidden
+    ></div>
 
-<main>
-<section id="page-home" class="page active">
-<div class="hero-card"><h2 id="installTitle">Telefonuna uygulama gibi kur</h2><p id="installText">Safari’de aç, Paylaş düğmesine bas ve “Ana Ekrana Ekle”yi seç.</p><button id="installBtn">Kurulum talimatlarını göster</button></div>
+    <main id="mainContent" tabindex="-1">
+      <section id="page-home" class="page active">
+        <div class="hero-card">
+          <h2 id="installTitle" data-i18n="installTitle">
+            Telefonuna uygulama gibi kur
+          </h2>
+          <p id="installText" data-i18n="installText">
+            Safari’de aç, Paylaş düğmesine bas ve “Ana Ekrana Ekle”yi seç.
+          </p>
+          <button id="installBtn" data-i18n="installButton">
+            Kurulum talimatlarını göster
+          </button>
+        </div>
 
-<div class="stats">
-<div class="stat"><b>103</b><span id="sTerms">Knowledge Entries</span></div>
-<div class="stat"><b id="favCount">0</b><span id="sFav">Favourites</span></div>
-<div class="stat"><b id="recentCount">0</b><span id="sRecent">Recent</span></div>
-</div>
+        <div class="stats">
+          <div class="stat">
+            <b>203</b
+            ><span id="sTerms" data-i18n="knowledgeEntries"
+              >Knowledge Entries</span
+            >
+          </div>
+          <button
+            type="button"
+            class="stat stat-button"
+            data-workspace="favourites"
+          >
+            <b id="favCount">0</b
+            ><span id="sFav" data-i18n="favourites">Favourites</span>
+          </button>
+          <button
+            type="button"
+            class="stat stat-button"
+            data-workspace="recent"
+          >
+            <b id="recentCount">0</b
+            ><span id="sRecent" data-i18n="recent">Recent</span>
+          </button>
+        </div>
 
-<h2 class="section-title">Explore the Platform</h2>
-<p class="section-intro">Knowledge, calculators and practical tools built for property, construction and investment professionals.</p>
-<div class="module-grid">
-<div class="module live" onclick="showPage('knowledge')"><div class="emoji">📘</div><h3>Knowledge OS</h3><p>Bilingual terminology, practical guides and professional reference content.</p><span class="tag">ACTIVE</span></div>
-<div class="module live" onclick="showPage('calculators')"><div class="emoji">🧮</div><h3>Calculators</h3><p>Finance, development and construction calculations.</p><span class="tag">ACTIVE</span></div>
-<div class="module live" onclick="showPage('construction')"><div class="emoji">🏗️</div><h3>Construction Tools</h3><p>Material take-off and site measurement tools.</p><span class="tag">ACTIVE</span></div>
-<div class="module"><div class="emoji">⚖️</div><h3>Legal & Compliance</h3><p>UK legal, planning and due diligence guides.</p><span class="tag">PLANNED</span></div>
-<div class="module"><div class="emoji">✉️</div><h3>Email Studio</h3><p>Professional bilingual email templates.</p><span class="tag">PLANNED</span></div>
-<div class="module"><div class="emoji">🤝</div><h3>Meeting Assistant</h3><p>Investor, lender and developer meeting preparation.</p><span class="tag">PLANNED</span></div>
-</div>
-</section>
+        <h2 class="section-title" data-i18n="explore">Explore the Platform</h2>
+        <p class="section-intro" data-i18n="exploreIntro">
+          Knowledge, calculators and practical tools built for property,
+          construction and investment professionals.
+        </p>
+        <div class="module-grid">
+          <button type="button" class="module live" data-page="knowledge">
+            <span class="emoji" aria-hidden="true">📘</span
+            ><span class="module-title">Knowledge OS</span
+            ><span class="module-copy" data-i18n="knowledgeDescription"
+              >Bilingual terminology, practical guides and professional
+              reference content.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="handbooks">
+            <span class="emoji" aria-hidden="true">📗</span
+            ><span class="module-title">Investor Handbook</span
+            ><span class="module-copy"
+              >A progressive bilingual learning handbook for property
+              investors.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="assistant">
+            <span class="emoji" aria-hidden="true">✦</span
+            ><span class="module-title">Ask EMCP</span
+            ><span class="module-copy" data-i18n="assistantDescription"
+              >Ask a question and search the local professional knowledge
+              base.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-workspace="overview">
+            <span class="emoji" aria-hidden="true">◆</span
+            ><span class="module-title" data-i18n="workspace">My Workspace</span
+            ><span class="module-copy" data-i18n="workspaceDescription"
+              >Manage favourites, collections, notes and saved deal
+              scenarios.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="calculators">
+            <span class="emoji" aria-hidden="true">🧮</span
+            ><span class="module-title" data-i18n="calculators"
+              >Calculators</span
+            ><span class="module-copy" data-i18n="calculatorsDescription"
+              >Finance, development and construction calculations.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="construction">
+            <span class="emoji" aria-hidden="true">🏗️</span
+            ><span class="module-title" data-i18n="constructionTools"
+              >Construction Tools</span
+            ><span class="module-copy" data-i18n="constructionDescription"
+              >Material take-off and site measurement tools.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <article class="module planned">
+            <div class="emoji" aria-hidden="true">⚖️</div>
+            <h3 data-i18n="legalCompliance">Legal & Compliance</h3>
+            <p data-i18n="legalDescription">
+              UK legal, planning and due diligence guides.
+            </p>
+            <span class="tag" data-i18n="planned">PLANNED</span>
+          </article>
+          <article class="module planned">
+            <div class="emoji" aria-hidden="true">✉️</div>
+            <h3 data-i18n="emailStudio">Email Studio</h3>
+            <p data-i18n="emailDescription">
+              Professional bilingual email templates.
+            </p>
+            <span class="tag" data-i18n="planned">PLANNED</span>
+          </article>
+          <article class="module planned">
+            <div class="emoji" aria-hidden="true">🤝</div>
+            <h3 data-i18n="meetingAssistant">Meeting Assistant</h3>
+            <p data-i18n="meetingDescription">
+              Investor, lender and developer meeting preparation.
+            </p>
+            <span class="tag" data-i18n="planned">PLANNED</span>
+          </article>
+        </div>
+      </section>
 
-<section id="page-knowledge" class="page">
-<h2 class="section-title">Knowledge OS</h2>
-<div class="chips" id="cats"></div>
-<div class="status"><span id="count"></span><span id="offline">Available offline</span></div>
-<div class="grid" id="grid"></div>
-</section>
+      <section id="page-knowledge" class="page">
+        <h2 class="section-title">Knowledge OS</h2>
+        <div id="knowledgeError" class="data-error" role="alert" hidden>
+          <strong id="knowledgeErrorTitle"></strong
+          ><span id="knowledgeErrorText"></span
+          ><button type="button" id="retryKnowledge"></button>
+        </div>
+        <div
+          class="chips"
+          id="cats"
+          role="group"
+          aria-label="Knowledge categories"
+          data-i18n-aria="knowledgeCategories"
+        ></div>
+        <div class="status">
+          <span id="count" role="status" aria-live="polite"></span
+          ><span id="offline" data-i18n="availableOffline"
+            >Available offline</span
+          >
+        </div>
+        <div class="grid" id="grid"></div>
+      </section>
 
-<section id="page-calculators" class="page">
-<h2 class="section-title">Calculators</h2>
-<div class="tool-nav"><button class="active">Finance</button><button>Development</button><button>Property</button></div>
-<div class="calc-grid">
-<div class="calc"><h3>LTV</h3><label>Loan</label><input id="ltvLoan" type="number"><label>Property Value</label><input id="ltvValue" type="number"><button onclick="calcLTV()">Calculate</button><div class="result" id="ltvResult"></div></div>
-<div class="calc"><h3>LTC</h3><label>Loan</label><input id="ltcLoan" type="number"><label>Total Cost</label><input id="ltcCost" type="number"><button onclick="calcLTC()">Calculate</button><div class="result" id="ltcResult"></div></div>
-<div class="calc"><h3>LTGDV</h3><label>Loan</label><input id="ltgdvLoan" type="number"><label>GDV</label><input id="ltgdvValue" type="number"><button onclick="calcLTGDV()">Calculate</button><div class="result" id="ltgdvResult"></div></div>
-<div class="calc"><h3>ROI</h3><label>Profit</label><input id="roiProfit" type="number"><label>Investment</label><input id="roiCost" type="number"><button onclick="calcROI()">Calculate</button><div class="result" id="roiResult"></div></div>
-<div class="calc"><h3>Rental Yield</h3><label>Annual Rent</label><input id="yieldRent" type="number"><label>Property Value</label><input id="yieldValue" type="number"><button onclick="calcYield()">Calculate</button><div class="result" id="yieldResult"></div></div>
-<div class="calc"><h3>Development Profit</h3><label>GDV</label><input id="devGdv" type="number"><label>Total Development Cost</label><input id="devCost" type="number"><button onclick="calcDevProfit()">Calculate</button><div class="result" id="devResult"></div></div>
-<div class="calc"><h3>Monthly Loan Payment</h3><label>Loan</label><input id="loanPrincipal" type="number"><label>Annual Interest %</label><input id="loanRate" type="number"><label>Term Years</label><input id="loanYears" type="number"><button onclick="calcMonthly()">Calculate</button><div class="result" id="loanResult"></div></div>
-<div class="calc"><h3>Arrangement Fee</h3><label>Loan</label><input id="feeLoan" type="number"><label>Fee %</label><input id="feeRate" type="number"><button onclick="calcFee()">Calculate</button><div class="result" id="feeResult"></div></div>
-<div class="calc"><h3>Interest Roll-up</h3><label>Loan</label><input id="rollLoan" type="number"><label>Annual Interest %</label><input id="rollRate" type="number"><label>Months</label><input id="rollMonths" type="number"><button onclick="calcRollup()">Calculate</button><div class="result" id="rollResult"></div></div>
-<div class="calc"><h3>Stamp Duty Guide</h3><p style="color:var(--muted)">Placeholder module for future live UK SDLT rules.</p><div class="result">Planned</div></div>
-</div>
-</section>
+      <section id="page-handbooks" class="page" aria-labelledby="handbookTitle">
+        <div class="handbook-heading">
+          <div>
+            <span class="badge">Professional Handbook</span>
+            <h2 id="handbookTitle">Property Investor’s Handbook</h2>
+            <p id="handbookSummary"></p>
+          </div>
+          <div class="handbook-progress" aria-live="polite">
+            <strong id="handbookProgress">0%</strong>
+            <span id="handbookProgressLabel">Progress</span>
+          </div>
+        </div>
+        <div class="handbook-toolbar" role="group" aria-label="Handbook navigation">
+          <button type="button" data-handbook-action="resume">Resume last chapter</button>
+          <button type="button" data-handbook-action="saved">Saved chapters</button>
+          <button type="button" data-handbook-action="all">All chapters</button>
+        </div>
+        <div class="handbook-layout">
+          <nav id="handbookChapters" class="handbook-chapters" aria-label="Investor Handbook chapters"></nav>
+          <article id="handbookChapter" class="handbook-chapter" tabindex="-1" aria-live="polite"></article>
+        </div>
+      </section>
 
-<section id="page-construction" class="page">
-<h2 class="section-title">Construction Tools</h2>
-<div class="calc-grid">
-<div class="calc"><h3>Concrete Volume</h3><label>Length m</label><input id="cLen" type="number"><label>Width m</label><input id="cWid" type="number"><label>Depth m</label><input id="cDep" type="number"><button onclick="calcConcrete()">Calculate</button><div class="result" id="cResult"></div></div>
-<div class="calc"><h3>Paint Area</h3><label>Wall Length m</label><input id="pLen" type="number"><label>Wall Height m</label><input id="pHeight" type="number"><label>Number of Coats</label><input id="pCoats" type="number" value="2"><button onclick="calcPaint()">Calculate</button><div class="result" id="pResult"></div></div>
-<div class="calc"><h3>Flooring Area</h3><label>Length m</label><input id="fLen" type="number"><label>Width m</label><input id="fWid" type="number"><label>Waste %</label><input id="fWaste" type="number" value="10"><button onclick="calcFloor()">Calculate</button><div class="result" id="fResult"></div></div>
-<div class="calc"><h3>Plasterboard Sheets</h3><label>Wall Area m²</label><input id="pbArea" type="number"><label>Sheet Area m²</label><input id="pbSheet" type="number" value="2.88"><label>Waste %</label><input id="pbWaste" type="number" value="10"><button onclick="calcPB()">Calculate</button><div class="result" id="pbResult"></div></div>
-<div class="calc"><h3>Insulation Area</h3><label>Wall/Ceiling Area m²</label><input id="insArea" type="number"><label>Waste %</label><input id="insWaste" type="number" value="5"><button onclick="calcIns()">Calculate</button><div class="result" id="insResult"></div></div>
-<div class="calc"><h3>Tiles Quantity</h3><label>Total Area m²</label><input id="tileArea" type="number"><label>Tile Area m²</label><input id="tileSize" type="number" value="0.09"><label>Waste %</label><input id="tileWaste" type="number" value="10"><button onclick="calcTiles()">Calculate</button><div class="result" id="tileResult"></div></div>
-</div>
-</section>
-</main>
+      <section id="page-assistant" class="page">
+        <h2 class="section-title">Ask EMCP</h2>
+        <div class="assistant-card">
+          <p data-i18n="assistantIntro">
+            Ask about property, construction, investment, finance or compliance.
+            EMCP searches its local knowledge first.
+          </p>
+          <form id="assistantForm" class="assistant-form">
+            <label
+              class="sr-only"
+              for="assistantQuestion"
+              data-i18n="yourQuestion"
+              >Your question</label
+            ><textarea
+              id="assistantQuestion"
+              rows="3"
+              data-i18n-placeholder="assistantPlaceholder"
+              placeholder="Ask a professional question…"
+              required
+            ></textarea
+            ><button type="submit" data-i18n="askEmcp">Ask EMCP</button>
+          </form>
+          <div
+            id="assistantOutput"
+            class="assistant-output"
+            aria-live="polite"
+          ></div>
+        </div>
+      </section>
 
-<nav class="bottom">
-<button class="active" id="navHome" onclick="showPage('home')">⌂ <span>Home</span></button>
-<button id="navKnowledge" onclick="showPage('knowledge')">📘 <span>Knowledge</span></button>
-<button id="navCalc" onclick="showPage('calculators')">🧮 <span>Calculators</span></button>
-<button id="navBuild" onclick="showPage('construction')">🏗️ <span>Build</span></button>
-<button id="navHelp">? <span>Help</span></button>
-</nav>
+      <section id="page-workspace" class="page">
+        <div class="workspace-page-heading">
+          <div>
+            <h2 class="section-title" data-i18n="workspace">My Workspace</h2>
+            <p data-i18n="workspaceIntro">
+              Your personal knowledge and deal workspace. Data stays on this
+              device by default.
+            </p>
+          </div>
+          <span class="workspace-privacy" data-i18n="onDevice"
+            >On this device only</span
+          >
+        </div>
+        <div
+          class="workspace-tabs"
+          role="tablist"
+          aria-label="Workspace views"
+          data-i18n-aria="workspaceViews"
+        >
+          <button
+            type="button"
+            role="tab"
+            class="active"
+            aria-selected="true"
+            tabindex="0"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="overview"
+            data-i18n="overview"
+          >
+            Overview</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="favourites"
+            data-i18n="favourites"
+          >
+            Favourites</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="recent"
+            data-i18n="recent"
+          >
+            Recent</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="collections"
+            data-i18n="collections"
+          >
+            Collections</button
+          ><button
+            type="button"
+            role="tab"
+            aria-selected="false"
+            tabindex="-1"
+            aria-controls="workspaceOutput"
+            data-workspace-tab="scenarios"
+            data-i18n="scenarios"
+          >
+            Scenarios
+          </button>
+        </div>
+        <div
+          id="workspaceOutput"
+          class="workspace-output"
+          role="tabpanel"
+          aria-live="polite"
+        ></div>
+        <section class="workspace-data-tools">
+          <h3 data-i18n="dataTools">Data Backup</h3>
+          <p id="workspacePrivacyText" data-i18n="privacyText">
+            Exports and imports happen locally in your browser. Nothing is
+            uploaded.
+          </p>
+          <div class="workspace-data-actions">
+            <button type="button" id="exportWorkspace" data-i18n="exportData">
+              Export data</button
+            ><label class="workspace-import"
+              ><span data-i18n="importData">Import data</span
+              ><input
+                id="importWorkspace"
+                type="file"
+                accept="application/json,.json"
+              /><small data-i18n="importFile"
+                >Choose workspace backup</small
+              ></label
+            >
+          </div>
+          <div
+            id="workspaceStatus"
+            class="workspace-status"
+            aria-live="polite"
+          ></div>
+        </section>
+      </section>
 
-<div class="modal" id="modal"><div class="sheet" id="sheet"></div></div>
+      <section id="page-calculators" class="page">
+        <h2 class="section-title" data-i18n="calculators">Calculators</h2>
+        <section class="deal-workspace" aria-labelledby="dealSnapshotTitle">
+          <div class="workspace-heading">
+            <div>
+              <h3 id="dealSnapshotTitle" data-i18n="dealSnapshot">
+                Deal Snapshot
+              </h3>
+              <p data-i18n="dealIntro">
+                Combine leverage, cost, value, profit and return metrics in one
+                reusable scenario.
+              </p>
+            </div>
+            <span class="workspace-badge" data-i18n="savedLocally"
+              >Saved locally</span
+            >
+          </div>
+          <div class="snapshot-fields">
+            <label
+              ><span data-i18n="scenarioName">Scenario name</span
+              ><input
+                id="dealName"
+                type="text"
+                data-i18n-placeholder="scenarioPlaceholder"
+                placeholder="e.g. Nottingham acquisition"
+            /></label>
+            <label
+              ><span data-i18n="loanPounds">Loan (£)</span
+              ><input id="dealLoan" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="propertyValuePounds">Property value (£)</span
+              ><input id="dealPropertyValue" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="totalCostPounds"
+                >Total development cost (£)</span
+              ><input id="dealCost" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="gdvPounds">Gross development value (£)</span
+              ><input id="dealGdv" type="number" min="0" step="any"
+            /></label>
+            <label
+              ><span data-i18n="annualRentPounds">Annual rent (£)</span
+              ><input id="dealRent" type="number" min="0" step="any"
+            /></label>
+          </div>
+          <div class="snapshot-actions">
+            <button
+              type="button"
+              id="calculateDeal"
+              data-i18n="calculateSnapshot"
+            >
+              Calculate snapshot</button
+            ><button
+              type="button"
+              class="secondary"
+              id="exampleDeal"
+              data-i18n="useExample"
+            >
+              Use example</button
+            ><button
+              type="button"
+              class="secondary"
+              id="resetDeal"
+              data-i18n="reset"
+            >
+              Reset
+            </button>
+          </div>
+          <div
+            id="dealErrors"
+            class="workspace-errors"
+            aria-live="polite"
+          ></div>
+          <div
+            id="dealResults"
+            class="snapshot-results"
+            aria-live="polite"
+          ></div>
+          <div
+            id="dealResultActions"
+            class="snapshot-actions result-actions"
+            hidden
+          >
+            <button type="button" id="saveDeal" data-i18n="saveScenario">
+              Save scenario</button
+            ><button
+              type="button"
+              class="secondary"
+              id="copyDeal"
+              data-i18n="copySummary"
+            >
+              Copy summary</button
+            ><button
+              type="button"
+              class="secondary"
+              id="shareDeal"
+              data-i18n="shareSummary"
+            >
+              Share summary
+            </button>
+          </div>
+          <div class="saved-scenarios">
+            <h4 data-i18n="savedScenarios">Saved scenarios</h4>
+            <div id="savedScenarioList" class="scenario-list">
+              <p class="scenario-empty" data-i18n="noScenarios">
+                No saved scenarios yet.
+              </p>
+            </div>
+          </div>
+        </section>
+        <div
+          class="tool-nav"
+          data-i18n-aria="calculatorCategories"
+          aria-label="Calculator categories"
+        >
+          <button
+            type="button"
+            class="active"
+            data-calculator-filter="all"
+            data-i18n="all"
+          >
+            All</button
+          ><button
+            type="button"
+            data-calculator-filter="finance"
+            data-i18n="finance"
+          >
+            Finance</button
+          ><button
+            type="button"
+            data-calculator-filter="development"
+            data-i18n="development"
+          >
+            Development</button
+          ><button
+            type="button"
+            data-calculator-filter="property"
+            data-i18n="property"
+          >
+            Property
+          </button>
+        </div>
+        <div class="calc-grid">
+          <div class="calc">
+            <h3>LTV</h3>
+            <label>Loan</label><input id="ltvLoan" type="number" /><label
+              >Property Value</label
+            ><input id="ltvValue" type="number" /><button
+              type="button"
+              data-calculate="ltv"
+            >
+              Calculate
+            </button>
+            <div class="result" id="ltvResult"></div>
+          </div>
+          <div class="calc">
+            <h3>LTC</h3>
+            <label>Loan</label><input id="ltcLoan" type="number" /><label
+              >Total Cost</label
+            ><input id="ltcCost" type="number" /><button
+              type="button"
+              data-calculate="ltc"
+            >
+              Calculate
+            </button>
+            <div class="result" id="ltcResult"></div>
+          </div>
+          <div class="calc">
+            <h3>LTGDV</h3>
+            <label>Loan</label><input id="ltgdvLoan" type="number" /><label
+              >GDV</label
+            ><input id="ltgdvValue" type="number" /><button
+              type="button"
+              data-calculate="ltgdv"
+            >
+              Calculate
+            </button>
+            <div class="result" id="ltgdvResult"></div>
+          </div>
+          <div class="calc">
+            <h3>ROI</h3>
+            <label>Profit</label><input id="roiProfit" type="number" /><label
+              >Investment</label
+            ><input id="roiCost" type="number" /><button
+              type="button"
+              data-calculate="roi"
+            >
+              Calculate
+            </button>
+            <div class="result" id="roiResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Rental Yield</h3>
+            <label>Annual Rent</label
+            ><input id="yieldRent" type="number" /><label>Property Value</label
+            ><input id="yieldValue" type="number" /><button
+              type="button"
+              data-calculate="yield"
+            >
+              Calculate
+            </button>
+            <div class="result" id="yieldResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Development Profit</h3>
+            <label>GDV</label><input id="devGdv" type="number" /><label
+              >Total Development Cost</label
+            ><input id="devCost" type="number" /><button
+              type="button"
+              data-calculate="development-profit"
+            >
+              Calculate
+            </button>
+            <div class="result" id="devResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Monthly Loan Payment</h3>
+            <label>Loan</label><input id="loanPrincipal" type="number" /><label
+              >Annual Interest %</label
+            ><input id="loanRate" type="number" /><label>Term Years</label
+            ><input id="loanYears" type="number" /><button
+              type="button"
+              data-calculate="monthly-payment"
+            >
+              Calculate
+            </button>
+            <div class="result" id="loanResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Arrangement Fee</h3>
+            <label>Loan</label><input id="feeLoan" type="number" /><label
+              >Fee %</label
+            ><input id="feeRate" type="number" /><button
+              type="button"
+              data-calculate="arrangement-fee"
+            >
+              Calculate
+            </button>
+            <div class="result" id="feeResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Interest Roll-up</h3>
+            <label>Loan</label><input id="rollLoan" type="number" /><label
+              >Annual Interest %</label
+            ><input id="rollRate" type="number" /><label>Months</label
+            ><input id="rollMonths" type="number" /><button
+              type="button"
+              data-calculate="interest-rollup"
+            >
+              Calculate
+            </button>
+            <div class="result" id="rollResult"></div>
+          </div>
+          <div class="calc" data-calculator-groups="property">
+            <h3 data-i18n="stampDutyGuide">Stamp Duty Guide</h3>
+            <p class="muted" data-i18n="stampDutyPlaceholder">
+              Placeholder module for future live UK SDLT rules.
+            </p>
+            <div class="result" data-i18n="planned">Planned</div>
+          </div>
+        </div>
+      </section>
 
-<script>
-const TERMS=[{"term": "Advisory Retainer", "tr": "Danışmanlık sabit ücreti", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Belirli bir dönem boyunca verilen stratejik danışmanlık hizmeti için peşin veya düzenli ödenen ücret.", "use": "Pazar girişi, yatırımcı hazırlığı ve fırsat paketleme çalışmalarında kullanılır.", "example": "The engagement will begin with a three-month advisory retainer.", "tags": ["retainer", "advisory", "fee", "danışmanlık"]}, {"term": "Success Fee", "tr": "Başarı primi / işlem başarı ücreti", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "İşlem, finansman veya yatırım eşleşmesi başarıyla tamamlandığında ödenen ücret.", "use": "Sermaye temini, satış, ortaklık veya mandate kapanışında kullanılır.", "example": "A success fee becomes payable upon completion of the transaction.", "tags": ["fee", "completion", "transaction", "komisyon"]}, {"term": "Strategic Mandate", "tr": "Stratejik yetkilendirme", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Belirli bir yatırımcıyı, projeyi veya sermaye arayışını temsil etmek için verilen resmi görev ve yetki.", "use": "Kontrollü yatırımcı erişimi ve proje temsilinde kullanılır.", "example": "EMCP has been appointed under a strategic mandate.", "tags": ["mandate", "representation", "yetki"]}, {"term": "Origination", "tr": "Fırsat ve işlem geliştirme", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Yatırım fırsatlarını, projeleri, yatırımcıları veya finansman kaynaklarını sistemli biçimde bulma ve geliştirme süreci.", "use": "Deal sourcing ile benzer olsa da daha ilişki ve süreç odaklıdır.", "example": "The team is responsible for opportunity origination across the East Midlands.", "tags": ["deal sourcing", "pipeline", "fırsat"]}, {"term": "Pipeline", "tr": "İşlem / fırsat havuzu", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Farklı olgunluk seviyelerinde takip edilen potansiyel yatırım, proje veya müşteri fırsatlarının bütünü.", "use": "CRM, yatırımcı ilişkileri ve satış süreçlerinde kullanılır.", "example": "We currently have five qualified opportunities in the pipeline.", "tags": ["crm", "deal flow", "fırsat havuzu"]}, {"term": "Deal Flow", "tr": "İşlem akışı", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Belirli bir dönemde yatırımcı veya danışman önüne gelen yatırım fırsatlarının hacmi ve kalitesi.", "use": "Fonlar, family office'ler ve yatırım platformları kullanır.", "example": "Our regional network provides consistent deal flow.", "tags": ["pipeline", "origination", "yatırım"]}, {"term": "Capital Stack", "tr": "Sermaye yapısı", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Bir projenin finansmanında kullanılan senior debt, mezzanine, preferred equity ve ordinary equity katmanlarının bütünü.", "use": "Geliştirme finansmanı ve yatırım yapılandırmasında kullanılır.", "example": "The capital stack includes senior debt and sponsor equity.", "tags": ["debt", "equity", "finance"]}, {"term": "Equity", "tr": "Öz sermaye / hisse sermayesi", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Bir şirkete veya projeye ortaklık karşılığında konulan sermaye.", "use": "Borçtan farklı olarak sabit geri ödeme zorunluluğu yoktur; yatırımcı riske ortak olur.", "example": "The investor will provide £4 million of equity.", "tags": ["share", "capital", "özsermaye"]}, {"term": "Preferred Equity", "tr": "İmtiyazlı öz sermaye", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Geri ödeme ve getiri sıralamasında adi öz sermayeden önce gelen, ancak borçtan sonra yer alan sermaye türü.", "use": "Risk ve getiri paylaşımını yapılandırmak için kullanılır.", "example": "The gap will be funded through preferred equity.", "tags": ["capital stack", "return", "priority"]}, {"term": "JV", "tr": "Ortak girişim", "cat": "Sermaye ve Yatırım", "abbr": "Joint Venture", "def": "İki veya daha fazla tarafın belirli bir proje veya işletme için kaynaklarını, risklerini ve getirilerini birleştirdiği ortaklık yapısı.", "use": "Developer ile yatırımcı arasındaki proje ortaklıklarında sık kullanılır.", "example": "The parties are considering a 50:50 JV.", "tags": ["joint venture", "partnership", "ortaklık"]}, {"term": "Co-development", "tr": "Ortak geliştirme", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "İki veya daha fazla tarafın bir gayrimenkul projesini birlikte geliştirmesi.", "use": "Arsa sahibi, developer ve yatırımcı arasında kullanılabilir.", "example": "The opportunity may suit a co-development structure.", "tags": ["development", "JV", "ortaklık"]}, {"term": "Forward Funding", "tr": "İleri finansman", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Yatırımcının geliştirme sürecinde arsa ve inşaat maliyetlerini aşamalı olarak finanse ettiği yapı.", "use": "BTR, PBSA ve ticari geliştirmelerde sık görülür.", "example": "The scheme is being considered for forward funding.", "tags": ["funding", "development", "institutional"]}, {"term": "Forward Purchase", "tr": "İleri alım", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Yatırımcının tamamlanacak bir projeyi önceden belirlenen koşullarla satın almayı taahhüt ettiği yapı.", "use": "Forward funding'den farklı olarak geliştirici finansmanı çoğunlukla kendisi sağlar.", "example": "The investor has agreed a forward purchase on completion.", "tags": ["purchase", "development", "exit"]}, {"term": "Family Office", "tr": "Aile ofisi", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Varlıklı bir ailenin yatırımlarını, vergi, hukuk, miras ve servet yönetimini yöneten özel yapı.", "use": "Büyük ve uzun vadeli sermaye kaynaklarından biridir.", "example": "The opportunity is suitable for a UK-based family office.", "tags": ["HNWI", "private capital", "wealth"]}, {"term": "HNWI", "tr": "Yüksek net değerli birey", "cat": "Sermaye ve Yatırım", "abbr": "High-Net-Worth Individual", "def": "Yatırım yapılabilir varlığı yüksek olan kişi.", "use": "Private banking, yatırım ve gayrimenkul sermaye ilişkilerinde kullanılır.", "example": "The event is aimed at HNWIs and family offices.", "tags": ["wealth", "investor", "private capital"]}, {"term": "Private Capital", "tr": "Özel sermaye", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Borsa dışı kaynaklardan gelen aile ofisi, özel yatırımcı, private equity ve benzeri sermaye.", "use": "Kurumsal olmayan veya özel yapılandırılmış yatırım kaynaklarını anlatır.", "example": "The platform connects regional opportunities with private capital.", "tags": ["equity", "family office", "fund"]}, {"term": "Investment Thesis", "tr": "Yatırım tezi", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Bir yatırımın neden yapılması gerektiğini açıklayan stratejik gerekçe ve varsayımlar bütünü.", "use": "Bölge, sektör, getiri, risk ve çıkış mantığını açıklar.", "example": "The investment thesis is based on regional housing demand.", "tags": ["strategy", "investment", "narrative"]}, {"term": "Investor Fit", "tr": "Yatırımcı uyumu", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Bir fırsatın yatırımcının sermaye büyüklüğü, risk iştahı, vadesi ve sektör tercihiyle uyum derecesi.", "use": "Kontrollü fırsat eşleştirmesinde kullanılır.", "example": "We only present opportunities with a clear investor fit.", "tags": ["qualification", "matching", "screening"]}, {"term": "Investor Qualification", "tr": "Yatırımcı niteliklendirme", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Yatırımcının sermaye kapasitesi, karar süreci, risk iştahı, zamanlaması ve yatırım kriterlerinin doğrulanması.", "use": "Her yatırımcıya her fırsatı göndermemek için yapılır.", "example": "Investor qualification must be completed before introductions.", "tags": ["KYC", "screening", "investor"]}, {"term": "Opportunity Screening", "tr": "Fırsat ön elemesi", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Bir yatırım fırsatının temel ticari, finansal, hukuki ve stratejik kriterlere göre ilk değerlendirmesi.", "use": "Detaylı due diligence öncesinde yapılır.", "example": "The project passed our initial opportunity screening.", "tags": ["screening", "DD", "filter"]}, {"term": "Investment Committee", "tr": "Yatırım komitesi", "cat": "Sermaye ve Yatırım", "abbr": "IC", "def": "Bir yatırım kararını inceleyen ve onaylayan yetkili kurul.", "use": "Fon, family office ve kurumsal yatırımcı süreçlerinde kullanılır.", "example": "The proposal will be submitted to the investment committee.", "tags": ["IC", "approval", "decision"]}, {"term": "IC Memo", "tr": "Yatırım komitesi notu", "cat": "Sermaye ve Yatırım", "abbr": "Investment Committee Memorandum", "def": "Yatırım komitesine sunulan, fırsatın getirilerini, risklerini, yapısını ve önerilen kararı açıklayan belge.", "use": "Kurumsal yatırım kararında temel dokümandır.", "example": "The team is preparing the IC memo.", "tags": ["investment committee", "memo", "approval"]}, {"term": "Ticket Size", "tr": "Yatırım büyüklüğü", "cat": "Sermaye ve Yatırım", "abbr": "", "def": "Bir yatırımcının tek bir işleme koymayı planladığı yaklaşık sermaye tutarı.", "use": "Yatırımcı-fırsat eşleşmesinde temel kriterdir.", "example": "The minimum ticket size is £2 million.", "tags": ["capital", "investment amount", "bütçe"]}, {"term": "Senior Debt", "tr": "Birinci derece kıdemli borç", "cat": "Finansman", "abbr": "", "def": "Geri ödeme sıralamasında diğer borç ve öz sermaye türlerinden önce gelen, genellikle birinci derece teminatlı finansman.", "use": "Geliştirme ve yatırım kredilerinde ana borç katmanıdır.", "example": "The acquisition will be funded with senior debt.", "tags": ["loan", "first charge", "debt"]}, {"term": "Mezzanine Finance", "tr": "Ara katman finansmanı", "cat": "Finansman", "abbr": "", "def": "Senior debt ile equity arasında yer alan, daha yüksek riskli ve genellikle daha pahalı finansman.", "use": "Sermaye açığını kapatmak için kullanılır.", "example": "The remaining funding gap may be covered by mezzanine finance.", "tags": ["debt", "capital stack", "gap funding"]}, {"term": "Bridge Loan", "tr": "Köprü kredisi", "cat": "Finansman", "abbr": "", "def": "Satın alma, refinansman veya geçici nakit ihtiyacı için kullanılan kısa vadeli finansman.", "use": "Hızlı tamamlanması gereken property işlemlerinde yaygındır.", "example": "The purchase will be completed using a bridge loan.", "tags": ["bridging", "short term", "loan"]}, {"term": "Development Finance", "tr": "Geliştirme finansmanı", "cat": "Finansman", "abbr": "", "def": "Arsa alımı ve inşaat maliyetlerini finanse etmek için kullanılan proje bazlı kredi.", "use": "Drawdown'lar ilerleme raporlarına göre serbest bırakılır.", "example": "The lender has offered development finance at 65% LTGDV.", "tags": ["construction", "loan", "drawdown"]}, {"term": "LTV", "tr": "Kredi / değer oranı", "cat": "Finansman", "abbr": "Loan to Value", "def": "Kredi tutarının gayrimenkulün mevcut değerine oranı.", "use": "Yatırım ve satın alma finansmanında kullanılır.", "example": "The lender is comfortable at 70% LTV.", "tags": ["loan", "value", "ratio"]}, {"term": "LTC", "tr": "Kredi / toplam maliyet oranı", "cat": "Finansman", "abbr": "Loan to Cost", "def": "Kredi tutarının toplam proje maliyetine oranı.", "use": "Geliştirme finansmanında sık kullanılır.", "example": "The facility is capped at 80% LTC.", "tags": ["cost", "loan", "development"]}, {"term": "LTGDV", "tr": "Kredi / tamamlanmış brüt geliştirme değeri oranı", "cat": "Finansman", "abbr": "Loan to Gross Development Value", "def": "Toplam kredi tutarının projenin tamamlandığındaki tahmini brüt değerine oranı.", "use": "Development finance tekliflerinde temel ölçüdür.", "example": "The maximum leverage is 65% LTGDV.", "tags": ["GDV", "development", "leverage"]}, {"term": "GDV", "tr": "Brüt geliştirme değeri", "cat": "Finansman", "abbr": "Gross Development Value", "def": "Bir geliştirme projesinin tamamlandığında beklenen toplam satış veya piyasa değeri.", "use": "Kârlılık ve finansman hesaplarında kullanılır.", "example": "The scheme has an estimated GDV of £18 million.", "tags": ["development value", "valuation", "sales"]}, {"term": "IRR", "tr": "İç verim oranı", "cat": "Finansman", "abbr": "Internal Rate of Return", "def": "Bir yatırımın zaman içindeki nakit akışlarını dikkate alan yıllıklaştırılmış getiri ölçüsü.", "use": "Farklı yatırım senaryolarını karşılaştırmak için kullanılır.", "example": "The target project IRR is 18%.", "tags": ["return", "investment", "yield"]}, {"term": "ROI", "tr": "Yatırım getirisi", "cat": "Finansman", "abbr": "Return on Investment", "def": "Elde edilen kazancın yatırılan sermayeye oranı.", "use": "Basit performans ölçümüdür; zaman değerini tek başına hesaba katmaz.", "example": "The projected ROI is 24%.", "tags": ["return", "profit", "investment"]}, {"term": "Yield", "tr": "Getiri oranı", "cat": "Finansman", "abbr": "", "def": "Bir varlığın yıllık gelirinin değerine veya satın alma fiyatına oranı.", "use": "Gelir üreten property yatırımlarında kullanılır.", "example": "The asset is being marketed at a 6.5% net initial yield.", "tags": ["income", "property", "return"]}, {"term": "DSCR", "tr": "Borç servisi karşılama oranı", "cat": "Finansman", "abbr": "Debt Service Coverage Ratio", "def": "Net işletme gelirinin borç anapara ve faiz ödemelerini karşılama gücünü gösteren oran.", "use": "Lender kredi değerlendirmesinde kullanır.", "example": "The lender requires a minimum DSCR of 1.25x.", "tags": ["debt service", "income", "ratio"]}, {"term": "Interest Cover", "tr": "Faiz karşılama oranı", "cat": "Finansman", "abbr": "ICR", "def": "Gelirin veya kârın faiz ödemelerini kaç kez karşıladığını gösteren oran.", "use": "Yatırım kredisi ve şirket finansmanında kullanılır.", "example": "The asset must maintain an interest cover ratio above 1.5x.", "tags": ["ICR", "interest", "coverage"]}, {"term": "Drawdown", "tr": "Kredi dilimi kullanımı", "cat": "Finansman", "abbr": "", "def": "Onaylanmış kredi limitinin tamamının veya bir kısmının borçluya serbest bırakılması.", "use": "Development finance'da iş ilerledikçe yapılır.", "example": "The next drawdown is subject to the monitoring surveyor's report.", "tags": ["loan", "release", "facility"]}, {"term": "Exit Strategy", "tr": "Çıkış stratejisi", "cat": "Finansman", "abbr": "", "def": "Yatırımın nasıl ve ne zaman nakde çevrileceğini açıklayan plan.", "use": "Satış, refinansman veya uzun vadeli elde tutma seçeneklerini kapsar.", "example": "The primary exit strategy is a refinance on stabilisation.", "tags": ["sale", "refinance", "investment"]}, {"term": "Refinance", "tr": "Yeniden finansman", "cat": "Finansman", "abbr": "", "def": "Mevcut borcun yeni bir krediyle kapatılması veya yeniden yapılandırılması.", "use": "İnşaat sonrası daha uzun vadeli ve düşük maliyetli krediye geçişte kullanılır.", "example": "The development loan will be refinanced at practical completion.", "tags": ["loan", "exit", "finance"]}, {"term": "Coupon", "tr": "Faiz / kupon oranı", "cat": "Finansman", "abbr": "", "def": "Bir borç veya yatırım aracında ödenen belirlenmiş faiz oranı.", "use": "Mezzanine, tahvil ve özel borç işlemlerinde görülür.", "example": "The mezzanine facility carries a 12% coupon.", "tags": ["interest", "debt", "rate"]}, {"term": "Arrangement Fee", "tr": "Kredi düzenleme ücreti", "cat": "Finansman", "abbr": "", "def": "Lender tarafından kredinin oluşturulması ve tahsisi için alınan ücret.", "use": "Genellikle kredi tutarının yüzdesi olarak hesaplanır.", "example": "The facility includes a 2% arrangement fee.", "tags": ["loan fee", "lender", "finance"]}, {"term": "First Charge", "tr": "Birinci derece ipotek / teminat", "cat": "Finansman", "abbr": "", "def": "Bir varlık üzerinde geri ödeme önceliği sağlayan birinci sıradaki yasal teminat.", "use": "Senior lender tarafından talep edilir.", "example": "The lender will take a first legal charge over the property.", "tags": ["security", "mortgage", "senior debt"]}, {"term": "Due Diligence", "tr": "Detaylı inceleme", "cat": "Hukuk ve İnceleme", "abbr": "DD", "def": "Bir yatırım veya işlem öncesinde hukuki, mali, teknik, ticari ve çevresel risklerin sistemli incelenmesi.", "use": "Yatırım kararı ve sözleşme öncesinde yapılır.", "example": "The transaction remains subject to legal and technical due diligence.", "tags": ["DD", "review", "risk"]}, {"term": "NDA", "tr": "Gizlilik sözleşmesi", "cat": "Hukuk ve İnceleme", "abbr": "Non-Disclosure Agreement", "def": "Tarafların paylaşılan gizli bilgileri korumasını düzenleyen sözleşme.", "use": "Data room veya hassas proje bilgileri paylaşılmadan önce imzalanır.", "example": "Please sign the NDA before we grant data room access.", "tags": ["confidentiality", "agreement", "legal"]}, {"term": "Heads of Terms", "tr": "Ana ticari şartlar", "cat": "Hukuk ve İnceleme", "abbr": "HoT", "def": "Tarafların planlanan işlemde anlaştığı temel ticari maddeleri özetleyen, çoğunlukla kısmen bağlayıcı belge.", "use": "Detaylı sözleşme öncesinde hazırlanır.", "example": "The parties have agreed the heads of terms.", "tags": ["HoT", "terms", "agreement"]}, {"term": "LOI", "tr": "Niyet mektubu", "cat": "Hukuk ve İnceleme", "abbr": "Letter of Intent", "def": "Bir tarafın işlem veya ortaklık niyetini ve temel şartlarını yazılı olarak ifade ettiği belge.", "use": "Satın alma ve yatırım görüşmelerinin erken aşamasında kullanılır.", "example": "The investor submitted a non-binding LOI.", "tags": ["intent", "offer", "letter"]}, {"term": "MOU", "tr": "Mutabakat zaptı", "cat": "Hukuk ve İnceleme", "abbr": "Memorandum of Understanding", "def": "Tarafların işbirliği niyetini, rollerini ve temel çerçeveyi kayda aldığı belge.", "use": "Ortaklık ve kurumsal işbirliklerinde kullanılır.", "example": "The parties signed an MOU to explore joint opportunities.", "tags": ["cooperation", "agreement", "mutabakat"]}, {"term": "SPA", "tr": "Hisse satın alma sözleşmesi", "cat": "Hukuk ve İnceleme", "abbr": "Share Purchase Agreement", "def": "Bir şirketteki hisselerin satış şartlarını düzenleyen sözleşme.", "use": "Şirket veya SPV satın alımında kullanılır.", "example": "Completion will take place under the SPA.", "tags": ["shares", "purchase", "company"]}, {"term": "Asset Purchase Agreement", "tr": "Varlık satın alma sözleşmesi", "cat": "Hukuk ve İnceleme", "abbr": "APA", "def": "Belirli işletme veya proje varlıklarının satışını düzenleyen sözleşme.", "use": "Hisse yerine seçilmiş varlıkların satın alınmasında kullanılır.", "example": "The business assets will transfer under an APA.", "tags": ["asset", "purchase", "agreement"]}, {"term": "JVA", "tr": "Ortak girişim sözleşmesi", "cat": "Hukuk ve İnceleme", "abbr": "Joint Venture Agreement", "def": "JV taraflarının sermaye katkılarını, yönetimini, kararlarını, kâr paylaşımını ve çıkışını düzenleyen sözleşme.", "use": "Gayrimenkul geliştirme ortaklıklarında kullanılır.", "example": "The parties are negotiating the JVA.", "tags": ["JV", "agreement", "partnership"]}, {"term": "Exclusivity", "tr": "Münhasırlık", "cat": "Hukuk ve İnceleme", "abbr": "", "def": "Belirli bir süre boyunca taraflardan birinin alternatif alıcı, yatırımcı veya danışmanlarla görüşmesini sınırlayan düzenleme.", "use": "İşlem müzakeresi sırasında ciddiyeti korumak için kullanılır.", "example": "The buyer has requested six weeks of exclusivity.", "tags": ["lockout", "negotiation", "exclusive"]}, {"term": "Longstop Date", "tr": "Nihai son tarih", "cat": "Hukuk ve İnceleme", "abbr": "", "def": "Belirli koşulların tamamlanması veya işlemin kapanması için sözleşmede belirlenen en son tarih.", "use": "Conditional contracts ve development anlaşmalarında kullanılır.", "example": "The longstop date is 31 December 2027.", "tags": ["deadline", "completion", "contract"]}, {"term": "Condition Precedent", "tr": "Ön koşul", "cat": "Hukuk ve İnceleme", "abbr": "CP", "def": "Sözleşmenin yürürlüğe girmesi veya işlem kapanışı için önceden yerine getirilmesi gereken şart.", "use": "Planning, finance ve consent koşullarında kullanılır.", "example": "Planning consent is a condition precedent to completion.", "tags": ["CP", "condition", "completion"]}, {"term": "Warranty", "tr": "Sözleşmesel garanti", "cat": "Hukuk ve İnceleme", "abbr": "", "def": "Bir tarafın belirli bir hususun doğru olduğuna dair verdiği sözleşmesel güvence.", "use": "Yanlış çıkarsa tazminat talebi doğabilir.", "example": "The seller gives warranties regarding title and litigation.", "tags": ["representation", "claim", "contract"]}, {"term": "Indemnity", "tr": "Tazmin yükümlülüğü", "cat": "Hukuk ve İnceleme", "abbr": "", "def": "Belirli bir kayıp veya risk gerçekleşirse zararın karşılanmasını öngören sözleşme hükmü.", "use": "Bilinen spesifik risklerde kullanılır.", "example": "The seller will provide an indemnity for the tax liability.", "tags": ["loss", "risk", "contract"]}, {"term": "Data Room", "tr": "Belge inceleme odası", "cat": "Hukuk ve İnceleme", "abbr": "", "def": "Bir işlemle ilgili hukuki, mali, teknik ve ticari belgelerin güvenli şekilde paylaşıldığı dijital ortam.", "use": "Due diligence sürecinin merkezidir.", "example": "The legal documents are available in the virtual data room.", "tags": ["VDR", "documents", "DD"]}, {"term": "BTR", "tr": "Kiralamak için inşa edilen konut", "cat": "Gayrimenkul ve Geliştirme", "abbr": "Build to Rent", "def": "Tek bir kurumsal sahip tarafından uzun vadeli kiralama amacıyla geliştirilen konut projesi.", "use": "Kurumsal yatırım ve forward funding işlemlerinde kullanılır.", "example": "The site is suitable for a 220-unit BTR scheme.", "tags": ["residential", "rental", "institutional"]}, {"term": "PBSA", "tr": "Amaca özel öğrenci konaklaması", "cat": "Gayrimenkul ve Geliştirme", "abbr": "Purpose-Built Student Accommodation", "def": "Öğrenciler için özel olarak tasarlanmış ve işletilen konaklama projesi.", "use": "Üniversite şehirlerinde yatırım sınıfıdır.", "example": "The proposal includes 450 PBSA beds.", "tags": ["student", "accommodation", "development"]}, {"term": "HMO", "tr": "Birden fazla kişinin paylaştığı konut", "cat": "Gayrimenkul ve Geliştirme", "abbr": "House in Multiple Occupation", "def": "Birden fazla ayrı hane tarafından paylaşılan konut türü.", "use": "Lisans, yangın ve mekânsal standartlara tabi olabilir.", "example": "The property requires a mandatory HMO licence.", "tags": ["residential", "licence", "shared house"]}, {"term": "Mixed-use", "tr": "Karma kullanımlı", "cat": "Gayrimenkul ve Geliştirme", "abbr": "", "def": "Konut, ticaret, ofis, otel veya toplumsal kullanımların aynı proje içinde birleştiği geliştirme.", "use": "Şehir merkezi rejenerasyonunda yaygındır.", "example": "The masterplan proposes a mixed-use regeneration scheme.", "tags": ["development", "regeneration", "planning"]}, {"term": "Regeneration", "tr": "Kentsel yenileme / canlandırma", "cat": "Gayrimenkul ve Geliştirme", "abbr": "", "def": "Ekonomik, fiziksel veya sosyal olarak gerilemiş bir alanın kapsamlı biçimde yeniden geliştirilmesi.", "use": "Kamu-özel ortaklıklarında kullanılır.", "example": "The project forms part of the city-centre regeneration programme.", "tags": ["urban renewal", "public sector", "development"]}, {"term": "Strategic Land", "tr": "Stratejik geliştirme arazisi", "cat": "Gayrimenkul ve Geliştirme", "abbr": "", "def": "Henüz geliştirme izni bulunmayabilen, fakat orta veya uzun vadede planlama potansiyeli taşıyan arazi.", "use": "Promoter ve landowner işlemlerinde kullanılır.", "example": "The portfolio includes strategic land on the edge of the settlement.", "tags": ["land", "planning", "promotion"]}, {"term": "Freehold", "tr": "Mülkiyet hakkı", "cat": "Gayrimenkul ve Geliştirme", "abbr": "", "def": "Arazi ve üzerindeki yapının süresiz mülkiyet hakkı.", "use": "İngiltere mülkiyet sisteminin temel hak türlerinden biridir.", "example": "The property is offered for sale freehold.", "tags": ["title", "ownership", "property"]}, {"term": "Leasehold", "tr": "Süreli kullanım / kira mülkiyeti", "cat": "Gayrimenkul ve Geliştirme", "abbr": "", "def": "Bir taşınmazı belirli süre ve sözleşme şartlarıyla kullanma hakkı.", "use": "Daire, ticari mülk ve uzun süreli kiralamalarda kullanılır.", "example": "The unit is held on a 125-year leasehold interest.", "tags": ["lease", "title", "property"]}, {"term": "Net Initial Yield", "tr": "Net başlangıç getirisi", "cat": "Gayrimenkul ve Geliştirme", "abbr": "NIY", "def": "Yıllık net kira gelirinin, satın alma masrafları dahil toplam satın alma maliyetine oranı.", "use": "Ticari gayrimenkul değerlemesinde kullanılır.", "example": "The asset is priced at a 6.25% NIY.", "tags": ["yield", "rent", "valuation"]}, {"term": "ERV", "tr": "Tahmini piyasa kira değeri", "cat": "Gayrimenkul ve Geliştirme", "abbr": "Estimated Rental Value", "def": "Bir mülkün mevcut piyasa koşullarında elde edebileceği tahmini kira.", "use": "Değerleme ve asset management için kullanılır.", "example": "The current rent is 12% below ERV.", "tags": ["rent", "valuation", "income"]}, {"term": "Vacant Possession", "tr": "Boş teslim", "cat": "Gayrimenkul ve Geliştirme", "abbr": "VP", "def": "Mülkün kiracı, kullanıcı veya eşya olmadan alıcıya teslim edilmesi.", "use": "Satış ve lease anlaşmalarında kullanılır.", "example": "The property is available with vacant possession.", "tags": ["completion", "property", "possession"]}, {"term": "LPA", "tr": "Yerel planlama otoritesi", "cat": "Planlama ve Kamu", "abbr": "Local Planning Authority", "def": "Planlama başvurularını değerlendiren yerel kamu kurumu.", "use": "Genellikle district, borough veya city council'dır.", "example": "The application has been submitted to the LPA.", "tags": ["planning", "council", "authority"]}, {"term": "Outline Planning Permission", "tr": "Ana hatlarıyla planlama izni", "cat": "Planlama ve Kamu", "abbr": "Outline Permission", "def": "Bir geliştirmenin prensipte kabul edildiğini gösteren, detayların daha sonra reserved matters ile sunulduğu izin.", "use": "Büyük arazi ve konut projelerinde kullanılır.", "example": "The site benefits from outline planning permission.", "tags": ["outline", "planning", "permission"]}, {"term": "Reserved Matters", "tr": "Saklı detaylar başvurusu", "cat": "Planlama ve Kamu", "abbr": "", "def": "Outline permission sonrasında erişim, görünüm, peyzaj, ölçek ve yerleşim gibi detayların onaya sunulması.", "use": "Outline izni detaylandırır.", "example": "The reserved matters application will be submitted next quarter.", "tags": ["planning", "details", "outline"]}, {"term": "Section 106", "tr": "Planlama yükümlülüğü anlaşması", "cat": "Planlama ve Kamu", "abbr": "S106", "def": "Geliştirici ile yerel otorite arasında, uygun fiyatlı konut veya altyapı katkıları gibi yükümlülükleri düzenleyen anlaşma.", "use": "Planning permission ile bağlantılıdır.", "example": "The scheme is subject to a Section 106 agreement.", "tags": ["planning obligation", "affordable housing", "council"]}, {"term": "CIL", "tr": "Toplumsal altyapı katkı payı", "cat": "Planlama ve Kamu", "abbr": "Community Infrastructure Levy", "def": "Yeni geliştirmelerin yerel altyapıya katkısı için uygulanan metrekare bazlı yerel vergi/harç.", "use": "Her LPA uygulamayabilir veya oranları değişebilir.", "example": "The development is liable for CIL.", "tags": ["levy", "planning", "infrastructure"]}, {"term": "NPPF", "tr": "Ulusal Planlama Politikası Çerçevesi", "cat": "Planlama ve Kamu", "abbr": "National Planning Policy Framework", "def": "İngiltere'deki planlama kararları ve yerel planlar için merkezi hükümet politika çerçevesi.", "use": "Planning statement ve appeal süreçlerinde referans verilir.", "example": "The proposal accords with the NPPF.", "tags": ["planning policy", "national", "framework"]}, {"term": "Public-backed", "tr": "Kamu destekli", "cat": "Planlama ve Kamu", "abbr": "", "def": "Bir proje veya büyüme programının kamu politikası, finansmanı, arazi desteği veya kurumsal katılım ile desteklenmesi.", "use": "Yatırım anlatısında dikkatli ve kanıtlı kullanılmalıdır.", "example": "The opportunity sits within a public-backed regeneration programme.", "tags": ["government", "support", "regeneration"]}, {"term": "Local Plan", "tr": "Yerel plan", "cat": "Planlama ve Kamu", "abbr": "", "def": "Yerel otoritenin arazi kullanımı, konut, altyapı ve gelişme politikalarını belirleyen resmi plan belgesi.", "use": "Arazi potansiyelini değerlendirmede temel kaynaktır.", "example": "The site is allocated for housing in the adopted Local Plan.", "tags": ["planning", "allocation", "council"]}, {"term": "Planning Gain", "tr": "Planlama kaynaklı değer artışı / katkı", "cat": "Planlama ve Kamu", "abbr": "", "def": "Planlama izniyle oluşan değer artışı veya geliştiriciden alınan toplumsal katkılar için kullanılan genel ifade.", "use": "S106, CIL ve arazi değer artışı bağlamında kullanılır.", "example": "The authority is seeking appropriate planning gain.", "tags": ["uplift", "S106", "CIL"]}, {"term": "JCT Contract", "tr": "JCT yapı sözleşmesi", "cat": "İnşaat ve Teslim", "abbr": "Joint Contracts Tribunal", "def": "Birleşik Krallık'ta yaygın kullanılan standart inşaat sözleşmesi ailesi.", "use": "Traditional, design and build ve minor works gibi türleri vardır.", "example": "The works will be procured under a JCT Design and Build contract.", "tags": ["contract", "construction", "JCT"]}, {"term": "NEC Contract", "tr": "NEC yapı ve mühendislik sözleşmesi", "cat": "İnşaat ve Teslim", "abbr": "New Engineering Contract", "def": "İşbirliği, erken uyarı ve aktif proje yönetimine dayalı standart sözleşme ailesi.", "use": "Altyapı ve kamu projelerinde yaygındır.", "example": "The infrastructure package will use NEC4 ECC.", "tags": ["contract", "infrastructure", "NEC"]}, {"term": "Practical Completion", "tr": "Pratik tamamlanma", "cat": "İnşaat ve Teslim", "abbr": "PC", "def": "İşlerin önemli ölçüde tamamlandığı ve binanın kullanılabilir olduğu sözleşmesel aşama.", "use": "Retention'ın yarısının serbest kalması ve defects period başlangıcıyla ilişkilidir.", "example": "Practical completion is targeted for March 2027.", "tags": ["completion", "construction", "handover"]}, {"term": "Retention", "tr": "Kesinti / teminat tutarı", "cat": "İnşaat ve Teslim", "abbr": "", "def": "İşverenin kusurların giderilmesini güvence altına almak için hakedişlerden tuttuğu yüzde.", "use": "Genellikle PC ve defects period sonunda aşamalı serbest bırakılır.", "example": "A 3% retention will apply to interim payments.", "tags": ["payment", "defects", "contract"]}, {"term": "Variation", "tr": "İş değişikliği", "cat": "İnşaat ve Teslim", "abbr": "", "def": "Sözleşme kapsamındaki iş, tasarım, miktar veya şartlarda yapılan değişiklik.", "use": "Fiyat ve süre etkisi belgelenmelidir.", "example": "The client instructed a variation to the mechanical specification.", "tags": ["change order", "contract", "cost"]}, {"term": "Snagging", "tr": "Eksik ve kusur tespiti", "cat": "İnşaat ve Teslim", "abbr": "", "def": "Tamamlanma öncesi veya sonrası küçük kusur ve eksiklerin listelenmesi süreci.", "use": "Handover öncesinde yapılır.", "example": "The snagging inspection is scheduled for Friday.", "tags": ["defects", "inspection", "completion"]}, {"term": "RAMS", "tr": "Risk değerlendirmesi ve yöntem beyanı", "cat": "İnşaat ve Teslim", "abbr": "Risk Assessments and Method Statements", "def": "Bir işin risklerini ve güvenli uygulama yöntemini açıklayan sağlık ve güvenlik belgeleri.", "use": "Şantiye öncesi onay sürecinde kullanılır.", "example": "All subcontractors must submit RAMS before starting work.", "tags": ["health safety", "method statement", "risk"]}, {"term": "BOQ", "tr": "Mahal ve miktar listesi", "cat": "İnşaat ve Teslim", "abbr": "Bill of Quantities", "def": "Projede yapılacak iş kalemlerini ve miktarlarını sistemli şekilde listeleyen ihale ve maliyet belgesi.", "use": "Tender ve valuation süreçlerinde kullanılır.", "example": "The contractor priced the works against the BOQ.", "tags": ["quantity", "tender", "cost"]}, {"term": "Value Engineering", "tr": "Değer mühendisliği", "cat": "İnşaat ve Teslim", "abbr": "VE", "def": "Gerekli performansı koruyarak maliyet, süre veya uygulanabilirliği iyileştirme çalışması.", "use": "Sadece ucuzlatma değil, toplam değeri optimize etme amacı taşır.", "example": "The team identified £250,000 of value engineering savings.", "tags": ["cost saving", "design", "construction"]}, {"term": "Design and Build", "tr": "Tasarla ve yap", "cat": "İnşaat ve Teslim", "abbr": "D&B", "def": "Tasarım ve yapım sorumluluğunun ana yüklenicide birleştiği tedarik modeli.", "use": "Tek sorumluluk noktası sağlar.", "example": "The project will be delivered on a design and build basis.", "tags": ["procurement", "contractor", "design"]}, {"term": "Employer's Requirements", "tr": "İşveren gereksinimleri", "cat": "İnşaat ve Teslim", "abbr": "ERs", "def": "Design and Build sözleşmesinde işverenin performans, kapsam ve tasarım beklentilerini belirleyen doküman.", "use": "Contractor's Proposals ile birlikte değerlendirilir.", "example": "The tender must comply with the Employer's Requirements.", "tags": ["D&B", "specification", "contract"]}, {"term": "Contractor's Proposals", "tr": "Yüklenici teklif ve çözümleri", "cat": "İnşaat ve Teslim", "abbr": "CPs", "def": "Yüklenicinin Employer's Requirements'a nasıl cevap vereceğini açıklayan tasarım ve yöntem dokümanları.", "use": "D&B sözleşmesinin temel parçalarındandır.", "example": "The Contractor's Proposals include the structural design solution.", "tags": ["D&B", "proposal", "design"]}, {"term": "AML", "tr": "Kara para aklamayı önleme", "cat": "Uyum ve Kurumsal", "abbr": "Anti-Money Laundering", "def": "Suç gelirlerinin finansal sisteme sokulmasını önlemek için uygulanan kontrol ve yükümlülükler.", "use": "Yatırımcı, müşteri ve fon kaynağı kontrolünde zorunludur.", "example": "The investor must complete AML checks.", "tags": ["compliance", "KYC", "money laundering"]}, {"term": "KYC", "tr": "Müşterini tanı", "cat": "Uyum ve Kurumsal", "abbr": "Know Your Customer", "def": "Müşterinin kimliğini, adresini, sahiplik yapısını ve risk profilini doğrulama süreci.", "use": "Finansal ve property işlemlerinde kullanılır.", "example": "We cannot proceed until KYC is complete.", "tags": ["identity", "AML", "compliance"]}, {"term": "Source of Funds", "tr": "Fon kaynağı", "cat": "Uyum ve Kurumsal", "abbr": "SoF", "def": "Belirli bir işlemde kullanılacak paranın nereden geldiğinin açıklanması ve doğrulanması.", "use": "Banka hesap dökümü, satış belgesi veya kredi sözleşmesiyle kanıtlanabilir.", "example": "The solicitor requested evidence of source of funds.", "tags": ["AML", "money", "evidence"]}, {"term": "Source of Wealth", "tr": "Servet kaynağı", "cat": "Uyum ve Kurumsal", "abbr": "SoW", "def": "Bir kişinin toplam servetini zaman içinde nasıl elde ettiğinin açıklanması.", "use": "Yüksek değerli veya riskli işlemlerde istenir.", "example": "The compliance team is reviewing source of wealth.", "tags": ["AML", "wealth", "compliance"]}, {"term": "PEP", "tr": "Siyasi nüfuz sahibi kişi", "cat": "Uyum ve Kurumsal", "abbr": "Politically Exposed Person", "def": "Kamu görevi nedeniyle yolsuzluk riski daha yüksek kabul edilen kişi ve bazı yakın bağlantıları.", "use": "Enhanced due diligence gerektirebilir.", "example": "The client has been identified as a PEP.", "tags": ["compliance", "EDD", "risk"]}, {"term": "CRM", "tr": "Müşteri ilişkileri yönetimi", "cat": "Uyum ve Kurumsal", "abbr": "Customer Relationship Management", "def": "İlişkileri, fırsatları, takipleri ve iletişim geçmişini sistemli biçimde yöneten yazılım ve süreç.", "use": "Origination ve investor relations için temel altyapıdır.", "example": "Every interaction must be logged in the CRM.", "tags": ["pipeline", "contacts", "follow-up"]}, {"term": "KPI", "tr": "Temel performans göstergesi", "cat": "Uyum ve Kurumsal", "abbr": "Key Performance Indicator", "def": "Bir ekip veya sürecin başarısını ölçmek için kullanılan sayısal hedef.", "use": "Aylık ilişki, toplantı ve dönüşüm ölçümünde kullanılır.", "example": "Qualified investor meetings are a core KPI.", "tags": ["performance", "target", "metric"]}, {"term": "Stakeholder", "tr": "Paydaş", "cat": "Uyum ve Kurumsal", "abbr": "", "def": "Bir proje veya karardan etkilenen ya da onu etkileyebilen kişi, kurum veya grup.", "use": "Council, investor, developer, adviser ve community paydaş olabilir.", "example": "We are engaging key regional stakeholders.", "tags": ["partner", "public sector", "relationship"]}, {"term": "Referral", "tr": "Yönlendirme / referans", "cat": "Uyum ve Kurumsal", "abbr": "", "def": "Bir kişinin başka bir potansiyel müşteri, yatırımcı veya iş ortağına tavsiye edilmesi.", "use": "Güvene dayalı iş geliştirmede etkilidir.", "example": "The introduction came through a trusted referral.", "tags": ["introduction", "network", "lead"]}, {"term": "Outreach", "tr": "Hedefli iletişim faaliyeti", "cat": "Uyum ve Kurumsal", "abbr": "", "def": "Belirli kişi veya kurumlara e-posta, LinkedIn, telefon veya etkinlik yoluyla planlı biçimde ulaşma süreci.", "use": "Lead generation ve partnership development için kullanılır.", "example": "The team will begin targeted outreach next week.", "tags": ["lead generation", "contact", "marketing"]}, {"term": "One-pager", "tr": "Tek sayfalık özet", "cat": "İletişim ve Belgeler", "abbr": "", "def": "Bir şirketi, fırsatı veya projeyi tek sayfada özetleyen kısa tanıtım dokümanı.", "use": "İlk temas ve hızlı değerlendirme için kullanılır.", "example": "Please send the investor one-pager before the call.", "tags": ["summary", "document", "investor"]}, {"term": "Teaser", "tr": "Kısa anonim fırsat tanıtımı", "cat": "İletişim ve Belgeler", "abbr": "", "def": "Tam gizli bilgiler paylaşılmadan önce yatırım fırsatının temel özelliklerini özetleyen kısa belge.", "use": "NDA öncesinde veya ilk yatırımcı ilgisini ölçmek için kullanılır.", "example": "We circulated a confidential teaser to selected investors.", "tags": ["opportunity", "document", "marketing"]}, {"term": "IM", "tr": "Yatırım bilgi memorandumu", "cat": "İletişim ve Belgeler", "abbr": "Information Memorandum", "def": "Bir yatırım veya satış fırsatını ayrıntılı olarak açıklayan kapsamlı bilgi dokümanı.", "use": "Finansal, hukuki, operasyonel ve pazar bilgilerini içerir.", "example": "The full IM is available following execution of the NDA.", "tags": ["memorandum", "investment", "document"]}, {"term": "Capital Narrative", "tr": "Sermaye anlatısı", "cat": "İletişim ve Belgeler", "abbr": "", "def": "Bir projenin neden yatırım yapılabilir olduğunu yatırımcı diliyle açıklayan yapılandırılmış hikâye.", "use": "Bölge, talep, kamu desteği, getiri, risk ve çıkışı bir araya getirir.", "example": "The capital narrative needs to be clearer before investor outreach.", "tags": ["story", "investment thesis", "presentation"]}, {"term": "Controlled Introduction", "tr": "Kontrollü tanıştırma", "cat": "İletişim ve Belgeler", "abbr": "", "def": "Yatırımcı ve fırsat sahibinin, uygunluk ve gizlilik kontrolleri tamamlandıktan sonra planlı biçimde tanıştırılması.", "use": "Mass brokering yerine seçici süreçte kullanılır.", "example": "We will arrange a controlled introduction after qualification.", "tags": ["introduction", "investor fit", "NDA"]}];
-let lang=localStorage.getItem('emcpLang')||'tr',activeCat='Tümü',mode='all';
-const norm=s=>String(s||'').toLocaleLowerCase('tr-TR').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/ı/g,'i').replace(/ş/g,'s').replace(/ç/g,'c').replace(/ğ/g,'g').replace(/ö/g,'o').replace(/ü/g,'u');
-const esc=s=>String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
-function score(t,q){if(!q)return 1;const n=norm(q),term=norm(t.term),abbr=norm(t.abbr),tr=norm(t.tr),tags=norm((t.tags||[]).join(' ')),def=norm(t.def);let s=0;if(term===n)s+=100;if(abbr===n)s+=95;if(term.startsWith(n))s+=70;if(abbr.startsWith(n))s+=65;if(tr.startsWith(n))s+=55;if(term.includes(n))s+=45;if(abbr.includes(n))s+=40;if(tr.includes(n))s+=35;if(tags.includes(n))s+=25;if(def.includes(n))s+=15;return s;}
-function getFav(){return JSON.parse(localStorage.getItem('emcpFav')||'[]')}function getRecent(){return JSON.parse(localStorage.getItem('emcpRecent')||'[]')}
-function updateStats(){favCount.textContent=getFav().length;recentCount.textContent=getRecent().length}
-function renderCats(){cats.innerHTML=['Tümü',...new Set(TERMS.map(x=>x.cat))].map(c=>`<button class="chip ${activeCat===c?'active':''}" onclick="setCat('${c.replace(/'/g,"\'")}')">${esc(c)}</button>`).join('')}
-function getList(){const q=document.getElementById('q').value.trim();let a=TERMS.map((t,i)=>({...t,_i:i,_s:score(t,q)})).filter(x=>x._s>0);if(activeCat!=='Tümü')a=a.filter(x=>x.cat===activeCat);a.sort((a,b)=>b._s-a._s||a.term.localeCompare(b.term,'en'));return a}
-function render(){const a=getList();count.textContent=lang==='tr'?`${a.length} sonuç`:`${a.length} results`;grid.innerHTML=a.length?a.map((t,n)=>`<article class="card" style="animation-delay:${Math.min(n,8)*30}ms" onclick="openTerm(${t._i})"><div class="term">${esc(t.term)}</div>${t.abbr?`<div class="abbr">${esc(t.abbr)}</div>`:''}<div class="tr">${esc(t.tr)}</div><div class="def">${esc(t.def)}</div><div class="badge">${esc(t.cat)}</div></article>`).join(''):`<div class="empty">${lang==='tr'?'Sonuç bulunamadı.':'No results found.'}</div>`;updateStats()}
-function setCat(c){activeCat=c;renderCats();render()}
-function openTerm(i){const t=TERMS[i];let r=getRecent();r=[t.term,...r.filter(x=>x!==t.term)].slice(0,30);localStorage.setItem('emcpRecent',JSON.stringify(r));const fav=getFav().includes(t.term);sheet.innerHTML=`<button class="close" onclick="closeModal()">×</button><div class="badge">${esc(t.cat)}</div><h2>${esc(t.term)}</h2>${t.abbr?`<div class="abbr">${esc(t.abbr)}</div>`:''}<h3>${lang==='tr'?'Türkçesi':'Turkish equivalent'}</h3><p><b>${esc(t.tr)}</b></p><h3>${lang==='tr'?'Tanım':'Definition'}</h3><p>${esc(t.def)}</p><h3>${lang==='tr'?'Ne zaman kullanılır?':'When is it used?'}</h3><p>${esc(t.use)}</p><h3>${lang==='tr'?'Toplantı / e-posta örneği':'Meeting / email example'}</h3><p><i>${esc(t.example)}</i></p><div class="actions"><button onclick="toggleFav('${t.term.replace(/'/g,"\'")}')">${fav?'★':'☆'} Favourite</button><button onclick="copyTerm(${i})">Copy</button><button onclick="shareTerm(${i})">Share</button></div>`;modal.classList.add('show');updateStats()}
-function closeModal(){modal.classList.remove('show')}function toggleFav(term){let f=getFav();f=f.includes(term)?f.filter(x=>x!==term):[...f,term];localStorage.setItem('emcpFav',JSON.stringify(f));closeModal();render()}
-function copyTerm(i){const t=TERMS[i];navigator.clipboard?.writeText(`${t.term} — ${t.tr}\n${t.def}`);alert(lang==='tr'?'Kopyalandı':'Copied')}
-function shareTerm(i){const t=TERMS[i],text=`${t.term} — ${t.tr}\n${t.def}`;if(navigator.share)navigator.share({title:t.term,text});else copyTerm(i)}
-function showPage(name){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById('page-'+name).classList.add('active');document.querySelectorAll('.bottom button').forEach(b=>b.classList.remove('active'));if(name==='home')navHome.classList.add('active');if(name==='knowledge')navKnowledge.classList.add('active');if(name==='calculators')navCalc.classList.add('active');if(name==='construction')navBuild.classList.add('active');scrollTo({top:0,behavior:'smooth'})}
-function setLang(l){lang=l;localStorage.setItem('emcpLang',l);trBtn.classList.toggle('active',l==='tr');enBtn.classList.toggle('active',l==='en');q.placeholder=l==='tr'?'Bir harf, kelime veya kısaltma yazın…':'Type a letter, term or abbreviation…';clearBtn.textContent=l==='tr'?'Temizle':'Clear';installTitle.textContent=l==='tr'?'Telefonuna uygulama gibi kur':'Install it like an app';installText.textContent=l==='tr'?'Safari’de aç, Paylaş düğmesine bas ve “Ana Ekrana Ekle”yi seç.':'Open in Safari, tap Share, then choose “Add to Home Screen”.';render()}
-function pct(a,b){return b?((a/b)*100).toFixed(2)+'%':'—'}function money(v){return isFinite(v)?'£'+v.toLocaleString(undefined,{maximumFractionDigits:2}):'—'}
-function calcLTV(){ltvResult.textContent=pct(+ltvLoan.value,+ltvValue.value)}function calcLTC(){ltcResult.textContent=pct(+ltcLoan.value,+ltcCost.value)}function calcLTGDV(){ltgdvResult.textContent=pct(+ltgdvLoan.value,+ltgdvValue.value)}function calcROI(){roiResult.textContent=pct(+roiProfit.value,+roiCost.value)}function calcYield(){yieldResult.textContent=pct(+yieldRent.value,+yieldValue.value)}
-function calcDevProfit(){const p=+devGdv.value-+devCost.value;devResult.textContent=`${money(p)} | ${pct(p,+devCost.value)} on cost`}
-function calcMonthly(){const P=+loanPrincipal.value,r=(+loanRate.value/100)/12,n=+loanYears.value*12;const m=r&&n?P*r*Math.pow(1+r,n)/(Math.pow(1+r,n)-1):P/n;loanResult.textContent=money(m)}
-function calcFee(){feeResult.textContent=money(+feeLoan.value*(+feeRate.value/100))}
-function calcRollup(){rollResult.textContent=money(+rollLoan.value*(+rollRate.value/100)*(+rollMonths.value/12))}
-function calcConcrete(){cResult.textContent=(+cLen.value*+cWid.value*+cDep.value).toFixed(2)+' m³'}function calcPaint(){const area=+pLen.value*+pHeight.value*+pCoats.value;pResult.textContent=area.toFixed(2)+' m² total coating area'}
-function calcFloor(){const a=+fLen.value*+fWid.value*(1+(+fWaste.value/100));fResult.textContent=a.toFixed(2)+' m² incl. waste'}
-function calcPB(){const sheets=(+pbArea.value*(1+(+pbWaste.value/100)))/+pbSheet.value;pbResult.textContent=Math.ceil(sheets)+' sheets'}
-function calcIns(){const a=+insArea.value*(1+(+insWaste.value/100));insResult.textContent=a.toFixed(2)+' m² incl. waste'}
-function calcTiles(){const qty=(+tileArea.value*(1+(+tileWaste.value/100)))/+tileSize.value;tileResult.textContent=Math.ceil(qty)+' tiles'}
-q.addEventListener('input',()=>{showPage('knowledge');render()});clearBtn.onclick=()=>{q.value='';activeCat='Tümü';renderCats();render()};trBtn.onclick=()=>setLang('tr');enBtn.onclick=()=>setLang('en');
-themeBtn.onclick=()=>{const d=document.documentElement.getAttribute('data-theme')==='dark';document.documentElement.setAttribute('data-theme',d?'light':'dark');localStorage.setItem('emcpTheme',d?'light':'dark')};document.documentElement.setAttribute('data-theme',localStorage.getItem('emcpTheme')||'light');
-navHelp.onclick=()=>{sheet.innerHTML=`<button class="close" onclick="closeModal()">×</button><h2>${lang==='tr'?'Çocuk Gibi Anlatılan Kullanım Kılavuzu':'Very Simple User Guide'}</h2><p>${lang==='tr'?'1. Home ekranından bir modüle dokun.<br>2. Knowledge içinde arama yap.<br>3. Calculators bölümünde rakamları yaz ve Calculate’a bas.<br>4. Construction Tools bölümünde ölçüleri gir.<br>5. Koyu mod için üstteki yarım ay düğmesine bas.<br>6. Uygulamayı Safari’de açıp Ana Ekrana Ekle.':'1. Tap a module on Home.<br>2. Search inside Knowledge.<br>3. Enter numbers in Calculators and tap Calculate.<br>4. Enter dimensions in Construction Tools.<br>5. Use the half-moon button for dark mode.<br>6. Open in Safari and Add to Home Screen.'}</p>`;modal.classList.add('show')};
-installBtn.onclick=()=>navHelp.click();modal.onclick=e=>{if(e.target.id==='modal')closeModal()};
-setLang(lang);renderCats();render();updateStats();if('serviceWorker'in navigator)navigator.serviceWorker.register('/service-worker.js');
-</script>
-</body></html>
+      <section id="page-construction" class="page">
+        <h2 class="section-title" data-i18n="constructionTools">
+          Construction Tools
+        </h2>
+        <div class="calc-grid">
+          <div class="calc">
+            <h3>Concrete Volume</h3>
+            <label>Length m</label><input id="cLen" type="number" /><label
+              >Width m</label
+            ><input id="cWid" type="number" /><label>Depth m</label
+            ><input id="cDep" type="number" /><button
+              type="button"
+              data-calculate="concrete"
+            >
+              Calculate
+            </button>
+            <div class="result" id="cResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Paint Area</h3>
+            <label>Wall Length m</label><input id="pLen" type="number" /><label
+              >Wall Height m</label
+            ><input id="pHeight" type="number" /><label>Number of Coats</label
+            ><input id="pCoats" type="number" value="2" /><button
+              type="button"
+              data-calculate="paint"
+            >
+              Calculate
+            </button>
+            <div class="result" id="pResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Flooring Area</h3>
+            <label>Length m</label><input id="fLen" type="number" /><label
+              >Width m</label
+            ><input id="fWid" type="number" /><label>Waste %</label
+            ><input id="fWaste" type="number" value="10" /><button
+              type="button"
+              data-calculate="flooring"
+            >
+              Calculate
+            </button>
+            <div class="result" id="fResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Plasterboard Sheets</h3>
+            <label>Wall Area m²</label><input id="pbArea" type="number" /><label
+              >Sheet Area m²</label
+            ><input id="pbSheet" type="number" value="2.88" /><label
+              >Waste %</label
+            ><input id="pbWaste" type="number" value="10" /><button
+              type="button"
+              data-calculate="plasterboard"
+            >
+              Calculate
+            </button>
+            <div class="result" id="pbResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Insulation Area</h3>
+            <label>Wall/Ceiling Area m²</label
+            ><input id="insArea" type="number" /><label>Waste %</label
+            ><input id="insWaste" type="number" value="5" /><button
+              type="button"
+              data-calculate="insulation"
+            >
+              Calculate
+            </button>
+            <div class="result" id="insResult"></div>
+          </div>
+          <div class="calc">
+            <h3>Tiles Quantity</h3>
+            <label>Total Area m²</label
+            ><input id="tileArea" type="number" /><label>Tile Area m²</label
+            ><input id="tileSize" type="number" value="0.09" /><label
+              >Waste %</label
+            ><input id="tileWaste" type="number" value="10" /><button
+              type="button"
+              data-calculate="tiles"
+            >
+              Calculate
+            </button>
+            <div class="result" id="tileResult"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <nav
+      class="bottom"
+      aria-label="Primary navigation"
+      data-i18n-aria="primaryNavigation"
+    >
+      <button class="active" aria-current="page" id="navHome" data-page="home">
+        <span aria-hidden="true">⌂</span> <span data-i18n="home">Home</span>
+      </button>
+      <button id="navKnowledge" data-page="knowledge">
+        <span aria-hidden="true">📘</span>
+        <span data-i18n="knowledge">Knowledge</span>
+      </button>
+      <button id="navHandbooks" data-page="handbooks">
+        <span aria-hidden="true">📗</span>
+        <span>Handbooks</span>
+      </button>
+      <button id="navCalc" data-page="calculators">
+        <span aria-hidden="true">🧮</span>
+        <span data-i18n="calculators">Calculators</span>
+      </button>
+      <button id="navBuild" data-page="construction">
+        <span aria-hidden="true">🏗️</span> <span data-i18n="build">Build</span>
+      </button>
+      <button id="navHelp" data-help>
+        <span aria-hidden="true">?</span> <span data-i18n="help">Help</span>
+      </button>
+    </nav>
+
+    <div
+      class="modal"
+      id="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="modalTitle"
+    >
+      <div class="sheet" id="sheet" tabindex="-1"></div>
+    </div>
+    <aside id="pwaUpdate" class="pwa-update" role="status" hidden>
+      <div>
+        <strong id="pwaUpdateTitle"></strong><span id="pwaUpdateText"></span>
+      </div>
+      <div>
+        <button type="button" id="applyUpdate"></button
+        ><button type="button" class="secondary" id="dismissUpdate"></button>
+      </div>
+    </aside>
+
+    <script src="js/core.js" defer></script>
+    <script src="js/i18n.js" defer></script>
+    <script src="js/knowledge.js" defer></script>
+    <script src="js/calculator-model.js" defer></script>
+    <script src="js/dom.js" defer></script>
+    <script src="js/accessibility.js" defer></script>
+    <script src="js/virtual-list.js" defer></script>
+    <script src="js/operations.js" defer></script>
+    <script src="js/features.js" defer></script>
+    <script src="js/app.js" defer></script>
+    <script src="js/workspace.js" defer></script>
+    <script src="js/pwa.js" defer></script>
+  </body>
+</html>

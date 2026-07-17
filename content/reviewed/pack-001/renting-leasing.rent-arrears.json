@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "renting-leasing.rent-arrears",
+  "title": {
+    "en": "Rent Arrears",
+    "tr": "Kira Borcu Gecikmesi"
+  },
+  "summary": {
+    "en": "Rent that was due under an agreement but has not been paid on time.",
+    "tr": "Sözleşmeye göre vadesi geldiği hâlde zamanında ödenmemiş kira borcudur."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "Rent that was due under an agreement but has not been paid on time. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Sözleşmeye göre vadesi geldiği hâlde zamanında ödenmemiş kira borcudur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "property-development",
+    "en": "Property and Development",
+    "tr": "Gayrimenkul ve Geliştirme"
+  },
+  "subcategory": {
+    "key": "renting-leasing",
+    "en": "Renting and leasing",
+    "tr": "Kiralama"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["renting-leasing", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["rent", "arrears"],
+    "tr": ["kira", "borcu", "gecikmesi"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Rent Arrears” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Kira Borcu Gecikmesi” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving rent arrears.",
+    "tr": "Bu kavramı kira borcu gecikmesi içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "renting-leasing.rental-inventory",
+    "renting-leasing.break-clause"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Renting a property",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/browse/housing-local-services/renting-property",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Rent Arrears; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

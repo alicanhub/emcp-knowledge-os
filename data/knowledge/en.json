@@ -1,0 +1,1514 @@
+{
+  "Advisory Retainer": {
+    "defEn": "An upfront or recurring fee for strategic advisory services provided over an agreed period.",
+    "useEn": "Used for market entry, investor readiness and opportunity-packaging work."
+  },
+  "Success Fee": {
+    "defEn": "A fee payable when a transaction, financing or investment match completes successfully.",
+    "useEn": "Used on capital raising, sales, partnerships and completed mandates."
+  },
+  "Strategic Mandate": {
+    "defEn": "Formal authority to represent a specified investor, project or capital requirement.",
+    "useEn": "Used for controlled investor access and project representation."
+  },
+  "Origination": {
+    "defEn": "The systematic process of finding and developing investment opportunities, projects, investors or funding sources.",
+    "useEn": "Similar to deal sourcing, but more focused on relationships and process."
+  },
+  "Pipeline": {
+    "defEn": "The complete set of prospective investments, projects or client opportunities tracked at different stages.",
+    "useEn": "Used in CRM, investor-relations and sales processes."
+  },
+  "Deal Flow": {
+    "defEn": "The volume and quality of investment opportunities presented to an investor or adviser over a period.",
+    "useEn": "Used by funds, family offices and investment platforms."
+  },
+  "Capital Stack": {
+    "defEn": "All funding layers in a project, including senior debt, mezzanine, preferred equity and ordinary equity.",
+    "useEn": "Used in development finance and investment structuring."
+  },
+  "Equity": {
+    "defEn": "Capital invested in a company or project in exchange for an ownership interest.",
+    "useEn": "Unlike debt, it has no fixed repayment obligation and shares investment risk."
+  },
+  "Preferred Equity": {
+    "defEn": "Equity ranking ahead of ordinary equity for repayment and returns, but behind debt.",
+    "useEn": "Used to structure the allocation of risk and return."
+  },
+  "JV": {
+    "defEn": "A joint venture in which two or more parties combine resources, risks and returns for a project or business.",
+    "useEn": "Common in project partnerships between developers and investors."
+  },
+  "Co-development": {
+    "defEn": "An arrangement in which two or more parties jointly develop a property project.",
+    "useEn": "May be used between a landowner, developer and investor."
+  },
+  "Forward Funding": {
+    "defEn": "A structure where an investor funds land and construction costs progressively during development.",
+    "useEn": "Common in BTR, PBSA and commercial developments."
+  },
+  "Forward Purchase": {
+    "defEn": "A commitment by an investor to buy a project on agreed terms after completion.",
+    "useEn": "Unlike forward funding, the developer generally finances construction."
+  },
+  "Family Office": {
+    "defEn": "A private organisation managing a wealthy family's investments, tax, legal, succession and wealth affairs.",
+    "useEn": "A significant source of large-scale, long-term capital."
+  },
+  "HNWI": {
+    "defEn": "A high-net-worth individual with substantial investable assets.",
+    "useEn": "Used in private banking, investment and property-capital relationships."
+  },
+  "Private Capital": {
+    "defEn": "Capital from non-public sources such as family offices, private investors and private equity.",
+    "useEn": "Describes privately structured or non-institutional investment funding."
+  },
+  "Investment Thesis": {
+    "defEn": "The strategic rationale and assumptions explaining why an investment should be made.",
+    "useEn": "Sets out the location, sector, return, risk and exit logic."
+  },
+  "Investor Fit": {
+    "defEn": "The degree to which an opportunity matches an investor's capital, risk appetite, time horizon and sector preferences.",
+    "useEn": "Used for controlled opportunity matching."
+  },
+  "Investor Qualification": {
+    "defEn": "Verification of an investor's capital capacity, decision process, risk appetite, timing and criteria.",
+    "useEn": "Prevents unsuitable opportunities being sent to investors."
+  },
+  "Opportunity Screening": {
+    "defEn": "An initial assessment of an opportunity against key commercial, financial, legal and strategic criteria.",
+    "useEn": "Completed before detailed due diligence."
+  },
+  "Investment Committee": {
+    "defEn": "The authorised body that reviews and approves investment decisions.",
+    "useEn": "Used by funds, family offices and institutional investors."
+  },
+  "IC Memo": {
+    "defEn": "A document presenting an opportunity's returns, risks, structure and recommended decision to an investment committee.",
+    "useEn": "A core document in institutional investment decisions."
+  },
+  "Ticket Size": {
+    "defEn": "The approximate amount of capital an investor expects to commit to one transaction.",
+    "useEn": "A key criterion when matching investors and opportunities."
+  },
+  "One-pager": {
+    "defEn": "A concise single-page summary of a company, opportunity or project.",
+    "useEn": "Used for initial contact and rapid assessment."
+  },
+  "Teaser": {
+    "defEn": "A short document summarising an opportunity before confidential details are disclosed.",
+    "useEn": "Used before an NDA or to test initial investor interest."
+  },
+  "IM": {
+    "defEn": "An information memorandum providing comprehensive detail about an investment or sale opportunity.",
+    "useEn": "Contains financial, legal, operational and market information."
+  },
+  "Capital Narrative": {
+    "defEn": "A structured investor-focused explanation of why a project is investable.",
+    "useEn": "Combines location, demand, public support, return, risk and exit."
+  },
+  "Controlled Introduction": {
+    "defEn": "A planned introduction between an investor and opportunity owner after suitability and confidentiality checks.",
+    "useEn": "Used in selective processes instead of mass brokering."
+  },
+  "AML": {
+    "defEn": "Controls and legal duties designed to prevent criminal proceeds entering the financial system.",
+    "useEn": "Required when checking investors, clients and sources of funds."
+  },
+  "KYC": {
+    "defEn": "The process of verifying a client's identity, address, ownership structure and risk profile.",
+    "useEn": "Used in financial and property transactions."
+  },
+  "Source of Funds": {
+    "defEn": "Evidence explaining and verifying where money for a specific transaction originated.",
+    "useEn": "May be proven with bank statements, sale documents or loan agreements."
+  },
+  "Source of Wealth": {
+    "defEn": "An explanation of how a person's overall wealth was accumulated over time.",
+    "useEn": "Requested in high-value or higher-risk transactions."
+  },
+  "PEP": {
+    "defEn": "A politically exposed person considered to present elevated corruption risk because of public office or close connections.",
+    "useEn": "May require enhanced due diligence."
+  },
+  "CRM": {
+    "defEn": "Software and processes used to manage relationships, opportunities, follow-ups and communication history.",
+    "useEn": "Core infrastructure for origination and investor relations."
+  },
+  "KPI": {
+    "defEn": "A measurable target used to assess the performance of a team or process.",
+    "useEn": "Used for monthly relationship, meeting and conversion measurement."
+  },
+  "Stakeholder": {
+    "defEn": "A person, organisation or group that affects, or is affected by, a project or decision.",
+    "useEn": "May include councils, investors, developers, advisers and communities."
+  },
+  "Referral": {
+    "defEn": "A recommendation connecting someone with a prospective client, investor or business partner.",
+    "useEn": "Effective in trust-based business development."
+  },
+  "Outreach": {
+    "defEn": "Planned contact with target people or organisations through email, LinkedIn, telephone or events.",
+    "useEn": "Used for lead generation and partnership development."
+  },
+  "JCT Contract": {
+    "defEn": "A family of standard construction contracts widely used in the United Kingdom.",
+    "useEn": "Includes traditional, design-and-build and minor-works forms."
+  },
+  "NEC Contract": {
+    "defEn": "A standard contract family based on collaboration, early warning and active project management.",
+    "useEn": "Common in infrastructure and public-sector projects."
+  },
+  "Practical Completion": {
+    "defEn": "The contractual stage when works are substantially complete and the building can be used.",
+    "useEn": "Often triggers partial retention release and the defects period."
+  },
+  "Retention": {
+    "defEn": "A percentage withheld from payments to secure the correction of defects.",
+    "useEn": "Usually released in stages at practical completion and after the defects period."
+  },
+  "Variation": {
+    "defEn": "A change to contracted work, design, quantities or conditions.",
+    "useEn": "Its price and programme effects should be documented."
+  },
+  "Snagging": {
+    "defEn": "The process of listing minor defects and incomplete items before or after completion.",
+    "useEn": "Typically undertaken before handover."
+  },
+  "RAMS": {
+    "defEn": "Risk assessments and method statements describing work risks and safe working methods.",
+    "useEn": "Used in pre-construction and site approval processes."
+  },
+  "BOQ": {
+    "defEn": "A bill of quantities systematically listing project work items and quantities for tendering and cost control.",
+    "useEn": "Used in tender and valuation processes."
+  },
+  "Value Engineering": {
+    "defEn": "Work to improve cost, programme or buildability while maintaining required performance.",
+    "useEn": "Aims to optimise overall value rather than simply reduce cost."
+  },
+  "Design and Build": {
+    "defEn": "A procurement model placing design and construction responsibility with the main contractor.",
+    "useEn": "Provides the employer with a single point of responsibility."
+  },
+  "Employer's Requirements": {
+    "defEn": "The document defining the employer's performance, scope and design expectations under a design-and-build contract.",
+    "useEn": "Read together with the Contractor's Proposals."
+  },
+  "Contractor's Proposals": {
+    "defEn": "Documents explaining how the contractor will meet the Employer's Requirements through its design and methods.",
+    "useEn": "A core component of a design-and-build contract."
+  },
+  "Senior Debt": {
+    "defEn": "Finance that ranks ahead of other debt and equity for repayment and is usually secured by a first charge.",
+    "useEn": "The main debt layer in development and investment facilities."
+  },
+  "Mezzanine Finance": {
+    "defEn": "Higher-risk finance positioned between senior debt and equity and usually priced accordingly.",
+    "useEn": "Used to bridge a funding gap in the capital stack."
+  },
+  "Bridge Loan": {
+    "defEn": "Short-term finance used for an acquisition, refinancing or temporary liquidity requirement.",
+    "useEn": "Common in property transactions requiring rapid completion."
+  },
+  "Development Finance": {
+    "defEn": "Project-based lending used to finance land acquisition and construction costs.",
+    "useEn": "Drawdowns are released against progress reports."
+  },
+  "LTV": {
+    "defEn": "The ratio of the loan amount to the property's current value.",
+    "useEn": "Used in investment and acquisition finance."
+  },
+  "LTC": {
+    "defEn": "The ratio of the loan amount to total project cost.",
+    "useEn": "Commonly used in development finance."
+  },
+  "LTGDV": {
+    "defEn": "The ratio of total borrowing to the project's estimated gross value at completion.",
+    "useEn": "A key measure in development-finance offers."
+  },
+  "GDV": {
+    "defEn": "The expected total sale or market value of a development when completed.",
+    "useEn": "Used in profitability and finance calculations."
+  },
+  "IRR": {
+    "defEn": "An annualised return measure that accounts for the timing of an investment's cash flows.",
+    "useEn": "Used to compare investment scenarios."
+  },
+  "ROI": {
+    "defEn": "The ratio of profit or gain to the capital invested.",
+    "useEn": "A simple performance measure that does not independently account for time value."
+  },
+  "Yield": {
+    "defEn": "The ratio of an asset's annual income to its value or purchase price.",
+    "useEn": "Used for income-producing property investments."
+  },
+  "DSCR": {
+    "defEn": "The ratio showing how well net operating income covers principal and interest payments.",
+    "useEn": "Used by lenders in credit assessment."
+  },
+  "Interest Cover": {
+    "defEn": "A ratio showing how many times income or profit covers interest payments.",
+    "useEn": "Used in investment lending and corporate finance."
+  },
+  "Drawdown": {
+    "defEn": "The release of some or all of an approved credit facility to the borrower.",
+    "useEn": "In development finance, releases follow construction progress."
+  },
+  "Exit Strategy": {
+    "defEn": "A plan explaining how and when an investment will be converted to cash.",
+    "useEn": "May involve sale, refinancing or long-term hold."
+  },
+  "Refinance": {
+    "defEn": "The repayment or restructuring of existing debt using a new loan.",
+    "useEn": "Often used to move from construction finance to longer-term, lower-cost debt."
+  },
+  "Coupon": {
+    "defEn": "The specified interest rate paid on a debt or investment instrument.",
+    "useEn": "Seen in mezzanine, bond and private-debt transactions."
+  },
+  "Arrangement Fee": {
+    "defEn": "A fee charged by a lender for originating and allocating a loan facility.",
+    "useEn": "Usually calculated as a percentage of the loan."
+  },
+  "First Charge": {
+    "defEn": "First-ranking legal security over an asset, giving repayment priority.",
+    "useEn": "Normally required by the senior lender."
+  },
+  "Due Diligence": {
+    "defEn": "A systematic review of legal, financial, technical, commercial and environmental risks before a transaction.",
+    "useEn": "Completed before investment approval and contracting."
+  },
+  "NDA": {
+    "defEn": "A non-disclosure agreement governing the protection of confidential information shared between parties.",
+    "useEn": "Signed before access to a data room or sensitive project information."
+  },
+  "Heads of Terms": {
+    "defEn": "A usually partly binding document summarising the main commercial terms agreed for a proposed transaction.",
+    "useEn": "Prepared before detailed contracts."
+  },
+  "LOI": {
+    "defEn": "A letter stating a party's intention and principal terms for a transaction or partnership.",
+    "useEn": "Used early in acquisition and investment discussions."
+  },
+  "MOU": {
+    "defEn": "A memorandum recording parties' intended cooperation, roles and broad framework.",
+    "useEn": "Used in partnerships and institutional collaboration."
+  },
+  "SPA": {
+    "defEn": "A share purchase agreement governing the sale of shares in a company.",
+    "useEn": "Used to acquire a company or special-purpose vehicle."
+  },
+  "Asset Purchase Agreement": {
+    "defEn": "An agreement governing the sale of specified business or project assets.",
+    "useEn": "Used when selected assets are acquired instead of shares."
+  },
+  "JVA": {
+    "defEn": "An agreement governing joint-venture contributions, management, decisions, profit sharing and exit.",
+    "useEn": "Used in property-development partnerships."
+  },
+  "Exclusivity": {
+    "defEn": "An arrangement restricting discussions with alternative buyers, investors or advisers for a specified period.",
+    "useEn": "Used to protect commitment during transaction negotiations."
+  },
+  "Longstop Date": {
+    "defEn": "The final contractual date by which conditions must be satisfied or a transaction must complete.",
+    "useEn": "Used in conditional contracts and development agreements."
+  },
+  "Condition Precedent": {
+    "defEn": "A condition that must be satisfied before a contract becomes effective or a transaction completes.",
+    "useEn": "Common for planning, finance and consent requirements."
+  },
+  "Warranty": {
+    "defEn": "A contractual assurance that a stated matter is true.",
+    "useEn": "If incorrect, it may give rise to a damages claim."
+  },
+  "Indemnity": {
+    "defEn": "A contractual promise to compensate for a specified loss or risk if it occurs.",
+    "useEn": "Used for identified, specific risks."
+  },
+  "Data Room": {
+    "defEn": "A secure digital environment for sharing transaction-related legal, financial, technical and commercial documents.",
+    "useEn": "Central to the due-diligence process."
+  },
+  "LPA": {
+    "defEn": "The local planning authority responsible for determining planning applications.",
+    "useEn": "Usually a district, borough or city council."
+  },
+  "Outline Planning Permission": {
+    "defEn": "Permission accepting a development in principle, with details submitted later through reserved matters.",
+    "useEn": "Used for large land and housing projects."
+  },
+  "Reserved Matters": {
+    "defEn": "Details such as access, appearance, landscaping, scale and layout submitted after outline permission.",
+    "useEn": "Provides the detailed approval following an outline consent."
+  },
+  "Section 106": {
+    "defEn": "An agreement between a developer and local authority securing obligations such as affordable housing or infrastructure contributions.",
+    "useEn": "Connected to the grant of planning permission."
+  },
+  "CIL": {
+    "defEn": "A local, area-based levy on new development used to contribute towards infrastructure.",
+    "useEn": "Availability and rates vary between planning authorities."
+  },
+  "NPPF": {
+    "defEn": "The central-government policy framework for planning decisions and local plans in England.",
+    "useEn": "Referenced in planning statements and appeals."
+  },
+  "Public-backed": {
+    "defEn": "Supported by public policy, funding, land, institutional participation or another form of government involvement.",
+    "useEn": "Should be used carefully and with evidence in investment narratives."
+  },
+  "Local Plan": {
+    "defEn": "The formal document setting a local authority's land-use, housing, infrastructure and development policies.",
+    "useEn": "A primary source when assessing land potential."
+  },
+  "Planning Gain": {
+    "defEn": "A general term for value created by planning permission or community contributions secured from development.",
+    "useEn": "Used in the context of Section 106, CIL and land-value uplift."
+  },
+  "BTR": {
+    "defEn": "Build-to-rent housing developed for long-term letting under a single institutional owner.",
+    "useEn": "Used in institutional investment and forward-funding transactions."
+  },
+  "PBSA": {
+    "defEn": "Purpose-built student accommodation designed and operated specifically for students.",
+    "useEn": "An investment class in university locations."
+  },
+  "HMO": {
+    "defEn": "A house in multiple occupation shared by more than one separate household.",
+    "useEn": "May be subject to licensing, fire and space standards."
+  },
+  "Mixed-use": {
+    "defEn": "A development combining residential, retail, office, hotel or community uses within one project.",
+    "useEn": "Common in town-centre regeneration."
+  },
+  "Regeneration": {
+    "defEn": "Comprehensive redevelopment of an area experiencing economic, physical or social decline.",
+    "useEn": "Often delivered through public-private collaboration."
+  },
+  "Strategic Land": {
+    "defEn": "Land without current development consent but with medium- or long-term planning potential.",
+    "useEn": "Used in promoter and landowner transactions."
+  },
+  "Freehold": {
+    "defEn": "Indefinite ownership of land and the buildings on it.",
+    "useEn": "One of the principal forms of property ownership in England."
+  },
+  "Leasehold": {
+    "defEn": "The right to occupy property for a defined term under agreed lease conditions.",
+    "useEn": "Used for flats, commercial property and long-term occupational interests."
+  },
+  "Net Initial Yield": {
+    "defEn": "Annual net rental income divided by total acquisition cost including purchase expenses.",
+    "useEn": "Used in commercial-property valuation."
+  },
+  "ERV": {
+    "defEn": "The estimated rent a property could achieve under current market conditions.",
+    "useEn": "Used in valuation and asset management."
+  },
+  "Vacant Possession": {
+    "defEn": "Delivery of a property to a buyer without tenants, occupants or belongings.",
+    "useEn": "Used in sale and lease agreements."
+  },
+  "Asking Price": {
+    "defEn": "The price a seller advertises for a property. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Conveyancing": {
+    "defEn": "The legal and administrative work used to transfer property ownership. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Exchange of Contracts": {
+    "defEn": "The stage when signed sale contracts are exchanged and the transaction becomes binding in England and Wales. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Joint Property Ownership": {
+    "defEn": "Ownership of one property by two or more people under a chosen legal arrangement. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Legal Completion": {
+    "defEn": "The point when purchase money is transferred and ownership is completed. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Chain": {
+    "defEn": "A linked sequence of purchases where each transaction depends on another. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Offer": {
+    "defEn": "A buyer's proposed price and terms for purchasing a property. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Searches": {
+    "defEn": "Checks ordered during a purchase to obtain information not always visible at inspection. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Title Plan": {
+    "defEn": "A Land Registry plan showing a registered property's location and general boundaries. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Title Register": {
+    "defEn": "HM Land Registry's written record of a registered property's ownership and registered interests. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Business Lease": {
+    "defEn": "A lease granting occupation of premises for business use on stated terms. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Dilapidations": {
+    "defEn": "Lease-related claims concerning a property's repair, reinstatement or condition obligations. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Full Repairing and Insuring Lease": {
+    "defEn": "A commercial lease intended to place defined repair and insurance costs on the tenant, directly or through recovery. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Lease Assignment": {
+    "defEn": "A transfer of an existing tenant's lease interest to another party, subject to the lease and law. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Passing Rent": {
+    "defEn": "The rent currently payable under an existing lease. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rent-Free Period": {
+    "defEn": "An agreed period during which contractual rent is reduced to zero, subject to the lease terms. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Repairing Obligation": {
+    "defEn": "A lease duty allocating responsibility for specified repair and condition matters. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Service Charge Budget": {
+    "defEn": "An estimate of recoverable shared-service expenditure for a future service-charge period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Service Charge Reconciliation": {
+    "defEn": "A comparison of budgeted service charges with actual eligible expenditure after the period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Subletting": {
+    "defEn": "A tenant granting another occupier rights over some or all of leased premises, where permitted. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Architect": {
+    "defEn": "A qualified design professional who develops and coordinates building design within their appointment. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Construction Client": {
+    "defEn": "The person or organisation for whom a construction project is carried out. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Pre-Construction Phase": {
+    "defEn": "The project period in which design, planning and preparation occur before construction work begins. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Principal Contractor": {
+    "defEn": "The contractor appointed to manage and coordinate the construction phase on relevant multi-contractor projects. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Principal Designer": {
+    "defEn": "The appointed designer who leads coordination of health and safety during the pre-construction phase on relevant projects. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Project Handover": {
+    "defEn": "The organised transfer of completed works, information and responsibilities to the receiving party. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Quantity Surveyor": {
+    "defEn": "A construction professional who manages measurement, cost and commercial information. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Site Manager": {
+    "defEn": "The person managing day-to-day site activities within their delegated authority. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Structural Engineer": {
+    "defEn": "An engineer who assesses and designs structural elements so loads are safely supported. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Subcontractor": {
+    "defEn": "A business or person engaged by a contractor to carry out part of the works. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Break-Even Occupancy": {
+    "defEn": "The occupancy level at which defined property income covers defined operating costs. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Capital Growth": {
+    "defEn": "An increase in a property's value between two measurement dates. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Gross Rental Income": {
+    "defEn": "Total rental income before property expenses and finance costs are deducted. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Investment Leverage": {
+    "defEn": "The use of borrowed money alongside equity to fund an investment. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Net Rental Income": {
+    "defEn": "Rental income remaining after the defined operating expenses have been deducted. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Operating Expenses": {
+    "defEn": "Recurring costs of operating a property, measured under a clearly stated scope. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Payback Period": {
+    "defEn": "The time needed for cumulative cash inflows to recover an initial cash outlay. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rental Cash Flow": {
+    "defEn": "The cash received from a rental property minus cash paid during a period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Total Return": {
+    "defEn": "The combined investment result from income and value change over a stated period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Vacancy Rate": {
+    "defEn": "The proportion of available space or time that is unoccupied during a period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Early Repayment Charge": {
+    "defEn": "A charge that may apply when specified borrowing is repaid earlier than its contract allows without charge. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Fixed-Rate Mortgage": {
+    "defEn": "A mortgage whose interest rate is fixed for an agreed period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Interest-Only Mortgage": {
+    "defEn": "A mortgage where scheduled payments generally cover interest while principal must be repaid separately. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Interest Rate": {
+    "defEn": "The rate used to calculate the interest charged on borrowing. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Loan Principal": {
+    "defEn": "The amount borrowed that remains to be repaid, excluding future interest. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Mortgage Deposit": {
+    "defEn": "The buyer's own money contributed toward a purchase rather than borrowed from the mortgage lender. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Mortgage Term": {
+    "defEn": "The agreed period over which a mortgage is scheduled to run. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Mortgage": {
+    "defEn": "A loan secured against property, commonly used to fund a purchase. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Repayment Mortgage": {
+    "defEn": "A mortgage where regular payments reduce both interest and principal over the term. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Variable-Rate Mortgage": {
+    "defEn": "A mortgage with an interest rate that can change under its terms. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Building Completion Certificate": {
+    "defEn": "A building-control document issued when the relevant process concludes that completed work complies, subject to its scope. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Building Control Approval": {
+    "defEn": "Approval or acceptance obtained through the applicable building-control route for proposed building work. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Building Control Body": {
+    "defEn": "The authorised body responsible for building-control functions on a project. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Building Regulations": {
+    "defEn": "Legal standards governing aspects of building design and construction, separate from planning permission. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Conservation Area": {
+    "defEn": "An area designated for special architectural or historic interest where additional planning controls may apply. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Listed Building Consent": {
+    "defEn": "A separate consent that may be required for work affecting the special interest of a listed building. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Party Wall": {
+    "defEn": "A wall or qualifying structure shared by buildings or owners and potentially covered by specific statutory procedures. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Permitted Development Rights": {
+    "defEn": "Planning rights that allow specified development without a conventional planning application, subject to limits and conditions. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Planning Application": {
+    "defEn": "A formal request to the planning authority for a decision on proposed development. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Planning Condition": {
+    "defEn": "A requirement attached to a planning permission that controls how development proceeds or is used. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Contract for Sale": {
+    "defEn": "The contract recording the agreed legal terms for a property sale. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Energy Performance Certificate": {
+    "defEn": "A certificate showing an assessed building energy-efficiency rating and recommendations. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Fixtures and Fittings Form": {
+    "defEn": "A sale form recording which items are included, excluded or offered separately. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Memorandum of Sale": {
+    "defEn": "A transaction summary circulated after an offer is accepted to help the parties begin conveyancing. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Mortgage Deed": {
+    "defEn": "A deed creating the lender's legal security over property for a mortgage. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Information Form": {
+    "defEn": "A seller-completed form providing standard information about a residential property and related matters. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Lease": {
+    "defEn": "A legal document granting rights to occupy or use property for a defined term on stated conditions. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rent Statement": {
+    "defEn": "A record of rent charges, payments, credits and balance for a tenancy or lease. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Schedule of Condition": {
+    "defEn": "A written and often photographic record of property condition at a stated date. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Transfer Deed": {
+    "defEn": "A deed used to transfer registered property ownership from one party to another. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Break Clause": {
+    "defEn": "A lease term allowing an eligible party to end the agreement early if stated conditions are met. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Holding Deposit": {
+    "defEn": "A payment used to reserve a proposed tenancy while checks and paperwork are completed. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Landlord": {
+    "defEn": "A person or organisation that grants someone the right to occupy property in return for rent. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rent Arrears": {
+    "defEn": "Rent that was due under an agreement but has not been paid on time. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rent Review": {
+    "defEn": "A contractual process for reconsidering rent at specified times or events. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rent": {
+    "defEn": "The regular payment made for the right to occupy or use property. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Rental Inventory": {
+    "defEn": "A dated record of a rented property's contents and condition. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Tenancy Agreement": {
+    "defEn": "The agreement setting the terms on which a tenant occupies a home. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Tenancy Deposit": {
+    "defEn": "Money held as security against specified tenancy obligations. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Tenant": {
+    "defEn": "A person or organisation entitled to occupy property under a tenancy or lease. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Asbestos-Containing Material": {
+    "defEn": "Material that contains asbestos and requires risk-based identification and management. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Building Survey": {
+    "defEn": "A detailed professional inspection and report suited to properties needing deeper condition analysis. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Damp": {
+    "defEn": "Unwanted excess moisture in building materials or internal spaces. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Electrical Installation Condition Report": {
+    "defEn": "A report on the observed condition and safety of an electrical installation at the time of inspection. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Flood Risk": {
+    "defEn": "The possibility and potential consequences of flooding at a property or site. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Home Survey": {
+    "defEn": "A professional visual inspection and report on a home's condition at a stated level of service. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Japanese Knotweed": {
+    "defEn": "An invasive plant whose presence can affect property management and require specialist assessment. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Land Contamination": {
+    "defEn": "Harmful substances in or on land that may require investigation, risk assessment or remediation. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Mortgage Valuation": {
+    "defEn": "A lender-commissioned valuation used for lending purposes rather than a full condition survey. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Subsidence": {
+    "defEn": "Downward movement of ground supporting a building that can affect its foundations. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Asking Rent": {
+    "defEn": "The rent advertised by a landlord before negotiation and agreement. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Building Insurance Premium": {
+    "defEn": "The price paid for a period of buildings insurance cover. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Council Tax": {
+    "defEn": "A local tax on domestic property, subject to the rules of the relevant UK jurisdiction. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Ground Rent": {
+    "defEn": "Rent payable under some long leases for use of the land on which a property stands. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Maintenance Cost": {
+    "defEn": "Money spent keeping property and its systems in usable condition. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Market Value": {
+    "defEn": "A professionally assessed value based on a defined valuation basis and valuation date. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Property Repair Cost": {
+    "defEn": "Money required to correct damage, defects or failed components. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Service Charge": {
+    "defEn": "A charge for specified services, maintenance or management provided for a property. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Stamp Duty Land Tax": {
+    "defEn": "A transaction tax that can apply to qualifying land and property acquisitions in England and Northern Ireland. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Void Cost": {
+    "defEn": "Costs and lost income arising while lettable property is unoccupied. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "useEn": "Understanding transaction documents Preparing questions for an adviser"
+  },
+  "Mortgage Agreement in Principle": {
+    "defEn": "A lender's preliminary indication of how much it may be prepared to lend, subject to checks and a full application.",
+    "useEn": "Record and communicate mortgage agreement in principle in a residential decision file."
+  },
+  "Completion Statement": {
+    "defEn": "A statement showing purchase money, adjustments, fees and the balance needed to complete a transaction.",
+    "useEn": "Record and communicate completion statement in a residential decision file."
+  },
+  "Gazumping": {
+    "defEn": "A seller accepting another buyer's higher offer before the original transaction becomes binding.",
+    "useEn": "Record and communicate gazumping in a residential decision file."
+  },
+  "Gazundering": {
+    "defEn": "A buyer reducing an offer late in a transaction before it becomes binding.",
+    "useEn": "Record and communicate gazundering in a residential decision file."
+  },
+  "Property Reservation Agreement": {
+    "defEn": "An agreement used to reserve a property for a stated period while the purchase progresses.",
+    "useEn": "Record and communicate property reservation agreement in a residential decision file."
+  },
+  "Communal Area": {
+    "defEn": "Part of a building or estate intended for shared use rather than exclusive occupation by one unit.",
+    "useEn": "Record and communicate communal area in a residential decision file."
+  },
+  "Leasehold Major Works": {
+    "defEn": "Substantial building works whose cost may be recovered from leaseholders according to leases and applicable procedures.",
+    "useEn": "Record and communicate leasehold major works in a residential decision file."
+  },
+  "Property Reserve Fund": {
+    "defEn": "Money collected and held for anticipated future major expenditure on a building or estate.",
+    "useEn": "Record and communicate property reserve fund in a residential decision file."
+  },
+  "Right to Manage": {
+    "defEn": "A statutory route through which qualifying leaseholders may take over specified management functions, subject to requirements.",
+    "useEn": "Record and communicate right to manage in a residential decision file."
+  },
+  "Service Charge Demand": {
+    "defEn": "A request for payment of service charges made under the lease and applicable requirements.",
+    "useEn": "Record and communicate service charge demand in a residential decision file."
+  },
+  "Condensation": {
+    "defEn": "Moisture forming when humid air meets a sufficiently cold surface or cools below its dew point.",
+    "useEn": "Record and communicate condensation in a residential decision file."
+  },
+  "Dry Rot": {
+    "defEn": "A form of timber decay caused by a fungus where moisture and other suitable conditions are present.",
+    "useEn": "Record and communicate dry rot in a residential decision file."
+  },
+  "Mould Growth": {
+    "defEn": "Fungal growth encouraged by suitable moisture, temperature and nutrients on a surface.",
+    "useEn": "Record and communicate mould growth in a residential decision file."
+  },
+  "Structural Movement": {
+    "defEn": "Movement of building elements that may be historic, seasonal or ongoing and requires cause-specific assessment.",
+    "useEn": "Record and communicate structural movement in a residential decision file."
+  },
+  "Wet Rot": {
+    "defEn": "Timber decay associated with persistently damp conditions and wood-destroying fungi.",
+    "useEn": "Record and communicate wet rot in a residential decision file."
+  },
+  "Boiler Service Record": {
+    "defEn": "A dated record of boiler servicing work and observations within the service scope.",
+    "useEn": "Record and communicate boiler service record in a residential decision file."
+  },
+  "Electrical Safety Report": {
+    "defEn": "A report recording the scope and outcome of an inspection or test of a property's electrical installation.",
+    "useEn": "Record and communicate electrical safety report in a residential decision file."
+  },
+  "Gas Safety Record": {
+    "defEn": "A record documenting the outcome of a relevant gas safety check by an appropriately qualified person.",
+    "useEn": "Record and communicate gas safety record in a residential decision file."
+  },
+  "Leasehold Information Form": {
+    "defEn": "A transaction form used to provide specified information about a leasehold property and its management.",
+    "useEn": "Record and communicate leasehold information form in a residential decision file."
+  },
+  "New-build Warranty Document": {
+    "defEn": "A document setting out the provider, period, scope, conditions and exclusions of a new-home warranty arrangement.",
+    "useEn": "Record and communicate new-build warranty document in a residential decision file."
+  },
+  "Boiler Efficiency": {
+    "defEn": "A measure of how effectively a boiler converts supplied energy into useful heat.",
+    "useEn": "Record and communicate boiler efficiency in a residential decision file."
+  },
+  "Double Glazing": {
+    "defEn": "A glazing unit using two panes separated by a sealed space to improve thermal performance compared with single glazing.",
+    "useEn": "Record and communicate double glazing in a residential decision file."
+  },
+  "Loft Insulation": {
+    "defEn": "Thermal insulation installed at roof or ceiling level to reduce heat transfer through the top of a home.",
+    "useEn": "Record and communicate loft insulation in a residential decision file."
+  },
+  "Smart Meter": {
+    "defEn": "A utility meter capable of recording consumption and communicating readings through its supported system.",
+    "useEn": "Record and communicate smart meter in a residential decision file."
+  },
+  "Utility Meter Reading": {
+    "defEn": "A recorded electricity, gas or water meter value used to establish consumption at a point in time.",
+    "useEn": "Record and communicate utility meter reading in a residential decision file."
+  },
+  "Residential Auction Sale": {
+    "defEn": "A residential sale conducted through an auction process with stated bidding and contractual rules.",
+    "useEn": "Record and communicate residential auction sale in a residential decision file."
+  },
+  "Open Market Sale": {
+    "defEn": "Marketing a home to the wider market and negotiating a sale with an available buyer.",
+    "useEn": "Record and communicate open market sale in a residential decision file."
+  },
+  "Residential Portfolio Disposal": {
+    "defEn": "The planned sale of multiple residential assets together or through a coordinated sequence.",
+    "useEn": "Record and communicate residential portfolio disposal in a residential decision file."
+  },
+  "Probate Property": {
+    "defEn": "Property forming part of a deceased person's estate and sold or managed through the applicable estate-administration process.",
+    "useEn": "Record and communicate probate property in a residential decision file."
+  },
+  "Repossessed Property": {
+    "defEn": "Property taken into possession by a secured lender or other entitled party through an applicable legal process.",
+    "useEn": "Record and communicate repossessed property in a residential decision file."
+  },
+  "Contents Insurance": {
+    "defEn": "Insurance intended to cover specified household belongings against insured events, subject to the policy.",
+    "useEn": "Record and communicate contents insurance in a residential decision file."
+  },
+  "Insurance Excess": {
+    "defEn": "The amount a policyholder must bear toward an eligible claim before or alongside the insurer's payment.",
+    "useEn": "Record and communicate insurance excess in a residential decision file."
+  },
+  "Insured Peril": {
+    "defEn": "An event or cause of loss expressly covered by an insurance policy.",
+    "useEn": "Record and communicate insured peril in a residential decision file."
+  },
+  "Landlord Insurance": {
+    "defEn": "Insurance designed for risks associated with owning and letting residential property, within the selected cover.",
+    "useEn": "Record and communicate landlord insurance in a residential decision file."
+  },
+  "Underinsurance": {
+    "defEn": "A situation where the insured amount or declared risk is insufficient for the property or contents exposed.",
+    "useEn": "Record and communicate underinsurance in a residential decision file."
+  },
+  "Buy-to-Let": {
+    "defEn": "Buying a residential property primarily to let it to tenants and earn rental income, with associated costs and risks.",
+    "useEn": "Record and communicate buy-to-let in a residential decision file."
+  },
+  "Cash-on-Cash Return": {
+    "defEn": "Annual pre-tax cash flow expressed as a percentage of the investor's cash invested, using clearly stated assumptions.",
+    "useEn": "Record and communicate cash-on-cash return in a residential decision file."
+  },
+  "Gross Rental Yield": {
+    "defEn": "Annual gross rent expressed as a percentage of the chosen property value or purchase price, before operating costs.",
+    "useEn": "Record and communicate gross rental yield in a residential decision file."
+  },
+  "Net Rental Yield": {
+    "defEn": "Annual rental income after defined operating costs expressed as a percentage of the chosen property value or cost basis.",
+    "useEn": "Record and communicate net rental yield in a residential decision file."
+  },
+  "Rental Void Period": {
+    "defEn": "A period when a lettable property produces no rent because it is unoccupied or between tenancies.",
+    "useEn": "Record and communicate rental void period in a residential decision file."
+  },
+  "Tenancy Deposit Protection": {
+    "defEn": "The applicable process for safeguarding a tenancy deposit and providing required information under the relevant regime.",
+    "useEn": "Record and communicate tenancy deposit protection in a residential decision file."
+  },
+  "Landlord Access Notice": {
+    "defEn": "Notice requesting access to a rented home for a stated legitimate purpose, subject to the tenancy and applicable rules.",
+    "useEn": "Record and communicate landlord access notice in a residential decision file."
+  },
+  "Landlord Repair Duty": {
+    "defEn": "A landlord's responsibility for specified repairs, determined by the agreement and applicable law.",
+    "useEn": "Record and communicate landlord repair duty in a residential decision file."
+  },
+  "Right to Rent Check": {
+    "defEn": "A jurisdiction-specific check of an adult occupier's eligibility where the applicable rules require it.",
+    "useEn": "Record and communicate right to rent check in a residential decision file."
+  },
+  "Smoke Alarm Check": {
+    "defEn": "A documented check that relevant smoke alarms are present and operating within the required or agreed scope.",
+    "useEn": "Record and communicate smoke alarm check in a residential decision file."
+  },
+  "Collective Enfranchisement": {
+    "defEn": "A process through which qualifying leaseholders may act together to acquire the freehold, subject to applicable requirements.",
+    "useEn": "Record and communicate collective enfranchisement in a residential decision file."
+  },
+  "Commonhold": {
+    "defEn": "A form of property ownership combining individual unit ownership with membership of an association managing common parts.",
+    "useEn": "Record and communicate commonhold in a residential decision file."
+  },
+  "Residential Lease Extension": {
+    "defEn": "A process that increases the remaining term of a residential lease by agreement or an applicable statutory route.",
+    "useEn": "Record and communicate residential lease extension in a residential decision file."
+  },
+  "Leasehold Managing Agent": {
+    "defEn": "An agent appointed to administer services, maintenance and charges for a leasehold building within its authority.",
+    "useEn": "Record and communicate leasehold managing agent in a residential decision file."
+  },
+  "Unexpired Lease Term": {
+    "defEn": "The time remaining before a lease reaches its contractual end date.",
+    "useEn": "Record and communicate unexpired lease term in a residential decision file."
+  },
+  "Letting Agent Fee": {
+    "defEn": "A disclosed fee charged for specified letting or tenancy services.",
+    "useEn": "Record and communicate letting agent fee in a residential decision file."
+  },
+  "Property Maintenance Request": {
+    "defEn": "A recorded request describing a maintenance issue, priority, access information and required follow-up.",
+    "useEn": "Record and communicate property maintenance request in a residential decision file."
+  },
+  "Periodic Property Inspection": {
+    "defEn": "A scheduled inspection of an occupied or managed property within an agreed and lawful scope.",
+    "useEn": "Record and communicate periodic property inspection in a residential decision file."
+  },
+  "Property Management Fee": {
+    "defEn": "A fee paid for defined ongoing property-management services.",
+    "useEn": "Record and communicate property management fee in a residential decision file."
+  },
+  "Rent Collection Service": {
+    "defEn": "A service that receives, records and reports rent payments within an agreed management scope.",
+    "useEn": "Record and communicate rent collection service in a residential decision file."
+  },
+  "Mortgage Affordability Assessment": {
+    "defEn": "A lender's assessment of whether an applicant can sustainably meet proposed mortgage payments.",
+    "useEn": "Record and communicate mortgage affordability assessment in a residential decision file."
+  },
+  "Mortgage Broker": {
+    "defEn": "An intermediary who helps a borrower research and arrange mortgage products within the scope of their service.",
+    "useEn": "Record and communicate mortgage broker in a residential decision file."
+  },
+  "Mortgage Offer": {
+    "defEn": "A lender's formal offer setting out the proposed mortgage amount, term, rate and conditions.",
+    "useEn": "Record and communicate mortgage offer in a residential decision file."
+  },
+  "Mortgage Product Fee": {
+    "defEn": "A fee associated with arranging or selecting a particular mortgage product.",
+    "useEn": "Record and communicate mortgage product fee in a residential decision file."
+  },
+  "Remortgage": {
+    "defEn": "Replacing the mortgage secured on a property with a new mortgage, usually from the same or another lender.",
+    "useEn": "Record and communicate remortgage in a residential decision file."
+  },
+  "Forwarding Address": {
+    "defEn": "An address supplied for correspondence after a person leaves a property.",
+    "useEn": "Record and communicate forwarding address in a residential decision file."
+  },
+  "Key Handover": {
+    "defEn": "The documented transfer of keys or access credentials to the authorised occupier or owner.",
+    "useEn": "Record and communicate key handover in a residential decision file."
+  },
+  "Handover Meter Reading": {
+    "defEn": "A utility meter reading recorded at completion, check-in or check-out to allocate consumption accurately.",
+    "useEn": "Record and communicate handover meter reading in a residential decision file."
+  },
+  "Moving-in Checklist": {
+    "defEn": "A structured list of access, utilities, condition, safety and administrative tasks for occupying a home.",
+    "useEn": "Record and communicate moving-in checklist in a residential decision file."
+  },
+  "Vacant Possession Handover": {
+    "defEn": "The practical handover process used where a property is to be delivered without occupiers or possessions that prevent use.",
+    "useEn": "Record and communicate vacant possession handover in a residential decision file."
+  },
+  "Beneficial Owner": {
+    "defEn": "The person who enjoys the economic benefit of property, which may differ from the registered legal owner.",
+    "useEn": "Record and communicate beneficial owner in a residential decision file."
+  },
+  "Co-ownership Agreement": {
+    "defEn": "A document recording how co-owners intend to share costs, decisions and sale proceeds.",
+    "useEn": "Record and communicate co-ownership agreement in a residential decision file."
+  },
+  "General Boundary": {
+    "defEn": "A mapped indication of a registered property's boundary that does not necessarily identify its exact legal line.",
+    "useEn": "Record and communicate general boundary in a residential decision file."
+  },
+  "Legal Owner": {
+    "defEn": "The person or organisation recorded as holding the legal title to a home.",
+    "useEn": "Record and communicate legal owner in a residential decision file."
+  },
+  "Sole Ownership": {
+    "defEn": "Ownership of a property by one legal owner.",
+    "useEn": "Record and communicate sole ownership in a residential decision file."
+  },
+  "Building Control Inspection": {
+    "defEn": "An inspection at a relevant stage to assess work against applicable building-control requirements.",
+    "useEn": "Record and communicate building control inspection in a residential decision file."
+  },
+  "Building Notice": {
+    "defEn": "A building-control application route available for certain work, subject to eligibility and jurisdiction.",
+    "useEn": "Record and communicate building notice in a residential decision file."
+  },
+  "Full Plans Application": {
+    "defEn": "A building-control route in which detailed plans and information are submitted for assessment before or during work.",
+    "useEn": "Record and communicate full plans application in a residential decision file."
+  },
+  "Lawful Development Certificate": {
+    "defEn": "A formal decision about the lawfulness of a proposed or existing use or development in the relevant planning system.",
+    "useEn": "Record and communicate lawful development certificate in a residential decision file."
+  },
+  "Planning Permission": {
+    "defEn": "Formal permission from the relevant planning authority for development that requires consent.",
+    "useEn": "Record and communicate planning permission in a residential decision file."
+  },
+  "Home Maintenance Schedule": {
+    "defEn": "A dated plan listing recurring inspections, servicing and maintenance tasks for a home.",
+    "useEn": "Record and communicate home maintenance schedule in a residential decision file."
+  },
+  "Planned Maintenance": {
+    "defEn": "Maintenance scheduled in advance using expected service lives, inspections and priorities.",
+    "useEn": "Record and communicate planned maintenance in a residential decision file."
+  },
+  "Reactive Maintenance": {
+    "defEn": "Work initiated in response to a fault, failure or unexpected maintenance need.",
+    "useEn": "Record and communicate reactive maintenance in a residential decision file."
+  },
+  "Residential Refurbishment": {
+    "defEn": "Work that repairs, renews or upgrades an existing home without necessarily rebuilding it.",
+    "useEn": "Record and communicate residential refurbishment in a residential decision file."
+  },
+  "Residential Renovation": {
+    "defEn": "A coordinated programme of work to improve or restore an existing home's condition, function or appearance.",
+    "useEn": "Record and communicate residential renovation in a residential decision file."
+  },
+  "Property Condition Rating": {
+    "defEn": "A rating used in a survey to communicate the relative seriousness or urgency of an observed condition.",
+    "useEn": "Record and communicate property condition rating in a residential decision file."
+  },
+  "Drainage Survey": {
+    "defEn": "An inspection of drainage condition and performance, often using specialist equipment.",
+    "useEn": "Record and communicate drainage survey in a residential decision file."
+  },
+  "Invasive Inspection": {
+    "defEn": "An inspection requiring opening-up, removal or disturbance of finishes to investigate concealed construction.",
+    "useEn": "Record and communicate invasive inspection in a residential decision file."
+  },
+  "Property Survey": {
+    "defEn": "A professional inspection and report addressing a property's condition within an agreed scope.",
+    "useEn": "Record and communicate property survey in a residential decision file."
+  },
+  "Roof Inspection": {
+    "defEn": "An inspection of accessible roof elements to identify visible condition, defects and maintenance needs.",
+    "useEn": "Record and communicate roof inspection in a residential decision file."
+  },
+  "Tenancy Check-in Report": {
+    "defEn": "A dated record made near the start of a tenancy describing condition, contents and relevant meter readings.",
+    "useEn": "Record and communicate tenancy check-in report in a residential decision file."
+  },
+  "Tenancy Check-out Report": {
+    "defEn": "A dated end-of-tenancy record used to compare property condition with the agreed starting record.",
+    "useEn": "Record and communicate tenancy check-out report in a residential decision file."
+  },
+  "Tenancy Notice Period": {
+    "defEn": "The period of notice required before a tenancy-related action takes effect, subject to the agreement and applicable law.",
+    "useEn": "Record and communicate tenancy notice period in a residential decision file."
+  },
+  "Tenant Guarantor": {
+    "defEn": "A person or organisation agreeing to meet specified tenant obligations if the tenant does not.",
+    "useEn": "Record and communicate tenant guarantor in a residential decision file."
+  },
+  "Tenant Referencing": {
+    "defEn": "Checks used to help a landlord or agent assess a prospective tenant against disclosed criteria.",
+    "useEn": "Record and communicate tenant referencing in a residential decision file."
+  },
+  "Property Access Appointment": {
+    "defEn": "An agreed time for authorised inspection, repair or other access to an occupied home.",
+    "useEn": "Record and communicate property access appointment in a residential decision file."
+  },
+  "End-of-Tenancy Cleaning": {
+    "defEn": "Cleaning undertaken when a tenancy ends, assessed against the agreement and evidenced starting condition.",
+    "useEn": "Record and communicate end-of-tenancy cleaning in a residential decision file."
+  },
+  "Rent Due Date": {
+    "defEn": "The date by which rent is payable under the tenancy agreement.",
+    "useEn": "Record and communicate rent due date in a residential decision file."
+  },
+  "Reporting Repairs": {
+    "defEn": "The process a tenant uses to notify the landlord or manager about a repair need and retain a record.",
+    "useEn": "Record and communicate reporting repairs in a residential decision file."
+  },
+  "Tenant Reasonable Care": {
+    "defEn": "Everyday care expected from an occupier to avoid preventable damage, subject to the tenancy and applicable law.",
+    "useEn": "Record and communicate tenant reasonable care in a residential decision file."
+  },
+  "Comparable Property": {
+    "defEn": "A sufficiently similar property used as evidence when considering the value of another property.",
+    "useEn": "Record and communicate comparable property in a residential decision file."
+  },
+  "Comparable Sales Analysis": {
+    "defEn": "A structured comparison of relevant property transactions to support a value opinion.",
+    "useEn": "Record and communicate comparable sales analysis in a residential decision file."
+  },
+  "Estate Agent Market Appraisal": {
+    "defEn": "An estate agent's opinion of likely marketing price or rent, distinct from a formal valuation for another purpose.",
+    "useEn": "Record and communicate estate agent market appraisal in a residential decision file."
+  },
+  "Valuation Assumption": {
+    "defEn": "A stated condition treated as true when forming a property value opinion.",
+    "useEn": "Record and communicate valuation assumption in a residential decision file."
+  },
+  "Valuation Date": {
+    "defEn": "The date at which a stated property value applies.",
+    "useEn": "Record and communicate valuation date in a residential decision file."
+  },
+  "Asset Management": {
+    "defEn": "Strategic oversight intended to protect and improve an asset's performance, risk position and business plan.",
+    "useEn": "Document asset management in an investment appraisal or decision record."
+  },
+  "Base-case Scenario": {
+    "defEn": "The central set of appraisal assumptions considered most appropriate for decision comparison.",
+    "useEn": "Document base-case scenario in an investment appraisal or decision record."
+  },
+  "Best-case Scenario": {
+    "defEn": "A deliberately favourable but internally consistent set of disclosed appraisal assumptions.",
+    "useEn": "Document best-case scenario in an investment appraisal or decision record."
+  },
+  "Bridging Finance": {
+    "defEn": "Short-term secured finance used to bridge a defined funding or transaction gap, with a credible repayment route.",
+    "useEn": "Document bridging finance in an investment appraisal or decision record."
+  },
+  "Capital Allocation": {
+    "defEn": "The decision to distribute available capital among investments, reserves and other uses.",
+    "useEn": "Document capital allocation in an investment appraisal or decision record."
+  },
+  "Common Investor Mistakes": {
+    "defEn": "Recurring decision errors that weaken evidence, appraisal, risk control or execution.",
+    "useEn": "Document common investor mistakes in an investment appraisal or decision record."
+  },
+  "Comparable Evidence": {
+    "defEn": "Relevant transaction or market evidence used to support assumptions about value or rent.",
+    "useEn": "Document comparable evidence in an investment appraisal or decision record."
+  },
+  "Concentration Risk": {
+    "defEn": "Excessive dependence on one asset, location, tenant, strategy, lender or risk factor.",
+    "useEn": "Document concentration risk in an investment appraisal or decision record."
+  },
+  "Construction Risk": {
+    "defEn": "Uncertainty arising from design, procurement, cost, quality, safety, programme or delivery of works.",
+    "useEn": "Document construction risk in an investment appraisal or decision record."
+  },
+  "Cost Overrun": {
+    "defEn": "Actual or forecast cost exceeding the approved or stated budget baseline.",
+    "useEn": "Document cost overrun in an investment appraisal or decision record."
+  },
+  "Deal Appraisal": {
+    "defEn": "A structured financial and risk assessment of a potential transaction against objectives and constraints.",
+    "useEn": "Document deal appraisal in an investment appraisal or decision record."
+  },
+  "Deal Snapshot": {
+    "defEn": "A concise, dated summary of key deal inputs, outputs, assumptions and risks.",
+    "useEn": "Document deal snapshot in an investment appraisal or decision record."
+  },
+  "Deal Sourcing": {
+    "defEn": "The repeatable process used to identify potential property investment opportunities.",
+    "useEn": "Document deal sourcing in an investment appraisal or decision record."
+  },
+  "Demand Analysis": {
+    "defEn": "Assessment of the depth, characteristics and evidence of buyer or occupier demand.",
+    "useEn": "Document demand analysis in an investment appraisal or decision record."
+  },
+  "Development Exit": {
+    "defEn": "The planned disposal, refinance or retention route following development activity.",
+    "useEn": "Document development exit in an investment appraisal or decision record."
+  },
+  "Diversification": {
+    "defEn": "Spreading exposure across assets or risk drivers to reduce dependence on a single outcome.",
+    "useEn": "Document diversification in an investment appraisal or decision record."
+  },
+  "Environmental Risk": {
+    "defEn": "Potential adverse effects from contamination, flooding, ecology, ground conditions or other environmental factors.",
+    "useEn": "Document environmental risk in an investment appraisal or decision record."
+  },
+  "Equity Multiple": {
+    "defEn": "Total equity distributions divided by total equity contributions, without measuring timing by itself.",
+    "useEn": "Document equity multiple in an investment appraisal or decision record."
+  },
+  "Financing Cost": {
+    "defEn": "Interest, fees and other identified costs attributable to borrowing or arranging capital.",
+    "useEn": "Document financing cost in an investment appraisal or decision record."
+  },
+  "Go/No-Go Decision": {
+    "defEn": "A documented decision to proceed, pause or reject an opportunity against stated criteria.",
+    "useEn": "Document go/no-go decision in an investment appraisal or decision record."
+  },
+  "Hold Strategy": {
+    "defEn": "A strategy focused on retaining an asset for income, growth or another stated objective.",
+    "useEn": "Document hold strategy in an investment appraisal or decision record."
+  },
+  "Ignoring Exit Risk": {
+    "defEn": "Making an investment decision without testing whether the intended sale, refinance or hold route remains feasible under adverse conditions.",
+    "useEn": "Document ignoring exit risk in an investment appraisal or decision record."
+  },
+  "Insurance Cost": {
+    "defEn": "The premiums and disclosed associated charges included for the selected insurance cover.",
+    "useEn": "Document insurance cost in an investment appraisal or decision record."
+  },
+  "Interest-rate Risk": {
+    "defEn": "Exposure to changes in interest rates that affect finance cost, affordability, value or exit options.",
+    "useEn": "Document interest-rate risk in an investment appraisal or decision record."
+  },
+  "Investment Break-even Point": {
+    "defEn": "The output, occupancy, price or time at which defined revenue equals defined costs.",
+    "useEn": "Document investment break-even point in an investment appraisal or decision record."
+  },
+  "Investment Checklist": {
+    "defEn": "A repeatable list of evidence, calculations, risks and approvals required before a decision.",
+    "useEn": "Document investment checklist in an investment appraisal or decision record."
+  },
+  "Investment Contingency": {
+    "defEn": "A separately identified allowance for uncertainty within a defined cost or programme scope.",
+    "useEn": "Document investment contingency in an investment appraisal or decision record."
+  },
+  "Investment Decision Framework": {
+    "defEn": "A consistent set of criteria, evidence requirements and approval steps for investment decisions.",
+    "useEn": "Document investment decision framework in an investment appraisal or decision record."
+  },
+  "Investment Forecasting": {
+    "defEn": "Producing forward-looking estimates from documented assumptions and available evidence.",
+    "useEn": "Document investment forecasting in an investment appraisal or decision record."
+  },
+  "Investment Lessons Learned": {
+    "defEn": "Documented observations about what worked, failed or should change in future decisions.",
+    "useEn": "Document investment lessons learned in an investment appraisal or decision record."
+  },
+  "Investment Memorandum": {
+    "defEn": "A decision document summarising the opportunity, evidence, assumptions, appraisal, risks and recommendation.",
+    "useEn": "Document investment memorandum in an investment appraisal or decision record."
+  },
+  "Investment Performance Tracking": {
+    "defEn": "Regular comparison of actual investment results with budget, forecast and objectives.",
+    "useEn": "Document investment performance tracking in an investment appraisal or decision record."
+  },
+  "Investment Strategy": {
+    "defEn": "A documented approach for selecting, financing, managing and exiting investments.",
+    "useEn": "Document investment strategy in an investment appraisal or decision record."
+  },
+  "Investment Time Horizon": {
+    "defEn": "The expected period from committing capital until the intended exit or objective.",
+    "useEn": "Document investment time horizon in an investment appraisal or decision record."
+  },
+  "Investor Goals": {
+    "defEn": "The specific financial and practical outcomes an investor wants property to support.",
+    "useEn": "Document investor goals in an investment appraisal or decision record."
+  },
+  "Lease Management": {
+    "defEn": "Administration of lease dates, obligations, payments, notices, reviews and evidence.",
+    "useEn": "Document lease management in an investment appraisal or decision record."
+  },
+  "Liquidity Risk": {
+    "defEn": "The risk that an asset or position cannot be sold, refinanced or converted to cash when required without material loss.",
+    "useEn": "Document liquidity risk in an investment appraisal or decision record."
+  },
+  "Loan Amortisation": {
+    "defEn": "The scheduled reduction of loan principal through payments over time.",
+    "useEn": "Document loan amortisation in an investment appraisal or decision record."
+  },
+  "Loan Term": {
+    "defEn": "The contractual period over which a loan is scheduled to remain outstanding.",
+    "useEn": "Document loan term in an investment appraisal or decision record."
+  },
+  "Location Analysis": {
+    "defEn": "Assessment of how a property's position, connections, amenities and local context affect its use and prospects.",
+    "useEn": "Document location analysis in an investment appraisal or decision record."
+  },
+  "Maintenance Allowance": {
+    "defEn": "A forecast amount reserved for routine and expected property maintenance.",
+    "useEn": "Document maintenance allowance in an investment appraisal or decision record."
+  },
+  "Management Cost": {
+    "defEn": "The cost attributed to letting, administering and overseeing a property investment.",
+    "useEn": "Document management cost in an investment appraisal or decision record."
+  },
+  "Margin of Safety": {
+    "defEn": "The deliberate buffer between an investment assumption or price and a more adverse outcome.",
+    "useEn": "Document margin of safety in an investment appraisal or decision record."
+  },
+  "Net Operating Income": {
+    "defEn": "Property income after defined operating expenses but before financing and tax items, subject to the stated convention.",
+    "useEn": "Document net operating income in an investment appraisal or decision record."
+  },
+  "Net Present Value": {
+    "defEn": "The sum of forecast cash flows discounted to a stated valuation date at a selected discount rate.",
+    "useEn": "Document net present value in an investment appraisal or decision record."
+  },
+  "Overestimating Rent": {
+    "defEn": "Forecasting rent above the level supported by comparable evidence and realistic letting assumptions.",
+    "useEn": "Document overestimating rent in an investment appraisal or decision record."
+  },
+  "Overpaying": {
+    "defEn": "Paying more than the amount supported by the investor's evidence, objectives and risk-adjusted appraisal.",
+    "useEn": "Document overpaying in an investment appraisal or decision record."
+  },
+  "Planning Risk": {
+    "defEn": "Uncertainty that planning decisions, conditions, policy or timing adversely affect an investment.",
+    "useEn": "Document planning risk in an investment appraisal or decision record."
+  },
+  "Portfolio Strategy": {
+    "defEn": "A coordinated plan for the role, balance, funding and lifecycle of multiple investments.",
+    "useEn": "Document portfolio strategy in an investment appraisal or decision record."
+  },
+  "Post-investment Review": {
+    "defEn": "A structured review comparing the investment case with actual delivery and outcomes.",
+    "useEn": "Document post-investment review in an investment appraisal or decision record."
+  },
+  "Programme Delay": {
+    "defEn": "Progress or completion occurring later than the approved or assumed programme.",
+    "useEn": "Document programme delay in an investment appraisal or decision record."
+  },
+  "Property Debt": {
+    "defEn": "Borrowed capital associated with acquiring, developing or holding property.",
+    "useEn": "Document property debt in an investment appraisal or decision record."
+  },
+  "Property Investment Budget": {
+    "defEn": "An approved plan of expected income, costs, capital expenditure and funding for a period.",
+    "useEn": "Document property investment budget in an investment appraisal or decision record."
+  },
+  "Property Management": {
+    "defEn": "Day-to-day administration of property, occupiers, maintenance, suppliers and records within an agreed scope.",
+    "useEn": "Document property management in an investment appraisal or decision record."
+  },
+  "Property Market Research": {
+    "defEn": "The structured collection and analysis of evidence about prices, rents, demand, supply and activity.",
+    "useEn": "Document property market research in an investment appraisal or decision record."
+  },
+  "Property Market Risk": {
+    "defEn": "Exposure to adverse changes in property prices, rents, liquidity, demand or supply.",
+    "useEn": "Document property market risk in an investment appraisal or decision record."
+  },
+  "Property Sale Exit": {
+    "defEn": "An exit that realises the investment through sale of the property or relevant interest.",
+    "useEn": "Document property sale exit in an investment appraisal or decision record."
+  },
+  "Purchase Price": {
+    "defEn": "The agreed price payable for an asset before separately identified costs and adjustments.",
+    "useEn": "Document purchase price in an investment appraisal or decision record."
+  },
+  "Refinance Exit": {
+    "defEn": "An exit or capital-release route using replacement finance, subject to value, income and lending conditions.",
+    "useEn": "Document refinance exit in an investment appraisal or decision record."
+  },
+  "Regulatory Risk": {
+    "defEn": "Uncertainty that regulatory requirements or changes affect cost, use, income, compliance or value.",
+    "useEn": "Document regulatory risk in an investment appraisal or decision record."
+  },
+  "Rental Income": {
+    "defEn": "Income earned or forecast from granting occupation or use of property.",
+    "useEn": "Document rental income in an investment appraisal or decision record."
+  },
+  "Return on Capital Employed": {
+    "defEn": "A performance ratio comparing defined operating return with capital employed.",
+    "useEn": "Document return on capital employed in an investment appraisal or decision record."
+  },
+  "Return on Equity": {
+    "defEn": "Defined return divided by the equity base used in the analysis.",
+    "useEn": "Document return on equity in an investment appraisal or decision record."
+  },
+  "Risk Tolerance": {
+    "defEn": "The degree of uncertainty and potential loss an investor is willing and able to accept.",
+    "useEn": "Document risk tolerance in an investment appraisal or decision record."
+  },
+  "Scenario Comparison": {
+    "defEn": "Side-by-side comparison of appraisal outcomes under consistently defined assumption sets.",
+    "useEn": "Document scenario comparison in an investment appraisal or decision record."
+  },
+  "Sensitivity Analysis": {
+    "defEn": "Testing how appraisal outputs change when selected assumptions change individually or together.",
+    "useEn": "Document sensitivity analysis in an investment appraisal or decision record."
+  },
+  "Supply Analysis": {
+    "defEn": "Assessment of existing, competing and planned property supply in a defined market.",
+    "useEn": "Document supply analysis in an investment appraisal or decision record."
+  },
+  "Survey Risk": {
+    "defEn": "The risk that condition information is incomplete, misunderstood or outside an inspection's scope.",
+    "useEn": "Document survey risk in an investment appraisal or decision record."
+  },
+  "Tax Risk": {
+    "defEn": "Uncertainty arising from tax treatment, timing, classification, compliance or future change.",
+    "useEn": "Document tax risk in an investment appraisal or decision record."
+  },
+  "Tenant Management": {
+    "defEn": "The structured management of tenant communication, obligations, payments, service and retention.",
+    "useEn": "Document tenant management in an investment appraisal or decision record."
+  },
+  "Tenant Risk": {
+    "defEn": "Uncertainty associated with tenant demand, payment, conduct, retention or covenant strength.",
+    "useEn": "Document tenant risk in an investment appraisal or decision record."
+  },
+  "Title Risk": {
+    "defEn": "Uncertainty arising from ownership, registered interests, boundaries, rights or restrictions affecting property.",
+    "useEn": "Document title risk in an investment appraisal or decision record."
+  },
+  "Underestimating Costs": {
+    "defEn": "Using cost assumptions that omit, understate or inadequately allow for likely expenditure.",
+    "useEn": "Document underestimating costs in an investment appraisal or decision record."
+  },
+  "Vacancy Assumption": {
+    "defEn": "The forecast allowance for time or space that produces no rent.",
+    "useEn": "Document vacancy assumption in an investment appraisal or decision record."
+  },
+  "Worst-case Scenario": {
+    "defEn": "A deliberately adverse but plausible and internally consistent set of assumptions.",
+    "useEn": "Document worst-case scenario in an investment appraisal or decision record."
+  }
+}

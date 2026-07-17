@@ -1,0 +1,168 @@
+{
+  "id": "handbook.property-investor",
+  "object_type": "handbook",
+  "title": {
+    "en": "Property Investor’s Handbook",
+    "tr": "Gayrimenkul Yatırımcısının El Kitabı"
+  },
+  "summary": {
+    "en": "A practical bilingual handbook that progresses from beginner foundations to advanced investment decisions.",
+    "tr": "Başlangıç temellerinden ileri yatırım kararlarına ilerleyen pratik iki dilli el kitabı."
+  },
+  "learning_objectives": {
+    "en": [
+      "Understand Property Investor’s Handbook and its place in the publishing hierarchy."
+    ],
+    "tr": [
+      "Gayrimenkul Yatırımcısının El Kitabı konusunu ve yayın hiyerarşisindeki yerini anlamak."
+    ]
+  },
+  "prerequisites": [],
+  "difficulty_level": "beginner",
+  "estimated_study_time_minutes": 1200,
+  "related_knowledge_entries": [],
+  "related_topics": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_case_studies": [],
+  "official_sources": [
+    {
+      "title": "Authoritative source review required",
+      "url": null,
+      "status": "required"
+    }
+  ],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial publishing architecture draft.",
+        "tr": "İlk yayın mimarisi taslağı."
+      }
+    }
+  ],
+  "completion_status": "in_progress",
+  "content_version": "1.0.0",
+  "review_status": "draft",
+  "reviewer": null,
+  "jurisdiction": [
+    "United Kingdom",
+    "Turkey — local professional verification required"
+  ],
+  "child_paths": ["path.property-investor"],
+  "chapters": [
+    "handbook.investor.chapter-01",
+    "handbook.investor.chapter-02",
+    "handbook.investor.chapter-03",
+    "handbook.investor.chapter-04",
+    "handbook.investor.chapter-05",
+    "handbook.investor.chapter-06",
+    "handbook.investor.chapter-07",
+    "handbook.investor.chapter-08",
+    "handbook.investor.chapter-09",
+    "handbook.investor.chapter-10",
+    "handbook.investor.chapter-11",
+    "handbook.investor.chapter-12",
+    "handbook.investor.chapter-13",
+    "handbook.investor.chapter-14",
+    "handbook.investor.chapter-15",
+    "handbook.investor.chapter-16",
+    "handbook.investor.chapter-17",
+    "handbook.investor.chapter-18",
+    "handbook.investor.chapter-19",
+    "handbook.investor.chapter-20",
+    "handbook.investor.chapter-27",
+    "handbook.investor.chapter-28",
+    "handbook.investor.chapter-29",
+    "handbook.investor.chapter-30",
+    "handbook.investor.chapter-32",
+    "handbook.investor.chapter-33",
+    "handbook.investor.chapter-34",
+    "handbook.investor.chapter-36",
+    "handbook.investor.chapter-37",
+    "handbook.investor.chapter-40"
+  ],
+  "planned_chapters": [
+    {
+      "chapter_number": 21,
+      "id": "handbook.investor.chapter-21",
+      "title": {
+        "en": "Commercial Property",
+        "tr": "Commercial Property"
+      }
+    },
+    {
+      "chapter_number": 22,
+      "id": "handbook.investor.chapter-22",
+      "title": {
+        "en": "Mixed-Use Property",
+        "tr": "Mixed-Use Property"
+      }
+    },
+    {
+      "chapter_number": 23,
+      "id": "handbook.investor.chapter-23",
+      "title": {
+        "en": "Property Development",
+        "tr": "Property Development"
+      }
+    },
+    {
+      "chapter_number": 24,
+      "id": "handbook.investor.chapter-24",
+      "title": {
+        "en": "Renovation and Refurbishment",
+        "tr": "Renovation ve Refurbishment"
+      }
+    },
+    {
+      "chapter_number": 25,
+      "id": "handbook.investor.chapter-25",
+      "title": {
+        "en": "Construction Cost Basics",
+        "tr": "Construction Cost Basics"
+      }
+    },
+    {
+      "chapter_number": 26,
+      "id": "handbook.investor.chapter-26",
+      "title": {
+        "en": "Planning and Building Control",
+        "tr": "Planning ve Building Control"
+      }
+    },
+    {
+      "chapter_number": 31,
+      "id": "handbook.investor.chapter-31",
+      "title": {
+        "en": "Tenant and Lease Management",
+        "tr": "Tenant ve Lease Management"
+      }
+    },
+    {
+      "chapter_number": 35,
+      "id": "handbook.investor.chapter-35",
+      "title": {
+        "en": "Real Case Studies",
+        "tr": "Gerçek Vaka Analizleri"
+      }
+    },
+    {
+      "chapter_number": 38,
+      "id": "handbook.investor.chapter-38",
+      "title": {
+        "en": "Document Guide",
+        "tr": "Belge Rehberi"
+      }
+    },
+    {
+      "chapter_number": 39,
+      "id": "handbook.investor.chapter-39",
+      "title": {
+        "en": "Building a Professional Team",
+        "tr": "Profesyonel Ekip Kurma"
+      }
+    }
+  ]
+}

@@ -2,14 +2,18 @@
   "name": "EMCP Knowledge OS",
   "short_name": "EMCP OS",
   "description": "The Operating System for Property, Construction & Investment Professionals.",
-  "start_url": "/",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "any",
   "background_color": "#F3F6FB",
   "theme_color": "#012169",
   "lang": "tr",
+  "categories": ["business", "finance", "education", "productivity"],
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "icon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any maskable"

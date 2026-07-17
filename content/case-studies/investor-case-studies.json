@@ -1,0 +1,1014 @@
+[
+  {
+    "id": "case-study.investor-screening-example",
+    "object_type": "case_study",
+    "title": {
+      "en": "Investor Screening Example",
+      "tr": "Yatırım Ön Eleme Örneği"
+    },
+    "summary": {
+      "en": "A placeholder case study for a future fully evidenced investor appraisal.",
+      "tr": "Gelecekte kanıtlarla tamamlanacak yatırım değerlendirmesi vaka taslağı."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Investor Screening Example and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Yatırım Ön Eleme Örneği konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "facts_verified": false
+  },
+  {
+    "id": "case-study.first-home",
+    "object_type": "case_study",
+    "title": {
+      "en": "First-home Purchase",
+      "tr": "İlk Konut Alımı"
+    },
+    "summary": {
+      "en": "A buyer compares budget, mortgage evidence, survey findings and completion tasks.",
+      "tr": "Bir alıcı bütçeyi, kredi kanıtını, inceleme bulgularını ve tamamlama işlerini karşılaştırır."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use First-home Purchase as a structured residential-property aid."
+      ],
+      "tr": [
+        "İlk Konut Alımı aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A buyer compares budget, mortgage evidence, survey findings and completion tasks.",
+      "tr": "Bir alıcı bütçeyi, kredi kanıtını, inceleme bulgularını ve tamamlama işlerini karşılaştırır."
+    },
+    "lessons": {
+      "en": [
+        "Separate evidence from assumptions.",
+        "Escalate legal, valuation, lending and technical questions."
+      ],
+      "tr": [
+        "Kanıtı varsayımdan ayırın.",
+        "Hukuk, değerleme, kredi ve teknik soruları uzmanlara yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "case-study.beginner-landlord",
+    "object_type": "case_study",
+    "title": {
+      "en": "Beginner Landlord",
+      "tr": "Başlangıç Seviyesi Ev Sahibi"
+    },
+    "summary": {
+      "en": "A new landlord documents income, costs, tenant setup, safety and maintenance assumptions.",
+      "tr": "Yeni bir ev sahibi gelir, gider, kiracı başlangıcı, güvenlik ve bakım varsayımlarını belgeler."
+    },
+    "learning_objectives": {
+      "en": ["Use Beginner Landlord as a structured residential-property aid."],
+      "tr": [
+        "Başlangıç Seviyesi Ev Sahibi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A new landlord documents income, costs, tenant setup, safety and maintenance assumptions.",
+      "tr": "Yeni bir ev sahibi gelir, gider, kiracı başlangıcı, güvenlik ve bakım varsayımlarını belgeler."
+    },
+    "lessons": {
+      "en": [
+        "Separate evidence from assumptions.",
+        "Escalate legal, valuation, lending and technical questions."
+      ],
+      "tr": [
+        "Kanıtı varsayımdan ayırın.",
+        "Hukuk, değerleme, kredi ve teknik soruları uzmanlara yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "case-study.leasehold-flat",
+    "object_type": "case_study",
+    "title": {
+      "en": "Leasehold Flat Review",
+      "tr": "Leasehold Daire İncelemesi"
+    },
+    "summary": {
+      "en": "A buyer reviews lease term, service charges, major works, management and title evidence.",
+      "tr": "Bir alıcı leasehold süresini, hizmet giderlerini, büyük işleri, yönetimi ve tapu kanıtını inceler."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Leasehold Flat Review as a structured residential-property aid."
+      ],
+      "tr": [
+        "Leasehold Daire İncelemesi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A buyer reviews lease term, service charges, major works, management and title evidence.",
+      "tr": "Bir alıcı leasehold süresini, hizmet giderlerini, büyük işleri, yönetimi ve tapu kanıtını inceler."
+    },
+    "lessons": {
+      "en": [
+        "Separate evidence from assumptions.",
+        "Escalate legal, valuation, lending and technical questions."
+      ],
+      "tr": [
+        "Kanıtı varsayımdan ayırın.",
+        "Hukuk, değerleme, kredi ve teknik soruları uzmanlara yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "case-study.investor-first-rental",
+    "object_type": "case_study",
+    "title": {
+      "en": "First Rental Investment",
+      "tr": "İlk Kiralık Konut Yatırımı"
+    },
+    "summary": {
+      "en": "A beginner compares rent, costs, finance, vacancy and exit evidence before deciding.",
+      "tr": "İlk Kiralık Konut Yatırımı, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply First Rental Investment to a documented beginner investment decision."
+      ],
+      "tr": [
+        "İlk Kiralık Konut Yatırımı aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A beginner compares rent, costs, finance, vacancy and exit evidence before deciding.",
+      "tr": "İlk Kiralık Konut Yatırımı için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.investor-refurbishment",
+    "object_type": "case_study",
+    "title": {
+      "en": "Refurbishment Investment",
+      "tr": "Yenileme Yatırımı"
+    },
+    "summary": {
+      "en": "An investor tests purchase, works, contingency, programme, value and sale assumptions.",
+      "tr": "Yenileme Yatırımı, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Refurbishment Investment to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yenileme Yatırımı aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "An investor tests purchase, works, contingency, programme, value and sale assumptions.",
+      "tr": "Yenileme Yatırımı için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.investor-refinance",
+    "object_type": "case_study",
+    "title": {
+      "en": "Refinance Decision",
+      "tr": "Yeniden Finansman Kararı"
+    },
+    "summary": {
+      "en": "An owner compares hold, refinance and sale using consistent values and finance costs.",
+      "tr": "Yeniden Finansman Kararı, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Refinance Decision to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yeniden Finansman Kararı aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "An owner compares hold, refinance and sale using consistent values and finance costs.",
+      "tr": "Yeniden Finansman Kararı için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.investor-small-portfolio",
+    "object_type": "case_study",
+    "title": {
+      "en": "Small Portfolio Review",
+      "tr": "Küçük Portföy İncelemesi"
+    },
+    "summary": {
+      "en": "An investor reviews concentration, cash flow, maintenance and funding across several assets.",
+      "tr": "Küçük Portföy İncelemesi, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Small Portfolio Review to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Küçük Portföy İncelemesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "An investor reviews concentration, cash flow, maintenance and funding across several assets.",
+      "tr": "Küçük Portföy İncelemesi için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.investor-no-go",
+    "object_type": "case_study",
+    "title": {
+      "en": "No-Go Investment Decision",
+      "tr": "Yatırımdan Vazgeçme Kararı"
+    },
+    "summary": {
+      "en": "A deal is rejected because verified downside evidence falls outside the decision criteria.",
+      "tr": "Yatırımdan Vazgeçme Kararı, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply No-Go Investment Decision to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırımdan Vazgeçme Kararı aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A deal is rejected because verified downside evidence falls outside the decision criteria.",
+      "tr": "Yatırımdan Vazgeçme Kararı için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.scenario-rent",
+    "object_type": "case_study",
+    "title": {
+      "en": "Rent Sensitivity Comparison",
+      "tr": "Kira Duyarlılığı Karşılaştırması"
+    },
+    "summary": {
+      "en": "Base, lower and higher rent assumptions are compared without changing unrelated inputs.",
+      "tr": "Kira Duyarlılığı Karşılaştırması, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Rent Sensitivity Comparison to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Kira Duyarlılığı Karşılaştırması aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "Base, lower and higher rent assumptions are compared without changing unrelated inputs.",
+      "tr": "Kira Duyarlılığı Karşılaştırması için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.scenario-interest",
+    "object_type": "case_study",
+    "title": {
+      "en": "Interest-cost Scenario Comparison",
+      "tr": "Faiz Maliyeti Senaryo Karşılaştırması"
+    },
+    "summary": {
+      "en": "Finance cost is varied across consistent scenarios to show cash-flow sensitivity.",
+      "tr": "Faiz Maliyeti Senaryo Karşılaştırması, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Interest-cost Scenario Comparison to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Faiz Maliyeti Senaryo Karşılaştırması aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "Finance cost is varied across consistent scenarios to show cash-flow sensitivity.",
+      "tr": "Faiz Maliyeti Senaryo Karşılaştırması için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.scenario-exit",
+    "object_type": "case_study",
+    "title": {
+      "en": "Exit-value Scenario Comparison",
+      "tr": "Çıkış Değeri Senaryo Karşılaştırması"
+    },
+    "summary": {
+      "en": "A range of supported exit values is compared against cost, debt and equity outcomes.",
+      "tr": "Çıkış Değeri Senaryo Karşılaştırması, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Exit-value Scenario Comparison to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Çıkış Değeri Senaryo Karşılaştırması aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A range of supported exit values is compared against cost, debt and equity outcomes.",
+      "tr": "Çıkış Değeri Senaryo Karşılaştırması için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.appraisal-rental",
+    "object_type": "case_study",
+    "title": {
+      "en": "Worked Rental Appraisal",
+      "tr": "Çalışılmış Kira Yatırımı Değerlemesi"
+    },
+    "summary": {
+      "en": "A hypothetical rental appraisal links gross yield, operating expenses, net cash flow and financing.",
+      "tr": "Çalışılmış Kira Yatırımı Değerlemesi, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Worked Rental Appraisal to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Çalışılmış Kira Yatırımı Değerlemesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A hypothetical rental appraisal links gross yield, operating expenses, net cash flow and financing.",
+      "tr": "Çalışılmış Kira Yatırımı Değerlemesi için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.appraisal-refurbishment",
+    "object_type": "case_study",
+    "title": {
+      "en": "Worked Refurbishment Appraisal",
+      "tr": "Çalışılmış Yenileme Değerlemesi"
+    },
+    "summary": {
+      "en": "A hypothetical refurbishment appraisal links price, works, contingency, programme and exit.",
+      "tr": "Çalışılmış Yenileme Değerlemesi, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Worked Refurbishment Appraisal to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Çalışılmış Yenileme Değerlemesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A hypothetical refurbishment appraisal links price, works, contingency, programme and exit.",
+      "tr": "Çalışılmış Yenileme Değerlemesi için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  },
+  {
+    "id": "case-study.appraisal-development",
+    "object_type": "case_study",
+    "title": {
+      "en": "Worked Development Appraisal",
+      "tr": "Çalışılmış Geliştirme Değerlemesi"
+    },
+    "summary": {
+      "en": "A hypothetical development appraisal links cost, GDV, funding, profit and downside testing.",
+      "tr": "Çalışılmış Geliştirme Değerlemesi, varsayımları ve kanıtları açıkça ayıran eğitim amaçlı bir örnektir."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Worked Development Appraisal to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Çalışılmış Geliştirme Değerlemesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "scenario": {
+      "en": "A hypothetical development appraisal links cost, GDV, funding, profit and downside testing.",
+      "tr": "Çalışılmış Geliştirme Değerlemesi için kanıt, varsayım ve sonuçlar tarihli olarak kaydedilir."
+    },
+    "lessons": {
+      "en": [
+        "Use hypothetical figures only for learning.",
+        "Keep evidence, assumptions and calculator outputs distinct.",
+        "Obtain property-specific professional advice."
+      ],
+      "tr": [
+        "Yalnız eğitim için varsayımsal rakamlar kullanın.",
+        "Kanıt, varsayım ve hesaplayıcı çıktılarını ayrı tutun.",
+        "Taşınmaza özel uzman görüşü alın."
+      ]
+    }
+  }
+]

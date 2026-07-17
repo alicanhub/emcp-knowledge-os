@@ -1,0 +1,183 @@
+{
+  "id": "investor.insurance-cost",
+  "title": {
+    "en": "Insurance Cost",
+    "tr": "Sigorta Maliyeti"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "The premiums and disclosed associated charges included for the selected insurance cover.",
+    "tr": "Seçilen sigorta teminatı için dahil edilen primler ve açıklanmış ilgili ücretlerdir."
+  },
+  "definition": {
+    "en": "The premiums and disclosed associated charges included for the selected insurance cover.",
+    "tr": "Seçilen sigorta teminatı için dahil edilen primler ve açıklanmış ilgili ücretlerdir."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "investor-fundamentals",
+    "en": "Property Investor Fundamentals",
+    "tr": "Gayrimenkul Yatırımcısı Temelleri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["property-investment", "pack-003", "beginner"],
+  "keywords": {
+    "en": ["insurance cost"],
+    "tr": ["sigorta maliyeti"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "A learner enters a hypothetical property's evidence into a dated appraisal, calculates or records insurance cost, and tests whether a reasonable adverse change alters the decision.",
+    "tr": "Öğrenci varsayımsal taşınmazın kanıtını tarihli değerlemeye girer, sigorta maliyeti değerini hesaplar veya kaydeder ve makul olumsuz değişikliğin kararı değiştirip değiştirmediğini test eder."
+  },
+  "when_to_use": {
+    "en": "Use insurance cost when it is relevant to screening, financing, managing or exiting a property investment.",
+    "tr": "Sigorta Maliyeti kavramını gayrimenkul yatırımını ön eleme, finanse etme, yönetme veya yatırımdan çıkmada ilgili olduğunda kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Document insurance cost in an investment appraisal or decision record."
+    ],
+    "tr": [
+      "Sigorta Maliyeti konusunu yatırım değerlemesi veya karar kaydında belgelemek."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Incorrect definitions, periods or unsupported assumptions can materially distort the decision."
+    ],
+    "tr": [
+      "Yanlış tanım, dönem veya desteksiz varsayımlar kararı önemli ölçüde bozabilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Using a number without recording its source, date, units and exclusions."
+    ],
+    "tr": [
+      "Bir rakamı kaynağı, tarihi, birimi ve hariç kalemleri olmadan kullanmak."
+    ]
+  },
+  "related_concepts": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "Insurance Cost decision diagram planned.",
+      "tr": "Sigorta Maliyeti karar şeması planlandı."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "Insurance Cost beginner lesson planned.",
+      "tr": "Sigorta Maliyeti başlangıç dersi planlandı."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Property investment professional guidance",
+      "publisher": "Royal Institution of Chartered Surveyors",
+      "url": "https://www.rics.org/consumer-guides",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative professional starting point; transaction-specific assumptions and current requirements require verification."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0",
+  "simple_explanation": {
+    "en": "The premiums and disclosed associated charges included for the selected insurance cover.",
+    "tr": "Seçilen sigorta teminatı için dahil edilen primler ve açıklanmış ilgili ücretlerdir."
+  },
+  "professional_explanation": {
+    "en": "The premiums and disclosed associated charges included for the selected insurance cover. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Seçilen sigorta teminatı için dahil edilen primler ve açıklanmış ilgili ücretlerdir. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for insurance cost before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce sigorta maliyeti için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the insurance cost assumption.",
+    "tr": "Değerleme dosyası sigorta maliyeti varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify Insurance Cost?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Sigorta Maliyeti nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can Insurance Cost be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Sigorta Maliyeti esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 003 reviewed edition.",
+        "tr": "İlk Pack 003 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}

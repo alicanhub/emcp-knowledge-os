@@ -1,0 +1,192 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "planning-building-control.building-regulations",
+  "title": {
+    "en": "Building Regulations",
+    "tr": "Yapı Yönetmelikleri"
+  },
+  "summary": {
+    "en": "Legal standards governing aspects of building design and construction, separate from planning permission.",
+    "tr": "Planlama izninden ayrı olarak bina tasarımı ve yapımının belirli yönlerini düzenleyen yasal standartlardır."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "Legal standards governing aspects of building design and construction, separate from planning permission. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Planlama izninden ayrı olarak bina tasarımı ve yapımının belirli yönlerini düzenleyen yasal standartlardır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "planning-public",
+    "en": "Planning and Public",
+    "tr": "Planlama ve Kamu"
+  },
+  "subcategory": {
+    "key": "planning-building-control",
+    "en": "Planning and building control basics",
+    "tr": "Planlama ve yapı kontrolü temelleri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["planning-building-control", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["building", "regulations"],
+    "tr": ["yapı", "yönetmelikleri"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Building Regulations” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Yapı Yönetmelikleri” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving building regulations.",
+    "tr": "Bu kavramı yapı yönetmelikleri içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "planning-building-control.conservation-area",
+    "planning-building-control.building-control-approval"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Planning permission and building regulations approval",
+      "publisher": "Planning Portal",
+      "url": "https://www.planningportal.co.uk/planning/planning-applications/how-to-apply/planning-permission-and-building-regulations-approval/",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Building Regulations; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.1.0",
+  "simple_explanation": {
+    "en": "Legal standards governing aspects of building design and construction, separate from planning permission.",
+    "tr": "Planlama izninden ayrı olarak bina tasarımı ve yapımının belirli yönlerini düzenleyen yasal standartlardır."
+  },
+  "professional_explanation": {
+    "en": "Legal standards governing aspects of building design and construction, separate from planning permission. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Planlama izninden ayrı olarak bina tasarımı ve yapımının belirli yönlerini düzenleyen yasal standartlardır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "real_world_example": {
+    "en": "Example: before relying on “Building Regulations” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Yapı Yönetmelikleri” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "office_example": {
+    "en": "Use this concept when reading, discussing or checking property work involving building regulations.",
+    "tr": "Bu kavramı yapı yönetmelikleri içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "What should be checked when using Building Regulations?",
+        "answer": "Check the current source, transaction documents, evidence and jurisdiction-specific requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yapı Yönetmelikleri kullanılırken neler kontrol edilmelidir?",
+        "answer": "Güncel kaynağı, işlem belgelerini, kanıtı ve bölgeye özel gereklilikleri kontrol edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "best_practice": {
+    "en": [
+      "Retain dated evidence and obtain qualified advice for material decisions."
+    ],
+    "tr": [
+      "Tarihli kanıtı saklayın ve önemli kararlar için nitelikli uzman görüşü alın."
+    ]
+  },
+  "uk_practice": {
+    "en": "Check the current rules for the relevant UK nation and transaction date.",
+    "tr": "İlgili Birleşik Krallık ülkesi ve işlem tarihi için güncel kuralları kontrol edin."
+  },
+  "turkey_practice": {
+    "en": "Confirm the equivalent Turkish legal and market practice with a qualified local professional.",
+    "tr": "Türkiye'deki karşılık gelen hukuk ve piyasa uygulamasını nitelikli yerel bir uzmanla doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 4,
+  "revision_history": [
+    {
+      "version": "1.1.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 002 residential learning enrichment.",
+        "tr": "Pack 002 konut öğrenme zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ],
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Does Building Regulations work identically everywhere?",
+        "answer": "No. Verify the current jurisdiction, documents and professional guidance."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Yapı Yönetmelikleri her yerde aynı şekilde mi uygulanır?",
+        "answer": "Hayır. Güncel hukuk bölgesini, belgeleri ve mesleki rehberi doğrulayın."
+      }
+    ]
+  },
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "Visual explanation planned.",
+      "tr": "Görsel açıklama planlandı."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "Beginner video planned.",
+      "tr": "Başlangıç videosu planlandı."
+    },
+    "url": null
+  }
+}

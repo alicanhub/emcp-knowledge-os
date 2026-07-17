@@ -1,0 +1,153 @@
+import { test, expect } from "@playwright/test";
+
+test("knowledge, bilingual dialog and keyboard journey", async ({ page }) => {
+  await page.goto("/");
+  await expect(page.locator("#count")).toContainText("378");
+  await page.locator("#enBtn").click();
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await page.locator("#q").fill("loan to value");
+  const result = page.locator("#grid .card").first();
+  await expect(result).toContainText("LTV");
+  await result.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "false");
+  await expect(page.locator("#modalTitle")).toContainText("LTV");
+  await expect(page.locator(".knowledge-section")).toHaveCount(23);
+  await expect(page.locator(".knowledge-section").first()).toHaveAttribute(
+    "open",
+    "",
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          window.EMCPApp.entries.find((entry) => entry.term === "LTV").use
+            .length > 0,
+      ),
+    )
+    .toBe(true);
+  await page.keyboard.press("Escape");
+  await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "true");
+  await expect(result).toBeFocused();
+});
+
+test("calculator and workspace backup journey", async ({ page }) => {
+  await page.goto("/");
+  await expect
+    .poll(() => page.evaluate(() => window.EMCPCalculators))
+    .toBeUndefined();
+  await page.locator('[data-page="calculators"]').last().click();
+  await expect
+    .poll(() => page.evaluate(() => Boolean(window.EMCPCalculators)))
+    .toBe(true);
+  await page.locator("#ltvLoan").fill("700000");
+  await page.locator("#ltvValue").fill("1000000");
+  await page.locator('[data-calculate="ltv"]').click();
+  await expect(page.locator("#ltvResult")).toHaveText("70.00%");
+  const backup = await page.evaluate(() => window.EMCPWorkspace.buildExport());
+  expect(backup.format).toBe("emcp-workspace");
+  expect(backup.version).toBe(1);
+  await page.evaluate(
+    (payload) => window.EMCPWorkspace.importData(payload, false),
+    backup,
+  );
+  await expect
+    .poll(() =>
+      page.evaluate(() => window.EMCPWorkspace.getAutomaticBackups().length),
+    )
+    .toBe(1);
+});
+
+test("lazy features, worker search, virtualization and local operations", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.locator("#count")).toContainText("378");
+  expect(await page.locator("#grid .card").count()).toBeLessThan(378);
+  const result = await page.evaluate(async () => {
+    const values = await window.EMCPKnowledge.searchAsync("loan to value");
+    return values[0].entry.term;
+  });
+  expect(result).toBe("LTV");
+  expect(await page.evaluate(() => window.EMCPAssistant)).toBeUndefined();
+  await page.locator('[data-page="assistant"]').first().click();
+  await expect
+    .poll(() => page.evaluate(() => Boolean(window.EMCPAssistant)))
+    .toBe(true);
+  await page.locator("#assistantQuestion").fill("What is LTV?");
+  await page.locator("#assistantForm button").click();
+  await expect(page.locator("#assistantOutput")).toContainText("LTV");
+  const snapshot = await page.evaluate(() => window.EMCPOperations.snapshot());
+  expect(snapshot.releaseChannel).toBe("stable");
+  expect(
+    Object.values(snapshot.metrics.days).some((events) => events.app_open >= 1),
+  ).toBe(true);
+});
+
+test("investor handbook progress, notes, saved chapters and bilingual resume", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.locator("#navHandbooks").click();
+  await expect(page.locator("#handbookChapters button")).toHaveCount(30);
+  await expect(page.locator("#handbookProgress")).toContainText("0%");
+  await page.locator("#handbookChapters button").first().click();
+  await page.locator('[data-handbook-action="toggle-complete"]').click();
+  await expect(page.locator("#handbookProgress")).toContainText("3%");
+  await page.locator('[data-handbook-action="toggle-save"]').click();
+  await page
+    .locator("#handbookNote")
+    .fill("Review this chapter before appraisal.");
+  await page.locator('[data-handbook-action="save-note"]').click();
+  await page.locator("#enBtn").click();
+  await expect(page.locator("html")).toHaveAttribute("lang", "en");
+  await expect(page.locator("#handbookChapter h3")).toBeVisible();
+  await page.reload();
+  await page.locator('[data-page="handbooks"]').first().click();
+  await page.locator('[data-handbook-action="resume"]').click();
+  await expect(page.locator("#handbookProgress")).toContainText("3%");
+  await expect(page.locator("#handbookNote")).toHaveValue(
+    "Review this chapter before appraisal.",
+  );
+});
+
+test("service worker controls a fully cached offline reload", async ({
+  page,
+  context,
+}) => {
+  await page.goto("/");
+  await expect
+    .poll(async () => {
+      try {
+        return await page.evaluate(() => !!navigator.serviceWorker?.controller);
+      } catch {
+        return false;
+      }
+    })
+    .toBe(true);
+  await page.waitForLoadState("networkidle");
+  await context.setOffline(true);
+  await page.reload();
+  await expect(page.locator("h1")).toContainText("EMCP Knowledge OS");
+  await expect(page.locator("#connectionStatus")).toBeVisible();
+  await expect(page.locator("#count")).toContainText("378");
+  await page.locator('[data-page="calculators"]').last().click();
+  await expect
+    .poll(() => page.evaluate(() => Boolean(window.EMCPCalculators)))
+    .toBe(true);
+  await page.locator("#ltvLoan").fill("70");
+  await page.locator("#ltvValue").fill("100");
+  await page.locator('[data-calculate="ltv"]').click();
+  await expect(page.locator("#ltvResult")).toHaveText("70.00%");
+  await page.locator("#navHome").click();
+  await page.locator('[data-page="assistant"]').first().click();
+  await expect
+    .poll(() => page.evaluate(() => Boolean(window.EMCPAssistant)))
+    .toBe(true);
+  await page.locator("#assistantQuestion").fill("LTV");
+  await page.locator("#assistantForm button").click();
+  await expect(page.locator("#assistantOutput")).toContainText("LTV");
+  await page.locator("#navHandbooks").click();
+  await expect(page.locator("#handbookChapters button")).toHaveCount(30);
+  await context.setOffline(false);
+});

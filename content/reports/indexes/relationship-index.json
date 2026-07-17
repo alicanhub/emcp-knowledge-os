@@ -1,0 +1,605 @@
+{
+  "finance.dscr": [
+    "finance.ltv",
+    "finance.irr"
+  ],
+  "finance.gdv": [
+    "finance.ltv",
+    "finance.ltc",
+    "finance.irr"
+  ],
+  "finance.irr": [
+    "finance.gdv",
+    "finance.dscr"
+  ],
+  "finance.ltc": [
+    "finance.ltv",
+    "finance.gdv"
+  ],
+  "finance.ltv": [
+    "finance.ltc",
+    "finance.gdv",
+    "finance.dscr"
+  ],
+  "buying-owning.asking-price": [
+    "buying-owning.joint-ownership",
+    "buying-owning.property-offer"
+  ],
+  "buying-owning.conveyancing": [
+    "buying-owning.property-chain",
+    "buying-owning.exchange-of-contracts"
+  ],
+  "buying-owning.exchange-of-contracts": [
+    "buying-owning.conveyancing",
+    "buying-owning.legal-completion"
+  ],
+  "buying-owning.joint-ownership": [
+    "buying-owning.property-searches",
+    "buying-owning.asking-price"
+  ],
+  "buying-owning.legal-completion": [
+    "buying-owning.exchange-of-contracts",
+    "buying-owning.title-register"
+  ],
+  "buying-owning.property-chain": [
+    "buying-owning.property-offer",
+    "buying-owning.conveyancing"
+  ],
+  "buying-owning.property-offer": [
+    "buying-owning.asking-price",
+    "buying-owning.property-chain"
+  ],
+  "buying-owning.property-searches": [
+    "buying-owning.title-plan",
+    "buying-owning.joint-ownership"
+  ],
+  "buying-owning.title-plan": [
+    "buying-owning.title-register",
+    "buying-owning.property-searches"
+  ],
+  "buying-owning.title-register": [
+    "buying-owning.legal-completion",
+    "buying-owning.title-plan"
+  ],
+  "commercial-property.business-lease": [
+    "commercial-property.dilapidations",
+    "commercial-property.passing-rent"
+  ],
+  "commercial-property.dilapidations": [
+    "commercial-property.subletting",
+    "commercial-property.business-lease"
+  ],
+  "commercial-property.full-repairing-insuring-lease": [
+    "commercial-property.repairing-obligation",
+    "commercial-property.lease-assignment"
+  ],
+  "commercial-property.lease-assignment": [
+    "commercial-property.full-repairing-insuring-lease",
+    "commercial-property.subletting"
+  ],
+  "commercial-property.passing-rent": [
+    "commercial-property.business-lease",
+    "commercial-property.rent-free-period"
+  ],
+  "commercial-property.rent-free-period": [
+    "commercial-property.passing-rent",
+    "commercial-property.service-charge-budget"
+  ],
+  "commercial-property.repairing-obligation": [
+    "commercial-property.service-charge-reconciliation",
+    "commercial-property.full-repairing-insuring-lease"
+  ],
+  "commercial-property.service-charge-budget": [
+    "commercial-property.rent-free-period",
+    "commercial-property.service-charge-reconciliation"
+  ],
+  "commercial-property.service-charge-reconciliation": [
+    "commercial-property.service-charge-budget",
+    "commercial-property.repairing-obligation"
+  ],
+  "commercial-property.subletting": [
+    "commercial-property.lease-assignment",
+    "commercial-property.dilapidations"
+  ],
+  "construction-roles-stages.architect": [
+    "construction-roles-stages.construction-client",
+    "construction-roles-stages.structural-engineer"
+  ],
+  "construction-roles-stages.construction-client": [
+    "construction-roles-stages.project-handover",
+    "construction-roles-stages.architect"
+  ],
+  "construction-roles-stages.pre-construction-phase": [
+    "construction-roles-stages.site-manager",
+    "construction-roles-stages.project-handover"
+  ],
+  "construction-roles-stages.principal-contractor": [
+    "construction-roles-stages.principal-designer",
+    "construction-roles-stages.subcontractor"
+  ],
+  "construction-roles-stages.principal-designer": [
+    "construction-roles-stages.quantity-surveyor",
+    "construction-roles-stages.principal-contractor"
+  ],
+  "construction-roles-stages.project-handover": [
+    "construction-roles-stages.pre-construction-phase",
+    "construction-roles-stages.construction-client"
+  ],
+  "construction-roles-stages.quantity-surveyor": [
+    "construction-roles-stages.structural-engineer",
+    "construction-roles-stages.principal-designer"
+  ],
+  "construction-roles-stages.site-manager": [
+    "construction-roles-stages.subcontractor",
+    "construction-roles-stages.pre-construction-phase"
+  ],
+  "construction-roles-stages.structural-engineer": [
+    "construction-roles-stages.architect",
+    "construction-roles-stages.quantity-surveyor"
+  ],
+  "construction-roles-stages.subcontractor": [
+    "construction-roles-stages.principal-contractor",
+    "construction-roles-stages.site-manager"
+  ],
+  "investment-returns.break-even-occupancy": [
+    "investment-returns.vacancy-rate",
+    "investment-returns.payback-period"
+  ],
+  "investment-returns.capital-growth": [
+    "investment-returns.total-return",
+    "investment-returns.rental-cash-flow"
+  ],
+  "investment-returns.gross-rental-income": [
+    "investment-returns.rental-cash-flow",
+    "investment-returns.net-rental-income"
+  ],
+  "investment-returns.investment-leverage": [
+    "investment-returns.payback-period",
+    "investment-returns.total-return"
+  ],
+  "investment-returns.net-rental-income": [
+    "investment-returns.gross-rental-income",
+    "investment-returns.operating-expenses"
+  ],
+  "investment-returns.operating-expenses": [
+    "investment-returns.net-rental-income",
+    "investment-returns.vacancy-rate"
+  ],
+  "investment-returns.payback-period": [
+    "investment-returns.break-even-occupancy",
+    "investment-returns.investment-leverage"
+  ],
+  "investment-returns.rental-cash-flow": [
+    "investment-returns.capital-growth",
+    "investment-returns.gross-rental-income"
+  ],
+  "investment-returns.total-return": [
+    "investment-returns.investment-leverage",
+    "investment-returns.capital-growth"
+  ],
+  "investment-returns.vacancy-rate": [
+    "investment-returns.operating-expenses",
+    "investment-returns.break-even-occupancy"
+  ],
+  "mortgages-loans.early-repayment-charge": [
+    "mortgages-loans.mortgage-term",
+    "mortgages-loans.mortgage"
+  ],
+  "mortgages-loans.fixed-rate-mortgage": [
+    "mortgages-loans.interest-rate",
+    "mortgages-loans.variable-rate-mortgage"
+  ],
+  "mortgages-loans.interest-only-mortgage": [
+    "mortgages-loans.repayment-mortgage",
+    "mortgages-loans.mortgage-term"
+  ],
+  "mortgages-loans.interest-rate": [
+    "mortgages-loans.loan-principal",
+    "mortgages-loans.fixed-rate-mortgage"
+  ],
+  "mortgages-loans.loan-principal": [
+    "mortgages-loans.mortgage-deposit",
+    "mortgages-loans.interest-rate"
+  ],
+  "mortgages-loans.mortgage-deposit": [
+    "mortgages-loans.mortgage",
+    "mortgages-loans.loan-principal"
+  ],
+  "mortgages-loans.mortgage-term": [
+    "mortgages-loans.interest-only-mortgage",
+    "mortgages-loans.early-repayment-charge"
+  ],
+  "mortgages-loans.mortgage": [
+    "mortgages-loans.early-repayment-charge",
+    "mortgages-loans.mortgage-deposit"
+  ],
+  "mortgages-loans.repayment-mortgage": [
+    "mortgages-loans.variable-rate-mortgage",
+    "mortgages-loans.interest-only-mortgage"
+  ],
+  "mortgages-loans.variable-rate-mortgage": [
+    "mortgages-loans.fixed-rate-mortgage",
+    "mortgages-loans.repayment-mortgage"
+  ],
+  "planning-building-control.building-completion-certificate": [
+    "planning-building-control.building-control-body",
+    "planning-building-control.party-wall"
+  ],
+  "planning-building-control.building-control-approval": [
+    "planning-building-control.building-regulations",
+    "planning-building-control.building-control-body"
+  ],
+  "planning-building-control.building-control-body": [
+    "planning-building-control.building-control-approval",
+    "planning-building-control.building-completion-certificate"
+  ],
+  "planning-building-control.building-regulations": [
+    "planning-building-control.conservation-area",
+    "planning-building-control.building-control-approval"
+  ],
+  "planning-building-control.conservation-area": [
+    "planning-building-control.listed-building-consent",
+    "planning-building-control.building-regulations"
+  ],
+  "planning-building-control.listed-building-consent": [
+    "planning-building-control.planning-condition",
+    "planning-building-control.conservation-area"
+  ],
+  "planning-building-control.party-wall": [
+    "planning-building-control.building-completion-certificate",
+    "planning-building-control.planning-application"
+  ],
+  "planning-building-control.permitted-development-rights": [
+    "planning-building-control.planning-application",
+    "planning-building-control.planning-condition"
+  ],
+  "planning-building-control.planning-application": [
+    "planning-building-control.party-wall",
+    "planning-building-control.permitted-development-rights"
+  ],
+  "planning-building-control.planning-condition": [
+    "planning-building-control.permitted-development-rights",
+    "planning-building-control.listed-building-consent"
+  ],
+  "property-documents.contract-for-sale": [
+    "property-documents.memorandum-of-sale",
+    "property-documents.transfer-deed"
+  ],
+  "property-documents.energy-performance-certificate": [
+    "property-documents.mortgage-deed",
+    "property-documents.property-information-form"
+  ],
+  "property-documents.fixtures-fittings-form": [
+    "property-documents.property-information-form",
+    "property-documents.property-lease"
+  ],
+  "property-documents.memorandum-of-sale": [
+    "property-documents.schedule-of-condition",
+    "property-documents.contract-for-sale"
+  ],
+  "property-documents.mortgage-deed": [
+    "property-documents.transfer-deed",
+    "property-documents.energy-performance-certificate"
+  ],
+  "property-documents.property-information-form": [
+    "property-documents.energy-performance-certificate",
+    "property-documents.fixtures-fittings-form"
+  ],
+  "property-documents.property-lease": [
+    "property-documents.fixtures-fittings-form",
+    "property-documents.rent-statement"
+  ],
+  "property-documents.rent-statement": [
+    "property-documents.property-lease",
+    "property-documents.schedule-of-condition"
+  ],
+  "property-documents.schedule-of-condition": [
+    "property-documents.rent-statement",
+    "property-documents.memorandum-of-sale"
+  ],
+  "property-documents.transfer-deed": [
+    "property-documents.contract-for-sale",
+    "property-documents.mortgage-deed"
+  ],
+  "renting-leasing.break-clause": [
+    "renting-leasing.rent-arrears",
+    "renting-leasing.rent-review"
+  ],
+  "renting-leasing.holding-deposit": [
+    "renting-leasing.tenancy-deposit",
+    "renting-leasing.rental-inventory"
+  ],
+  "renting-leasing.landlord": [
+    "renting-leasing.tenancy-agreement",
+    "renting-leasing.tenant"
+  ],
+  "renting-leasing.rent-arrears": [
+    "renting-leasing.rental-inventory",
+    "renting-leasing.break-clause"
+  ],
+  "renting-leasing.rent-review": [
+    "renting-leasing.break-clause",
+    "renting-leasing.tenancy-agreement"
+  ],
+  "renting-leasing.rent": [
+    "renting-leasing.tenant",
+    "renting-leasing.tenancy-deposit"
+  ],
+  "renting-leasing.rental-inventory": [
+    "renting-leasing.holding-deposit",
+    "renting-leasing.rent-arrears"
+  ],
+  "renting-leasing.tenancy-agreement": [
+    "renting-leasing.rent-review",
+    "renting-leasing.landlord"
+  ],
+  "renting-leasing.tenancy-deposit": [
+    "renting-leasing.rent",
+    "renting-leasing.holding-deposit"
+  ],
+  "renting-leasing.tenant": [
+    "renting-leasing.landlord",
+    "renting-leasing.rent"
+  ],
+  "risks-inspections.asbestos-containing-material": [
+    "risks-inspections.subsidence",
+    "risks-inspections.flood-risk"
+  ],
+  "risks-inspections.building-survey": [
+    "risks-inspections.mortgage-valuation",
+    "risks-inspections.damp"
+  ],
+  "risks-inspections.damp": [
+    "risks-inspections.building-survey",
+    "risks-inspections.subsidence"
+  ],
+  "risks-inspections.electrical-condition-report": [
+    "risks-inspections.japanese-knotweed",
+    "risks-inspections.home-survey"
+  ],
+  "risks-inspections.flood-risk": [
+    "risks-inspections.asbestos-containing-material",
+    "risks-inspections.land-contamination"
+  ],
+  "risks-inspections.home-survey": [
+    "risks-inspections.electrical-condition-report",
+    "risks-inspections.mortgage-valuation"
+  ],
+  "risks-inspections.japanese-knotweed": [
+    "risks-inspections.land-contamination",
+    "risks-inspections.electrical-condition-report"
+  ],
+  "risks-inspections.land-contamination": [
+    "risks-inspections.flood-risk",
+    "risks-inspections.japanese-knotweed"
+  ],
+  "risks-inspections.mortgage-valuation": [
+    "risks-inspections.home-survey",
+    "risks-inspections.building-survey"
+  ],
+  "risks-inspections.subsidence": [
+    "risks-inspections.damp",
+    "risks-inspections.asbestos-containing-material"
+  ],
+  "values-costs-income.asking-rent": [
+    "values-costs-income.market-value",
+    "values-costs-income.service-charge"
+  ],
+  "values-costs-income.building-insurance-premium": [
+    "values-costs-income.stamp-duty-land-tax",
+    "values-costs-income.maintenance-cost"
+  ],
+  "values-costs-income.council-tax": [
+    "values-costs-income.ground-rent",
+    "values-costs-income.stamp-duty-land-tax"
+  ],
+  "values-costs-income.ground-rent": [
+    "values-costs-income.service-charge",
+    "values-costs-income.council-tax"
+  ],
+  "values-costs-income.maintenance-cost": [
+    "values-costs-income.building-insurance-premium",
+    "values-costs-income.repair-cost"
+  ],
+  "values-costs-income.market-value": [
+    "values-costs-income.void-cost",
+    "values-costs-income.asking-rent"
+  ],
+  "values-costs-income.repair-cost": [
+    "values-costs-income.maintenance-cost",
+    "values-costs-income.void-cost"
+  ],
+  "values-costs-income.service-charge": [
+    "values-costs-income.asking-rent",
+    "values-costs-income.ground-rent"
+  ],
+  "values-costs-income.stamp-duty-land-tax": [
+    "values-costs-income.council-tax",
+    "values-costs-income.building-insurance-premium"
+  ],
+  "values-costs-income.void-cost": [
+    "values-costs-income.repair-cost",
+    "values-costs-income.market-value"
+  ],
+  "residential.buying.agreement-in-principle": [],
+  "residential.buying.completion-statement": [],
+  "residential.buying.gazumping": [],
+  "residential.buying.gazundering": [],
+  "residential.buying.reservation-agreement": [],
+  "residential.communal.communal-area": [],
+  "residential.communal.major-works": [],
+  "residential.communal.reserve-fund": [],
+  "residential.communal.right-to-manage": [],
+  "residential.communal.service-charge-demand": [],
+  "residential.defects.condensation": [],
+  "residential.defects.dry-rot": [],
+  "residential.defects.mould-growth": [],
+  "residential.defects.structural-movement": [],
+  "residential.defects.wet-rot": [],
+  "residential.documents.boiler-service-record": [],
+  "residential.documents.electrical-safety-report": [],
+  "residential.documents.gas-safety-record": [],
+  "residential.documents.leasehold-information-form": [],
+  "residential.documents.new-build-warranty-document": [],
+  "residential.energy.boiler-efficiency": [],
+  "residential.energy.double-glazing": [],
+  "residential.energy.loft-insulation": [],
+  "residential.energy.smart-meter": [],
+  "residential.energy.utility-meter-reading": [],
+  "residential.exit.auction-sale": [],
+  "residential.exit.open-market-sale": [],
+  "residential.exit.portfolio-disposal": [],
+  "residential.exit.probate-property": [],
+  "residential.exit.repossessed-property": [],
+  "residential.insurance.contents-insurance": [],
+  "residential.insurance.insurance-excess": [],
+  "residential.insurance.insured-peril": [],
+  "residential.insurance.landlord-insurance": [],
+  "residential.insurance.underinsurance": [],
+  "residential.investment.buy-to-let": [],
+  "residential.investment.cash-on-cash-return": [],
+  "residential.investment.gross-rental-yield": [],
+  "residential.investment.net-rental-yield": [],
+  "residential.investment.rental-void-period": [],
+  "residential.landlord.deposit-protection": [],
+  "residential.landlord.landlord-access-notice": [],
+  "residential.landlord.landlord-repair-duty": [],
+  "residential.landlord.right-to-rent-check": [],
+  "residential.landlord.smoke-alarm-check": [],
+  "residential.leasehold.collective-enfranchisement": [],
+  "residential.leasehold.commonhold": [],
+  "residential.leasehold.lease-extension": [],
+  "residential.leasehold.leasehold-managing-agent": [],
+  "residential.leasehold.unexpired-lease-term": [],
+  "residential.management.letting-agent-fee": [],
+  "residential.management.maintenance-request": [],
+  "residential.management.periodic-property-inspection": [],
+  "residential.management.property-management-fee": [],
+  "residential.management.rent-collection-service": [],
+  "residential.mortgages.mortgage-affordability-assessment": [],
+  "residential.mortgages.mortgage-broker": [],
+  "residential.mortgages.mortgage-offer": [],
+  "residential.mortgages.mortgage-product-fee": [],
+  "residential.mortgages.remortgage": [],
+  "residential.moving.forwarding-address": [],
+  "residential.moving.key-handover": [],
+  "residential.moving.meter-handover-reading": [],
+  "residential.moving.moving-in-checklist": [],
+  "residential.moving.vacant-possession-handover": [],
+  "residential.ownership.beneficial-owner": [],
+  "residential.ownership.co-ownership-agreement": [],
+  "residential.ownership.general-boundary": [],
+  "residential.ownership.legal-owner": [],
+  "residential.ownership.sole-ownership": [],
+  "residential.planning.building-control-inspection": [],
+  "residential.planning.building-notice": [],
+  "residential.planning.full-plans-application": [],
+  "residential.planning.lawful-development-certificate": [],
+  "residential.planning.planning-permission": [],
+  "residential.renovation.maintenance-schedule": [],
+  "residential.renovation.planned-maintenance": [],
+  "residential.renovation.reactive-maintenance": [],
+  "residential.renovation.residential-refurbishment": [],
+  "residential.renovation.residential-renovation": [],
+  "residential.surveys.condition-rating": [],
+  "residential.surveys.drainage-survey": [],
+  "residential.surveys.invasive-inspection": [],
+  "residential.surveys.property-survey": [],
+  "residential.surveys.roof-inspection": [],
+  "residential.tenancy.check-in-report": [],
+  "residential.tenancy.check-out-report": [],
+  "residential.tenancy.tenancy-notice-period": [],
+  "residential.tenancy.tenant-guarantor": [],
+  "residential.tenancy.tenant-referencing": [],
+  "residential.tenant.access-appointment": [],
+  "residential.tenant.end-of-tenancy-cleaning": [],
+  "residential.tenant.rent-due-date": [],
+  "residential.tenant.reporting-repairs": [],
+  "residential.tenant.tenant-reasonable-care": [],
+  "residential.valuation.comparable-property": [],
+  "residential.valuation.comparable-sales-analysis": [],
+  "residential.valuation.market-appraisal": [],
+  "residential.valuation.valuation-assumption": [],
+  "residential.valuation.valuation-date": [],
+  "investor.asset-management": [],
+  "investor.base-case-scenario": [],
+  "investor.best-case-scenario": [],
+  "investor.bridging-finance": [],
+  "investor.capital-allocation": [],
+  "investor.common-investor-mistakes": [],
+  "investor.comparable-evidence": [],
+  "investor.concentration-risk": [],
+  "investor.construction-risk": [],
+  "investor.cost-overrun": [],
+  "investor.deal-appraisal": [],
+  "investor.deal-snapshot": [],
+  "investor.deal-sourcing": [],
+  "investor.demand-analysis": [],
+  "investor.development-exit": [],
+  "investor.development-finance": [],
+  "investor.diversification": [],
+  "investor.due-diligence": [],
+  "investor.environmental-risk": [],
+  "investor.equity-multiple": [],
+  "investor.equity": [],
+  "investor.exit-strategy": [],
+  "investor.financing-cost": [],
+  "investor.go-no-go-decision": [],
+  "investor.hold-strategy": [],
+  "investor.ignoring-exit-risk": [],
+  "investor.insurance-cost": [],
+  "investor.interest-rate-risk": [],
+  "investor.investment-break-even-point": [],
+  "investor.investment-checklist": [],
+  "investor.investment-contingency": [],
+  "investor.investment-decision-framework": [],
+  "investor.investment-forecasting": [],
+  "investor.investment-lessons-learned": [],
+  "investor.investment-memorandum": [],
+  "investor.investment-performance-tracking": [],
+  "investor.investment-strategy": [],
+  "investor.investment-time-horizon": [],
+  "investor.investor-goals": [],
+  "investor.lease-management": [],
+  "investor.liquidity-risk": [],
+  "investor.loan-amortisation": [],
+  "investor.loan-term": [],
+  "investor.location-analysis": [],
+  "investor.maintenance-allowance": [],
+  "investor.management-cost": [],
+  "investor.margin-of-safety": [],
+  "investor.net-operating-income": [],
+  "investor.net-present-value": [],
+  "investor.overestimating-rent": [],
+  "investor.overpaying": [],
+  "investor.planning-risk": [],
+  "investor.portfolio-strategy": [],
+  "investor.post-investment-review": [],
+  "investor.programme-delay": [],
+  "investor.property-debt": [],
+  "investor.property-investment-budget": [],
+  "investor.property-management": [],
+  "investor.property-market-research": [],
+  "investor.property-market-risk": [],
+  "investor.property-sale-exit": [],
+  "investor.purchase-price": [],
+  "investor.refinance-exit": [],
+  "investor.refinance": [],
+  "investor.regulatory-risk": [],
+  "investor.rental-income": [],
+  "investor.return-on-capital-employed": [],
+  "investor.return-on-equity": [],
+  "investor.risk-tolerance": [],
+  "investor.roi": [],
+  "investor.scenario-comparison": [],
+  "investor.sensitivity-analysis": [],
+  "investor.supply-analysis": [],
+  "investor.survey-risk": [],
+  "investor.tax-risk": [],
+  "investor.tenant-management": [],
+  "investor.tenant-risk": [],
+  "investor.title-risk": [],
+  "investor.underestimating-costs": [],
+  "investor.vacancy-assumption": [],
+  "investor.worst-case-scenario": []
+}

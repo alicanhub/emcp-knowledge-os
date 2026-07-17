@@ -1,0 +1,15 @@
+{
+  "releaseChannel": "stable",
+  "flags": {
+    "workerSearch": true,
+    "virtualResults": true,
+    "preloadFeatures": false,
+    "localAnalytics": true,
+    "performanceMonitoring": true
+  },
+  "productionStudio": {
+    "dataUrl": "../content/dashboard/data.json",
+    "refreshMs": 5000,
+    "startEndpoint": null
+  }
+}

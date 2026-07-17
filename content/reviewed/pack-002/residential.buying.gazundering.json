@@ -1,0 +1,183 @@
+{
+  "id": "residential.buying.gazundering",
+  "title": {
+    "en": "Gazundering",
+    "tr": "Son Aşamada Teklifi Düşürme"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "A buyer reducing an offer late in a transaction before it becomes binding.",
+    "tr": "İşlem bağlayıcı hâle gelmeden alıcının geç bir aşamada teklifini düşürmesidir."
+  },
+  "simple_explanation": {
+    "en": "A buyer reducing an offer late in a transaction before it becomes binding.",
+    "tr": "İşlem bağlayıcı hâle gelmeden alıcının geç bir aşamada teklifini düşürmesidir."
+  },
+  "professional_explanation": {
+    "en": "A buyer reducing an offer late in a transaction before it becomes binding. Its precise effect depends on the transaction, contract, evidence and jurisdiction.",
+    "tr": "İşlem bağlayıcı hâle gelmeden alıcının geç bir aşamada teklifini düşürmesidir. Kesin etkisi işleme, sözleşmeye, kanıta ve hukuk bölgesine bağlıdır."
+  },
+  "real_world_example": {
+    "en": "A homeowner, buyer, landlord or adviser records gazundering while reviewing a residential property decision.",
+    "tr": "Bir ev sahibi, alıcı, kiraya veren veya danışman konut kararını incelerken son aşamada teklifi düşürme konusunu kaydeder."
+  },
+  "office_example": {
+    "en": "A property professional identifies the evidence, assumptions and responsible party before relying on gazundering.",
+    "tr": "Taşınmaz uzmanı son aşamada teklifi düşürme konusuna dayanmadan önce kanıtı, varsayımları ve sorumlu tarafı belirler."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "What is Gazundering, and what should be verified?",
+        "answer": "A buyer reducing an offer late in a transaction before it becomes binding. Verify the current document, evidence, contract and jurisdiction-specific requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Son Aşamada Teklifi Düşürme nedir ve neler doğrulanmalıdır?",
+        "answer": "İşlem bağlayıcı hâle gelmeden alıcının geç bir aşamada teklifini düşürmesidir. Güncel belgeyi, kanıtı, sözleşmeyi ve bölgeye özel gereklilikleri doğrulayın."
+      }
+    ]
+  },
+  "definition": {
+    "en": "A buyer reducing an offer late in a transaction before it becomes binding.",
+    "tr": "İşlem bağlayıcı hâle gelmeden alıcının geç bir aşamada teklifini düşürmesidir."
+  },
+  "category": {
+    "key": "property-development",
+    "en": "Property and Development",
+    "tr": "Gayrimenkul ve Geliştirme"
+  },
+  "subcategory": {
+    "key": "buying",
+    "en": "Buying and selling",
+    "tr": "Alım ve satım"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["residential-property", "buying", "pack-002"],
+  "keywords": {
+    "en": ["gazundering"],
+    "tr": ["son aşamada teklifi düşürme"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "In a simple home review, the user records the relevant facts for gazundering, keeps the supporting document and flags anything requiring professional advice.",
+    "tr": "Basit bir konut incelemesinde kullanıcı son aşamada teklifi düşürme için ilgili bilgileri kaydeder, destekleyici belgeyi saklar ve uzman görüşü gerektiren konuları işaretler."
+  },
+  "when_to_use": {
+    "en": "Use this concept when buying, owning, letting, managing, financing, improving or selling a home where it is relevant.",
+    "tr": "Bu kavramı ilgili olduğu durumda konut alırken, sahip olurken, kiralarken, yönetirken, finanse ederken, iyileştirirken veya satarken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Record and communicate gazundering in a residential decision file."
+    ],
+    "tr": [
+      "Bir konut karar dosyasında son aşamada teklifi düşürme konusunu kaydedip paylaşmak."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Definitions, contractual effects and legal requirements can differ by jurisdiction and change over time."
+    ],
+    "tr": [
+      "Tanımlar, sözleşmesel etkiler ve hukuki gereklilikler bölgeye göre değişebilir ve zamanla güncellenebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Relying on an informal description without checking the underlying document or current evidence."
+    ],
+    "tr": [
+      "Dayanak belgeyi veya güncel kanıtı kontrol etmeden gayriresmî açıklamaya güvenmek."
+    ]
+  },
+  "practical_tips": {
+    "en": ["Keep dated evidence and record who verified it."],
+    "tr": ["Tarihli kanıtı saklayın ve kimin doğruladığını kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Confirm material decisions with an appropriately qualified professional."
+    ],
+    "tr": ["Önemli kararları uygun nitelikte bir uzmanla doğrulayın."]
+  },
+  "uk_practice": {
+    "en": "Use the cited UK guidance as a starting point and check the rules for the relevant UK nation and transaction date.",
+    "tr": "Atıf verilen Birleşik Krallık rehberini başlangıç noktası olarak kullanın; ilgili ülke ve işlem tarihindeki kuralları kontrol edin."
+  },
+  "turkey_practice": {
+    "en": "The UK concept may not map directly to Turkish law or market practice; obtain current local advice and use the Turkish title as an educational explanation.",
+    "tr": "Birleşik Krallık kavramı Türk hukukuna veya piyasa uygulamasına bire bir karşılık gelmeyebilir; güncel yerel görüş alın ve Türkçe başlığı eğitim amaçlı açıklama olarak kullanın."
+  },
+  "related_concepts": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 002 reviewed edition.",
+        "tr": "İlk Pack 002 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ],
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 4,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Is Gazundering the same in every jurisdiction?",
+        "answer": "No. Check the current local legal, contractual and professional context."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Son Aşamada Teklifi Düşürme her hukuk bölgesinde aynı mıdır?",
+        "answer": "Hayır. Güncel yerel hukuki, sözleşmesel ve mesleki bağlamı kontrol edin."
+      }
+    ]
+  },
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "A future diagram will illustrate gazundering.",
+      "tr": "Gelecekteki bir şema son aşamada teklifi düşürme konusunu gösterecektir."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "A future beginner video will explain gazundering.",
+      "tr": "Gelecekteki başlangıç videosu son aşamada teklifi düşürme konusunu açıklayacaktır."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Buying a home",
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/buying-a-home",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative starting point for the buying and selling scope; current transaction-specific requirements must be verified."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

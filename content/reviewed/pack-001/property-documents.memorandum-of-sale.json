@@ -1,0 +1,93 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "property-documents.memorandum-of-sale",
+  "title": {
+    "en": "Memorandum of Sale",
+    "tr": "Satış Bilgi Özeti"
+  },
+  "summary": {
+    "en": "A transaction summary circulated after an offer is accepted to help the parties begin conveyancing.",
+    "tr": "Teklif kabul edildikten sonra tarafların devir işlemlerine başlamasına yardımcı olmak için dağıtılan işlem özetidir."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "A transaction summary circulated after an offer is accepted to help the parties begin conveyancing. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Teklif kabul edildikten sonra tarafların devir işlemlerine başlamasına yardımcı olmak için dağıtılan işlem özetidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "legal-review",
+    "en": "Legal and Review",
+    "tr": "Hukuk ve İnceleme"
+  },
+  "subcategory": {
+    "key": "property-documents",
+    "en": "Common property documents",
+    "tr": "Yaygın taşınmaz belgeleri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["property-documents", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["memorandum", "of", "sale"],
+    "tr": ["satış", "bilgi", "özeti"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "Example: before relying on “Memorandum of Sale” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Satış Bilgi Özeti” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving memorandum of sale.",
+    "tr": "Bu kavramı satış bilgi özeti içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "property-documents.schedule-of-condition",
+    "property-documents.contract-for-sale"
+  ],
+  "related_calculators": [],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Finding information held by HM Land Registry",
+      "publisher": "HM Land Registry",
+      "url": "https://www.gov.uk/guidance/finding-information-held-by-hm-land-registry",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Memorandum of Sale; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

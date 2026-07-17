@@ -1,0 +1,40 @@
+{
+  "translations": "en.json",
+  "searchIndex": "search-index.json",
+  "relationships": "relationships.json",
+  "details": "details.json",
+  "categories": [
+    {
+      "category": "Sermaye ve Yatırım",
+      "file": "capital-investment.json"
+    },
+    {
+      "category": "Finansman",
+      "file": "finance.json"
+    },
+    {
+      "category": "Hukuk ve İnceleme",
+      "file": "legal.json"
+    },
+    {
+      "category": "Gayrimenkul ve Geliştirme",
+      "file": "property-development.json"
+    },
+    {
+      "category": "Planlama ve Kamu",
+      "file": "planning.json"
+    },
+    {
+      "category": "İnşaat ve Teslim",
+      "file": "construction.json"
+    },
+    {
+      "category": "Uyum ve Kurumsal",
+      "file": "compliance-corporate.json"
+    },
+    {
+      "category": "İletişim ve Belgeler",
+      "file": "commercial-documents.json"
+    }
+  ]
+}

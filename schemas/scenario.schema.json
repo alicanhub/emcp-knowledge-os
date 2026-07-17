@@ -1,0 +1,33 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/scenario.schema.json",
+  "type": "object",
+  "required": ["id", "name", "inputs", "createdAt", "updatedAt"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-zA-Z0-9_-]{1,200}$" },
+    "name": { "type": "string", "minLength": 1, "maxLength": 300 },
+    "createdAt": { "type": "string", "format": "date-time" },
+    "updatedAt": { "type": "string", "format": "date-time" },
+    "inputs": {
+      "type": "object",
+      "required": [
+        "dealName",
+        "dealLoan",
+        "dealPropertyValue",
+        "dealCost",
+        "dealGdv",
+        "dealRent"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "dealName": { "type": "string", "maxLength": 300 },
+        "dealLoan": { "type": "number", "minimum": 0 },
+        "dealPropertyValue": { "type": "number", "exclusiveMinimum": 0 },
+        "dealCost": { "type": "number", "exclusiveMinimum": 0 },
+        "dealGdv": { "type": "number", "exclusiveMinimum": 0 },
+        "dealRent": { "type": "number", "minimum": 0 }
+      }
+    }
+  }
+}

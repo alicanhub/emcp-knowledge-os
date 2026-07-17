@@ -1,0 +1,940 @@
+[
+  {
+    "id": "checklist.investment-screening",
+    "object_type": "checklist",
+    "title": {
+      "en": "Investment Screening Checklist",
+      "tr": "Yatırım Ön Eleme Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable draft checklist linked from handbook chapters.",
+      "tr": "El kitabı bölümlerinden bağlantı verilen yeniden kullanılabilir taslak liste."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Investment Screening Checklist and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Yatırım Ön Eleme Kontrol Listesi konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Define the objective.",
+        "Collect evidence.",
+        "Record assumptions.",
+        "Escalate specialist questions."
+      ],
+      "tr": [
+        "Amacı tanımlayın.",
+        "Kanıtları toplayın.",
+        "Varsayımları kaydedin.",
+        "Uzmanlık gerektiren soruları yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.purchase-due-diligence",
+    "object_type": "checklist",
+    "title": {
+      "en": "Purchase Due-Diligence Checklist",
+      "tr": "Satın Alma İnceleme Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable draft checklist linked from handbook chapters.",
+      "tr": "El kitabı bölümlerinden bağlantı verilen yeniden kullanılabilir taslak liste."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Purchase Due-Diligence Checklist and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Satın Alma İnceleme Kontrol Listesi konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Define the objective.",
+        "Collect evidence.",
+        "Record assumptions.",
+        "Escalate specialist questions."
+      ],
+      "tr": [
+        "Amacı tanımlayın.",
+        "Kanıtları toplayın.",
+        "Varsayımları kaydedin.",
+        "Uzmanlık gerektiren soruları yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.finance-readiness",
+    "object_type": "checklist",
+    "title": {
+      "en": "Finance Readiness Checklist",
+      "tr": "Finansmana Hazırlık Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable draft checklist linked from handbook chapters.",
+      "tr": "El kitabı bölümlerinden bağlantı verilen yeniden kullanılabilir taslak liste."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Finance Readiness Checklist and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Finansmana Hazırlık Kontrol Listesi konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Define the objective.",
+        "Collect evidence.",
+        "Record assumptions.",
+        "Escalate specialist questions."
+      ],
+      "tr": [
+        "Amacı tanımlayın.",
+        "Kanıtları toplayın.",
+        "Varsayımları kaydedin.",
+        "Uzmanlık gerektiren soruları yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.rental-readiness",
+    "object_type": "checklist",
+    "title": {
+      "en": "Rental Readiness Checklist",
+      "tr": "Kiralamaya Hazırlık Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable draft checklist linked from handbook chapters.",
+      "tr": "El kitabı bölümlerinden bağlantı verilen yeniden kullanılabilir taslak liste."
+    },
+    "learning_objectives": {
+      "en": [
+        "Understand Rental Readiness Checklist and its place in the publishing hierarchy."
+      ],
+      "tr": [
+        "Kiralamaya Hazırlık Kontrol Listesi konusunu ve yayın hiyerarşisindeki yerini anlamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 30,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "Authoritative source review required",
+        "url": null,
+        "status": "required"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial publishing architecture draft.",
+          "tr": "İlk yayın mimarisi taslağı."
+        }
+      }
+    ],
+    "completion_status": "planned",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Define the objective.",
+        "Collect evidence.",
+        "Record assumptions.",
+        "Escalate specialist questions."
+      ],
+      "tr": [
+        "Amacı tanımlayın.",
+        "Kanıtları toplayın.",
+        "Varsayımları kaydedin.",
+        "Uzmanlık gerektiren soruları yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.residential-viewing",
+    "object_type": "checklist",
+    "title": {
+      "en": "Residential Viewing Checklist",
+      "tr": "Konut Görüntüleme Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A practical residential viewing checklist for beginner use.",
+      "tr": "Başlangıç kullanımı için pratik konut görüntüleme kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Residential Viewing Checklist as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Görüntüleme Kontrol Listesi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Record visible condition and room use.",
+        "Check access, services and surroundings.",
+        "List questions and evidence still required.",
+        "Do not treat a viewing as a professional survey."
+      ],
+      "tr": [
+        "Görünür durumu ve oda kullanımını kaydedin.",
+        "Giriş, altyapı ve çevreyi kontrol edin.",
+        "Gereken soru ve kanıtları listeleyin.",
+        "Görüntülemeyi mesleki inceleme olarak kabul etmeyin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.residential-purchase",
+    "object_type": "checklist",
+    "title": {
+      "en": "Residential Purchase Checklist",
+      "tr": "Konut Satın Alma Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A practical residential purchase checklist for beginner use.",
+      "tr": "Başlangıç kullanımı için pratik konut satın alma kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Residential Purchase Checklist as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Satın Alma Kontrol Listesi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Confirm budget and funding evidence.",
+        "Appoint appropriate advisers.",
+        "Review title, searches, survey and contract.",
+        "Record exchange and completion requirements."
+      ],
+      "tr": [
+        "Bütçeyi ve finansman kanıtını doğrulayın.",
+        "Uygun uzmanları görevlendirin.",
+        "Tapu, araştırma, inceleme ve sözleşmeyi değerlendirin.",
+        "Sözleşme teatisi ve tamamlama gerekliliklerini kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.residential-letting",
+    "object_type": "checklist",
+    "title": {
+      "en": "Residential Letting Checklist",
+      "tr": "Konut Kiraya Verme Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A practical residential letting checklist for beginner use.",
+      "tr": "Başlangıç kullanımı için pratik konut kiraya verme kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Residential Letting Checklist as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Kiraya Verme Kontrol Listesi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Confirm property readiness and applicable duties.",
+        "Document tenant selection criteria.",
+        "Complete agreement, inventory and deposit process.",
+        "Schedule safety, maintenance and communication tasks."
+      ],
+      "tr": [
+        "Taşınmazın hazır olduğunu ve geçerli yükümlülükleri doğrulayın.",
+        "Kiracı seçim ölçütlerini belgeleyin.",
+        "Sözleşme, envanter ve depozito sürecini tamamlayın.",
+        "Güvenlik, bakım ve iletişim işlerini planlayın."
+      ]
+    }
+  },
+  {
+    "id": "checklist.residential-condition",
+    "object_type": "checklist",
+    "title": {
+      "en": "Residential Condition Checklist",
+      "tr": "Konut Durum Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A practical residential condition checklist for beginner use.",
+      "tr": "Başlangıç kullanımı için pratik konut durum kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Residential Condition Checklist as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Durum Kontrol Listesi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Record moisture, movement and visible defects.",
+        "Identify inaccessible or concealed areas.",
+        "Separate observation from diagnosis.",
+        "Escalate material concerns to a qualified surveyor."
+      ],
+      "tr": [
+        "Nem, hareket ve görünür kusurları kaydedin.",
+        "Erişilemeyen veya gizli alanları belirleyin.",
+        "Gözlemi teşhisten ayırın.",
+        "Önemli endişeleri nitelikli inceleme uzmanına yönlendirin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.residential-handover",
+    "object_type": "checklist",
+    "title": {
+      "en": "Residential Handover Checklist",
+      "tr": "Konut Teslim Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A practical residential handover checklist for beginner use.",
+      "tr": "Başlangıç kullanımı için pratik konut teslim kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Use Residential Handover Checklist as a structured residential-property aid."
+      ],
+      "tr": [
+        "Konut Teslim Kontrol Listesi aracını yapılandırılmış bir konut desteği olarak kullanmak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 10,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "GOV.UK housing and local services",
+        "url": "https://www.gov.uk/browse/housing-local-services",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 002 edition.",
+          "tr": "İlk Pack 002 sürümü."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Confirm keys and authorised recipients.",
+        "Record meter readings and condition.",
+        "Transfer relevant manuals and records.",
+        "Log unresolved defects and responsibilities."
+      ],
+      "tr": [
+        "Anahtarları ve yetkili alıcıları doğrulayın.",
+        "Sayaç değerlerini ve durumu kaydedin.",
+        "İlgili kılavuzları ve kayıtları devredin.",
+        "Çözülmemiş kusurları ve sorumlulukları kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.investor-goals",
+    "object_type": "checklist",
+    "title": {
+      "en": "Investor Goals Checklist",
+      "tr": "Yatırımcı Hedefleri Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable investor goals checklist for evidence-led decisions.",
+      "tr": "Kanıta dayalı kararlar için yeniden kullanılabilir yatırımcı hedefleri kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Investor Goals Checklist to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırımcı Hedefleri Kontrol Listesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Define income, growth and liquidity objectives.",
+        "Record time horizon and capital limits.",
+        "State risk capacity and tolerance.",
+        "Identify decision owners and review dates."
+      ],
+      "tr": [
+        "Gelir, değer artışı ve likidite hedeflerini tanımlayın.",
+        "Süre ufkunu ve sermaye sınırlarını kaydedin.",
+        "Risk kapasitesi ve toleransını belirtin.",
+        "Karar sorumlularını ve inceleme tarihlerini belirleyin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.deal-screening",
+    "object_type": "checklist",
+    "title": {
+      "en": "Deal Screening Checklist",
+      "tr": "Yatırım Fırsatı Ön Eleme Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable deal screening checklist for evidence-led decisions.",
+      "tr": "Kanıta dayalı kararlar için yeniden kullanılabilir yatırım fırsatı ön eleme kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Deal Screening Checklist to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Fırsatı Ön Eleme Kontrol Listesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Confirm strategy fit and location.",
+        "Collect price, income, cost and funding evidence.",
+        "Identify material missing information.",
+        "Record pass, pause or reject decision."
+      ],
+      "tr": [
+        "Strateji uyumunu ve lokasyonu doğrulayın.",
+        "Fiyat, gelir, maliyet ve finansman kanıtını toplayın.",
+        "Önemli eksik bilgileri belirleyin.",
+        "Devam, bekletme veya ret kararını kaydedin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.investment-appraisal",
+    "object_type": "checklist",
+    "title": {
+      "en": "Investment Appraisal Checklist",
+      "tr": "Yatırım Değerleme Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable investment appraisal checklist for evidence-led decisions.",
+      "tr": "Kanıta dayalı kararlar için yeniden kullanılabilir yatırım değerleme kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Investment Appraisal Checklist to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Değerleme Kontrol Listesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Use consistent periods and units.",
+        "Reconcile income, costs and financing.",
+        "Test base, upside and downside cases.",
+        "Check calculator outputs independently."
+      ],
+      "tr": [
+        "Tutarlı dönem ve birimler kullanın.",
+        "Gelir, gider ve finansmanı uzlaştırın.",
+        "Temel, iyimser ve kötümser senaryoları test edin.",
+        "Hesaplayıcı çıktılarını bağımsız kontrol edin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.investment-risk",
+    "object_type": "checklist",
+    "title": {
+      "en": "Investment Risk Checklist",
+      "tr": "Yatırım Riski Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable investment risk checklist for evidence-led decisions.",
+      "tr": "Kanıta dayalı kararlar için yeniden kullanılabilir yatırım riski kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Investment Risk Checklist to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Riski Kontrol Listesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Name each material risk and owner.",
+        "Record likelihood, impact and evidence.",
+        "Define mitigation and contingency.",
+        "Test whether the exit remains feasible."
+      ],
+      "tr": [
+        "Her önemli riski ve sorumlusunu belirleyin.",
+        "Olasılık, etki ve kanıtı kaydedin.",
+        "Azaltım ve beklenmeyen durum payını tanımlayın.",
+        "Çıkışın uygulanabilir kalıp kalmadığını test edin."
+      ]
+    }
+  },
+  {
+    "id": "checklist.investment-decision",
+    "object_type": "checklist",
+    "title": {
+      "en": "Investment Decision Checklist",
+      "tr": "Yatırım Kararı Kontrol Listesi"
+    },
+    "summary": {
+      "en": "A reusable investment decision checklist for evidence-led decisions.",
+      "tr": "Kanıta dayalı kararlar için yeniden kullanılabilir yatırım kararı kontrol listesi."
+    },
+    "learning_objectives": {
+      "en": [
+        "Apply Investment Decision Checklist to a documented beginner investment decision."
+      ],
+      "tr": [
+        "Yatırım Kararı Kontrol Listesi aracını belgeli bir başlangıç yatırım kararına uygulamak."
+      ]
+    },
+    "prerequisites": [],
+    "difficulty_level": "beginner",
+    "estimated_study_time_minutes": 15,
+    "related_knowledge_entries": [],
+    "related_topics": [],
+    "related_calculators": [],
+    "related_documents": [],
+    "related_case_studies": [],
+    "official_sources": [
+      {
+        "title": "RICS consumer and professional guidance",
+        "url": "https://www.rics.org/consumer-guides",
+        "status": "verified"
+      }
+    ],
+    "revision_history": [
+      {
+        "version": "1.0.0",
+        "date": "2026-07-14",
+        "summary": {
+          "en": "Initial Pack 003 draft.",
+          "tr": "İlk Pack 003 taslağı."
+        }
+      }
+    ],
+    "completion_status": "complete",
+    "content_version": "1.0.0",
+    "review_status": "draft",
+    "reviewer": null,
+    "jurisdiction": [
+      "United Kingdom",
+      "Turkey — local professional verification required"
+    ],
+    "items": {
+      "en": [
+        "Summarise evidence and unresolved issues.",
+        "Compare results with approval criteria.",
+        "Record conflicts and professional advice.",
+        "Document go, no-go or conditional approval."
+      ],
+      "tr": [
+        "Kanıtı ve çözülmemiş konuları özetleyin.",
+        "Sonuçları onay ölçütleriyle karşılaştırın.",
+        "Çelişkileri ve uzman görüşlerini kaydedin.",
+        "Devam, ret veya koşullu onayı belgeleyin."
+      ]
+    }
+  }
+]

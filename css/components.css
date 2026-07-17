@@ -1,0 +1,194 @@
+/* Reusable primitives include legacy selectors to preserve public contracts. */
+:where(.ui-button, button, .workspace-import) {
+  min-height: var(--target-min);
+  touch-action: manipulation;
+}
+
+:where(.ui-button, button):disabled,
+:where(.ui-button, button)[aria-disabled="true"] {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+:where(.ui-button, button)[aria-busy="true"] {
+  cursor: progress;
+}
+
+:where(.ui-button, button):active:not(:disabled) {
+  filter: brightness(0.92);
+}
+
+:where(.ui-card, .hero-card, .module, .card, .calc, .assistant-card) {
+  overflow-wrap: anywhere;
+}
+
+.card {
+  content-visibility: auto;
+  contain-intrinsic-size: 0 15rem;
+}
+
+.virtual-sentinel {
+  min-height: 1px;
+  grid-column: 1 / -1;
+}
+
+:where(.ui-field, input, select, textarea) {
+  min-height: var(--target-min);
+  color: var(--ink);
+}
+
+:where(.ui-field, input, select, textarea)[aria-invalid="true"] {
+  border-color: var(--color-danger);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--color-danger) 25%, transparent);
+}
+
+.ui-feedback,
+[role="status"],
+[role="alert"] {
+  overflow-wrap: anywhere;
+}
+
+.ui-icon,
+.emoji,
+.bottom button > [aria-hidden="true"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --motion-fast: 0.01ms;
+    --motion-normal: 0.01ms;
+  }
+}
+.knowledge-v2-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+.knowledge-v2-meta span {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.3rem 0.65rem;
+  font-size: var(--font-size-sm);
+}
+.knowledge-section {
+  border-block-start: 1px solid var(--line);
+  padding: var(--space-3) 0;
+}
+.knowledge-section summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.knowledge-section-body {
+  padding-block-start: var(--space-2);
+}
+.knowledge-section-body ul {
+  padding-inline-start: 1.25rem;
+}
+.knowledge-qa + .knowledge-qa {
+  margin-block-start: var(--space-3);
+}
+.handbook-heading,
+.handbook-toolbar,
+.handbook-actions,
+.handbook-related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+.handbook-heading {
+  align-items: start;
+  justify-content: space-between;
+  margin-block-end: var(--space-4);
+}
+.handbook-progress {
+  min-width: 8rem;
+  padding: var(--space-4);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--card);
+  text-align: center;
+}
+.handbook-progress strong,
+.handbook-progress span {
+  display: block;
+}
+.handbook-progress strong {
+  font-size: 1.8rem;
+  color: var(--color-accent-text);
+}
+.handbook-toolbar {
+  margin-block-end: var(--space-4);
+}
+.handbook-layout {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.75fr) minmax(0, 2fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+.handbook-chapters,
+.handbook-chapter {
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--card);
+}
+.handbook-chapters {
+  display: grid;
+  max-height: 70vh;
+  overflow: auto;
+  padding: var(--space-2);
+}
+.handbook-chapter-link {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-2);
+  border: 0;
+  border-radius: var(--radius-sm);
+  background: transparent;
+  color: var(--ink);
+  text-align: start;
+}
+.handbook-chapter-link.active {
+  background: var(--navy);
+  color: #fff;
+}
+.handbook-chapter {
+  padding: var(--space-5);
+}
+.handbook-section {
+  border-block-start: 1px solid var(--line);
+  padding: var(--space-3) 0;
+}
+.handbook-section summary {
+  cursor: pointer;
+  font-weight: 700;
+}
+.handbook-section > div {
+  padding-block-start: var(--space-2);
+}
+.handbook-note {
+  display: grid;
+  gap: var(--space-2);
+  margin-block: var(--space-4);
+}
+.handbook-section fieldset {
+  display: grid;
+  gap: var(--space-2);
+  border: 0;
+  padding: 0;
+}
+@media (max-width: 760px) {
+  .handbook-layout {
+    grid-template-columns: 1fr;
+  }
+  .handbook-chapters {
+    max-height: 18rem;
+  }
+  .handbook-chapter {
+    padding: var(--space-4);
+  }
+}

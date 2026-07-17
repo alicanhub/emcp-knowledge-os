@@ -1,0 +1,66 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+}
+body {
+  margin: 0;
+  background: Canvas;
+  color: CanvasText;
+}
+main {
+  width: min(1100px, calc(100% - 2rem));
+  margin: 2rem auto;
+}
+.eyebrow {
+  color: #176b45;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.notice {
+  border-left: 0.3rem solid #b65f00;
+  padding: 0.75rem 1rem;
+  background: color-mix(in srgb, #ffb347 18%, Canvas);
+}
+#summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+.metric {
+  border: 1px solid GrayText;
+  border-radius: 0.6rem;
+  padding: 1rem;
+}
+.metric strong {
+  display: block;
+  font-size: 1.7rem;
+}
+.columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+th,
+td {
+  border-bottom: 1px solid GrayText;
+  padding: 0.65rem;
+  text-align: left;
+}
+th:last-child,
+td:last-child {
+  text-align: right;
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}

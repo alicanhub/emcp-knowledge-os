@@ -1,0 +1,919 @@
+{
+  "pack_id": "pack-003",
+  "pack_number": 3,
+  "title": {
+    "en": "Property Investor Fundamentals",
+    "tr": "Gayrimenkul Yatırımcısı Temelleri"
+  },
+  "planned_concept_count": 100,
+  "reviewed_new_or_legacy_records": 81,
+  "existing_authored_records_enriched": 19,
+  "status": "reviewed",
+  "concepts": [
+    {
+      "number": 1,
+      "title": {
+        "en": "Investor Goals",
+        "tr": "Yatırımcı Hedefleri"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investor-goals"
+    },
+    {
+      "number": 2,
+      "title": {
+        "en": "Investment Strategy",
+        "tr": "Yatırım Stratejisi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-strategy"
+    },
+    {
+      "number": 3,
+      "title": {
+        "en": "Risk Tolerance",
+        "tr": "Risk Toleransı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.risk-tolerance"
+    },
+    {
+      "number": 4,
+      "title": {
+        "en": "Investment Time Horizon",
+        "tr": "Yatırım Süresi Ufku"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-time-horizon"
+    },
+    {
+      "number": 5,
+      "title": {
+        "en": "Capital Allocation",
+        "tr": "Sermaye Dağılımı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.capital-allocation"
+    },
+    {
+      "number": 6,
+      "title": {
+        "en": "Deal Sourcing",
+        "tr": "Yatırım Fırsatı Bulma"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.deal-sourcing"
+    },
+    {
+      "number": 7,
+      "title": {
+        "en": "Property Market Research",
+        "tr": "Gayrimenkul Piyasası Araştırması"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.property-market-research"
+    },
+    {
+      "number": 8,
+      "title": {
+        "en": "Location Analysis",
+        "tr": "Lokasyon Analizi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.location-analysis"
+    },
+    {
+      "number": 9,
+      "title": {
+        "en": "Demand Analysis",
+        "tr": "Talep Analizi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.demand-analysis"
+    },
+    {
+      "number": 10,
+      "title": {
+        "en": "Supply Analysis",
+        "tr": "Arz Analizi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.supply-analysis"
+    },
+    {
+      "number": 11,
+      "title": {
+        "en": "Comparable Evidence",
+        "tr": "Emsal Kanıt"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.comparable-evidence"
+    },
+    {
+      "number": 12,
+      "title": {
+        "en": "Purchase Price",
+        "tr": "Satın Alma Fiyatı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.purchase-price"
+    },
+    {
+      "number": 13,
+      "title": {
+        "en": "Market Value",
+        "tr": "Piyasa Değeri"
+      },
+      "disposition": "existing record enriched",
+      "id": "values-costs-income.market-value"
+    },
+    {
+      "number": 14,
+      "title": {
+        "en": "GDV",
+        "tr": "Brüt Geliştirme Değeri"
+      },
+      "disposition": "existing record enriched",
+      "id": "finance.gdv"
+    },
+    {
+      "number": 15,
+      "title": {
+        "en": "Rental Income",
+        "tr": "Kira Geliri"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.rental-income"
+    },
+    {
+      "number": 16,
+      "title": {
+        "en": "Gross Rental Yield",
+        "tr": "Brüt Kira Getirisi"
+      },
+      "disposition": "existing record enriched",
+      "id": "residential.investment.gross-rental-yield"
+    },
+    {
+      "number": 17,
+      "title": {
+        "en": "Net Rental Yield",
+        "tr": "Net Kira Getirisi"
+      },
+      "disposition": "existing record enriched",
+      "id": "residential.investment.net-rental-yield"
+    },
+    {
+      "number": 18,
+      "title": {
+        "en": "Rental Cash Flow",
+        "tr": "Kira Nakit Akışı"
+      },
+      "disposition": "existing record enriched",
+      "id": "investment-returns.rental-cash-flow"
+    },
+    {
+      "number": 19,
+      "title": {
+        "en": "Property Operating Expenses",
+        "tr": "Gayrimenkul İşletme Giderleri"
+      },
+      "disposition": "existing record enriched",
+      "id": "investment-returns.operating-expenses"
+    },
+    {
+      "number": 20,
+      "title": {
+        "en": "Net Operating Income",
+        "tr": "Net İşletme Geliri"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.net-operating-income"
+    },
+    {
+      "number": 21,
+      "title": {
+        "en": "Vacancy Assumption",
+        "tr": "Boşluk Varsayımı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.vacancy-assumption"
+    },
+    {
+      "number": 22,
+      "title": {
+        "en": "Maintenance Allowance",
+        "tr": "Bakım Payı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.maintenance-allowance"
+    },
+    {
+      "number": 23,
+      "title": {
+        "en": "Management Cost",
+        "tr": "Yönetim Maliyeti"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.management-cost"
+    },
+    {
+      "number": 24,
+      "title": {
+        "en": "Insurance Cost",
+        "tr": "Sigorta Maliyeti"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.insurance-cost"
+    },
+    {
+      "number": 25,
+      "title": {
+        "en": "Financing Cost",
+        "tr": "Finansman Maliyeti"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.financing-cost"
+    },
+    {
+      "number": 26,
+      "title": {
+        "en": "Mortgage Deposit",
+        "tr": "Konut Kredisi Peşinatı"
+      },
+      "disposition": "existing record enriched",
+      "id": "mortgages-loans.mortgage-deposit"
+    },
+    {
+      "number": 27,
+      "title": {
+        "en": "Equity",
+        "tr": "Öz Sermaye"
+      },
+      "disposition": "existing runtime record enriched",
+      "id": "investor.equity"
+    },
+    {
+      "number": 28,
+      "title": {
+        "en": "Property Debt",
+        "tr": "Gayrimenkul Borcu"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.property-debt"
+    },
+    {
+      "number": 29,
+      "title": {
+        "en": "Investment Leverage",
+        "tr": "Yatırım Kaldıracı"
+      },
+      "disposition": "existing record enriched",
+      "id": "investment-returns.investment-leverage"
+    },
+    {
+      "number": 30,
+      "title": {
+        "en": "LTV",
+        "tr": "Kredi Değer Oranı"
+      },
+      "disposition": "existing record enriched",
+      "id": "finance.ltv"
+    },
+    {
+      "number": 31,
+      "title": {
+        "en": "LTC",
+        "tr": "Kredi Maliyet Oranı"
+      },
+      "disposition": "existing record enriched",
+      "id": "finance.ltc"
+    },
+    {
+      "number": 32,
+      "title": {
+        "en": "DSCR",
+        "tr": "Borç Servisi Karşılama Oranı"
+      },
+      "disposition": "existing record enriched",
+      "id": "finance.dscr"
+    },
+    {
+      "number": 33,
+      "title": {
+        "en": "Interest Rate",
+        "tr": "Faiz Oranı"
+      },
+      "disposition": "existing record enriched",
+      "id": "mortgages-loans.interest-rate"
+    },
+    {
+      "number": 34,
+      "title": {
+        "en": "Loan Term",
+        "tr": "Kredi Vadesi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.loan-term"
+    },
+    {
+      "number": 35,
+      "title": {
+        "en": "Loan Amortisation",
+        "tr": "Kredi Amortismanı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.loan-amortisation"
+    },
+    {
+      "number": 36,
+      "title": {
+        "en": "Interest-Only Mortgage",
+        "tr": "Yalnız Faiz Ödemeli Kredi"
+      },
+      "disposition": "existing record enriched",
+      "id": "mortgages-loans.interest-only-mortgage"
+    },
+    {
+      "number": 37,
+      "title": {
+        "en": "Repayment Mortgage",
+        "tr": "Anapara ve Faiz Ödemeli Kredi"
+      },
+      "disposition": "existing record enriched",
+      "id": "mortgages-loans.repayment-mortgage"
+    },
+    {
+      "number": 38,
+      "title": {
+        "en": "Bridging Finance",
+        "tr": "Köprü Finansmanı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.bridging-finance"
+    },
+    {
+      "number": 39,
+      "title": {
+        "en": "Development Finance",
+        "tr": "Geliştirme Finansmanı"
+      },
+      "disposition": "existing runtime record enriched",
+      "id": "investor.development-finance"
+    },
+    {
+      "number": 40,
+      "title": {
+        "en": "Refinance",
+        "tr": "Yeniden Finansman"
+      },
+      "disposition": "existing runtime record enriched",
+      "id": "investor.refinance"
+    },
+    {
+      "number": 41,
+      "title": {
+        "en": "ROI",
+        "tr": "Yatırım Getirisi"
+      },
+      "disposition": "existing runtime record enriched",
+      "id": "investor.roi"
+    },
+    {
+      "number": 42,
+      "title": {
+        "en": "Return on Equity",
+        "tr": "Öz Sermaye Getirisi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.return-on-equity"
+    },
+    {
+      "number": 43,
+      "title": {
+        "en": "Return on Capital Employed",
+        "tr": "Kullanılan Sermaye Getirisi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.return-on-capital-employed"
+    },
+    {
+      "number": 44,
+      "title": {
+        "en": "Cash-on-Cash Return",
+        "tr": "Nakit Üzerinden Getiri"
+      },
+      "disposition": "existing record enriched",
+      "id": "residential.investment.cash-on-cash-return"
+    },
+    {
+      "number": 45,
+      "title": {
+        "en": "IRR",
+        "tr": "İç Verim Oranı"
+      },
+      "disposition": "existing record enriched",
+      "id": "finance.irr"
+    },
+    {
+      "number": 46,
+      "title": {
+        "en": "Net Present Value",
+        "tr": "Net Bugünkü Değer"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.net-present-value"
+    },
+    {
+      "number": 47,
+      "title": {
+        "en": "Equity Multiple",
+        "tr": "Öz Sermaye Çarpanı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.equity-multiple"
+    },
+    {
+      "number": 48,
+      "title": {
+        "en": "Capital Growth",
+        "tr": "Sermaye Değer Artışı"
+      },
+      "disposition": "existing record enriched",
+      "id": "investment-returns.capital-growth"
+    },
+    {
+      "number": 49,
+      "title": {
+        "en": "Property Total Return",
+        "tr": "Toplam Gayrimenkul Getirisi"
+      },
+      "disposition": "existing record enriched",
+      "id": "investment-returns.total-return"
+    },
+    {
+      "number": 50,
+      "title": {
+        "en": "Investment Break-even Point",
+        "tr": "Yatırım Başabaş Noktası"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-break-even-point"
+    },
+    {
+      "number": 51,
+      "title": {
+        "en": "Sensitivity Analysis",
+        "tr": "Duyarlılık Analizi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.sensitivity-analysis"
+    },
+    {
+      "number": 52,
+      "title": {
+        "en": "Best-case Scenario",
+        "tr": "İyimser Senaryo"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.best-case-scenario"
+    },
+    {
+      "number": 53,
+      "title": {
+        "en": "Base-case Scenario",
+        "tr": "Temel Senaryo"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.base-case-scenario"
+    },
+    {
+      "number": 54,
+      "title": {
+        "en": "Worst-case Scenario",
+        "tr": "Kötümser Senaryo"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.worst-case-scenario"
+    },
+    {
+      "number": 55,
+      "title": {
+        "en": "Investment Contingency",
+        "tr": "Yatırım Beklenmeyen Gider Payı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-contingency"
+    },
+    {
+      "number": 56,
+      "title": {
+        "en": "Cost Overrun",
+        "tr": "Maliyet Aşımı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.cost-overrun"
+    },
+    {
+      "number": 57,
+      "title": {
+        "en": "Programme Delay",
+        "tr": "Program Gecikmesi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.programme-delay"
+    },
+    {
+      "number": 58,
+      "title": {
+        "en": "Planning Risk",
+        "tr": "Planlama Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.planning-risk"
+    },
+    {
+      "number": 59,
+      "title": {
+        "en": "Construction Risk",
+        "tr": "İnşaat Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.construction-risk"
+    },
+    {
+      "number": 60,
+      "title": {
+        "en": "Tenant Risk",
+        "tr": "Kiracı Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.tenant-risk"
+    },
+    {
+      "number": 61,
+      "title": {
+        "en": "Property Market Risk",
+        "tr": "Gayrimenkul Piyasa Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.property-market-risk"
+    },
+    {
+      "number": 62,
+      "title": {
+        "en": "Interest-rate Risk",
+        "tr": "Faiz Oranı Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.interest-rate-risk"
+    },
+    {
+      "number": 63,
+      "title": {
+        "en": "Liquidity Risk",
+        "tr": "Likidite Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.liquidity-risk"
+    },
+    {
+      "number": 64,
+      "title": {
+        "en": "Regulatory Risk",
+        "tr": "Düzenleyici Risk"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.regulatory-risk"
+    },
+    {
+      "number": 65,
+      "title": {
+        "en": "Tax Risk",
+        "tr": "Vergi Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.tax-risk"
+    },
+    {
+      "number": 66,
+      "title": {
+        "en": "Due Diligence",
+        "tr": "Detaylı İnceleme"
+      },
+      "disposition": "existing runtime record enriched",
+      "id": "investor.due-diligence"
+    },
+    {
+      "number": 67,
+      "title": {
+        "en": "Title Risk",
+        "tr": "Tapu Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.title-risk"
+    },
+    {
+      "number": 68,
+      "title": {
+        "en": "Survey Risk",
+        "tr": "İnceleme Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.survey-risk"
+    },
+    {
+      "number": 69,
+      "title": {
+        "en": "Environmental Risk",
+        "tr": "Çevresel Risk"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.environmental-risk"
+    },
+    {
+      "number": 70,
+      "title": {
+        "en": "Flood Risk",
+        "tr": "Sel Riski"
+      },
+      "disposition": "existing record enriched",
+      "id": "risks-inspections.flood-risk"
+    },
+    {
+      "number": 71,
+      "title": {
+        "en": "Exit Strategy",
+        "tr": "Çıkış Stratejisi"
+      },
+      "disposition": "existing runtime record enriched",
+      "id": "investor.exit-strategy"
+    },
+    {
+      "number": 72,
+      "title": {
+        "en": "Property Sale Exit",
+        "tr": "Gayrimenkul Satış Çıkışı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.property-sale-exit"
+    },
+    {
+      "number": 73,
+      "title": {
+        "en": "Refinance Exit",
+        "tr": "Yeniden Finansman Çıkışı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.refinance-exit"
+    },
+    {
+      "number": 74,
+      "title": {
+        "en": "Hold Strategy",
+        "tr": "Elde Tutma Stratejisi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.hold-strategy"
+    },
+    {
+      "number": 75,
+      "title": {
+        "en": "Development Exit",
+        "tr": "Geliştirme Çıkışı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.development-exit"
+    },
+    {
+      "number": 76,
+      "title": {
+        "en": "Portfolio Strategy",
+        "tr": "Portföy Stratejisi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.portfolio-strategy"
+    },
+    {
+      "number": 77,
+      "title": {
+        "en": "Diversification",
+        "tr": "Çeşitlendirme"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.diversification"
+    },
+    {
+      "number": 78,
+      "title": {
+        "en": "Concentration Risk",
+        "tr": "Yoğunlaşma Riski"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.concentration-risk"
+    },
+    {
+      "number": 79,
+      "title": {
+        "en": "Asset Management",
+        "tr": "Varlık Yönetimi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.asset-management"
+    },
+    {
+      "number": 80,
+      "title": {
+        "en": "Property Management",
+        "tr": "Gayrimenkul Yönetimi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.property-management"
+    },
+    {
+      "number": 81,
+      "title": {
+        "en": "Tenant Management",
+        "tr": "Kiracı Yönetimi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.tenant-management"
+    },
+    {
+      "number": 82,
+      "title": {
+        "en": "Lease Management",
+        "tr": "Kira Sözleşmesi Yönetimi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.lease-management"
+    },
+    {
+      "number": 83,
+      "title": {
+        "en": "Investment Performance Tracking",
+        "tr": "Yatırım Performansı Takibi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-performance-tracking"
+    },
+    {
+      "number": 84,
+      "title": {
+        "en": "Property Investment Budget",
+        "tr": "Gayrimenkul Yatırım Bütçesi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.property-investment-budget"
+    },
+    {
+      "number": 85,
+      "title": {
+        "en": "Investment Forecasting",
+        "tr": "Yatırım Tahmini"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-forecasting"
+    },
+    {
+      "number": 86,
+      "title": {
+        "en": "Deal Appraisal",
+        "tr": "Yatırım Fırsatı Değerlemesi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.deal-appraisal"
+    },
+    {
+      "number": 87,
+      "title": {
+        "en": "Investment Memorandum",
+        "tr": "Yatırım Bilgi Notu"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-memorandum"
+    },
+    {
+      "number": 88,
+      "title": {
+        "en": "Investment Decision Framework",
+        "tr": "Yatırım Karar Çerçevesi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-decision-framework"
+    },
+    {
+      "number": 89,
+      "title": {
+        "en": "Go/No-Go Decision",
+        "tr": "Devam veya Vazgeç Kararı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.go-no-go-decision"
+    },
+    {
+      "number": 90,
+      "title": {
+        "en": "Margin of Safety",
+        "tr": "Güvenlik Marjı"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.margin-of-safety"
+    },
+    {
+      "number": 91,
+      "title": {
+        "en": "Investment Checklist",
+        "tr": "Yatırım Kontrol Listesi"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-checklist"
+    },
+    {
+      "number": 92,
+      "title": {
+        "en": "Deal Snapshot",
+        "tr": "Yatırım Fırsatı Özeti"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.deal-snapshot"
+    },
+    {
+      "number": 93,
+      "title": {
+        "en": "Scenario Comparison",
+        "tr": "Senaryo Karşılaştırması"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.scenario-comparison"
+    },
+    {
+      "number": 94,
+      "title": {
+        "en": "Investment Lessons Learned",
+        "tr": "Yatırımdan Çıkarılan Dersler"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.investment-lessons-learned"
+    },
+    {
+      "number": 95,
+      "title": {
+        "en": "Post-investment Review",
+        "tr": "Yatırım Sonrası İnceleme"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.post-investment-review"
+    },
+    {
+      "number": 96,
+      "title": {
+        "en": "Common Investor Mistakes",
+        "tr": "Yaygın Yatırımcı Hataları"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.common-investor-mistakes"
+    },
+    {
+      "number": 97,
+      "title": {
+        "en": "Overpaying",
+        "tr": "Fazla Ödeme"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.overpaying"
+    },
+    {
+      "number": 98,
+      "title": {
+        "en": "Underestimating Costs",
+        "tr": "Maliyetleri Düşük Tahmin Etme"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.underestimating-costs"
+    },
+    {
+      "number": 99,
+      "title": {
+        "en": "Overestimating Rent",
+        "tr": "Kirayı Yüksek Tahmin Etme"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.overestimating-rent"
+    },
+    {
+      "number": 100,
+      "title": {
+        "en": "Ignoring Exit Risk",
+        "tr": "Çıkış Riskini Göz Ardı Etme"
+      },
+      "disposition": "new reviewed record",
+      "id": "investor.ignoring-exit-risk"
+    }
+  ],
+  "duplicate_audit": {
+    "runtime_records_checked": 303,
+    "authored_records_checked": 205,
+    "duplicate_records_created": 0
+  }
+}

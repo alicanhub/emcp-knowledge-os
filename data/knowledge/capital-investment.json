@@ -1,0 +1,466 @@
+[
+  {
+    "term": "Advisory Retainer",
+    "tr": "Danışmanlık sabit ücreti",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Belirli bir dönem boyunca verilen stratejik danışmanlık hizmeti için peşin veya düzenli ödenen ücret.",
+    "use": "Pazar girişi, yatırımcı hazırlığı ve fırsat paketleme çalışmalarında kullanılır.",
+    "example": "The engagement will begin with a three-month advisory retainer.",
+    "tags": [
+      "retainer",
+      "advisory",
+      "fee",
+      "danışmanlık"
+    ]
+  },
+  {
+    "term": "Success Fee",
+    "tr": "Başarı primi / işlem başarı ücreti",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "İşlem, finansman veya yatırım eşleşmesi başarıyla tamamlandığında ödenen ücret.",
+    "use": "Sermaye temini, satış, ortaklık veya mandate kapanışında kullanılır.",
+    "example": "A success fee becomes payable upon completion of the transaction.",
+    "tags": [
+      "fee",
+      "completion",
+      "transaction",
+      "komisyon"
+    ]
+  },
+  {
+    "term": "Strategic Mandate",
+    "tr": "Stratejik yetkilendirme",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Belirli bir yatırımcıyı, projeyi veya sermaye arayışını temsil etmek için verilen resmi görev ve yetki.",
+    "use": "Kontrollü yatırımcı erişimi ve proje temsilinde kullanılır.",
+    "example": "EMCP has been appointed under a strategic mandate.",
+    "tags": [
+      "mandate",
+      "representation",
+      "yetki"
+    ]
+  },
+  {
+    "term": "Origination",
+    "tr": "Fırsat ve işlem geliştirme",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Yatırım fırsatlarını, projeleri, yatırımcıları veya finansman kaynaklarını sistemli biçimde bulma ve geliştirme süreci.",
+    "use": "Deal sourcing ile benzer olsa da daha ilişki ve süreç odaklıdır.",
+    "example": "The team is responsible for opportunity origination across the East Midlands.",
+    "tags": [
+      "deal sourcing",
+      "pipeline",
+      "fırsat"
+    ]
+  },
+  {
+    "term": "Pipeline",
+    "tr": "İşlem / fırsat havuzu",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Farklı olgunluk seviyelerinde takip edilen potansiyel yatırım, proje veya müşteri fırsatlarının bütünü.",
+    "use": "CRM, yatırımcı ilişkileri ve satış süreçlerinde kullanılır.",
+    "example": "We currently have five qualified opportunities in the pipeline.",
+    "tags": [
+      "crm",
+      "deal flow",
+      "fırsat havuzu"
+    ]
+  },
+  {
+    "term": "Deal Flow",
+    "tr": "İşlem akışı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Belirli bir dönemde yatırımcı veya danışman önüne gelen yatırım fırsatlarının hacmi ve kalitesi.",
+    "use": "Fonlar, family office'ler ve yatırım platformları kullanır.",
+    "example": "Our regional network provides consistent deal flow.",
+    "tags": [
+      "pipeline",
+      "origination",
+      "yatırım"
+    ]
+  },
+  {
+    "term": "Capital Stack",
+    "tr": "Sermaye yapısı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir projenin finansmanında kullanılan senior debt, mezzanine, preferred equity ve ordinary equity katmanlarının bütünü.",
+    "use": "Geliştirme finansmanı ve yatırım yapılandırmasında kullanılır.",
+    "example": "The capital stack includes senior debt and sponsor equity.",
+    "tags": [
+      "debt",
+      "equity",
+      "finance"
+    ]
+  },
+  {
+    "term": "Equity",
+    "tr": "Öz sermaye / hisse sermayesi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir şirkete veya projeye ortaklık karşılığında konulan sermaye.",
+    "use": "Borçtan farklı olarak sabit geri ödeme zorunluluğu yoktur; yatırımcı riske ortak olur.",
+    "example": "The investor will provide £4 million of equity.",
+    "tags": [
+      "share",
+      "capital",
+      "özsermaye"
+    ]
+  },
+  {
+    "term": "Preferred Equity",
+    "tr": "İmtiyazlı öz sermaye",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Geri ödeme ve getiri sıralamasında adi öz sermayeden önce gelen, ancak borçtan sonra yer alan sermaye türü.",
+    "use": "Risk ve getiri paylaşımını yapılandırmak için kullanılır.",
+    "example": "The gap will be funded through preferred equity.",
+    "tags": [
+      "capital stack",
+      "return",
+      "priority"
+    ]
+  },
+  {
+    "term": "JV",
+    "tr": "Ortak girişim",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "Joint Venture",
+    "def": "İki veya daha fazla tarafın belirli bir proje veya işletme için kaynaklarını, risklerini ve getirilerini birleştirdiği ortaklık yapısı.",
+    "use": "Developer ile yatırımcı arasındaki proje ortaklıklarında sık kullanılır.",
+    "example": "The parties are considering a 50:50 JV.",
+    "tags": [
+      "joint venture",
+      "partnership",
+      "ortaklık"
+    ]
+  },
+  {
+    "term": "Co-development",
+    "tr": "Ortak geliştirme",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "İki veya daha fazla tarafın bir gayrimenkul projesini birlikte geliştirmesi.",
+    "use": "Arsa sahibi, developer ve yatırımcı arasında kullanılabilir.",
+    "example": "The opportunity may suit a co-development structure.",
+    "tags": [
+      "development",
+      "JV",
+      "ortaklık"
+    ]
+  },
+  {
+    "term": "Forward Funding",
+    "tr": "İleri finansman",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Yatırımcının geliştirme sürecinde arsa ve inşaat maliyetlerini aşamalı olarak finanse ettiği yapı.",
+    "use": "BTR, PBSA ve ticari geliştirmelerde sık görülür.",
+    "example": "The scheme is being considered for forward funding.",
+    "tags": [
+      "funding",
+      "development",
+      "institutional"
+    ]
+  },
+  {
+    "term": "Forward Purchase",
+    "tr": "İleri alım",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Yatırımcının tamamlanacak bir projeyi önceden belirlenen koşullarla satın almayı taahhüt ettiği yapı.",
+    "use": "Forward funding'den farklı olarak geliştirici finansmanı çoğunlukla kendisi sağlar.",
+    "example": "The investor has agreed a forward purchase on completion.",
+    "tags": [
+      "purchase",
+      "development",
+      "exit"
+    ]
+  },
+  {
+    "term": "Family Office",
+    "tr": "Aile ofisi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Varlıklı bir ailenin yatırımlarını, vergi, hukuk, miras ve servet yönetimini yöneten özel yapı.",
+    "use": "Büyük ve uzun vadeli sermaye kaynaklarından biridir.",
+    "example": "The opportunity is suitable for a UK-based family office.",
+    "tags": [
+      "HNWI",
+      "private capital",
+      "wealth"
+    ]
+  },
+  {
+    "term": "HNWI",
+    "tr": "Yüksek net değerli birey",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "High-Net-Worth Individual",
+    "def": "Yatırım yapılabilir varlığı yüksek olan kişi.",
+    "use": "Private banking, yatırım ve gayrimenkul sermaye ilişkilerinde kullanılır.",
+    "example": "The event is aimed at HNWIs and family offices.",
+    "tags": [
+      "wealth",
+      "investor",
+      "private capital"
+    ]
+  },
+  {
+    "term": "Private Capital",
+    "tr": "Özel sermaye",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Borsa dışı kaynaklardan gelen aile ofisi, özel yatırımcı, private equity ve benzeri sermaye.",
+    "use": "Kurumsal olmayan veya özel yapılandırılmış yatırım kaynaklarını anlatır.",
+    "example": "The platform connects regional opportunities with private capital.",
+    "tags": [
+      "equity",
+      "family office",
+      "fund"
+    ]
+  },
+  {
+    "term": "Investment Thesis",
+    "tr": "Yatırım tezi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir yatırımın neden yapılması gerektiğini açıklayan stratejik gerekçe ve varsayımlar bütünü.",
+    "use": "Bölge, sektör, getiri, risk ve çıkış mantığını açıklar.",
+    "example": "The investment thesis is based on regional housing demand.",
+    "tags": [
+      "strategy",
+      "investment",
+      "narrative"
+    ]
+  },
+  {
+    "term": "Investor Fit",
+    "tr": "Yatırımcı uyumu",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir fırsatın yatırımcının sermaye büyüklüğü, risk iştahı, vadesi ve sektör tercihiyle uyum derecesi.",
+    "use": "Kontrollü fırsat eşleştirmesinde kullanılır.",
+    "example": "We only present opportunities with a clear investor fit.",
+    "tags": [
+      "qualification",
+      "matching",
+      "screening"
+    ]
+  },
+  {
+    "term": "Investor Qualification",
+    "tr": "Yatırımcı niteliklendirme",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Yatırımcının sermaye kapasitesi, karar süreci, risk iştahı, zamanlaması ve yatırım kriterlerinin doğrulanması.",
+    "use": "Her yatırımcıya her fırsatı göndermemek için yapılır.",
+    "example": "Investor qualification must be completed before introductions.",
+    "tags": [
+      "KYC",
+      "screening",
+      "investor"
+    ]
+  },
+  {
+    "term": "Opportunity Screening",
+    "tr": "Fırsat ön elemesi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir yatırım fırsatının temel ticari, finansal, hukuki ve stratejik kriterlere göre ilk değerlendirmesi.",
+    "use": "Detaylı due diligence öncesinde yapılır.",
+    "example": "The project passed our initial opportunity screening.",
+    "tags": [
+      "screening",
+      "DD",
+      "filter"
+    ]
+  },
+  {
+    "term": "Investment Committee",
+    "tr": "Yatırım komitesi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "IC",
+    "def": "Bir yatırım kararını inceleyen ve onaylayan yetkili kurul.",
+    "use": "Fon, family office ve kurumsal yatırımcı süreçlerinde kullanılır.",
+    "example": "The proposal will be submitted to the investment committee.",
+    "tags": [
+      "IC",
+      "approval",
+      "decision"
+    ]
+  },
+  {
+    "term": "IC Memo",
+    "tr": "Yatırım komitesi notu",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "Investment Committee Memorandum",
+    "def": "Yatırım komitesine sunulan, fırsatın getirilerini, risklerini, yapısını ve önerilen kararı açıklayan belge.",
+    "use": "Kurumsal yatırım kararında temel dokümandır.",
+    "example": "The team is preparing the IC memo.",
+    "tags": [
+      "investment committee",
+      "memo",
+      "approval"
+    ]
+  },
+  {
+    "term": "Ticket Size",
+    "tr": "Yatırım büyüklüğü",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir yatırımcının tek bir işleme koymayı planladığı yaklaşık sermaye tutarı.",
+    "use": "Yatırımcı-fırsat eşleşmesinde temel kriterdir.",
+    "example": "The minimum ticket size is £2 million.",
+    "tags": [
+      "capital",
+      "investment amount",
+      "bütçe"
+    ]
+  },
+  {
+    "term": "Break-Even Occupancy",
+    "tr": "Başabaş Doluluk Oranı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Tanımlanan taşınmaz gelirinin tanımlanan işletme maliyetlerini karşıladığı doluluk seviyesidir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Break-Even Occupancy” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Capital Growth",
+    "tr": "Sermaye Değer Artışı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir taşınmazın değerinin iki ölçüm tarihi arasında artmasıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Capital Growth” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Gross Rental Income",
+    "tr": "Brüt Kira Geliri",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Taşınmaz giderleri ve finansman maliyetleri düşülmeden önceki toplam kira geliridir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Gross Rental Income” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Investment Leverage",
+    "tr": "Yatırım Kaldıracı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir yatırımı finanse etmek için öz kaynakla birlikte borç para kullanılmasıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Investment Leverage” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Net Rental Income",
+    "tr": "Net Kira Geliri",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Belirlenen işletme giderleri düşüldükten sonra kalan kira geliridir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Net Rental Income” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Operating Expenses",
+    "tr": "Taşınmaz İşletme Giderleri",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir taşınmazı işletmenin, kapsamı açıkça belirtilmiş düzenli maliyetleridir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Operating Expenses” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Payback Period",
+    "tr": "Geri Ödeme Süresi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Birikimli nakit girişlerinin başlangıçtaki nakit harcamasını karşılaması için gereken süredir. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Payback Period” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Rental Cash Flow",
+    "tr": "Kira Nakit Akışı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Bir dönemde kiralık taşınmazdan alınan nakit ile ödenen nakit arasındaki farktır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Rental Cash Flow” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Property Total Return",
+    "tr": "Toplam Taşınmaz Getirisi",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Belirli bir dönemde gelir ile değer değişiminin birlikte oluşturduğu yatırım sonucudur. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Property Total Return” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  },
+  {
+    "term": "Vacancy Rate",
+    "tr": "Boşluk Oranı",
+    "cat": "Sermaye ve Yatırım",
+    "abbr": "",
+    "def": "Kullanılabilir alanın veya sürenin bir dönem içinde boş kalan oranıdır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin.",
+    "use": "İşlem belgelerini anlamak Bir uzmana sorulacak soruları hazırlamak",
+    "example": "Example: before relying on “Vacancy Rate” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tags": [
+      "investment-returns",
+      "content-pack-001",
+      "fundamentals"
+    ]
+  }
+]

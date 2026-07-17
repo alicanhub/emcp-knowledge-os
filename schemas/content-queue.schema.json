@@ -1,0 +1,83 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/content-queue.schema.json",
+  "type": "object",
+  "required": [
+    "generated_at",
+    "next_recommended_pack",
+    "blocked_packs",
+    "human_review_packs",
+    "packs"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "generated_at": { "type": "string", "format": "date-time" },
+    "next_recommended_pack": {
+      "type": ["string", "null"],
+      "pattern": "^pack\\.[0-9]{3}$"
+    },
+    "blocked_packs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string" }
+    },
+    "human_review_packs": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": { "type": "string" }
+    },
+    "packs": {
+      "type": "array",
+      "minItems": 100,
+      "maxItems": 100,
+      "items": {
+        "type": "object",
+        "required": [
+          "pack_id",
+          "pack_number",
+          "title",
+          "status",
+          "target_entry_count",
+          "reviewed_entry_count",
+          "draft_entry_count",
+          "duplicate_count",
+          "missing_source_count",
+          "broken_reference_count",
+          "handbook_coverage",
+          "calculator_coverage",
+          "completion_percentage",
+          "requires_human_review"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "pack_id": { "type": "string", "pattern": "^pack\\.[0-9]{3}$" },
+          "pack_number": { "type": "integer", "minimum": 1, "maximum": 100 },
+          "title": { "type": "object" },
+          "status": { "type": "string" },
+          "target_entry_count": { "type": "integer", "minimum": 0 },
+          "reviewed_entry_count": { "type": "integer", "minimum": 0 },
+          "draft_entry_count": { "type": "integer", "minimum": 0 },
+          "duplicate_count": { "type": "integer", "minimum": 0 },
+          "missing_source_count": { "type": "integer", "minimum": 0 },
+          "broken_reference_count": { "type": "integer", "minimum": 0 },
+          "handbook_coverage": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "calculator_coverage": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "completion_percentage": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 100
+          },
+          "requires_human_review": { "type": "boolean" }
+        }
+      }
+    }
+  }
+}

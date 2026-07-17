@@ -1,0 +1,1020 @@
+{
+  "pack_id": "pack-002",
+  "pack_number": 2,
+  "title": {
+    "en": "Residential Property Fundamentals",
+    "tr": "Konut Gayrimenkulü Temelleri"
+  },
+  "status": "reviewed",
+  "planned_entry_count": 100,
+  "existing_records_enriched": [
+    "Freehold",
+    "Leasehold",
+    "Title Register",
+    "Title Plan",
+    "Exchange of Contracts",
+    "Legal Completion",
+    "Property Chain",
+    "Conveyancing",
+    "Mortgage",
+    "Repayment Mortgage",
+    "Interest-Only Mortgage",
+    "Home Survey",
+    "Building Survey",
+    "Damp",
+    "Subsidence",
+    "Tenancy Agreement",
+    "Tenancy Deposit",
+    "Service Charge",
+    "Planning Application",
+    "Building Regulations"
+  ],
+  "groups": [
+    {
+      "key": "ownership",
+      "title": {
+        "en": "Property ownership",
+        "tr": "Taşınmaz mülkiyeti"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.ownership.legal-owner",
+          "title": {
+            "en": "Legal Owner",
+            "tr": "Hukuki Malik"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.ownership.beneficial-owner",
+          "title": {
+            "en": "Beneficial Owner",
+            "tr": "Ekonomik Hak Sahibi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.ownership.sole-ownership",
+          "title": {
+            "en": "Sole Ownership",
+            "tr": "Tek Başına Mülkiyet"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.ownership.co-ownership-agreement",
+          "title": {
+            "en": "Co-ownership Agreement",
+            "tr": "Ortak Mülkiyet Sözleşmesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.ownership.general-boundary",
+          "title": {
+            "en": "General Boundary",
+            "tr": "Genel Sınır"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "buying",
+      "title": {
+        "en": "Buying and selling",
+        "tr": "Alım ve satım"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.buying.agreement-in-principle",
+          "title": {
+            "en": "Mortgage Agreement in Principle",
+            "tr": "Ön Kredi Uygunluk Yazısı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.buying.reservation-agreement",
+          "title": {
+            "en": "Property Reservation Agreement",
+            "tr": "Taşınmaz Rezervasyon Sözleşmesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.buying.gazumping",
+          "title": {
+            "en": "Gazumping",
+            "tr": "Daha Yüksek Teklifi Kabul Etme"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.buying.gazundering",
+          "title": {
+            "en": "Gazundering",
+            "tr": "Son Aşamada Teklifi Düşürme"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.buying.completion-statement",
+          "title": {
+            "en": "Completion Statement",
+            "tr": "Tamamlama Hesap Özeti"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "mortgages",
+      "title": {
+        "en": "Mortgages and deposits",
+        "tr": "Konut kredileri ve peşinat"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.mortgages.mortgage-offer",
+          "title": {
+            "en": "Mortgage Offer",
+            "tr": "Konut Kredisi Teklifi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.mortgages.mortgage-affordability-assessment",
+          "title": {
+            "en": "Mortgage Affordability Assessment",
+            "tr": "Konut Kredisi Ödeyebilirlik Değerlendirmesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.mortgages.remortgage",
+          "title": {
+            "en": "Remortgage",
+            "tr": "Konut Kredisini Yenileme"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.mortgages.mortgage-broker",
+          "title": {
+            "en": "Mortgage Broker",
+            "tr": "Konut Kredisi Aracısı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.mortgages.mortgage-product-fee",
+          "title": {
+            "en": "Mortgage Product Fee",
+            "tr": "Konut Kredisi Ürün Ücreti"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "valuation",
+      "title": {
+        "en": "Residential valuation",
+        "tr": "Konut değerlemesi"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.valuation.comparable-property",
+          "title": {
+            "en": "Comparable Property",
+            "tr": "Emsal Taşınmaz"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.valuation.comparable-sales-analysis",
+          "title": {
+            "en": "Comparable Sales Analysis",
+            "tr": "Emsal Satış Analizi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.valuation.valuation-date",
+          "title": {
+            "en": "Valuation Date",
+            "tr": "Değerleme Tarihi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.valuation.market-appraisal",
+          "title": {
+            "en": "Estate Agent Market Appraisal",
+            "tr": "Emlak Danışmanı Piyasa Görüşü"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.valuation.valuation-assumption",
+          "title": {
+            "en": "Valuation Assumption",
+            "tr": "Değerleme Varsayımı"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "tenancy",
+      "title": {
+        "en": "Renting and tenancy",
+        "tr": "Kiralama ve kiracılık"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.tenancy.tenancy-notice-period",
+          "title": {
+            "en": "Tenancy Notice Period",
+            "tr": "Kira Bildirim Süresi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenancy.tenant-guarantor",
+          "title": {
+            "en": "Tenant Guarantor",
+            "tr": "Kiracı Garantörü"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenancy.tenant-referencing",
+          "title": {
+            "en": "Tenant Referencing",
+            "tr": "Kiracı Referans Kontrolü"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenancy.check-in-report",
+          "title": {
+            "en": "Tenancy Check-in Report",
+            "tr": "Kiracılık Giriş Raporu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenancy.check-out-report",
+          "title": {
+            "en": "Tenancy Check-out Report",
+            "tr": "Kiracılık Çıkış Raporu"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "leasehold",
+      "title": {
+        "en": "Leasehold and freehold",
+        "tr": "Leasehold ve freehold"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.leasehold.commonhold",
+          "title": {
+            "en": "Commonhold",
+            "tr": "Commonhold Ortak Mülkiyet"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.leasehold.unexpired-lease-term",
+          "title": {
+            "en": "Unexpired Lease Term",
+            "tr": "Kalan Leasehold Süresi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.leasehold.lease-extension",
+          "title": {
+            "en": "Residential Lease Extension",
+            "tr": "Konut Leasehold Süre Uzatımı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.leasehold.collective-enfranchisement",
+          "title": {
+            "en": "Collective Enfranchisement",
+            "tr": "Toplu Mülkiyet Devralma"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.leasehold.leasehold-managing-agent",
+          "title": {
+            "en": "Leasehold Managing Agent",
+            "tr": "Leasehold Yönetim Şirketi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "surveys",
+      "title": {
+        "en": "Surveys and inspections",
+        "tr": "İnceleme ve denetimler"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.surveys.property-survey",
+          "title": {
+            "en": "Property Survey",
+            "tr": "Taşınmaz İncelemesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.surveys.condition-rating",
+          "title": {
+            "en": "Property Condition Rating",
+            "tr": "Taşınmaz Durum Derecesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.surveys.invasive-inspection",
+          "title": {
+            "en": "Invasive Inspection",
+            "tr": "Müdahaleli İnceleme"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.surveys.drainage-survey",
+          "title": {
+            "en": "Drainage Survey",
+            "tr": "Drenaj İncelemesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.surveys.roof-inspection",
+          "title": {
+            "en": "Roof Inspection",
+            "tr": "Çatı İncelemesi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "defects",
+      "title": {
+        "en": "Residential construction and defects",
+        "tr": "Konut yapımı ve kusurları"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.defects.condensation",
+          "title": {
+            "en": "Condensation",
+            "tr": "Yoğuşma"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.defects.mould-growth",
+          "title": {
+            "en": "Mould Growth",
+            "tr": "Küf Oluşumu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.defects.structural-movement",
+          "title": {
+            "en": "Structural Movement",
+            "tr": "Yapısal Hareket"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.defects.dry-rot",
+          "title": {
+            "en": "Dry Rot",
+            "tr": "Kuru Çürüklük"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.defects.wet-rot",
+          "title": {
+            "en": "Wet Rot",
+            "tr": "Islak Çürüklük"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "energy",
+      "title": {
+        "en": "Energy efficiency and utilities",
+        "tr": "Enerji verimliliği ve altyapı"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.energy.smart-meter",
+          "title": {
+            "en": "Smart Meter",
+            "tr": "Akıllı Sayaç"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.energy.utility-meter-reading",
+          "title": {
+            "en": "Utility Meter Reading",
+            "tr": "Altyapı Sayacı Okuması"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.energy.loft-insulation",
+          "title": {
+            "en": "Loft Insulation",
+            "tr": "Çatı Arası Yalıtımı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.energy.double-glazing",
+          "title": {
+            "en": "Double Glazing",
+            "tr": "Çift Cam"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.energy.boiler-efficiency",
+          "title": {
+            "en": "Boiler Efficiency",
+            "tr": "Kazan Verimliliği"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "insurance",
+      "title": {
+        "en": "Insurance and risk",
+        "tr": "Sigorta ve risk"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.insurance.contents-insurance",
+          "title": {
+            "en": "Contents Insurance",
+            "tr": "Ev Eşyası Sigortası"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.insurance.landlord-insurance",
+          "title": {
+            "en": "Landlord Insurance",
+            "tr": "Ev Sahibi Sigortası"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.insurance.insurance-excess",
+          "title": {
+            "en": "Insurance Excess",
+            "tr": "Sigorta Muafiyet Tutarı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.insurance.insured-peril",
+          "title": {
+            "en": "Insured Peril",
+            "tr": "Sigortalı Tehlike"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.insurance.underinsurance",
+          "title": {
+            "en": "Underinsurance",
+            "tr": "Eksik Sigorta"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "documents",
+      "title": {
+        "en": "Legal documents",
+        "tr": "Hukuki belgeler"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.documents.leasehold-information-form",
+          "title": {
+            "en": "Leasehold Information Form",
+            "tr": "Leasehold Bilgi Formu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.documents.gas-safety-record",
+          "title": {
+            "en": "Gas Safety Record",
+            "tr": "Gaz Güvenliği Kaydı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.documents.electrical-safety-report",
+          "title": {
+            "en": "Electrical Safety Report",
+            "tr": "Elektrik Güvenliği Raporu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.documents.boiler-service-record",
+          "title": {
+            "en": "Boiler Service Record",
+            "tr": "Kazan Bakım Kaydı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.documents.new-build-warranty-document",
+          "title": {
+            "en": "New-build Warranty Document",
+            "tr": "Yeni Konut Garanti Belgesi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "investment",
+      "title": {
+        "en": "Residential investment basics",
+        "tr": "Konut yatırımı temelleri"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.investment.buy-to-let",
+          "title": {
+            "en": "Buy-to-Let",
+            "tr": "Kiraya Vermek İçin Konut Alımı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.investment.gross-rental-yield",
+          "title": {
+            "en": "Gross Rental Yield",
+            "tr": "Brüt Kira Getirisi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.investment.net-rental-yield",
+          "title": {
+            "en": "Net Rental Yield",
+            "tr": "Net Kira Getirisi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.investment.cash-on-cash-return",
+          "title": {
+            "en": "Cash-on-Cash Return",
+            "tr": "Nakit Üzerinden Getiri"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.investment.rental-void-period",
+          "title": {
+            "en": "Rental Void Period",
+            "tr": "Kiralama Boşluk Dönemi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "landlord",
+      "title": {
+        "en": "Landlord responsibilities",
+        "tr": "Ev sahibi sorumlulukları"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.landlord.deposit-protection",
+          "title": {
+            "en": "Tenancy Deposit Protection",
+            "tr": "Kira Depozitosu Koruması"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.landlord.landlord-repair-duty",
+          "title": {
+            "en": "Landlord Repair Duty",
+            "tr": "Ev Sahibinin Onarım Yükümlülüğü"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.landlord.right-to-rent-check",
+          "title": {
+            "en": "Right to Rent Check",
+            "tr": "Kiraya Verme Uygunluk Kontrolü"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.landlord.smoke-alarm-check",
+          "title": {
+            "en": "Smoke Alarm Check",
+            "tr": "Duman Alarmı Kontrolü"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.landlord.landlord-access-notice",
+          "title": {
+            "en": "Landlord Access Notice",
+            "tr": "Ev Sahibi Giriş Bildirimi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "tenant",
+      "title": {
+        "en": "Tenant responsibilities",
+        "tr": "Kiracı sorumlulukları"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.tenant.rent-due-date",
+          "title": {
+            "en": "Rent Due Date",
+            "tr": "Kira Ödeme Tarihi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenant.reporting-repairs",
+          "title": {
+            "en": "Reporting Repairs",
+            "tr": "Onarım İhtiyacını Bildirme"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenant.tenant-reasonable-care",
+          "title": {
+            "en": "Tenant Reasonable Care",
+            "tr": "Kiracının Makul Özeni"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenant.access-appointment",
+          "title": {
+            "en": "Property Access Appointment",
+            "tr": "Taşınmaza Giriş Randevusu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.tenant.end-of-tenancy-cleaning",
+          "title": {
+            "en": "End-of-Tenancy Cleaning",
+            "tr": "Kiracılık Sonu Temizliği"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "management",
+      "title": {
+        "en": "Property management",
+        "tr": "Taşınmaz yönetimi"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.management.letting-agent-fee",
+          "title": {
+            "en": "Letting Agent Fee",
+            "tr": "Kiralama Aracısı Ücreti"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.management.property-management-fee",
+          "title": {
+            "en": "Property Management Fee",
+            "tr": "Taşınmaz Yönetim Ücreti"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.management.rent-collection-service",
+          "title": {
+            "en": "Rent Collection Service",
+            "tr": "Kira Tahsilat Hizmeti"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.management.maintenance-request",
+          "title": {
+            "en": "Property Maintenance Request",
+            "tr": "Taşınmaz Bakım Talebi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.management.periodic-property-inspection",
+          "title": {
+            "en": "Periodic Property Inspection",
+            "tr": "Periyodik Taşınmaz Kontrolü"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "renovation",
+      "title": {
+        "en": "Renovation and maintenance",
+        "tr": "Yenileme ve bakım"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.renovation.residential-refurbishment",
+          "title": {
+            "en": "Residential Refurbishment",
+            "tr": "Konut İyileştirmesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.renovation.residential-renovation",
+          "title": {
+            "en": "Residential Renovation",
+            "tr": "Konut Yenilemesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.renovation.planned-maintenance",
+          "title": {
+            "en": "Planned Maintenance",
+            "tr": "Planlı Bakım"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.renovation.reactive-maintenance",
+          "title": {
+            "en": "Reactive Maintenance",
+            "tr": "Arıza Sonrası Bakım"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.renovation.maintenance-schedule",
+          "title": {
+            "en": "Home Maintenance Schedule",
+            "tr": "Konut Bakım Programı"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "planning",
+      "title": {
+        "en": "Planning and building control basics",
+        "tr": "Planlama ve yapı kontrolü"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.planning.planning-permission",
+          "title": {
+            "en": "Planning Permission",
+            "tr": "Planlama İzni"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.planning.building-control-inspection",
+          "title": {
+            "en": "Building Control Inspection",
+            "tr": "Yapı Kontrol İncelemesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.planning.building-notice",
+          "title": {
+            "en": "Building Notice",
+            "tr": "Yapı Bildirimi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.planning.full-plans-application",
+          "title": {
+            "en": "Full Plans Application",
+            "tr": "Tam Plan Başvurusu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.planning.lawful-development-certificate",
+          "title": {
+            "en": "Lawful Development Certificate",
+            "tr": "Hukuka Uygun Geliştirme Belgesi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "communal",
+      "title": {
+        "en": "Service charges and communal ownership",
+        "tr": "Ortak alanlar ve hizmet giderleri"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.communal.major-works",
+          "title": {
+            "en": "Leasehold Major Works",
+            "tr": "Leasehold Büyük Onarım İşleri"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.communal.reserve-fund",
+          "title": {
+            "en": "Property Reserve Fund",
+            "tr": "Taşınmaz Yedek Fonu"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.communal.right-to-manage",
+          "title": {
+            "en": "Right to Manage",
+            "tr": "Yönetimi Devralma Hakkı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.communal.service-charge-demand",
+          "title": {
+            "en": "Service Charge Demand",
+            "tr": "Hizmet Gideri Talebi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.communal.communal-area",
+          "title": {
+            "en": "Communal Area",
+            "tr": "Ortak Alan"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "moving",
+      "title": {
+        "en": "Completion, handover and moving",
+        "tr": "Tamamlama, teslim ve taşınma"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.moving.key-handover",
+          "title": {
+            "en": "Key Handover",
+            "tr": "Anahtar Teslimi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.moving.meter-handover-reading",
+          "title": {
+            "en": "Handover Meter Reading",
+            "tr": "Teslim Sayaç Okuması"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.moving.moving-in-checklist",
+          "title": {
+            "en": "Moving-in Checklist",
+            "tr": "Taşınma Kontrol Listesi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.moving.forwarding-address",
+          "title": {
+            "en": "Forwarding Address",
+            "tr": "Yeni Yazışma Adresi"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.moving.vacant-possession-handover",
+          "title": {
+            "en": "Vacant Possession Handover",
+            "tr": "Boş Teslim İşlemi"
+          },
+          "status": "reviewed"
+        }
+      ]
+    },
+    {
+      "key": "exit",
+      "title": {
+        "en": "Residential exit strategies",
+        "tr": "Konut çıkış stratejileri"
+      },
+      "planned_entries": [
+        {
+          "id": "residential.exit.open-market-sale",
+          "title": {
+            "en": "Open Market Sale",
+            "tr": "Açık Piyasa Satışı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.exit.auction-sale",
+          "title": {
+            "en": "Residential Auction Sale",
+            "tr": "Konut Müzayede Satışı"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.exit.probate-property",
+          "title": {
+            "en": "Probate Property",
+            "tr": "Miras Sürecindeki Taşınmaz"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.exit.repossessed-property",
+          "title": {
+            "en": "Repossessed Property",
+            "tr": "Kredi Kuruluşunca Geri Alınmış Taşınmaz"
+          },
+          "status": "reviewed"
+        },
+        {
+          "id": "residential.exit.portfolio-disposal",
+          "title": {
+            "en": "Residential Portfolio Disposal",
+            "tr": "Konut Portföyü Satışı"
+          },
+          "status": "reviewed"
+        }
+      ]
+    }
+  ],
+  "duplicate_audit": {
+    "checked_runtime_records": 203,
+    "checked_authored_records": 205,
+    "collisions": [],
+    "policy": "Existing titles, Turkish titles and aliases were excluded before record creation."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://emcp.example/schemas/workspace-backup.schema.json",
+  "type": "object",
+  "required": ["format", "version", "exportedAt", "data"],
+  "additionalProperties": false,
+  "properties": {
+    "format": { "const": "emcp-workspace" },
+    "version": { "const": 1 },
+    "exportedAt": { "type": "string", "format": "date-time" },
+    "data": {
+      "type": "object",
+      "required": [
+        "favourites",
+        "recent",
+        "collections",
+        "notes",
+        "scenarios",
+        "preferences"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "favourites": {
+          "type": "array",
+          "maxItems": 5000,
+          "items": { "type": "string", "maxLength": 300 }
+        },
+        "recent": {
+          "type": "array",
+          "maxItems": 5000,
+          "items": { "type": "string", "maxLength": 300 }
+        },
+        "collections": {
+          "type": "array",
+          "maxItems": 500,
+          "items": { "$ref": "collection.schema.json" }
+        },
+        "notes": {
+          "type": "object",
+          "maxProperties": 2000,
+          "additionalProperties": { "type": "string", "maxLength": 20000 }
+        },
+        "scenarios": {
+          "type": "array",
+          "maxItems": 1000,
+          "items": { "$ref": "scenario.schema.json" }
+        },
+        "preferences": {
+          "type": "object",
+          "required": ["language", "theme"],
+          "additionalProperties": false,
+          "properties": {
+            "language": { "enum": ["en", "tr"] },
+            "theme": { "enum": ["light", "dark"] }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "id": "residential.valuation.market-appraisal",
+  "title": {
+    "en": "Estate Agent Market Appraisal",
+    "tr": "Emlak Danışmanı Piyasa Görüşü"
+  },
+  "abbreviation": "",
+  "summary": {
+    "en": "An estate agent's opinion of likely marketing price or rent, distinct from a formal valuation for another purpose.",
+    "tr": "Emlak danışmanının olası pazarlama fiyatı veya kirasına ilişkin görüşüdür; başka amaçlı resmî değerlemeden farklıdır."
+  },
+  "simple_explanation": {
+    "en": "An estate agent's opinion of likely marketing price or rent, distinct from a formal valuation for another purpose.",
+    "tr": "Emlak danışmanının olası pazarlama fiyatı veya kirasına ilişkin görüşüdür; başka amaçlı resmî değerlemeden farklıdır."
+  },
+  "professional_explanation": {
+    "en": "An estate agent's opinion of likely marketing price or rent, distinct from a formal valuation for another purpose. Its precise effect depends on the transaction, contract, evidence and jurisdiction.",
+    "tr": "Emlak danışmanının olası pazarlama fiyatı veya kirasına ilişkin görüşüdür; başka amaçlı resmî değerlemeden farklıdır. Kesin etkisi işleme, sözleşmeye, kanıta ve hukuk bölgesine bağlıdır."
+  },
+  "real_world_example": {
+    "en": "A homeowner, buyer, landlord or adviser records estate agent market appraisal while reviewing a residential property decision.",
+    "tr": "Bir ev sahibi, alıcı, kiraya veren veya danışman konut kararını incelerken emlak danışmanı piyasa görüşü konusunu kaydeder."
+  },
+  "office_example": {
+    "en": "A property professional identifies the evidence, assumptions and responsible party before relying on estate agent market appraisal.",
+    "tr": "Taşınmaz uzmanı emlak danışmanı piyasa görüşü konusuna dayanmadan önce kanıtı, varsayımları ve sorumlu tarafı belirler."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "What is Estate Agent Market Appraisal, and what should be verified?",
+        "answer": "An estate agent's opinion of likely marketing price or rent, distinct from a formal valuation for another purpose. Verify the current document, evidence, contract and jurisdiction-specific requirements."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Emlak Danışmanı Piyasa Görüşü nedir ve neler doğrulanmalıdır?",
+        "answer": "Emlak danışmanının olası pazarlama fiyatı veya kirasına ilişkin görüşüdür; başka amaçlı resmî değerlemeden farklıdır. Güncel belgeyi, kanıtı, sözleşmeyi ve bölgeye özel gereklilikleri doğrulayın."
+      }
+    ]
+  },
+  "definition": {
+    "en": "An estate agent's opinion of likely marketing price or rent, distinct from a formal valuation for another purpose.",
+    "tr": "Emlak danışmanının olası pazarlama fiyatı veya kirasına ilişkin görüşüdür; başka amaçlı resmî değerlemeden farklıdır."
+  },
+  "category": {
+    "key": "finance",
+    "en": "Finance",
+    "tr": "Finansman"
+  },
+  "subcategory": {
+    "key": "valuation",
+    "en": "Residential valuation",
+    "tr": "Konut değerlemesi"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["residential-property", "valuation", "pack-002"],
+  "keywords": {
+    "en": ["estate agent market appraisal"],
+    "tr": ["emlak danışmanı piyasa görüşü"]
+  },
+  "formula": null,
+  "worked_example": {
+    "en": "In a simple home review, the user records the relevant facts for estate agent market appraisal, keeps the supporting document and flags anything requiring professional advice.",
+    "tr": "Basit bir konut incelemesinde kullanıcı emlak danışmanı piyasa görüşü için ilgili bilgileri kaydeder, destekleyici belgeyi saklar ve uzman görüşü gerektiren konuları işaretler."
+  },
+  "when_to_use": {
+    "en": "Use this concept when buying, owning, letting, managing, financing, improving or selling a home where it is relevant.",
+    "tr": "Bu kavramı ilgili olduğu durumda konut alırken, sahip olurken, kiralarken, yönetirken, finanse ederken, iyileştirirken veya satarken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Record and communicate estate agent market appraisal in a residential decision file."
+    ],
+    "tr": [
+      "Bir konut karar dosyasında emlak danışmanı piyasa görüşü konusunu kaydedip paylaşmak."
+    ]
+  },
+  "risks": {
+    "en": [
+      "Definitions, contractual effects and legal requirements can differ by jurisdiction and change over time."
+    ],
+    "tr": [
+      "Tanımlar, sözleşmesel etkiler ve hukuki gereklilikler bölgeye göre değişebilir ve zamanla güncellenebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Relying on an informal description without checking the underlying document or current evidence."
+    ],
+    "tr": [
+      "Dayanak belgeyi veya güncel kanıtı kontrol etmeden gayriresmî açıklamaya güvenmek."
+    ]
+  },
+  "practical_tips": {
+    "en": ["Keep dated evidence and record who verified it."],
+    "tr": ["Tarihli kanıtı saklayın ve kimin doğruladığını kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Confirm material decisions with an appropriately qualified professional."
+    ],
+    "tr": ["Önemli kararları uygun nitelikte bir uzmanla doğrulayın."]
+  },
+  "uk_practice": {
+    "en": "Use the cited UK guidance as a starting point and check the rules for the relevant UK nation and transaction date.",
+    "tr": "Atıf verilen Birleşik Krallık rehberini başlangıç noktası olarak kullanın; ilgili ülke ve işlem tarihindeki kuralları kontrol edin."
+  },
+  "turkey_practice": {
+    "en": "The UK concept may not map directly to Turkish law or market practice; obtain current local advice and use the Turkish title as an educational explanation.",
+    "tr": "Birleşik Krallık kavramı Türk hukukuna veya piyasa uygulamasına bire bir karşılık gelmeyebilir; güncel yerel görüş alın ve Türkçe başlığı eğitim amaçlı açıklama olarak kullanın."
+  },
+  "related_concepts": [],
+  "related_calculators": [],
+  "related_documents": [],
+  "related_standards": [],
+  "related_regulations": [],
+  "revision_history": [
+    {
+      "version": "1.0.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Initial Pack 002 reviewed edition.",
+        "tr": "İlk Pack 002 incelenmiş sürümü."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ],
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 4,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Is Estate Agent Market Appraisal the same in every jurisdiction?",
+        "answer": "No. Check the current local legal, contractual and professional context."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Emlak Danışmanı Piyasa Görüşü her hukuk bölgesinde aynı mıdır?",
+        "answer": "Hayır. Güncel yerel hukuki, sözleşmesel ve mesleki bağlamı kontrol edin."
+      }
+    ]
+  },
+  "visual_illustration": {
+    "status": "planned",
+    "caption": {
+      "en": "A future diagram will illustrate estate agent market appraisal.",
+      "tr": "Gelecekteki bir şema emlak danışmanı piyasa görüşü konusunu gösterecektir."
+    },
+    "url": null
+  },
+  "future_video": {
+    "status": "planned",
+    "caption": {
+      "en": "A future beginner video will explain estate agent market appraisal.",
+      "tr": "Gelecekteki başlangıç videosu emlak danışmanı piyasa görüşü konusunu açıklayacaktır."
+    },
+    "url": null
+  },
+  "jurisdiction": [
+    "United Kingdom — educational overview",
+    "Turkey — local professional verification required"
+  ],
+  "sources": [
+    {
+      "title": "Property valuation",
+      "publisher": "Royal Institution of Chartered Surveyors",
+      "url": "https://www.rics.org/consumer-guides/property-surveys",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative starting point for the residential valuation scope; current transaction-specific requirements must be verified."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Editorial Review",
+  "review_status": "reviewed",
+  "content_version": "1.0.0"
+}

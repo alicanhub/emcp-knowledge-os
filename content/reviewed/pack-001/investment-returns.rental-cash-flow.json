@@ -1,0 +1,197 @@
+{
+  "$schema": "../../../schemas/content-entry.schema.json",
+  "id": "investment-returns.rental-cash-flow",
+  "title": {
+    "en": "Rental Cash Flow",
+    "tr": "Kira Nakit Akışı"
+  },
+  "summary": {
+    "en": "The cash received from a rental property minus cash paid during a period.",
+    "tr": "Bir dönemde kiralık taşınmazdan alınan nakit ile ödenen nakit arasındaki farktır."
+  },
+  "abbreviation": "",
+  "definition": {
+    "en": "The cash received from a rental property minus cash paid during a period. In professional work, its precise effect depends on the contract, evidence, valuation basis and rules applying to the property. Confirm jurisdiction-specific legal, tax, lending or technical consequences with a suitably qualified adviser.",
+    "tr": "Bir dönemde kiralık taşınmazdan alınan nakit ile ödenen nakit arasındaki farktır. Profesyonel uygulamadaki kesin etkisi; sözleşmeye, kanıtlara, değerleme esasına ve taşınmaza uygulanan kurallara bağlıdır. Bölgeye özgü hukuk, vergi, kredi veya teknik sonuçları uygun nitelikte bir uzmanla teyit edin."
+  },
+  "category": {
+    "key": "capital-investment",
+    "en": "Capital and Investment",
+    "tr": "Sermaye ve Yatırım"
+  },
+  "subcategory": {
+    "key": "investment-returns",
+    "en": "Everyday investment and returns",
+    "tr": "Temel yatırım ve getiri"
+  },
+  "aliases": {
+    "en": [],
+    "tr": []
+  },
+  "tags": ["investment-returns", "content-pack-001", "fundamentals"],
+  "keywords": {
+    "en": ["rental", "cash", "flow"],
+    "tr": ["kira", "nakit", "akışı"]
+  },
+  "formula": {
+    "expression": "CF = CI - CO",
+    "variables": [
+      {
+        "symbol": "CF",
+        "description": {
+          "en": "cash flow",
+          "tr": "nakit akışı"
+        }
+      },
+      {
+        "symbol": "CI",
+        "description": {
+          "en": "cash inflows",
+          "tr": "nakit girişleri"
+        }
+      },
+      {
+        "symbol": "CO",
+        "description": {
+          "en": "cash outflows",
+          "tr": "nakit çıkışları"
+        }
+      }
+    ],
+    "notes": {
+      "en": "Use consistently defined inputs for the same period; this educational formula is not professional advice.",
+      "tr": "Aynı dönem için tutarlı biçimde tanımlanmış girdiler kullanın; bu eğitsel formül profesyonel tavsiye değildir."
+    }
+  },
+  "worked_example": {
+    "en": "Example: before relying on “Rental Cash Flow” in a real decision, identify the property, relevant date, document or calculation scope, then verify the result against the cited guidance and transaction documents.",
+    "tr": "Örnek: Gerçek bir kararda “Kira Nakit Akışı” kavramına dayanmadan önce taşınmazı, ilgili tarihi, belgeyi veya hesap kapsamını belirleyin; ardından sonucu kaynak gösterilen rehber ve işlem belgeleriyle doğrulayın."
+  },
+  "when_to_use": {
+    "en": "Use this concept when reading, discussing or checking property work involving rental cash flow.",
+    "tr": "Bu kavramı kira nakit akışı içeren taşınmaz işlerini okurken, konuşurken veya kontrol ederken kullanın."
+  },
+  "use_cases": {
+    "en": [
+      "Understanding transaction documents",
+      "Preparing questions for an adviser"
+    ],
+    "tr": [
+      "İşlem belgelerini anlamak",
+      "Bir uzmana sorulacak soruları hazırlamak"
+    ]
+  },
+  "risks": {
+    "en": [
+      "Meaning and obligations can change by jurisdiction, date and contract wording."
+    ],
+    "tr": [
+      "Anlam ve yükümlülükler bölgeye, tarihe ve sözleşme metnine göre değişebilir."
+    ]
+  },
+  "common_mistakes": {
+    "en": [
+      "Treating a general explanation as a substitute for property-specific professional advice."
+    ],
+    "tr": [
+      "Genel açıklamayı taşınmaza özel profesyonel tavsiyenin yerine koymak."
+    ]
+  },
+  "related_concepts": [
+    "investment-returns.capital-growth",
+    "investment-returns.gross-rental-income"
+  ],
+  "related_calculators": ["Rental Yield"],
+  "related_documents": [],
+  "jurisdiction": ["England and Wales (verify devolved and local rules)"],
+  "sources": [
+    {
+      "title": "Property investment guidance",
+      "publisher": "RICS",
+      "url": "https://www.rics.org/consumer-guides",
+      "publication_date": null,
+      "accessed_date": "2026-07-14",
+      "citation_note": "Authoritative or recognised professional guidance used for the definition and practical context of Rental Cash Flow; check the live source for updates."
+    }
+  ],
+  "created_date": "2026-07-14",
+  "reviewed_date": "2026-07-14",
+  "reviewer": "EMCP Content Pack 001 source review",
+  "review_status": "reviewed",
+  "content_version": "1.2.0",
+  "simple_explanation": {
+    "en": "The timing and amount of cash receipts and payments arising from a rental investment.",
+    "tr": "Kiralama yatırımından doğan nakit giriş ve çıkışlarının zamanı ve tutarıdır."
+  },
+  "professional_explanation": {
+    "en": "The timing and amount of cash receipts and payments arising from a rental investment. The basis, period, inclusions and assumptions must be stated consistently.",
+    "tr": "Kiralama yatırımından doğan nakit giriş ve çıkışlarının zamanı ve tutarıdır. Esas, dönem, dahil edilen kalemler ve varsayımlar tutarlı biçimde belirtilmelidir."
+  },
+  "real_world_example": {
+    "en": "An investor records the evidence and assumptions for rental cash flow before comparing the opportunity with alternatives.",
+    "tr": "Yatırımcı fırsatı alternatiflerle karşılaştırmadan önce kira nakit akışı için kanıt ve varsayımları kaydeder."
+  },
+  "office_example": {
+    "en": "The appraisal file shows the source, date, owner and sensitivity of the rental cash flow assumption.",
+    "tr": "Değerleme dosyası kira nakit akışı varsayımının kaynağını, tarihini, sorumlusunu ve duyarlılığını gösterir."
+  },
+  "interview_questions": {
+    "en": [
+      {
+        "question": "How would you verify Rental Cash Flow?",
+        "answer": "Define the measure, obtain dated evidence, state assumptions and test the effect of error."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kira Nakit Akışı nasıl doğrulanır?",
+        "answer": "Ölçüyü tanımlayın, tarihli kanıt alın, varsayımları açıklayın ve hata etkisini test edin."
+      }
+    ]
+  },
+  "practical_tips": {
+    "en": ["Record the source, date, units, period and responsible reviewer."],
+    "tr": ["Kaynağı, tarihi, birimi, dönemi ve sorumlu inceleyeni kaydedin."]
+  },
+  "best_practice": {
+    "en": [
+      "Use consistent definitions across the base, upside and downside cases."
+    ],
+    "tr": ["Temel, iyimser ve kötümser senaryolarda tutarlı tanımlar kullanın."]
+  },
+  "uk_practice": {
+    "en": "Verify current UK legal, tax, valuation, planning and lending requirements with the relevant qualified adviser.",
+    "tr": "Güncel Birleşik Krallık hukuk, vergi, değerleme, planlama ve kredi gerekliliklerini ilgili nitelikli uzmanla doğrulayın."
+  },
+  "turkey_practice": {
+    "en": "Use the Turkish explanation educationally and verify current Turkish law, tax, title, valuation and lending practice locally.",
+    "tr": "Türkçe açıklamayı eğitim amaçlı kullanın; güncel Türkiye hukuk, vergi, tapu, değerleme ve kredi uygulamasını yerel olarak doğrulayın."
+  },
+  "difficulty_level": "beginner",
+  "estimated_reading_time_minutes": 5,
+  "frequently_asked_questions": {
+    "en": [
+      {
+        "question": "Can Rental Cash Flow be used without checking its basis?",
+        "answer": "No. The definition, period, evidence and exclusions must be clear."
+      }
+    ],
+    "tr": [
+      {
+        "question": "Kira Nakit Akışı esası kontrol edilmeden kullanılabilir mi?",
+        "answer": "Hayır. Tanım, dönem, kanıt ve hariç tutulan kalemler açık olmalıdır."
+      }
+    ]
+  },
+  "revision_history": [
+    {
+      "version": "1.2.0",
+      "date": "2026-07-14",
+      "summary": {
+        "en": "Pack 003 investor-fundamentals enrichment.",
+        "tr": "Pack 003 yatırımcı temelleri zenginleştirmesi."
+      },
+      "reviewer": "EMCP Editorial Review"
+    }
+  ]
+}
