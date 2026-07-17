@@ -56,6 +56,9 @@ scripts.forEach((file) =>
 );
 const sw = read("service-worker.js");
 const build = read("scripts/build.mjs");
+const vercel = JSON.parse(read("vercel.json"));
+assert.equal(vercel.buildCommand, "npm run build");
+assert.equal(vercel.outputDirectory, "dist");
 const coreLiteral = sw.match(/const CORE_PATHS\s*=\s*(\[[\s\S]*?\]);/)[1];
 const coreAssets = JSON.parse(coreLiteral.replace(/,\s*]$/, "]"));
 coreAssets
