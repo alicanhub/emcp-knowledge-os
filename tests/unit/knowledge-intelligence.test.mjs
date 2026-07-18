@@ -35,6 +35,7 @@ const normalize = context.EMCPBilingualSearch.normalize,
             },
           },
         ],
+        officialSources: [{ title: "Official planning guidance" }],
       },
     },
     {
@@ -80,6 +81,13 @@ test("builds typed entry intelligence without inventing unavailable semantics", 
   assert.equal(insight.buildingRegulations.relatedEntry.index, 0);
   assert.equal(insight.handbook[0].id, "chapter.planning");
   assert.equal(insight.readNext.index, 2);
+  assert.equal(insight.prerequisites[0].index, 0);
+  assert.ok(insight.nextRecommended.length > 0);
+  assert.equal(Array.isArray(insight.peopleAlsoStudy), true);
+  assert.equal(insight.relatedRegulations.length, 1);
+  assert.ok(insight.confidence.includes("official"));
+  assert.ok(insight.confidence.includes("reference"));
+  assert.equal(Array.isArray(insight.caseStudies), true);
 });
 
 test("creates four-level journeys for every topic", () => {

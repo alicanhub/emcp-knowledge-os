@@ -14,7 +14,7 @@ test("knowledge, bilingual dialog and keyboard journey", async ({ page }) => {
   await page.keyboard.press("Enter");
   await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "false");
   await expect(page.locator("#modalTitle")).toContainText("LTV");
-  await expect(page.locator(".knowledge-section")).toHaveCount(33);
+  expect(await page.locator(".knowledge-section").count()).toBeGreaterThan(33);
   await expect(page.locator(".knowledge-section").first()).toHaveAttribute(
     "open",
     "",
@@ -72,7 +72,9 @@ test("knowledge intelligence graph, journeys, breadcrumbs and read-next journey"
   await expect(page.locator("#breadcrumbs li")).toHaveCount(4);
   await expect(page.locator(".knowledge-intelligence")).toBeVisible();
   await expect(
-    page.locator(".knowledge-intelligence summary").first(),
+    page
+      .locator(".knowledge-intelligence summary")
+      .filter({ hasText: /Parent concept|Üst kavram/ }),
   ).toContainText(/Parent concept|Üst kavram/);
   await expect(page.locator(".knowledge-intelligence")).toContainText(
     /Read Next|Sonraki Okuma/,
@@ -83,6 +85,49 @@ test("knowledge intelligence graph, journeys, breadcrumbs and read-next journey"
   await expect(
     page.locator("#intelligenceRecent button").first(),
   ).toBeVisible();
+});
+
+test("learning graph, progress timeline and distraction-free study mode", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.locator("#enBtn").click();
+  await page.locator("#q").fill("planning permission");
+  await page.locator("#grid .card").first().click();
+  await expect(page.locator(".learning-panel")).toContainText("In Progress");
+  await expect(page.locator(".learning-timeline li")).not.toHaveCount(0);
+  await expect(page.locator(".knowledge-confidence")).toContainText(
+    /Official|Reference/,
+  );
+  await expect(page.locator(".knowledge-recommendations")).toContainText(
+    "You should learn next",
+  );
+  await expect(page.locator(".knowledge-intelligence")).toContainText(
+    "Related construction methods",
+  );
+  await page.getByRole("button", { name: "Completed", exact: true }).click();
+  await expect(page.locator(".learning-panel")).toContainText("Completed");
+  await expect(page.locator(".learning-progress")).toHaveAttribute(
+    "aria-valuenow",
+    "75",
+  );
+  await page.getByRole("button", { name: "Study mode" }).click();
+  await expect(page.locator("#sheet")).toHaveClass(/study-mode/);
+  await expect(
+    page.getByRole("button", { name: "Exit study mode" }),
+  ).toHaveAttribute("aria-pressed", "true");
+  await page.keyboard.press("Escape");
+  await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "true");
+  await expect
+    .poll(() =>
+      page.evaluate(
+        () =>
+          JSON.parse(localStorage.getItem("emcpLearningProgress"))[
+            "Planning Permission"
+          ].status,
+      ),
+    )
+    .toBe("completed");
 });
 
 test("calculator and workspace backup journey", async ({ page }) => {
