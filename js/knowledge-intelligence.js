@@ -2,6 +2,9 @@
   "use strict";
 
   const LEVELS = ["beginner", "intermediate", "advanced", "expert"],
+    LEVEL_RANK = Object.fromEntries(
+      LEVELS.map((level, index) => [level, index]),
+    ),
     STAGES = [
       [
         "planning",
@@ -140,6 +143,54 @@
           ],
           (chapter) => chapter.id,
         );
+      const difficulty = entry.details?.difficultyLevel || "beginner",
+        approvedConcepts = new Set(
+          list(entry.details?.relatedConcepts).map(normalize),
+        ),
+        prerequisites = relatedItems.filter(
+          (item) =>
+            approvedConcepts.has(normalize(item.entry.term)) &&
+            (LEVEL_RANK[item.entry.details?.difficultyLevel || "beginner"] ||
+              0) < (LEVEL_RANK[difficulty] || 0),
+        ),
+        peopleAlsoStudy = sameCategory
+          .filter((item) => !recent.has(normalize(item.entry.term)))
+          .slice(0, 4),
+        nextRecommended = unique(
+          [readNext, ...relatedItems]
+            .filter(Boolean)
+            .filter(
+              (item) =>
+                !prerequisites.some((value) => value.index === item.index),
+            ),
+          (item) => item.index,
+        ).slice(0, 4),
+        relatedRegulations = list(entry.details?.relatedRegulations),
+        constructionMethods = relatedItems.filter((item) =>
+          normalize(
+            `${item.entry.cat} ${list(item.entry.tags).join(" ")}`,
+          ).match(/construction|insaat|method|yontem|site|santiye/),
+        ),
+        investmentConcepts = relatedItems.filter((item) =>
+          normalize(
+            `${item.entry.cat} ${list(item.entry.tags).join(" ")}`,
+          ).match(/investment|yatirim|finance|finans|return|yield/),
+        ),
+        details = entry.details || {},
+        confidence = unique([
+          ...(list(details.officialSources).length
+            ? ["verified", "official"]
+            : []),
+          ...(relatedItems.length || relatedRegulations.length
+            ? ["reference"]
+            : []),
+          ...(details.realWorldExample || details.practicalTips?.length
+            ? ["practical"]
+            : []),
+          ...(difficulty === "advanced" || difficulty === "expert"
+            ? ["advanced"]
+            : []),
+        ]);
       return {
         parent: { type: "category", title: entry.cat },
         children: [],
@@ -150,6 +201,15 @@
         handbook,
         stage: stageFor(entry),
         readNext,
+        prerequisites,
+        nextRecommended,
+        peopleAlsoStudy,
+        oftenUsedTogether: relatedItems.slice(0, 4),
+        relatedRegulations,
+        constructionMethods,
+        investmentConcepts,
+        caseStudies: list(details.relatedCaseStudies),
+        confidence,
       };
     }
 

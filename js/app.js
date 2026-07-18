@@ -50,6 +50,7 @@ let activePage = "home";
 let intelligence = null;
 let mapFocusIndex = 0;
 let commandPalette = null;
+const learning = window.EMCPLearningEngine.create({ storage: core.storage });
 const ui = window.EMCPi18n;
 const pick = (english, turkish) =>
   ui ? ui.pick(english, turkish) : lang === "tr" ? turkish : english;
@@ -480,6 +481,62 @@ function entryLinks(items, emptyMessage) {
         .join("")}</div>`
     : `<p class="related-empty">${esc(emptyMessage)}</p>`;
 }
+const learningStatusLabels = {
+  saved: ["Saved", "Kaydedildi"],
+  "in-progress": ["In Progress", "Devam Ediyor"],
+  completed: ["Completed", "Tamamlandı"],
+  mastered: ["Mastered", "Uzmanlaşıldı"],
+};
+const confidenceLabels = {
+  verified: ["Verified", "Doğrulandı"],
+  official: ["Official", "Resmî"],
+  reference: ["Reference", "Referans"],
+  practical: ["Practical", "Pratik"],
+  advanced: ["Advanced", "İleri"],
+};
+function learningControls(index, entry, insight) {
+  const status = learning.get(entry.term)?.status || "in-progress",
+    minutes = Number(entry.details?.estimatedReadingTimeMinutes) || 3,
+    difficulty = entry.details?.difficultyLevel || "beginner",
+    percentage = learning.percentage(entry.term),
+    timelineItems = [
+      ...insight.prerequisites.map((item) => ({ ...item, kind: "before" })),
+      { entry, index, kind: "current" },
+      ...insight.nextRecommended
+        .slice(0, 3)
+        .map((item) => ({ ...item, kind: "next" })),
+    ],
+    timeline = timelineItems
+      .map((item) => {
+        const itemStatus = learning.get(item.entry.term)?.status,
+          current = item.kind === "current";
+        return `<li class="${current ? "current" : ""}${itemStatus ? " tracked" : ""}"><button type="button" data-open-term="${item.index}"${current ? ' aria-current="step"' : ""}><span>${esc(item.entry.term)}</span><small>${esc(itemStatus ? pick(...learningStatusLabels[itemStatus]) : item.kind === "before" ? pick("Prerequisite", "Ön koşul") : item.kind === "next" ? pick("Up next", "Sırada") : pick("Current topic", "Mevcut konu"))}</small></button></li>`;
+      })
+      .join("");
+  return `<section class="learning-panel" aria-labelledby="learningPanelTitle"><div class="learning-panel-heading"><div><span class="eyebrow">${pick("Learning progress", "Öğrenme ilerlemesi")}</span><h3 id="learningPanelTitle">${esc(pick(...learningStatusLabels[status]))}</h3></div><button type="button" class="study-mode-toggle" data-study-mode aria-pressed="false">${pick("Study mode", "Çalışma modu")}</button></div><div class="learning-meta"><span>${esc(difficulty)}</span><span>${minutes} ${pick("min read", "dk okuma")}</span></div><div class="learning-progress" role="progressbar" aria-label="${esc(pick("Topic progress", "Konu ilerlemesi"))}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${percentage}"><span style="width:${percentage}%"></span></div><div class="learning-status-actions" role="group" aria-label="${esc(pick("Set learning status", "Öğrenme durumunu belirle"))}">${Object.keys(
+    learningStatusLabels,
+  )
+    .map(
+      (value) =>
+        `<button type="button" data-learning-status="${value}" data-learning-index="${index}" aria-pressed="${status === value}">${esc(pick(...learningStatusLabels[value]))}</button>`,
+    )
+    .join(
+      "",
+    )}</div><ol class="learning-timeline" aria-label="${esc(pick("Personal learning timeline", "Kişisel öğrenme zaman çizelgesi"))}">${timeline}</ol></section>`;
+}
+function learningHeaderContent(index, entry) {
+  const insight = intelligence?.forEntry(index, getRecent());
+  if (!insight) return "";
+  const confidence = insight.confidence.length
+    ? insight.confidence
+        .map(
+          (value) =>
+            `<span class="confidence-badge ${value}">${esc(pick(...confidenceLabels[value]))}</span>`,
+        )
+        .join("")
+    : `<span class="confidence-badge reference">${pick("Reference", "Referans")}</span>`;
+  return `${learningControls(index, entry, insight)}<section class="knowledge-confidence" aria-label="${esc(pick("Knowledge confidence", "Bilgi güveni"))}">${confidence}</section>`;
+}
 function intelligenceContent(index, entry) {
   const insight = intelligence?.forEntry(index, getRecent());
   if (!insight) return "";
@@ -511,13 +568,20 @@ function intelligenceContent(index, entry) {
           )
           .join("")}</div>`
       : `<p class="related-empty">${pick("No handbook chapter explicitly references this entry.", "Bu kayda açıkça atıf yapan el kitabı bölümü yok.")}</p>`;
-  return `<section class="knowledge-intelligence"><h3>${pick("Knowledge Intelligence", "Bilgi Zekâsı")}</h3><p class="relationship-note">${pick("Relationships marked as derived come from the validated local relationship index; missing semantics are not guessed.", "Türetilmiş olarak işaretlenen ilişkiler doğrulanmış yerel ilişki dizininden gelir; eksik anlamlar tahmin edilmez.")}</p>
+  const recommendations = `${expandable("You should learn next", "Sırada öğrenmeniz gerekenler", entryLinks(insight.nextRecommended, pick("No next topic available.", "Sonraki konu yok.")), true)}${expandable("People also study", "Başkalarının da çalıştıkları", entryLinks(insight.peopleAlsoStudy, pick("No additional topic available.", "Ek konu yok.")))}${expandable("Often used together", "Sık birlikte kullanılanlar", entryLinks(insight.oftenUsedTogether, pick("No co-usage relationship available.", "Birlikte kullanım ilişkisi yok.")))}${expandable("Required before this topic", "Bu konudan önce gerekenler", entryLinks(insight.prerequisites, pick("No verified prerequisite is required.", "Doğrulanmış ön koşul gerekmiyor.")))}`;
+  return `<section class="knowledge-recommendations"><h3>${pick("Dynamic Recommendations", "Dinamik Öneriler")}</h3>${recommendations}</section><section class="knowledge-intelligence"><h3>${pick("Learning Graph", "Öğrenme Grafiği")}</h3><p class="relationship-note">${pick("Relationships are generated only from approved content and the validated local relationship index; missing semantics are not guessed.", "İlişkiler yalnızca onaylı içerikten ve doğrulanmış yerel ilişki dizininden oluşturulur; eksik anlamlar tahmin edilmez.")}</p>
+    ${expandable("Prerequisites", "Ön koşullar", entryLinks(insight.prerequisites, pick("No verified prerequisite is required.", "Doğrulanmış ön koşul gerekmiyor.")), true)}
+    ${expandable("Next recommended topics", "Sonraki önerilen konular", entryLinks(insight.nextRecommended, pick("No next topic available.", "Sonraki konu yok.")))}
     ${expandable("Parent concept", "Üst kavram", `<button type="button" class="intelligence-parent" data-breadcrumb-category="${esc(entry.cat)}">${esc(categoryLabel(insight.parent.title))}</button>`, true)}
     ${expandable("Child concepts", "Alt kavramlar", `<p class="related-empty">${pick("This entry is a leaf in the current verified taxonomy; no child concepts are defined.", "Bu kayıt mevcut doğrulanmış taksonomide bir yapraktır; alt kavram tanımlanmamıştır.")}</p>`)}
     ${expandable("Opposite concepts", "Karşıt kavramlar", `<p class="related-empty">${pick("No opposite concept is defined in the approved record.", "Onaylı kayıtta karşıt kavram tanımlanmamıştır.")}</p>`)}
     ${expandable("Related concepts", "İlgili kavramlar", entryLinks(insight.related, pick("No validated relationships.", "Doğrulanmış ilişki yok.")))}
     ${expandable("Frequently used together", "Sık birlikte kullanılanlar", `<p class="relationship-note">${pick("Derived from the strongest local relationship links.", "En güçlü yerel ilişki bağlantılarından türetilmiştir.")}</p>${entryLinks(insight.frequentlyTogether, pick("No co-usage relationship available.", "Birlikte kullanım ilişkisi yok."))}`)}
     ${expandable("Building Regulation references", "Yapı Mevzuatı referansları", `${regulations.length ? `<ul>${regulations.map((value) => `<li>${value}</li>`).join("")}</ul>` : ""}${regulationEntry ? entryLinks([regulationEntry], "") : ""}${!regulations.length && !regulationEntry ? `<p class="related-empty">${pick("No Building Regulations reference is recorded.", "Kayıtlı Yapı Mevzuatı referansı yok.")}</p>` : ""}`)}
+    ${expandable("Related regulations", "İlgili mevzuat", referencesMarkup(insight.relatedRegulations))}
+    ${expandable("Related construction methods", "İlgili inşaat yöntemleri", entryLinks(insight.constructionMethods, pick("No approved construction-method relationship.", "Onaylı inşaat yöntemi ilişkisi yok.")))}
+    ${expandable("Related investment concepts", "İlgili yatırım kavramları", entryLinks(insight.investmentConcepts, pick("No approved investment relationship.", "Onaylı yatırım ilişkisi yok.")))}
+    ${expandable("Related case studies", "İlgili vaka analizleri", insight.caseStudies.length ? `<ul>${insight.caseStudies.map((item) => `<li>${esc(typeof item === "string" ? item : item.id || item.title || "")}</li>`).join("")}</ul>` : `<p class="related-empty">${pick("No approved case-study relationship.", "Onaylı vaka analizi ilişkisi yok.")}</p>`)}
     ${expandable("Calculator links", "Hesaplayıcı bağlantıları", calculatorLinks)}
     ${expandable("Handbook links", "El kitabı bağlantıları", handbookLinks)}
     ${expandable("Construction workflow position", "İnşaat iş akışı konumu", `<p><span class="workflow-stage">${esc(pick(...stageLabels[insight.stage]))}</span></p><p class="relationship-note">${pick("Derived from the record’s approved title, category, tags and usage text.", "Kaydın onaylı başlık, kategori, etiket ve kullanım metninden türetilmiştir.")}</p>`)}
@@ -818,23 +882,26 @@ async function openTerm(i) {
   if (hydrated) TERMS = knowledge.entries;
   const t = TERMS[i];
   if (!t) return false;
+  const firstOpen = currentTermIndex !== i;
   currentTermIndex = i;
   let r = getRecent();
   r = [t.term, ...r.filter((x) => x !== t.term)].slice(0, 30);
   core.storage.set("emcpRecent", r);
+  if (firstOpen) learning.visit(t.term);
   window.dispatchEvent(new CustomEvent("emcp:workspace-change"));
   updateBreadcrumb("knowledge", t.cat, t.term);
   const fav = getFav().includes(t.term),
     definition = lang === "tr" ? t.def : t.defEn || t.def,
     usage = lang === "tr" ? t.use : t.useEn || t.use,
     note = window.emcpWorkspace?.knowledgeNoteMarkup?.(i) || "";
-  sheet.innerHTML = `<button type="button" class="close" data-modal-close>×</button><div class="badge">${esc(categoryLabel(t.cat))}</div><h2>${esc(t.term)}</h2>${t.abbr ? `<div class="abbr">${esc(t.abbr)}</div>` : ""}<p><b>${esc(t.tr)}</b></p>${v2Content(i, t) || `<h3>${pick("Definition", "Tanım")}</h3><p>${esc(definition)}</p><h3>${pick("When is it used?", "Ne zaman kullanılır?")}</h3><p>${esc(usage)}</p>`}${intelligenceContent(i, t)}${note}<div class="actions"><button type="button" data-toggle-favourite="${i}">${fav ? "★" : "☆"} ${pick("Favourite", "Favori")}</button><button type="button" data-collection-picker="${i}">${pick("Collections", "Koleksiyonlar")}</button><button type="button" data-copy-term="${i}">${pick("Copy", "Kopyala")}</button><button type="button" data-share-term="${i}">${pick("Share", "Paylaş")}</button></div>`;
+  sheet.innerHTML = `<button type="button" class="close" data-modal-close>×</button><div class="badge">${esc(categoryLabel(t.cat))}</div><h2>${esc(t.term)}</h2>${t.abbr ? `<div class="abbr">${esc(t.abbr)}</div>` : ""}<p><b>${esc(t.tr)}</b></p>${learningHeaderContent(i, t)}${v2Content(i, t) || `<h3>${pick("Definition", "Tanım")}</h3><p>${esc(definition)}</p><h3>${pick("When is it used?", "Ne zaman kullanılır?")}</h3><p>${esc(usage)}</p>`}${intelligenceContent(i, t)}${note}<div class="actions"><button type="button" data-toggle-favourite="${i}">${fav ? "★" : "☆"} ${pick("Favourite", "Favori")}</button><button type="button" data-collection-picker="${i}">${pick("Collections", "Koleksiyonlar")}</button><button type="button" data-copy-term="${i}">${pick("Copy", "Kopyala")}</button><button type="button" data-share-term="${i}">${pick("Share", "Paylaş")}</button></div>`;
   window.showModal();
   updateStats();
   return true;
 }
 function closeModal() {
   currentTermIndex = null;
+  sheet.classList.remove("study-mode");
   window.hideModal();
   updateBreadcrumb();
 }
@@ -851,6 +918,7 @@ function toggleFav(term) {
 }
 window.onEMCPModalClose = () => {
   currentTermIndex = null;
+  sheet.classList.remove("study-mode");
 };
 function copyTerm(i) {
   const t = TERMS[Number(i)];
@@ -994,6 +1062,24 @@ document.addEventListener("click", (event) => {
         true,
       ),
     );
+  }
+  if (
+    button.dataset.learningStatus &&
+    button.dataset.learningIndex !== undefined
+  ) {
+    const index = Number(button.dataset.learningIndex),
+      entry = TERMS[index];
+    if (entry && learning.set(entry.term, button.dataset.learningStatus)) {
+      window.dispatchEvent(new CustomEvent("emcp:workspace-change"));
+      openTerm(index);
+    }
+  }
+  if (button.hasAttribute("data-study-mode")) {
+    const active = sheet.classList.toggle("study-mode");
+    button.setAttribute("aria-pressed", String(active));
+    button.textContent = active
+      ? pick("Exit study mode", "Çalışma modundan çık")
+      : pick("Study mode", "Çalışma modu");
   }
   if (button.dataset.searchSuggestion !== undefined) {
     q.value = button.dataset.searchSuggestion;
