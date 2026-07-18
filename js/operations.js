@@ -82,7 +82,11 @@
     if (!button) return;
     if (button.dataset.page) track(`page_${button.dataset.page}`);
     if (button.dataset.openTerm !== undefined) track("knowledge_open");
-    if (button.dataset.calculate) track("calculator_complete");
+    if (button.dataset.calculate) {
+      track("calculator_complete");
+      track(`calculator_${button.dataset.calculate}`);
+      global.dispatchEvent(new CustomEvent("emcp:workspace-change"));
+    }
     if (button.dataset.workspace) track("workspace_open");
     if (button.id === "exportWorkspace") track("workspace_export");
   });

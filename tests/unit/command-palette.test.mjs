@@ -95,3 +95,34 @@ test("returns an empty list for an unmatched query", () => {
   const model = createModel({ entries });
   assert.equal(model.search("zzzzzzzz", storage).length, 0);
 });
+
+test("adds a resumable handbook chapter without displacing favourites", () => {
+  const model = createModel({
+    entries,
+    chapters: [
+      {
+        id: "chapter.finance",
+        title: { en: "Finance and Mortgages", tr: "Finansman ve Mortgage" },
+      },
+    ],
+  });
+  const contextualStorage = {
+    get: storage.get,
+    getRaw: () => "chapter.finance",
+  };
+  const results = model.search("", contextualStorage);
+  assert.equal(results[0].group, "Favourites");
+  assert.ok(
+    results.some((item) => item.group === "Continue Where You Left Off"),
+  );
+});
+
+test("caps large result sets for predictable rendering performance", () => {
+  const large = Array.from({ length: 5000 }, (_, index) => ({
+    term: `Property concept ${index}`,
+    tr: `Gayrimenkul kavramı ${index}`,
+    cat: "Property",
+  }));
+  const model = createModel({ entries: large });
+  assert.equal(model.search("property", { get: () => [] }).length, 120);
+});

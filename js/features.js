@@ -9,6 +9,7 @@
       calculators: ["js/calculators.js"],
       construction: ["js/calculators.js"],
       handbooks: ["js/handbook.js"],
+      dashboard: ["js/premium-dashboard.js"],
     },
     scripts = new Map(),
     features = new Map();

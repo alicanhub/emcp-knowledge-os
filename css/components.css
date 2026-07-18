@@ -293,6 +293,7 @@
 }
 
 .command-palette {
+  --palette-motion: 180ms;
   position: fixed;
   inset: 0;
   z-index: calc(var(--z-dialog) + 10);
@@ -304,7 +305,7 @@
   backdrop-filter: blur(14px);
   opacity: 0;
   visibility: hidden;
-  transition: opacity var(--motion-normal) ease;
+  transition: opacity var(--palette-motion) ease;
 }
 .command-palette.show {
   opacity: 1;
@@ -321,7 +322,7 @@
   background: color-mix(in srgb, var(--card) 94%, transparent);
   box-shadow: 0 2rem 6rem #0008;
   transform: translateY(-0.75rem) scale(0.985);
-  transition: transform var(--motion-normal) cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition: transform var(--palette-motion) cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 .command-palette.show .command-palette-panel {
   transform: translateY(0) scale(1);
@@ -364,10 +365,57 @@
   font-size: 0.72rem;
   font-weight: 800;
 }
+.command-palette-body {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 15rem;
+  min-height: 0;
+}
 .command-palette-results {
   overflow: auto;
   overscroll-behavior: contain;
   padding: var(--space-2);
+}
+.command-palette-preview {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-2);
+  overflow: hidden;
+  border-inline-start: 1px solid var(--line);
+  padding: var(--space-5);
+  background: color-mix(in srgb, var(--bg) 60%, var(--card));
+}
+.command-palette-preview small {
+  color: var(--ink);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.command-palette-preview strong {
+  font-size: 1.08rem;
+  overflow-wrap: anywhere;
+}
+.command-palette-preview p {
+  margin: 0;
+  color: color-mix(in srgb, var(--ink) 78%, var(--card));
+  overflow-wrap: anywhere;
+}
+.command-preview-icon {
+  display: grid;
+  width: 3rem;
+  height: 3rem;
+  place-items: center;
+  border-radius: 0.85rem;
+  background: linear-gradient(145deg, var(--navy2), var(--navy));
+  box-shadow: 0 0.6rem 1.5rem #01216933;
+  color: #fff;
+  font-size: 1.25rem;
+}
+.command-preview-action {
+  margin-block-start: auto;
+  color: var(--ink);
+  font-size: 0.74rem;
 }
 .command-group h3,
 .command-history h3 {
@@ -509,6 +557,196 @@
   }
   .command-palette-footer > span:last-child {
     display: none;
+  }
+  .command-palette-body {
+    grid-template-columns: 1fr;
+  }
+  .command-palette-preview {
+    display: none;
+  }
+}
+
+.smart-dashboard {
+  margin-block: clamp(2rem, 5vw, 4rem);
+}
+.smart-dashboard-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  margin-block-end: var(--space-4);
+}
+.smart-dashboard-heading h2 {
+  margin: 0.15rem 0 0;
+  font-size: clamp(1.55rem, 3vw, 2.2rem);
+  letter-spacing: -0.035em;
+}
+.smart-dashboard-heading button {
+  min-height: var(--target-min);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--card);
+  color: var(--ink);
+  padding-inline: var(--space-4);
+  font-weight: 750;
+}
+.eyebrow {
+  color: var(--color-accent-text);
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.smart-dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+.dashboard-feature {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: 7rem;
+  border: 0;
+  border-radius: 1.25rem;
+  padding: clamp(1.1rem, 3vw, 1.7rem);
+  background: linear-gradient(135deg, var(--navy), var(--navy2));
+  box-shadow: 0 1.1rem 2.6rem #0121692b;
+  color: #fff;
+  text-align: start;
+  transition:
+    transform var(--motion-fast) ease,
+    box-shadow var(--motion-fast) ease;
+}
+.dashboard-feature:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1.35rem 3rem #0121693d;
+}
+.dashboard-feature > span:nth-child(2) {
+  display: grid;
+  gap: 0.18rem;
+}
+.dashboard-feature small,
+.dashboard-feature span span {
+  color: #e7ecff;
+}
+.dashboard-feature strong {
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+.dashboard-feature-icon {
+  display: grid;
+  width: 3.5rem;
+  height: 3.5rem;
+  place-items: center;
+  border-radius: 1rem;
+  background: #ffffff1f;
+  font-size: 1.5rem;
+}
+.dashboard-card {
+  min-width: 0;
+  border: 1px solid color-mix(in srgb, var(--line) 82%, transparent);
+  border-radius: 1.15rem;
+  padding: var(--space-4);
+  background: var(--card);
+  box-shadow: 0 0.6rem 1.8rem #0121690d;
+  transition:
+    transform var(--motion-fast) ease,
+    box-shadow var(--motion-fast) ease;
+}
+.dashboard-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 1rem 2.2rem #01216918;
+}
+.dashboard-card header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-block-end: var(--space-3);
+}
+.dashboard-card header > span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 0.55rem;
+  background: color-mix(in srgb, var(--navy2) 10%, var(--card));
+  color: var(--navy2);
+  font-weight: 900;
+}
+.dashboard-card h3 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: -0.015em;
+}
+.dashboard-link {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-3);
+  width: 100%;
+  min-height: 3.4rem;
+  border: 0;
+  border-block-start: 1px solid color-mix(in srgb, var(--line) 70%, transparent);
+  padding: var(--space-2);
+  background: transparent;
+  color: var(--ink);
+  text-align: start;
+}
+.dashboard-link:first-child {
+  border-block-start: 0;
+}
+.dashboard-link > span:first-child {
+  display: grid;
+  min-width: 0;
+}
+.dashboard-link strong,
+.dashboard-link small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.dashboard-link small,
+.dashboard-empty {
+  color: var(--muted);
+}
+.dashboard-empty {
+  margin: var(--space-4) 0;
+}
+.dashboard-skeleton {
+  min-height: 13rem;
+  border-radius: 1.15rem;
+  background: linear-gradient(
+    100deg,
+    color-mix(in srgb, var(--line) 35%, var(--card)) 25%,
+    color-mix(in srgb, var(--line) 12%, var(--card)) 40%,
+    color-mix(in srgb, var(--line) 35%, var(--card)) 60%
+  );
+  background-size: 200% 100%;
+  animation: dashboard-shimmer 1.2s ease-in-out infinite;
+}
+@keyframes dashboard-shimmer {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+@media (max-width: 760px) {
+  .smart-dashboard-grid {
+    grid-template-columns: 1fr;
+  }
+  .dashboard-feature {
+    grid-column: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .command-palette {
+    --palette-motion: 0.01ms;
+  }
+  .dashboard-skeleton {
+    animation: none;
   }
 }
 .knowledge-v2-meta {

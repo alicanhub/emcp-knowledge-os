@@ -822,6 +822,7 @@ async function openTerm(i) {
   let r = getRecent();
   r = [t.term, ...r.filter((x) => x !== t.term)].slice(0, 30);
   core.storage.set("emcpRecent", r);
+  window.dispatchEvent(new CustomEvent("emcp:workspace-change"));
   updateBreadcrumb("knowledge", t.cat, t.term);
   const fav = getFav().includes(t.term),
     definition = lang === "tr" ? t.def : t.defEn || t.def,
@@ -843,6 +844,7 @@ function toggleFav(term) {
   let f = getFav();
   f = f.includes(term) ? f.filter((x) => x !== term) : [...f, term];
   core.storage.set("emcpFav", f);
+  window.dispatchEvent(new CustomEvent("emcp:workspace-change"));
   closeModal();
   render();
   window.emcpWorkspace?.refresh?.();
@@ -936,6 +938,7 @@ function setLang(l) {
   if (currentTermIndex !== null) openTerm(currentTermIndex);
   window.EMCPHandbook?.setLanguage?.(lang);
   commandPalette?.setLanguage?.();
+  window.EMCPPremiumDashboard?.render?.();
 }
 function showHelp() {
   currentTermIndex = null;
@@ -1086,6 +1089,16 @@ async function initializeApp() {
   renderCats();
   render();
   updateStats();
+  const idle =
+    window.requestIdleCallback ||
+    ((callback) => window.setTimeout(callback, 500));
+  idle(() =>
+    window.EMCPFeatures?.load("dashboard").catch((error) => {
+      const dashboard = document.getElementById("smartDashboard");
+      if (dashboard) dashboard.setAttribute("aria-busy", "false");
+      console.error("Unable to load dashboard:", error);
+    }),
+  );
 }
 window.EMCPApp = {
   showPage,
