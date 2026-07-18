@@ -138,6 +138,38 @@
           </button>
         </div>
 
+        <section
+          id="smartDashboard"
+          class="smart-dashboard"
+          aria-labelledby="smartDashboardTitle"
+          aria-busy="true"
+        >
+          <div class="smart-dashboard-heading">
+            <div>
+              <span class="eyebrow" id="smartDashboardEyebrow"
+                >EMCP Intelligence</span
+              >
+              <h2 id="smartDashboardTitle">Your dashboard</h2>
+            </div>
+            <button
+              type="button"
+              id="smartDashboardExplore"
+              data-page="knowledge"
+            >
+              Explore all
+            </button>
+          </div>
+          <div id="smartDashboardGrid" class="smart-dashboard-grid">
+            <div class="dashboard-skeleton" aria-hidden="true"></div>
+            <div class="dashboard-skeleton" aria-hidden="true"></div>
+            <div class="dashboard-skeleton" aria-hidden="true"></div>
+            <div class="dashboard-skeleton" aria-hidden="true"></div>
+          </div>
+          <span class="sr-only" role="status" id="smartDashboardStatus"
+            >Loading personalised dashboard</span
+          >
+        </section>
+
         <h2 class="section-title" data-i18n="explore">Explore the Platform</h2>
         <p class="section-intro" data-i18n="exploreIntro">
           Knowledge, calculators and practical tools built for property,
@@ -903,12 +935,20 @@
             <span aria-hidden="true">Esc</span>
           </button>
         </header>
-        <div
-          id="commandPaletteResults"
-          class="command-palette-results"
-          role="region"
-          aria-label="Command results"
-        ></div>
+        <div class="command-palette-body">
+          <div
+            id="commandPaletteResults"
+            class="command-palette-results"
+            role="region"
+            aria-label="Command results"
+          ></div>
+          <aside
+            id="commandPalettePreview"
+            class="command-palette-preview"
+            aria-label="Selected result preview"
+            aria-live="polite"
+          ></aside>
+        </div>
         <footer class="command-palette-footer">
           <span
             id="commandPaletteStatus"

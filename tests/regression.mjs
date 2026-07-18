@@ -35,6 +35,7 @@ const scripts = [
   "js/core.js",
   "js/search-engine.js",
   "js/command-palette.js",
+  "js/premium-dashboard.js",
   "js/knowledge.js",
   "js/knowledge-intelligence.js",
   "js/calculator-model.js",
@@ -74,12 +75,13 @@ coreAssets
       `missing cached asset: ${file}`,
     ),
   );
-assert.match(sw, /CACHE_PREFIX\}v29/);
+assert.match(sw, /CACHE_PREFIX\}v30/);
 assert.match(sw, /caches\.match\(OFFLINE_URL\)/);
 assert.match(sw, /url\.pathname\.endsWith\(["']\.json["']\)/);
 assert.ok(coreAssets.includes("js/core.js"));
 assert.ok(coreAssets.includes("js/search-engine.js"));
 assert.ok(coreAssets.includes("js/command-palette.js"));
+assert.ok(coreAssets.includes("js/premium-dashboard.js"));
 assert.ok(coreAssets.includes("js/knowledge.js"));
 assert.ok(coreAssets.includes("js/knowledge-intelligence.js"));
 assert.ok(coreAssets.includes("js/calculator-model.js"));

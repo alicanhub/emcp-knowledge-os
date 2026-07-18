@@ -2,7 +2,8 @@
   "use strict";
 
   const STORAGE_SEARCHES = "emcpPaletteSearches";
-  const MAX_RESULTS = 36;
+  const MAX_RESULTS = 120;
+  const WINDOW_SIZE = 32;
   const list = (value) => (Array.isArray(value) ? value : []);
   const escapeHTML = (value) =>
     String(value ?? "").replace(
@@ -97,8 +98,12 @@
     commands = [],
   } = {}) {
     const termIndex = new Map(
-      entries.map((entry, index) => [normalize(entry.term), { entry, index }]),
-    );
+        entries.map((entry, index) => [
+          normalize(entry.term),
+          { entry, index },
+        ]),
+      ),
+      chapterIndex = new Map(chapters.map((chapter) => [chapter.id, chapter]));
     function knowledgeItem(entry, index, group = "Knowledge") {
       return {
         id: `knowledge:${index}`,
@@ -163,12 +168,28 @@
       }));
     function contextualItems(storage) {
       const favourites = new Set(list(storage.get("emcpFav"))),
-        recent = list(storage.get("emcpRecent"));
+        recent = list(storage.get("emcpRecent")),
+        lastChapter = chapterIndex.get(
+          storage.getRaw?.("emcpHandbookInvestorLastChapter") || "",
+        ),
+        continueItems = lastChapter
+          ? [
+              {
+                id: `chapter:${lastChapter.id}`,
+                group: "Continue Where You Left Off",
+                title: lastChapter.title?.en || lastChapter.id,
+                subtitle: lastChapter.title?.tr || "",
+                keywords: ["continue", "resume", "devam", "sürdür"],
+                action: { type: "chapter", id: lastChapter.id },
+              },
+            ]
+          : [];
       return [
         ...[...favourites]
           .map((term) => termIndex.get(normalize(term)))
           .filter(Boolean)
           .map(({ entry, index }) => knowledgeItem(entry, index, "Favourites")),
+        ...continueItems,
         ...recent
           .filter((term) => !favourites.has(term))
           .map((term) => termIndex.get(normalize(term)))
@@ -221,6 +242,9 @@
       set(key, value) {
         core.storage.set(key, value);
       },
+      getRaw(key) {
+        return core.storage.getRaw(key) || "";
+      },
     };
   }
 
@@ -229,9 +253,11 @@
       input = document.getElementById("commandPaletteInput"),
       output = document.getElementById("commandPaletteResults"),
       status = document.getElementById("commandPaletteStatus"),
+      preview = document.getElementById("commandPalettePreview"),
       closeButton = document.getElementById("commandPaletteClose"),
       mobileSearch = document.getElementById("q");
-    if (!root || !input || !output || !status || !closeButton) return null;
+    if (!root || !input || !output || !preview || !status || !closeButton)
+      return null;
     const storage = createStorage(global.EMCPCore),
       labels = {
         en: {
@@ -257,7 +283,8 @@
       results = [],
       selected = 0,
       returnFocus = null,
-      open = false;
+      open = false,
+      cachedSearches = storage.get(STORAGE_SEARCHES);
     const language = () =>
       document.documentElement.lang === "tr" ? "tr" : "en";
     const allFocusable = () => [
@@ -266,11 +293,11 @@
       ...output.querySelectorAll("button"),
     ];
 
-    function groupMarkup(items, query) {
+    function groupMarkup(items, query, offset = 0) {
       const groups = new Map();
       items.forEach((item, index) => {
         if (!groups.has(item.group)) groups.set(item.group, []);
-        groups.get(item.group).push({ item, index });
+        groups.get(item.group).push({ item, index: index + offset });
       });
       return [...groups]
         .map(
@@ -290,9 +317,20 @@
       results = model.search(query, storage);
       selected = Math.min(selected, Math.max(0, results.length - 1));
       if (results.length) {
-        output.innerHTML = groupMarkup(results, query);
+        const start = Math.max(
+          0,
+          Math.min(selected - 8, Math.max(0, results.length - WINDOW_SIZE)),
+        );
+        output.innerHTML = groupMarkup(
+          results.slice(start, start + WINDOW_SIZE),
+          query,
+          start,
+        );
+        const current = results[selected];
+        preview.innerHTML = `<span class="command-preview-icon" aria-hidden="true">${current.group === "Favourites" ? "★" : current.group === "Recent" ? "↺" : current.group === "Calculators" ? "∑" : current.group === "Construction Tools" ? "◇" : current.group === "Investor Handbook" || current.group === "Continue Where You Left Off" ? "▤" : current.group === "Regulations" ? "§" : "◆"}</span><small>${escapeHTML(current.group)}</small><strong>${highlight(current.title, query)}</strong><p>${highlight(current.subtitle, query)}</p><span class="command-preview-action">${escapeHTML(language() === "tr" ? "Açmak için Enter'a basın" : "Press Enter to open")}</span>`;
       } else {
         output.innerHTML = `<div class="command-empty"><strong>${labels[language()].empty}</strong><span>${labels[language()].hint}</span><div class="command-suggestions"><button type="button" data-command-suggestion="LTV">LTV</button><button type="button" data-command-suggestion="yield">Yield</button><button type="button" data-command-suggestion="handbook">Handbook</button></div></div>`;
+        preview.innerHTML = `<span class="command-preview-icon" aria-hidden="true">⌕</span><strong>${escapeHTML(labels[language()].empty)}</strong><p>${escapeHTML(labels[language()].hint)}</p>`;
       }
       status.textContent = labels[language()].results(results.length);
     }
@@ -310,12 +348,12 @@
       if (!query) return;
       storage.set(
         STORAGE_SEARCHES,
-        [
+        (cachedSearches = [
           query,
-          ...storage
-            .get(STORAGE_SEARCHES)
-            .filter((item) => normalize(item) !== normalize(query)),
-        ].slice(0, 8),
+          ...cachedSearches.filter(
+            (item) => normalize(item) !== normalize(query),
+          ),
+        ].slice(0, 8)),
       );
     }
 
@@ -357,7 +395,7 @@
     }
 
     function showHistory() {
-      const history = storage.get(STORAGE_SEARCHES);
+      const history = cachedSearches;
       if (!history.length || input.value) return;
       const label = labels[language()].recent;
       output.insertAdjacentHTML(
