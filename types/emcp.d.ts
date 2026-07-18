@@ -12,12 +12,34 @@ interface Window {
         relationships: string;
         details: string;
       };
-      translations(value: unknown): Record<string, { defEn: string; useEn: string }>;
+      translations(
+        value: unknown,
+      ): Record<string, { defEn: string; useEn: string }>;
       [key: string]: unknown;
     };
     [key: string]: unknown;
   };
   EMCPKnowledge: Record<string, unknown>;
+  EMCPKnowledgeIntelligence: Record<string, unknown>;
+  EMCPBilingualSearch: {
+    create(entries: Array<Record<string, any>>): {
+      search(
+        query: unknown,
+        categoryAliases?: Record<string, string>,
+      ): Array<{
+        index: number;
+        score: number;
+        tier: number;
+        breakdown: Array<Record<string, any>>;
+        reasons: string[];
+      }>;
+      suggest(query: unknown, limit?: number): string[];
+      records: number;
+    };
+    normalize(value: unknown): string;
+    highlight(value: unknown, query: unknown): string;
+    weights: Array<Record<string, any>>;
+  };
   EMCPCalculatorModel: Record<string, unknown>;
   EMCPDOM: Record<string, unknown>;
   EMCPApp: {
@@ -28,6 +50,7 @@ interface Window {
   };
   EMCPI18n: Record<string, unknown>;
   EMCPAssistant: Record<string, unknown>;
+  EMCPAssistantEngine: Record<string, unknown>;
   EMCPCalculators: Record<string, unknown>;
   EMCPWorkspace: Record<string, unknown>;
   EMCPPWA: Record<string, unknown>;

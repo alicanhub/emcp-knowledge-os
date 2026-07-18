@@ -50,8 +50,21 @@
       active: "AKTİF",
       planned: "PLANLANIYOR",
       availableOffline: "Çevrimdışı kullanılabilir",
+      breadcrumb: "İçerik yolu",
+      knowledgeMap: "Bilgi Haritası",
+      knowledgeMapDescription:
+        "İlişkileri, öğrenme yolculuklarını ve inşaat aşamalarını keşfedin.",
+      visualKnowledgeMap: "Görsel Bilgi Haritası",
+      knowledgeIntelligenceDescription:
+        "Yerel bilgi tabanındaki doğrulanmış ve türetilmiş ilişkileri keşfedin.",
+      topic: "Konu",
+      relationshipGraph: "Etkileşimli bilgi ilişki grafiği",
+      graphInstruction:
+        "Yerel ilişki çevresine odaklanmak için bir düğüm seçin.",
+      knowledgeJourney: "Bilgi Yolculuğu",
+      recentlyViewed: "Yakın Zamanda Görüntülenenler",
       assistantIntro:
-        "Gayrimenkul, inşaat, yatırım, finansman veya uyum hakkında sorun. EMCP önce yerel bilgisinde arama yapar.",
+        "Türkçe, İngilizce veya iki dilde sorun. Yanıtlar yalnızca onaylı yerel EMCP bilgisini kullanır ve kanıtlarını gösterir.",
       yourQuestion: "Sorunuz",
       assistantPlaceholder: "Profesyonel bir soru sorun…",
       askEmcp: "EMCP’ye Sor",
@@ -134,8 +147,21 @@
       active: "ACTIVE",
       planned: "PLANNED",
       availableOffline: "Available offline",
+      breadcrumb: "Breadcrumb",
+      knowledgeMap: "Knowledge Map",
+      knowledgeMapDescription:
+        "Explore relationships, learning journeys and construction stages.",
+      visualKnowledgeMap: "Visual Knowledge Map",
+      knowledgeIntelligenceDescription:
+        "Explore verified and derived relationships across the local knowledge base.",
+      topic: "Topic",
+      relationshipGraph: "Interactive knowledge relationship graph",
+      graphInstruction:
+        "Choose a node to focus its local relationship neighbourhood.",
+      knowledgeJourney: "Knowledge Journey",
+      recentlyViewed: "Recently Viewed",
       assistantIntro:
-        "Ask about property, construction, investment, finance or compliance. EMCP searches its local knowledge first.",
+        "Ask in English, Turkish or both. Answers use only approved local EMCP knowledge and show their evidence.",
       yourQuestion: "Your question",
       assistantPlaceholder: "Ask a professional question…",
       askEmcp: "Ask EMCP",

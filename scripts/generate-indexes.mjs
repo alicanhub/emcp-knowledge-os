@@ -15,6 +15,9 @@ const compact = entries.map((entry) => ({
   ...(entry.abbr ? { abbr: entry.abbr } : {}),
   def: entry.def,
   defEn: translations[entry.term]?.defEn || entry.def,
+  use: entry.use,
+  useEn: translations[entry.term]?.useEn || entry.use,
+  example: entry.example,
   cat: entry.cat,
   ...(entry.aliases?.length ? { aliases: entry.aliases } : {}),
   ...(entry.tags?.length ? { tags: entry.tags } : {}),
@@ -28,6 +31,11 @@ const normalize = (value) =>
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/ı/g, "i")
+    .replace(/ş/g, "s")
+    .replace(/ç/g, "c")
+    .replace(/ğ/g, "g")
+    .replace(/ö/g, "o")
+    .replace(/ü/g, "u")
     .replace(/[^\p{L}\p{N}]+/gu, " ")
     .trim();
 const values = (value) => (Array.isArray(value) ? value : value ? [value] : []);

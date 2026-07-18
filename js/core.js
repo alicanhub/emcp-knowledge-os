@@ -334,7 +334,7 @@
     return result;
   }
   function knowledgeSearchEntries(value) {
-    if (!Array.isArray(value) || !value.length || value.length > 1000)
+    if (!Array.isArray(value) || !value.length || value.length > 20000)
       throw new TypeError("Invalid knowledge search index");
     return value.map((entry, index) => {
       if (!object(entry))
@@ -350,14 +350,14 @@
         abbr: cleanString(entry.abbr, 80),
         def: cleanString(entry.def),
         defEn: cleanString(entry.defEn),
+        use: cleanString(entry.use),
+        useEn: cleanString(entry.useEn),
+        example: cleanString(entry.example),
         cat: cleanString(entry.cat, 120),
         source,
         aliases: stringList(entry.aliases, { maxItems: 100, maxLength: 300 }),
         tags: stringList(entry.tags, { maxItems: 100, maxLength: 100 }),
         keywords: stringList(entry.keywords, { maxItems: 100, maxLength: 100 }),
-        use: "",
-        useEn: "",
-        example: "",
       };
     });
   }
@@ -368,20 +368,24 @@
       !Array.isArray(value.relationships)
     )
       throw new TypeError("Invalid relationship index");
-    return value.relationships
-      .slice(0, entryCount)
-      .map((items) =>
-        Array.isArray(items)
-          ? [
-              ...new Set(
-                items.filter(
-                  (item) =>
-                    Number.isInteger(item) && item >= 0 && item < entryCount,
-                ),
-              ),
-            ].slice(0, 20)
-          : [],
-      );
+    if (value.relationships.length !== entryCount)
+      throw new TypeError("Relationship index length does not match runtime");
+    return value.relationships.map((items, index) => {
+      if (
+        !Array.isArray(items) ||
+        items.length > 20 ||
+        items.some(
+          (item) =>
+            !Number.isInteger(item) ||
+            item < 0 ||
+            item >= entryCount ||
+            item === index,
+        ) ||
+        new Set(items).size !== items.length
+      )
+        throw new TypeError(`Broken relationship list at index ${index}`);
+      return items.slice();
+    });
   }
   function runtimeConfig(value) {
     if (!object(value)) throw new TypeError("Invalid runtime configuration");
@@ -403,7 +407,7 @@
     };
   }
   function knowledgeEntries(value) {
-    if (!Array.isArray(value) || value.length > 1000)
+    if (!Array.isArray(value) || value.length > 20000)
       throw new TypeError("Invalid knowledge entries");
     return value.map((entry, index) => {
       if (!object(entry))
@@ -436,7 +440,7 @@
     if (!object(value)) throw new TypeError("Invalid knowledge translations");
     const result = Object.create(null);
     Object.entries(value)
-      .slice(0, 2000)
+      .slice(0, 20000)
       .forEach(([term, translation]) => {
         if (!object(translation)) return;
         const key = cleanString(term, 300);

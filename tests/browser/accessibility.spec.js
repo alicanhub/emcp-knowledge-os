@@ -27,6 +27,15 @@ test("Turkish and English interfaces have no WCAG A/AA violations", async ({
   results = await new AxeBuilder({ page }).withTags(wcagTags).analyze();
   expect(results.violations).toEqual([]);
 
+  await page.locator("#q").fill("zzzzzzzzzz");
+  await expect(page.locator(".search-empty")).toBeVisible();
+  results = await new AxeBuilder({ page })
+    .include("#page-knowledge")
+    .withTags(wcagTags)
+    .analyze();
+  expect(results.violations).toEqual([]);
+
+  await page.locator("#q").fill("");
   await page.locator("#navKnowledge").click();
   await page.locator("#grid .card").first().click();
   results = await new AxeBuilder({ page })
@@ -40,6 +49,16 @@ test("Turkish and English interfaces have no WCAG A/AA violations", async ({
   await expect(page.locator("#handbookChapters button")).toHaveCount(30);
   results = await new AxeBuilder({ page })
     .include("#page-handbooks")
+    .withTags(wcagTags)
+    .analyze();
+  expect(results.violations).toEqual([]);
+
+  await page.locator("#navHome").click();
+  await page.locator('[data-page="knowledge-map"]').click();
+  await page.locator(".knowledge-map-node").nth(1).focus();
+  await page.keyboard.press("Enter");
+  results = await new AxeBuilder({ page })
+    .include("#page-knowledge-map")
     .withTags(wcagTags)
     .analyze();
   expect(results.violations).toEqual([]);
@@ -77,6 +96,20 @@ test("controls are labelled and reduced-motion preferences are honoured", async 
         .map((input) => input.id),
     );
   expect(unlabelled).toEqual([]);
+
+  await page.locator("#navHome").click();
+  await page.locator('[data-page="assistant"]').first().click();
+  await expect
+    .poll(() => page.evaluate(() => Boolean(window.EMCPAssistant)))
+    .toBe(true);
+  await page.locator("#assistantQuestion").fill("LTV nedir?");
+  await page.locator("#assistantForm button").click();
+  await expect(page.locator(".assistant-confidence")).toBeVisible();
+  const assistantResults = await new AxeBuilder({ page })
+    .include("#page-assistant")
+    .withTags(wcagTags)
+    .analyze();
+  expect(assistantResults.violations).toEqual([]);
 });
 
 test("local content dashboard is read-only and accessible", async ({
