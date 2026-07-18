@@ -20,6 +20,7 @@ interface Window {
     [key: string]: unknown;
   };
   EMCPKnowledge: Record<string, unknown>;
+  EMCPKnowledgeIntelligence: Record<string, unknown>;
   EMCPBilingualSearch: {
     create(entries: Array<Record<string, any>>): {
       search(
@@ -49,6 +50,7 @@ interface Window {
   };
   EMCPI18n: Record<string, unknown>;
   EMCPAssistant: Record<string, unknown>;
+  EMCPAssistantEngine: Record<string, unknown>;
   EMCPCalculators: Record<string, unknown>;
   EMCPWorkspace: Record<string, unknown>;
   EMCPPWA: Record<string, unknown>;

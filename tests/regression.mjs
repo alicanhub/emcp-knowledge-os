@@ -34,7 +34,9 @@ function installCore(context) {
 const scripts = [
   "js/core.js",
   "js/search-engine.js",
+  "js/command-palette.js",
   "js/knowledge.js",
+  "js/knowledge-intelligence.js",
   "js/calculator-model.js",
   "js/dom.js",
   "js/accessibility.js",
@@ -45,6 +47,7 @@ const scripts = [
   "js/search-worker.js",
   "js/app.js",
   "js/handbook.js",
+  "js/assistant-engine.js",
   "js/assistant.js",
   "js/calculators.js",
   "js/i18n.js",
@@ -71,18 +74,22 @@ coreAssets
       `missing cached asset: ${file}`,
     ),
   );
-assert.match(sw, /CACHE_PREFIX\}v26/);
+assert.match(sw, /CACHE_PREFIX\}v29/);
 assert.match(sw, /caches\.match\(OFFLINE_URL\)/);
 assert.match(sw, /url\.pathname\.endsWith\(["']\.json["']\)/);
 assert.ok(coreAssets.includes("js/core.js"));
 assert.ok(coreAssets.includes("js/search-engine.js"));
+assert.ok(coreAssets.includes("js/command-palette.js"));
 assert.ok(coreAssets.includes("js/knowledge.js"));
+assert.ok(coreAssets.includes("js/knowledge-intelligence.js"));
 assert.ok(coreAssets.includes("js/calculator-model.js"));
 assert.ok(coreAssets.includes("js/dom.js"));
 assert.ok(coreAssets.includes("js/accessibility.js"));
 assert.ok(coreAssets.includes("css/tokens.css"));
 assert.ok(coreAssets.includes("css/components.css"));
 assert.ok(coreAssets.includes("js/search-worker.js"));
+assert.ok(coreAssets.includes("js/assistant-engine.js"));
+assert.doesNotMatch(read("js/assistant.js"), /setProvider|https?:\/\//);
 assert.ok(coreAssets.includes("data/knowledge/search-index.json"));
 assert.ok(coreAssets.includes("data/knowledge/relationships.json"));
 assert.ok(coreAssets.includes("data/knowledge/details.json"));
@@ -124,6 +131,14 @@ assert.equal(roadmap.packs.length, 100);
 assert.equal(roadmap.packs[0].pack_number, 1);
 assert.equal(roadmap.packs[1].title.en, "Residential Property Fundamentals");
 assert.equal(roadmap.packs[2].title.en, "Property Investor Fundamentals");
+assert.throws(
+  () =>
+    installCore({ window: null }).schemas.relationships(
+      { version: 1, relationships: [[1], [4]] },
+      2,
+    ),
+  /Broken relationship/,
+);
 
 // Service-worker install and offline routing: navigation falls back to the app,
 // while missing JSON rejects instead of ever receiving HTML.
@@ -319,7 +334,7 @@ assert.match(html, /role="tablist"/);
 assert.equal((html.match(/role="tab"/g) || []).length, 5);
 assert.equal(
   (html.match(/<button type="button" class="module live"/g) || []).length,
-  6,
+  7,
 );
 assert.doesNotMatch(html, /<div class="module live"/);
 assert.doesNotMatch(html, /\son(?:click|change|input)=/i);
@@ -328,6 +343,8 @@ assert.match(html, /data-i18n-aria="languageSelector"/);
 assert.match(html, /data-i18n-aria="knowledgeCategories"/);
 assert.match(html, /data-i18n-aria="workspaceViews"/);
 assert.match(html, /data-i18n-aria="primaryNavigation"/);
+assert.match(html, /id="breadcrumbs"/);
+assert.match(html, /id="page-knowledge-map"/);
 assert.doesNotMatch(
   read("offline.html"),
   /<(?:style|script)(?:\s|>)[^>]*>[^<]/i,
@@ -622,7 +639,7 @@ assert.ok(contrast("#ffffff", "#C8102E") >= 4.5, "red button contrast");
   assert.equal(context.EMCPCalculators.getScenarios().length, 1);
 }
 
-// Ask EMCP still retrieves local knowledge and exposes sources.
+// Ask EMCP retrieves only local knowledge and exposes evidence.
 {
   const submit = {},
     output = {
@@ -638,6 +655,7 @@ assert.ok(contrast("#ffffff", "#C8102E") >= 4.5, "red button contrast");
   const context = { window: null, console, setTimeout, document: {} };
   context.window = context;
   installCore(context);
+  vm.runInNewContext(read("js/assistant-engine.js"), context);
   vm.runInNewContext(read("js/assistant.js"), context);
   const api = context.EMCPAssistant.create({
     form: {
@@ -656,24 +674,25 @@ assert.ok(contrast("#ffffff", "#C8102E") >= 4.5, "red button contrast");
           cat: "Finance",
         },
         index: 0,
-        _s: 200,
+        _s: 2500,
+        _tier: 5,
+        reasons: ["Abbreviation", "Definition"],
       },
     ],
     getRelatedEntries: () => [],
     getRelatedCalculators: () => [],
+    getRelatedChapters: async () => [],
     openEntry() {},
     getLanguage: () => "en",
+    normalize: context.EMCPBilingualSearch.normalize,
   });
   const found = await api.ask("What is LTV?");
   assert.equal(found.found, true);
   assert.match(output.innerHTML, /Loan to value/);
+  assert.match(output.innerHTML, /Evidence used/);
+  assert.match(output.innerHTML, /Confidence/);
   assert.equal(output.attrs["aria-busy"], "false");
-  api.setProvider({
-    generate: async () => "<img src=x onerror=alert(1)><p>Safe answer</p>",
-  });
-  await api.ask("LTV");
-  assert.doesNotMatch(output.innerHTML, /<img/i);
-  assert.match(output.innerHTML, /Safe answer/);
+  assert.equal(api.setProvider, undefined);
   api.clear();
   assert.equal(output.innerHTML, "");
 }

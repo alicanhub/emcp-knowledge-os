@@ -90,6 +90,16 @@
     ></div>
 
     <main id="mainContent" tabindex="-1">
+      <nav
+        id="breadcrumbs"
+        class="breadcrumbs"
+        aria-label="Breadcrumb"
+        data-i18n-aria="breadcrumb"
+      >
+        <ol>
+          <li aria-current="page">Home</li>
+        </ol>
+      </nav>
       <section id="page-home" class="page active">
         <div class="hero-card">
           <h2 id="installTitle" data-i18n="installTitle">
@@ -156,6 +166,15 @@
             ><span class="module-copy" data-i18n="assistantDescription"
               >Ask a question and search the local professional knowledge
               base.</span
+            ><span class="tag" data-i18n="active">ACTIVE</span>
+          </button>
+          <button type="button" class="module live" data-page="knowledge-map">
+            <span class="emoji" aria-hidden="true">◎</span
+            ><span class="module-title" data-i18n="knowledgeMap"
+              >Knowledge Map</span
+            ><span class="module-copy" data-i18n="knowledgeMapDescription"
+              >Explore relationships, learning journeys and construction
+              stages.</span
             ><span class="tag" data-i18n="active">ACTIVE</span>
           </button>
           <button type="button" class="module live" data-workspace="overview">
@@ -232,6 +251,57 @@
         <div class="grid" id="grid"></div>
       </section>
 
+      <section id="page-knowledge-map" class="page">
+        <div class="intelligence-heading">
+          <div>
+            <span class="badge">Knowledge Intelligence</span>
+            <h2 class="section-title" data-i18n="visualKnowledgeMap">
+              Visual Knowledge Map
+            </h2>
+            <p data-i18n="knowledgeIntelligenceDescription">
+              Explore verified and derived relationships across the local
+              knowledge base.
+            </p>
+          </div>
+          <label for="knowledgeMapTopic"
+            ><span data-i18n="topic">Topic</span>
+            <select id="knowledgeMapTopic"></select>
+          </label>
+        </div>
+        <div
+          id="relationshipHealth"
+          class="relationship-health"
+          role="status"
+        ></div>
+        <section class="knowledge-map-card" aria-labelledby="knowledgeMapTitle">
+          <h3 id="knowledgeMapTitle" data-i18n="relationshipGraph">
+            Relationship graph
+          </h3>
+          <p data-i18n="graphInstruction">
+            Choose a node to focus its local relationship neighbourhood.
+          </p>
+          <div
+            id="knowledgeMapGraph"
+            class="knowledge-map"
+            role="group"
+            aria-label="Interactive knowledge relationship graph"
+            data-i18n-aria="relationshipGraph"
+          ></div>
+        </section>
+        <section class="journey-card" aria-labelledby="journeyTitle">
+          <h3 id="journeyTitle" data-i18n="knowledgeJourney">
+            Knowledge Journey
+          </h3>
+          <div id="knowledgeJourney" class="knowledge-journey"></div>
+        </section>
+        <section class="journey-card" aria-labelledby="recentKnowledgeTitle">
+          <h3 id="recentKnowledgeTitle" data-i18n="recentlyViewed">
+            Recently Viewed
+          </h3>
+          <div id="intelligenceRecent" class="intelligence-list"></div>
+        </section>
+      </section>
+
       <section id="page-handbooks" class="page" aria-labelledby="handbookTitle">
         <div class="handbook-heading">
           <div>
@@ -244,14 +314,31 @@
             <span id="handbookProgressLabel">Progress</span>
           </div>
         </div>
-        <div class="handbook-toolbar" role="group" aria-label="Handbook navigation">
-          <button type="button" data-handbook-action="resume">Resume last chapter</button>
-          <button type="button" data-handbook-action="saved">Saved chapters</button>
+        <div
+          class="handbook-toolbar"
+          role="group"
+          aria-label="Handbook navigation"
+        >
+          <button type="button" data-handbook-action="resume">
+            Resume last chapter
+          </button>
+          <button type="button" data-handbook-action="saved">
+            Saved chapters
+          </button>
           <button type="button" data-handbook-action="all">All chapters</button>
         </div>
         <div class="handbook-layout">
-          <nav id="handbookChapters" class="handbook-chapters" aria-label="Investor Handbook chapters"></nav>
-          <article id="handbookChapter" class="handbook-chapter" tabindex="-1" aria-live="polite"></article>
+          <nav
+            id="handbookChapters"
+            class="handbook-chapters"
+            aria-label="Investor Handbook chapters"
+          ></nav>
+          <article
+            id="handbookChapter"
+            class="handbook-chapter"
+            tabindex="-1"
+            aria-live="polite"
+          ></article>
         </div>
       </section>
 
@@ -259,8 +346,8 @@
         <h2 class="section-title">Ask EMCP</h2>
         <div class="assistant-card">
           <p data-i18n="assistantIntro">
-            Ask about property, construction, investment, finance or compliance.
-            EMCP searches its local knowledge first.
+            Ask in English, Turkish or both. Answers use only approved local
+            EMCP knowledge and show their evidence.
           </p>
           <form id="assistantForm" class="assistant-form">
             <label
@@ -783,6 +870,57 @@
     >
       <div class="sheet" id="sheet" tabindex="-1"></div>
     </div>
+    <div
+      class="command-palette"
+      id="commandPalette"
+      role="dialog"
+      aria-modal="true"
+      aria-hidden="true"
+      aria-labelledby="commandPaletteTitle"
+    >
+      <div class="command-palette-panel">
+        <header class="command-palette-header">
+          <span class="command-search-icon" aria-hidden="true">⌕</span>
+          <div>
+            <h2 class="sr-only" id="commandPaletteTitle">Command Palette</h2>
+            <label class="sr-only" for="commandPaletteInput"
+              >Search commands and knowledge</label
+            >
+            <input
+              id="commandPaletteInput"
+              type="search"
+              aria-controls="commandPaletteResults"
+              autocomplete="off"
+              placeholder="Search knowledge, tools and commands…"
+            />
+          </div>
+          <button
+            type="button"
+            id="commandPaletteClose"
+            class="command-palette-close"
+            aria-label="Close command palette"
+          >
+            <span aria-hidden="true">Esc</span>
+          </button>
+        </header>
+        <div
+          id="commandPaletteResults"
+          class="command-palette-results"
+          role="region"
+          aria-label="Command results"
+        ></div>
+        <footer class="command-palette-footer">
+          <span
+            id="commandPaletteStatus"
+            role="status"
+            aria-live="polite"
+          ></span>
+          <span aria-hidden="true"
+            >↑↓ Navigate&nbsp;&nbsp; ↵ Open&nbsp;&nbsp; Esc Close</span
+          >
+        </footer>
+      </div>
+    </div>
     <aside id="pwaUpdate" class="pwa-update" role="status" hidden>
       <div>
         <strong id="pwaUpdateTitle"></strong><span id="pwaUpdateText"></span>
@@ -796,7 +934,9 @@
     <script src="js/core.js" defer></script>
     <script src="js/i18n.js" defer></script>
     <script src="js/search-engine.js" defer></script>
+    <script src="js/command-palette.js" defer></script>
     <script src="js/knowledge.js" defer></script>
+    <script src="js/knowledge-intelligence.js" defer></script>
     <script src="js/calculator-model.js" defer></script>
     <script src="js/dom.js" defer></script>
     <script src="js/accessibility.js" defer></script>

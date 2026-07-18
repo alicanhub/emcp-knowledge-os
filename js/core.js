@@ -368,20 +368,24 @@
       !Array.isArray(value.relationships)
     )
       throw new TypeError("Invalid relationship index");
-    return value.relationships
-      .slice(0, entryCount)
-      .map((items) =>
-        Array.isArray(items)
-          ? [
-              ...new Set(
-                items.filter(
-                  (item) =>
-                    Number.isInteger(item) && item >= 0 && item < entryCount,
-                ),
-              ),
-            ].slice(0, 20)
-          : [],
-      );
+    if (value.relationships.length !== entryCount)
+      throw new TypeError("Relationship index length does not match runtime");
+    return value.relationships.map((items, index) => {
+      if (
+        !Array.isArray(items) ||
+        items.length > 20 ||
+        items.some(
+          (item) =>
+            !Number.isInteger(item) ||
+            item < 0 ||
+            item >= entryCount ||
+            item === index,
+        ) ||
+        new Set(items).size !== items.length
+      )
+        throw new TypeError(`Broken relationship list at index ${index}`);
+      return items.slice();
+    });
   }
   function runtimeConfig(value) {
     if (!object(value)) throw new TypeError("Invalid runtime configuration");

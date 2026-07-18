@@ -1,5 +1,5 @@
 const CACHE_PREFIX = "emcp-os-";
-const CACHE = `${CACHE_PREFIX}v26`;
+const CACHE = `${CACHE_PREFIX}v29`;
 const SCOPE = self.registration.scope;
 const scoped = (path) => new URL(path, SCOPE).href;
 const CORE_PATHS = [
@@ -13,7 +13,9 @@ const CORE_PATHS = [
   "js/core.js",
   "js/i18n.js",
   "js/search-engine.js",
+  "js/command-palette.js",
   "js/knowledge.js",
+  "js/knowledge-intelligence.js",
   "js/calculator-model.js",
   "js/dom.js",
   "js/accessibility.js",
@@ -24,6 +26,7 @@ const CORE_PATHS = [
   "js/search-worker.js",
   "js/app.js",
   "js/handbook.js",
+  "js/assistant-engine.js",
   "js/assistant.js",
   "js/calculators.js",
   "js/workspace.js",

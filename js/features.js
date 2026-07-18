@@ -1,7 +1,11 @@
 (function (global) {
   "use strict";
   const definitions = {
-      assistant: ["js/ai-guard.js", "js/assistant.js"],
+      assistant: [
+        "js/ai-guard.js",
+        "js/assistant-engine.js",
+        "js/assistant.js",
+      ],
       calculators: ["js/calculators.js"],
       construction: ["js/calculators.js"],
       handbooks: ["js/handbook.js"],

@@ -14,7 +14,7 @@ test("knowledge, bilingual dialog and keyboard journey", async ({ page }) => {
   await page.keyboard.press("Enter");
   await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "false");
   await expect(page.locator("#modalTitle")).toContainText("LTV");
-  await expect(page.locator(".knowledge-section")).toHaveCount(23);
+  await expect(page.locator(".knowledge-section")).toHaveCount(33);
   await expect(page.locator(".knowledge-section").first()).toHaveAttribute(
     "open",
     "",
@@ -51,6 +51,38 @@ test("search typo tolerance, explanations and no-results guidance", async ({
   await expect(page.locator(".search-empty strong")).toHaveText(
     "No matching knowledge found",
   );
+});
+
+test("knowledge intelligence graph, journeys, breadcrumbs and read-next journey", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.locator('[data-page="knowledge-map"]').click();
+  await expect(page.locator("#breadcrumbs")).toContainText(
+    /Knowledge Map|Bilgi Haritası/,
+  );
+  await expect(page.locator("#relationshipHealth")).toContainText("378");
+  await expect(page.locator(".knowledge-map-node")).toHaveCount(9);
+  await expect(page.locator("#knowledgeJourney > section")).toHaveCount(4);
+  await page.locator(".knowledge-map-node").nth(1).focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator(".knowledge-map-node.root")).toHaveCount(1);
+  await page.locator("#navKnowledge").click();
+  await page.locator("#grid .card").first().click();
+  await expect(page.locator("#breadcrumbs li")).toHaveCount(4);
+  await expect(page.locator(".knowledge-intelligence")).toBeVisible();
+  await expect(
+    page.locator(".knowledge-intelligence summary").first(),
+  ).toContainText(/Parent concept|Üst kavram/);
+  await expect(page.locator(".knowledge-intelligence")).toContainText(
+    /Read Next|Sonraki Okuma/,
+  );
+  await page.locator("[data-modal-close]").click();
+  await page.locator("#navHome").click();
+  await page.locator('[data-page="knowledge-map"]').click();
+  await expect(
+    page.locator("#intelligenceRecent button").first(),
+  ).toBeVisible();
 });
 
 test("calculator and workspace backup journey", async ({ page }) => {
@@ -99,6 +131,14 @@ test("lazy features, worker search, virtualization and local operations", async 
   await page.locator("#assistantQuestion").fill("What is LTV?");
   await page.locator("#assistantForm button").click();
   await expect(page.locator("#assistantOutput")).toContainText("LTV");
+  await expect(page.locator(".assistant-confidence")).toBeVisible();
+  await expect(page.locator(".assistant-source").first()).toBeVisible();
+  await expect(page.locator("#assistantOutput")).toContainText(
+    /Evidence used|Kullanılan kanıtlar/,
+  );
+  await expect(page.locator(".assistant-source small").first()).toContainText(
+    /matched|eşleşti/i,
+  );
   const snapshot = await page.evaluate(() => window.EMCPOperations.snapshot());
   expect(snapshot.releaseChannel).toBe("stable");
   expect(
