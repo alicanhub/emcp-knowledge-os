@@ -1,54 +1,11 @@
 (function (global) {
   "use strict";
   const core = global.EMCPCore;
-  const STOP_WORDS = new Set([
-    "a",
-    "an",
-    "and",
-    "are",
-    "about",
-    "bana",
-    "bir",
-    "bu",
-    "can",
-    "define",
-    "do",
-    "does",
-    "explain",
-    "for",
-    "hakkinda",
-    "how",
-    "i",
-    "icin",
-    "ile",
-    "in",
-    "is",
-    "lutfen",
-    "me",
-    "my",
-    "nasil",
-    "ne",
-    "nedir",
-    "of",
-    "on",
-    "or",
-    "please",
-    "tell",
-    "the",
-    "to",
-    "ve",
-    "veya",
-    "what",
-    "whats",
-    "when",
-    "where",
-    "which",
-    "who",
-    "why",
-    "with",
-  ]);
+  const engine = global.EMCPBilingualSearch;
+  if (!engine) throw new Error("Bilingual search engine is unavailable");
   let entries = [],
     relationshipIndex = [],
+    searchable = engine.create([]),
     manifest = null,
     activeBase = "data/knowledge",
     activeFetcher = null,
@@ -57,150 +14,29 @@
     workerSequence = 0;
   const categoryPromises = new Map(),
     workerRequests = new Map();
-
-  const normalize = (value) =>
-    String(value || "")
-      .toLocaleLowerCase("tr-TR")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .replace(/ı/g, "i")
-      .replace(/ş/g, "s")
-      .replace(/ç/g, "c")
-      .replace(/ğ/g, "g")
-      .replace(/ö/g, "o")
-      .replace(/ü/g, "u")
-      .replace(/[^\p{L}\p{N}]+/gu, " ")
-      .trim();
-  const words = (value) => normalize(value).split(" ").filter(Boolean);
-  const meaningfulWords = (value) =>
-    words(value).filter((word) => !STOP_WORDS.has(word));
-  const list = (value) => (Array.isArray(value) ? value : value ? [value] : []);
-
-  function scoreValue(value, query, weights) {
-    const field = normalize(value),
-      queryWords = meaningfulWords(query),
-      fieldWords = words(value);
-    if (!field || !query) return 0;
-    if (field === query) return weights.exact;
-    if (field.startsWith(query)) return weights.starts;
-    if (field.includes(query)) return weights.includes;
-    let total = 0;
-    for (const word of queryWords) {
-      if (fieldWords.includes(word)) total += weights.wordExact;
-      else if (
-        word.length >= 3 &&
-        fieldWords.some((fieldWord) => fieldWord.startsWith(word))
-      )
-        total += weights.wordStart;
-      else if (
-        word.length >= 4 &&
-        fieldWords.some((fieldWord) => fieldWord.includes(word))
-      )
-        total += weights.wordPartial;
-    }
-    return total;
+  const normalize = engine.normalize;
+  function rebuildSearch() {
+    searchable = engine.create(entries);
   }
-  const scoreValues = (values, query, weights) =>
-    (Array.isArray(values) ? values : [values]).reduce(
-      (best, value) => Math.max(best, scoreValue(value, query, weights)),
-      0,
-    );
+  function mapResult(result) {
+    return {
+      entry: entries[result.index],
+      index: result.index,
+      _s: result.score,
+      _tier: result.tier,
+      breakdown: result.breakdown,
+      reasons: result.reasons,
+    };
+  }
   function score(entry, query, categoryAliases = {}) {
-    const q = normalize(query);
-    if (!q) return 1;
-    const title = {
-        exact: 2000,
-        starts: 1200,
-        includes: 800,
-        wordExact: 300,
-        wordStart: 200,
-        wordPartial: 100,
-      },
-      alias = {
-        exact: 1600,
-        starts: 1000,
-        includes: 650,
-        wordExact: 250,
-        wordStart: 160,
-        wordPartial: 80,
-      },
-      tag = {
-        exact: 600,
-        starts: 450,
-        includes: 300,
-        wordExact: 150,
-        wordStart: 100,
-        wordPartial: 50,
-      },
-      description = {
-        exact: 280,
-        starts: 200,
-        includes: 160,
-        wordExact: 60,
-        wordStart: 40,
-        wordPartial: 20,
-      },
-      category = {
-        exact: 420,
-        starts: 300,
-        includes: 220,
-        wordExact: 80,
-        wordStart: 55,
-        wordPartial: 30,
-      };
-    return (
-      scoreValues(entry.term || entry.title, q, title) +
-      scoreValues([entry.tr, entry.abbr, ...list(entry.aliases)], q, alias) +
-      scoreValues(entry.tags || [], q, tag) +
-      scoreValues(entry.keywords || [], q, tag) +
-      scoreValues(
-        [
-          entry.def,
-          entry.defEn,
-          entry.description,
-          entry.use,
-          entry.useEn,
-          entry.example,
-          entry.details?.simpleExplanation?.en,
-          entry.details?.simpleExplanation?.tr,
-          entry.details?.professionalExplanation?.en,
-          entry.details?.professionalExplanation?.tr,
-          entry.details?.realWorldExample?.en,
-          entry.details?.realWorldExample?.tr,
-          entry.details?.siteExample?.en,
-          entry.details?.siteExample?.tr,
-          entry.details?.officeExample?.en,
-          entry.details?.officeExample?.tr,
-          ...(entry.details?.practicalTips?.en || []),
-          ...(entry.details?.practicalTips?.tr || []),
-        ],
-        q,
-        description,
-      ) +
-      scoreValues(
-        [entry.cat, entry.category, categoryAliases[entry.cat]],
-        q,
-        category,
-      )
-    );
+    return engine.create([entry]).search(query, categoryAliases)[0]?.score || 0;
   }
   function search(query, categoryAliases = {}) {
-    const text = String(query || "").trim();
-    return entries
-      .map((entry, index) => ({
-        entry,
-        index,
-        _s: score(entry, text, categoryAliases),
-      }))
-      .filter((item) => item._s > 0)
-      .sort(
-        (left, right) =>
-          right._s - left._s ||
-          left.entry.term.localeCompare(right.entry.term, "en"),
-      );
+    return searchable.search(query, categoryAliases).map(mapResult);
   }
   function setEntries(value) {
     entries = core.schemas.knowledgeEntries(value);
+    rebuildSearch();
     initializeWorker();
     return entries;
   }
@@ -241,15 +77,7 @@
       workerRequests.set(id, (results) => {
         global.clearTimeout(timeout);
         if (!results) return resolve(search(query, categoryAliases));
-        resolve(
-          results
-            .map(({ index, score: resultScore }) => ({
-              entry: entries[index],
-              index,
-              _s: resultScore,
-            }))
-            .filter((item) => item.entry),
-        );
+        resolve(results.map(mapResult).filter((item) => item.entry));
       });
       worker.postMessage({ type: "search", id, query, categoryAliases });
     });
@@ -291,6 +119,7 @@
       ...entry,
       details: details[String(entry.term)] || null,
     }));
+    rebuildSearch();
     categoryPromises.clear();
     translationsPromise = null;
     initializeWorker();
@@ -332,6 +161,7 @@
               ? { ...entry, ...full, ...(translated[entry.term] || {}) }
               : entry;
           });
+          rebuildSearch();
           initializeWorker();
           return values;
         }),
@@ -358,6 +188,11 @@
     searchAsync,
     score,
     normalize,
+    highlight: engine.highlight,
+    suggest: (query, limit) => searchable.suggest(query, limit),
+    get weights() {
+      return engine.weights;
+    },
     loadCategory,
     hydrate,
     related,

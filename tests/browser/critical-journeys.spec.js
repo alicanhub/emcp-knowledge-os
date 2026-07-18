@@ -8,6 +8,8 @@ test("knowledge, bilingual dialog and keyboard journey", async ({ page }) => {
   await page.locator("#q").fill("loan to value");
   const result = page.locator("#grid .card").first();
   await expect(result).toContainText("LTV");
+  await expect(result.locator("mark").first()).toBeVisible();
+  await expect(result.locator(".match-reason")).toContainText("Matched by");
   await result.focus();
   await page.keyboard.press("Enter");
   await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "false");
@@ -29,6 +31,26 @@ test("knowledge, bilingual dialog and keyboard journey", async ({ page }) => {
   await page.keyboard.press("Escape");
   await expect(page.locator("#modal")).toHaveAttribute("aria-hidden", "true");
   await expect(result).toBeFocused();
+});
+
+test("search typo tolerance, explanations and no-results guidance", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await page.locator("#enBtn").click();
+  await page.locator("#q").fill("markte value");
+  await expect(page.locator("#grid .card").first()).toContainText(
+    "Market Value",
+  );
+  await expect(page.locator("#grid .match-reason").first()).toContainText(
+    "Title",
+  );
+  await page.locator("#q").fill("markte");
+  await expect(page.locator("#grid .card").first()).toBeVisible();
+  await page.locator("#q").fill("zzzzzzzzzz");
+  await expect(page.locator(".search-empty strong")).toHaveText(
+    "No matching knowledge found",
+  );
 });
 
 test("calculator and workspace backup journey", async ({ page }) => {

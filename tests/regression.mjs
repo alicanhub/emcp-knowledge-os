@@ -26,12 +26,14 @@ function installCore(context) {
   } else if (!context.localStorage.removeItem)
     context.localStorage.removeItem = () => {};
   vm.runInNewContext(read("js/core.js"), context);
+  vm.runInNewContext(read("js/search-engine.js"), context);
   return context.EMCPCore;
 }
 
 // Syntax and shipped asset integrity.
 const scripts = [
   "js/core.js",
+  "js/search-engine.js",
   "js/knowledge.js",
   "js/calculator-model.js",
   "js/dom.js",
@@ -69,10 +71,11 @@ coreAssets
       `missing cached asset: ${file}`,
     ),
   );
-assert.match(sw, /CACHE_PREFIX\}v25/);
+assert.match(sw, /CACHE_PREFIX\}v26/);
 assert.match(sw, /caches\.match\(OFFLINE_URL\)/);
 assert.match(sw, /url\.pathname\.endsWith\(["']\.json["']\)/);
 assert.ok(coreAssets.includes("js/core.js"));
+assert.ok(coreAssets.includes("js/search-engine.js"));
 assert.ok(coreAssets.includes("js/knowledge.js"));
 assert.ok(coreAssets.includes("js/calculator-model.js"));
 assert.ok(coreAssets.includes("js/dom.js"));
@@ -334,6 +337,10 @@ const pageScripts = [...html.matchAll(/<script src="([^"]+)"/g)].map(
 );
 assert.ok(
   pageScripts.indexOf("js/core.js") < pageScripts.indexOf("js/i18n.js"),
+);
+assert.ok(
+  pageScripts.indexOf("js/search-engine.js") <
+    pageScripts.indexOf("js/knowledge.js"),
 );
 assert.ok(
   pageScripts.indexOf("js/knowledge.js") < pageScripts.indexOf("js/app.js"),

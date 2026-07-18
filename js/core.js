@@ -334,7 +334,7 @@
     return result;
   }
   function knowledgeSearchEntries(value) {
-    if (!Array.isArray(value) || !value.length || value.length > 1000)
+    if (!Array.isArray(value) || !value.length || value.length > 20000)
       throw new TypeError("Invalid knowledge search index");
     return value.map((entry, index) => {
       if (!object(entry))
@@ -350,14 +350,14 @@
         abbr: cleanString(entry.abbr, 80),
         def: cleanString(entry.def),
         defEn: cleanString(entry.defEn),
+        use: cleanString(entry.use),
+        useEn: cleanString(entry.useEn),
+        example: cleanString(entry.example),
         cat: cleanString(entry.cat, 120),
         source,
         aliases: stringList(entry.aliases, { maxItems: 100, maxLength: 300 }),
         tags: stringList(entry.tags, { maxItems: 100, maxLength: 100 }),
         keywords: stringList(entry.keywords, { maxItems: 100, maxLength: 100 }),
-        use: "",
-        useEn: "",
-        example: "",
       };
     });
   }
@@ -403,7 +403,7 @@
     };
   }
   function knowledgeEntries(value) {
-    if (!Array.isArray(value) || value.length > 1000)
+    if (!Array.isArray(value) || value.length > 20000)
       throw new TypeError("Invalid knowledge entries");
     return value.map((entry, index) => {
       if (!object(entry))
@@ -436,7 +436,7 @@
     if (!object(value)) throw new TypeError("Invalid knowledge translations");
     const result = Object.create(null);
     Object.entries(value)
-      .slice(0, 2000)
+      .slice(0, 20000)
       .forEach(([term, translation]) => {
         if (!object(translation)) return;
         const key = cleanString(term, 300);

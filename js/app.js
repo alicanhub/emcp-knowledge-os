@@ -445,19 +445,45 @@ function getList() {
     ...item.entry,
     _i: item.index,
     _s: item._s,
+    _reasons: item.reasons,
   }));
   if (activeCat !== "Tümü") a = a.filter((x) => x.cat === activeCat);
   return a;
 }
+const reasonLabels = {
+  Title: ["Title", "Başlık"],
+  Abbreviation: ["Abbreviation", "Kısaltma"],
+  Alias: ["Alias", "Alternatif ad"],
+  Keyword: ["Keyword", "Anahtar kelime"],
+  Tag: ["Tag", "Etiket"],
+  Category: ["Category", "Kategori"],
+  "Related concept": ["Related concept", "İlgili kavram"],
+  Definition: ["Definition", "Tanım"],
+  "Practical use": ["Practical use", "Pratik kullanım"],
+  Example: ["Example", "Örnek"],
+};
+function resultCard(entry, query = "") {
+  const highlight = (value) => knowledge.highlight(value, query),
+    reasons = [...new Set(entry._reasons || [])].slice(0, 3),
+    reasonText = reasons
+      .map((reason) => pick(...(reasonLabels[reason] || [reason, reason])))
+      .join(" · ");
+  return `<button type="button" class="card" data-open-term="${entry._i}"><span class="term">${highlight(entry.term)}</span>${entry.abbr ? `<span class="abbr">${highlight(entry.abbr)}</span>` : ""}<span class="tr">${highlight(entry.tr)}</span><span class="def">${highlight(lang === "tr" ? entry.def : entry.defEn || entry.def)}</span>${reasonText ? `<span class="match-reason">${esc(pick("Matched by", "Eşleşme"))}: ${esc(reasonText)}</span>` : ""}<span class="badge">${esc(categoryLabel(entry.cat))}</span></button>`;
+}
+function emptySearch(query) {
+  const suggestions = knowledge.suggest(query, 3),
+    suggestionButtons = suggestions.length
+      ? `<div class="search-suggestions" role="group" aria-label="${esc(pick("Suggested searches", "Önerilen aramalar"))}">${suggestions.map((suggestion) => `<button type="button" data-search-suggestion="${esc(suggestion)}">${esc(suggestion)}</button>`).join("")}</div>`
+      : "";
+  return `<div class="empty search-empty"><strong>${esc(pick("No matching knowledge found", "Eşleşen bilgi bulunamadı"))}</strong><span>${esc(pick("Try a shorter term, another language, or one of the suggestions below.", "Daha kısa bir terim, diğer dili veya aşağıdaki önerilerden birini deneyin."))}</span>${suggestionButtons}</div>`;
+}
 function render() {
   const a = getList();
   count.textContent = pick(`${a.length} results`, `${a.length} sonuç`);
-  const cards = a.map(
-    (t) =>
-      `<button type="button" class="card" data-open-term="${t._i}"><span class="term">${esc(t.term)}</span>${t.abbr ? `<span class="abbr">${esc(t.abbr)}</span>` : ""}<span class="tr">${esc(t.tr)}</span><span class="def">${esc(lang === "tr" ? t.def : t.defEn || t.def)}</span><span class="badge">${esc(categoryLabel(t.cat))}</span></button>`,
-  );
+  const query = q.value.trim(),
+    cards = a.map((entry) => resultCard(entry, query));
   window.EMCPVirtualList.render(grid, cards, {
-    empty: `<div class="empty">${pick("No results found.", "Sonuç bulunamadı.")}</div>`,
+    empty: emptySearch(query),
   });
   updateStats();
 }
@@ -471,20 +497,19 @@ async function renderSearch() {
     ...item.entry,
     _i: item.index,
     _s: item._s,
+    _reasons: item.reasons,
   }));
   if (activeCat !== "Tümü")
     list = list.filter((entry) => entry.cat === activeCat);
   count.textContent = pick(`${list.length} results`, `${list.length} sonuç`);
   window.EMCPVirtualList.render(
     grid,
-    list.map(
-      (t) =>
-        `<button type="button" class="card" data-open-term="${t._i}"><span class="term">${esc(t.term)}</span>${t.abbr ? `<span class="abbr">${esc(t.abbr)}</span>` : ""}<span class="tr">${esc(t.tr)}</span><span class="def">${esc(lang === "tr" ? t.def : t.defEn || t.def)}</span><span class="badge">${esc(categoryLabel(t.cat))}</span></button>`,
-    ),
+    list.map((entry) => resultCard(entry, query)),
     {
-      empty: `<div class="empty">${pick("No results found.", "Sonuç bulunamadı.")}</div>`,
+      empty: emptySearch(query),
     },
   );
+  q.removeAttribute("aria-busy");
   window.EMCPOperations?.track("knowledge_search");
   updateStats();
 }
@@ -629,6 +654,7 @@ function showHelp() {
 }
 q.addEventListener("input", () => {
   showPage("knowledge");
+  q.setAttribute("aria-busy", "true");
   renderSearch();
 });
 clearBtn.addEventListener("click", () => {
@@ -659,6 +685,11 @@ document.addEventListener("click", (event) => {
   if (button.hasAttribute("data-help")) showHelp();
   if (button.hasAttribute("data-modal-close")) closeModal();
   if (button.dataset.openTerm !== undefined) openTerm(button.dataset.openTerm);
+  if (button.dataset.searchSuggestion !== undefined) {
+    q.value = button.dataset.searchSuggestion;
+    q.focus();
+    renderSearch();
+  }
   if (button.dataset.categoryIndex !== undefined) {
     const values = ["Tümü", ...new Set(TERMS.map((entry) => entry.cat))],
       category = values[Number(button.dataset.categoryIndex)];

@@ -12,6 +12,7 @@ const values = new Map(),
 const context = { window: null, localStorage, console };
 context.window = context;
 vm.runInNewContext(fs.readFileSync("js/core.js", "utf8"), context);
+vm.runInNewContext(fs.readFileSync("js/search-engine.js", "utf8"), context);
 vm.runInNewContext(fs.readFileSync("js/knowledge.js", "utf8"), context);
 const index = JSON.parse(fs.readFileSync("data/knowledge/index.json"));
 const entries = index.categories.flatMap((category) =>

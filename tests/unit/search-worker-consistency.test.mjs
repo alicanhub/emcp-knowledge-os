@@ -44,10 +44,19 @@ function synchronousSearch(query, categoryAliases = {}) {
     EMCPCore: { schemas: { knowledgeEntries: (value) => value } },
   };
   context.window = context;
+  vm.runInNewContext(fs.readFileSync("js/search-engine.js", "utf8"), context);
   vm.runInNewContext(fs.readFileSync("js/knowledge.js", "utf8"), context);
   context.EMCPKnowledge.setEntries(entries);
-  return context.EMCPKnowledge.search(query, categoryAliases).map(
-    ({ index, _s }) => ({ index, score: _s }),
+  return JSON.parse(
+    JSON.stringify(
+      context.EMCPKnowledge.search(query, categoryAliases).map((result) => ({
+        index: result.index,
+        score: result._s,
+        tier: result._tier,
+        breakdown: result.breakdown,
+        reasons: result.reasons,
+      })),
+    ),
   );
 }
 
@@ -64,10 +73,12 @@ function workerSearch(query, categoryAliases = {}) {
       },
     },
   };
+  context.importScripts = () =>
+    vm.runInNewContext(fs.readFileSync("js/search-engine.js", "utf8"), context);
   vm.runInNewContext(fs.readFileSync("js/search-worker.js", "utf8"), context);
   listener({ data: { type: "index", entries } });
   listener({ data: { type: "search", id: 1, query, categoryAliases } });
-  return response.results.map(({ index, score }) => ({ index, score }));
+  return JSON.parse(JSON.stringify(response.results));
 }
 
 test("worker search matches synchronous search for every searchable field", () => {

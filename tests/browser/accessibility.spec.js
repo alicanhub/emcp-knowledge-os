@@ -27,6 +27,15 @@ test("Turkish and English interfaces have no WCAG A/AA violations", async ({
   results = await new AxeBuilder({ page }).withTags(wcagTags).analyze();
   expect(results.violations).toEqual([]);
 
+  await page.locator("#q").fill("zzzzzzzzzz");
+  await expect(page.locator(".search-empty")).toBeVisible();
+  results = await new AxeBuilder({ page })
+    .include("#page-knowledge")
+    .withTags(wcagTags)
+    .analyze();
+  expect(results.violations).toEqual([]);
+
+  await page.locator("#q").fill("");
   await page.locator("#navKnowledge").click();
   await page.locator("#grid .card").first().click();
   results = await new AxeBuilder({ page })
